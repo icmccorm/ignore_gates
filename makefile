@@ -1,5 +1,5 @@
 default: clean
-	@zip -D -r starexec.zip *
+	@zip -D -r starexec.zip * -x *.csv -x *.py -x run.sh -x makefile -x README.md
 
 build:
 	cd kissat; ./configure && make && cp ./build/kissat ../bin/kissat

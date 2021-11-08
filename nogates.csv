@@ -1,0 +1,401 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result
+519895359,cnf_proj/14pipe_q0_k.cnf.xz,13218607,cadical_m,34795,solve_ignore_gates.sh,567816,complete,12.1642,8.877,974872,SAT-INCORRECT
+519895601,cnf_proj/quad_res_r28_m29.cnf.xz,13218606,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.058416,0.040172,113292,SAT-INCORRECT
+519895746,cnf_proj/vlsat2_144_7585.cnf.xz,13218605,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (cpu),5000.01,4999.19,1301656,UNKNOWN
+519895473,cnf_proj/erin2_0x1e3-216.cnf.xz,13218604,cadical_m,34795,solve_ignore_gates.sh,567816,complete,640.633,642.341,198912,SAT-INCORRECT
+519895540,cnf_proj/mp1-Nb6T07.cnf.xz,13218603,cadical_m,34795,solve_ignore_gates.sh,567816,complete,800.544,801.865,200040,UNSAT
+519895585,cnf_proj/puzzle30_sat.cnf.xz,13218602,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.214804,0.146988,113292,SAT-INCORRECT
+519895685,cnf_proj/spg_200_321.cnf.xz,13218601,cadical_m,34795,solve_ignore_gates.sh,567816,complete,90.5642,89.1593,582252,UNSAT
+519895409,cnf_proj/b2005-p5-12x12c10h7-Ser5-0.cnf.xz,13218600,cadical_m,34795,solve_ignore_gates.sh,567816,complete,472.611,474.321,727520,UNKNOWN
+519895412,cnf_proj/barman-pfile10-040.sas.ex.15.cnf.xz,13218599,cadical_m,34795,solve_ignore_gates.sh,567816,complete,505.873,502.3,1178668,UNSAT
+519895515,cnf_proj/ktf_TF-6.tf_4_0.06_77.cnf.xz,13218598,cadical_m,34795,solve_ignore_gates.sh,567816,complete,138.767,138.836,172864,SAT-INCORRECT
+519895640,cnf_proj/SC21_Timetable_C_140_E_29_Cl_10_S_15.cnf.xz,13218597,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4980.63,5000.11,432580,UNKNOWN
+519895698,cnf_proj/sted1_0x1e3-393.cnf.xz,13218596,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1830.15,1835.02,236936,SAT-INCORRECT
+519895579,cnf_proj/php12e12.cnf.xz,13218595,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4985.8,5000.02,313088,UNKNOWN
+519895674,cnf_proj/sp5-21-15-one-stri-tree-noid.cnf.xz,13218594,cadical_m,34795,solve_ignore_gates.sh,567816,complete,120.916,121.446,151344,SAT-INCORRECT
+519895756,cnf_proj/WS_500_32_30_10.apx_0.cnf.xz,13218593,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.043985,0.0300859,113292,SAT-INCORRECT
+519895371,cnf_proj/20-100-p100-55_sat.cnf.xz,13218592,cadical_m,34795,solve_ignore_gates.sh,567816,complete,665.96,665.781,354988,SAT-INCORRECT
+519895721,cnf_proj/sum_of_3_cubes_108_bits_52.cnf.xz,13218591,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3.60836,2.97053,285572,SAT-INCORRECT
+519895561,cnf_proj/Mycielski-10-hints-5.cnf.xz,13218590,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.860796,0.557901,113292,SAT-INCORRECT
+519895738,cnf_proj/UR-20-5p1.cnf.xz,13218589,cadical_m,34795,solve_ignore_gates.sh,567816,complete,12.188,11.5592,401156,SAT-INCORRECT
+519895723,cnf_proj/sum_of_3_cubes_37_bits_87.cnf.xz,13218588,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.470853,0.351883,113292,UNKNOWN
+519895635,cnf_proj/satch2ways18wu.cnf.xz,13218587,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4988.77,5000.02,5168328,UNKNOWN
+519895683,cnf_proj/spg_200_316.cnf.xz,13218586,cadical_m,34795,solve_ignore_gates.sh,567816,complete,127.709,126.089,590048,UNSAT
+519895452,cnf_proj/dist4.c.cnf.xz,13218585,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.177697,0.126899,113292,SAT-INCORRECT
+519895577,cnf_proj/pb_300_06_lb_02.cnf.xz,13218584,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2604.28,2613.24,562544,UNKNOWN
+519895686,cnf_proj/spg_300_300.cnf.xz,13218583,cadical_m,34795,solve_ignore_gates.sh,567816,complete,371.071,369.707,785936,UNSAT
+519895729,cnf_proj/sum_of_3_cubes_87_bits_75.cnf.xz,13218582,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.25598,2.10656,332552,UNKNOWN
+519895594,cnf_proj/puzzle44_unsat.cnf.xz,13218581,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.295143,0.201179,113292,SAT-INCORRECT
+519895564,cnf_proj/Mycielski-10-hints-8.cnf.xz,13218580,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.13063,0.756933,331852,SAT-INCORRECT
+519895680,cnf_proj/spg_200_300.cnf.xz,13218579,cadical_m,34795,solve_ignore_gates.sh,567816,complete,168.923,167.121,614328,UNSAT
+519895657,cnf_proj/size_5_5_5_i251_r12.cnf.xz,13218578,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1773.72,1778.03,248508,UNKNOWN
+519895435,cnf_proj/Circuit_multiplier35.cnf.xz,13218577,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.13382,0.115803,113292,UNKNOWN
+519895490,cnf_proj/HCP-529-60.cnf.xz,13218576,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4995.24,5000.11,757524,UNKNOWN
+519895669,cnf_proj/sp4-33-one-stri-tree-noid.cnf.xz,13218575,cadical_m,34795,solve_ignore_gates.sh,567816,complete,368.884,370.596,169236,UNSAT
+519895559,cnf_proj/MVD_ADS_S9_6_6.cnf.xz,13218574,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.98909,2.58116,341968,UNSAT
+519895480,cnf_proj/HCP-446-420.cnf.xz,13218573,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4993.94,5000.02,441372,UNKNOWN
+519895703,cnf_proj/sted5_0x0_n90-157.cnf.xz,13218572,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4982.73,5000.03,332700,UNKNOWN
+519895404,cnf_proj/b2005-p2-14x14c17h9-Ser6-0.cnf.xz,13218571,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (cpu),5000.09,4989.21,3685580,UNKNOWN
+519895743,cnf_proj/vlsat2_11_26.cnf.xz,13218570,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4984.53,5000.01,347840,UNKNOWN
+519895730,cnf_proj/sum_of_3_cubes_94_bits_30.cnf.xz,13218569,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.75108,2.24933,344016,SAT-INCORRECT
+519895737,cnf_proj/UR-15-10p0.cnf.xz,13218568,cadical_m,34795,solve_ignore_gates.sh,567816,complete,12.2082,11.6831,369896,SAT-INCORRECT
+519895441,cnf_proj/crafted_n10_d6_c4_num21.cnf.xz,13218567,cadical_m,34795,solve_ignore_gates.sh,567816,complete,142.463,138.994,1698948,UNSAT
+519895675,cnf_proj/sp5-21-15-una-nons-tree-noid.cnf.xz,13218566,cadical_m,34795,solve_ignore_gates.sh,567816,complete,314.859,315.459,164864,SAT-INCORRECT
+519895673,cnf_proj/sp5-21-15-one-nons-tree-noid.cnf.xz,13218565,cadical_m,34795,solve_ignore_gates.sh,567816,complete,839.539,841.508,203996,SAT-INCORRECT
+519895358,cnf_proj/143.smt2.cnf.xz,13218564,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.70343,1.90409,448652,SAT-INCORRECT
+519895485,cnf_proj/HCP-506-60.cnf.xz,13218563,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4993.8,5000.03,783468,UNKNOWN
+519895670,cnf_proj/sp4-33-una-stri-flat-noid.cnf.xz,13218562,cadical_m,34795,solve_ignore_gates.sh,567816,complete,142.364,142.71,153156,UNSAT
+519895693,cnf_proj/stb_531_83.apx_0.cnf.xz,13218561,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.040797,0.028009,113292,SAT-INCORRECT
+519895516,cnf_proj/ktf_TF-7.tf_3_0.06_113.cnf.xz,13218560,cadical_m,34795,solve_ignore_gates.sh,567816,complete,19.2283,19.0594,199500,SAT-INCORRECT
+519895421,cnf_proj/bvsmod_18.smt2.cnf.xz,13218559,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.320847,0.226502,113292,SAT-INCORRECT
+519895660,cnf_proj/snw_13_9_pre.cnf.xz,13218558,cadical_m,34795,solve_ignore_gates.sh,567816,complete,76.1175,76.5598,326032,UNKNOWN
+519895702,cnf_proj/sted4_0x0_n159-185.cnf.xz,13218557,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.74,5000.07,340880,UNKNOWN
+519895360,cnf_proj/20-100-frag12-0_sat.cnf.xz,13218556,cadical_m,34795,solve_ignore_gates.sh,567816,complete,390.517,391.585,272252,SAT-INCORRECT
+519895388,cnf_proj/at-least-two-maris-s03-gripper11.cnf.xz,13218555,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.124852,0.081868,113292,SAT-INCORRECT
+519895547,cnf_proj/MVD_ADS_S10_5_6.cnf.xz,13218554,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.78949,1.56712,220276,UNSAT
+519895739,cnf_proj/uum32.smt2.cnf.xz,13218553,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.211714,0.145796,113292,SAT-INCORRECT
+519895569,cnf_proj/Mycielski-11-hints-4.cnf.xz,13218552,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.9027,3.43761,612840,SAT-INCORRECT
+519895724,cnf_proj/sum_of_3_cubes_42_bits_96.cnf.xz,13218551,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.430248,0.322393,113292,SAT-INCORRECT
+519895424,cnf_proj/bvsub_12973.smt2.cnf.xz,13218550,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.73158,2.072,419420,SAT-INCORRECT
+519895575,cnf_proj/pb_300_05_lb_16.cnf.xz,13218549,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4974.73,5000.03,591588,UNKNOWN
+519895636,cnf_proj/satch2ways19u.cnf.xz,13218548,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4988.58,5000.02,5499404,UNKNOWN
+519895753,cnf_proj/WS_300_24_90_10.apx_0.cnf.xz,13218547,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.0284,0.024409,0,SAT-INCORRECT
+519895448,cnf_proj/ctl_4291_567_1_unsat.cnf.xz,13218546,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1388.22,1389.03,211696,UNSAT
+519895631,cnf_proj/satch2ways16.cnf.xz,13218545,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4980.24,5000.04,1.22E+07,UNKNOWN
+519895486,cnf_proj/HCP-522-105.cnf.xz,13218544,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4995.06,5000.04,811984,UNKNOWN
+519895629,cnf_proj/satch2ways15u.cnf.xz,13218543,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4992.15,5000.05,4087704,UNKNOWN
+519895494,cnf_proj/Kakuro-easy-045-ext.xml.hg_4.cnf.xz,13218542,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4989.74,5000.07,683084,UNKNOWN
+519895583,cnf_proj/prime_a24_b24.cnf.xz,13218541,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.37319,2.3398,136856,SAT-INCORRECT
+519895495,cnf_proj/Kakuro-easy-051-ext.xml.hg_4.cnf.xz,13218540,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1420.41,1421.21,1184792,UNSAT
+519895653,cnf_proj/SE_PR_WS_500_16_70_10.apx_0.cnf.xz,13218539,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.033399,0.0239051,113292,SAT-INCORRECT
+519895651,cnf_proj/SE_PR_stb_531_83.apx_1.cnf.xz,13218538,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.076358,0.052268,113292,SAT-INCORRECT
+519895555,cnf_proj/MVD_ADS_S5_6_6.cnf.xz,13218537,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.90751,2.55226,341324,UNSAT
+519895668,cnf_proj/sp4-33-one-nons-flat-noid.cnf.xz,13218536,cadical_m,34795,solve_ignore_gates.sh,567816,complete,15.0991,15.1365,134700,SAT-INCORRECT
+519895521,cnf_proj/LABS_n069_goal001.cnf.xz,13218535,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2505.93,2506.93,267924,UNSAT
+519895608,cnf_proj/quad_res_r37_m39.cnf.xz,13218534,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.171595,0.14148,113292,SAT-INCORRECT
+519895643,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_8.cnf.xz,13218533,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4941.5,5000.02,1903320,UNKNOWN
+519895474,cnf_proj/ex045_7.cnf.xz,13218532,cadical_m,34795,solve_ignore_gates.sh,567816,complete,669.217,663.119,2618444,SAT-INCORRECT
+519895563,cnf_proj/Mycielski-10-hints-7.cnf.xz,13218531,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.03288,0.69256,324904,SAT-INCORRECT
+519895676,cnf_proj/sp5-21-15-una-stri-flat-noid.cnf.xz,13218530,cadical_m,34795,solve_ignore_gates.sh,567816,complete,437.047,439.184,173504,SAT-INCORRECT
+519895391,cnf_proj/at-least-two-traffic_b_unsat.cnf.xz,13218529,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.19131,3.0529,428176,SAT-INCORRECT
+519895617,cnf_proj/randomG-n18-d05.cnf.xz,13218528,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4985.14,5000.03,325688,UNKNOWN
+519895599,cnf_proj/quad_res_r21_m22.cnf.xz,13218527,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.042027,0.029802,113292,SAT-INCORRECT
+519895483,cnf_proj/HCP-470-420.cnf.xz,13218526,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4982.75,5000.02,594468,UNKNOWN
+519895664,cnf_proj/sokoban-p20.sas.cr.27.cnf.xz,13218525,cadical_m,34795,solve_ignore_gates.sh,567816,complete,12.6239,11.9873,370676,SAT-INCORRECT
+519895571,cnf_proj/n320p5q2_n.apx_17.cnf.xz,13218524,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.098192,0.0634901,113292,SAT-INCORRECT
+519895444,cnf_proj/crafted_n12_d6_c3_num28.cnf.xz,13218523,cadical_m,34795,solve_ignore_gates.sh,567816,complete,159.573,156.621,1417860,UNSAT
+519895717,cnf_proj/string_compare_safety_cbmc_unwinding_870.cnf.xz,13218522,cadical_m,34795,solve_ignore_gates.sh,567816,complete,109.298,100.921,3655836,SAT-INCORRECT
+519895400,cnf_proj/b2005-p1-12x12c10h7-Ser5-0.cnf.xz,13218521,cadical_m,34795,solve_ignore_gates.sh,567816,complete,425.934,428.318,725624,UNKNOWN
+519895470,cnf_proj/ER_500_40_2.apx_0.cnf.xz,13218520,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.154621,0.0962831,113292,SAT-INCORRECT
+519895714,cnf_proj/string_compare_safety_cbmc_unwinding_730.cnf.xz,13218519,cadical_m,34795,solve_ignore_gates.sh,567816,complete,61.0632,53.6032,3151004,SAT-INCORRECT
+519895517,cnf_proj/ktf_TF-8.tf_4_0.02_37.cnf.xz,13218518,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4989.51,5000.02,334912,UNKNOWN
+519895362,cnf_proj/20-100-frag12-32_sat.cnf.xz,13218517,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3535.33,3539.92,463616,SAT-INCORRECT
+519895426,cnf_proj/bvurem_20.smt2.cnf.xz,13218516,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.314256,0.219308,113292,SAT-INCORRECT
+519895437,cnf_proj/Circuit_multiplier37.cnf.xz,13218515,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.18788,0.175251,113292,UNKNOWN
+519895603,cnf_proj/quad_res_r31_m35.cnf.xz,13218514,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.150614,0.102211,113292,SAT-INCORRECT
+519895453,cnf_proj/E00X23.cnf.xz,13218513,cadical_m,34795,solve_ignore_gates.sh,567816,complete,6.83566,5.51566,532412,SAT-INCORRECT
+519895662,cnf_proj/sokoban-p16.sas.ex.19-sc2016.cnf.xz,13218512,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4977.42,5000.02,2135312,UNKNOWN
+519895572,cnf_proj/Nb51T6.cnf.xz,13218511,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1427.35,1421.71,3152904,UNSAT
+519895396,cnf_proj/at-least-two-vmpc_28.cnf.xz,13218510,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.320443,0.197694,113292,SAT-INCORRECT
+519895755,cnf_proj/WS_500_16_70_10.apx_0.cnf.xz,13218509,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.033721,0.0240871,113292,SAT-INCORRECT
+519895652,cnf_proj/SE_PR_stb_588_138.apx_1.cnf.xz,13218508,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.035753,0.0252609,113292,SAT-INCORRECT
+519895567,cnf_proj/Mycielski-11-hints-2.cnf.xz,13218507,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.82085,3.39633,607568,SAT-INCORRECT
+519895356,cnf_proj/10pipe_k.cnf.xz,13218506,cadical_m,34795,solve_ignore_gates.sh,567816,complete,19.7938,22.0411,740980,UNKNOWN
+519895475,cnf_proj/ex065_25.cnf.xz,13218505,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3497.41,3505.34,408688,UNKNOWN
+519895751,cnf_proj/vlsat2_56_1042.cnf.xz,13218504,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4982.81,5000.01,387820,UNKNOWN
+519895375,cnf_proj/73.smt2.cnf.xz,13218503,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.564112,0.381121,113292,SAT-INCORRECT
+519895464,cnf_proj/edit_distance025_450.cnf.xz,13218502,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3891.25,3894.19,393116,SAT-INCORRECT
+519895398,cnf_proj/b2005-p1-12x12c10h7-Ser3-0.cnf.xz,13218501,cadical_m,34795,solve_ignore_gates.sh,567816,complete,419.178,421.359,717008,UNKNOWN
+519895450,cnf_proj/ctl_4291_567_9_unsat.cnf.xz,13218500,cadical_m,34795,solve_ignore_gates.sh,567816,complete,694.053,694.223,204188,UNSAT
+519895365,cnf_proj/20-100-lambda100-14_unsat.cnf.xz,13218499,cadical_m,34795,solve_ignore_gates.sh,567816,complete,74.2224,74.1736,169156,UNSAT
+519895393,cnf_proj/at-least-two-traffic_kkb_unknown.cnf.xz,13218498,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.06537,2.96152,424860,SAT-INCORRECT
+519895749,cnf_proj/vlsat2_44_545.cnf.xz,13218497,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4980.01,5000.02,312920,UNKNOWN
+519895385,cnf_proj/at-least-two-aaai10-planning-ipc5-pipesworld-12-step15.cnf.xz,13218496,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3.57062,2.41957,471548,SAT-INCORRECT
+519895366,cnf_proj/20-100-lambda100-47_unsat.cnf.xz,13218495,cadical_m,34795,solve_ignore_gates.sh,567816,complete,382.139,382.491,193400,UNSAT
+519895666,cnf_proj/sokoban-sequential-p145-microban-sequential.070-NOTKNOWN.cnf.xz,13218494,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4956.16,5000.02,1271092,UNKNOWN
+519895501,cnf_proj/Kakuro-easy-127-ext.xml.hg_7.cnf.xz,13218493,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1345.71,1355.16,4587092,UNKNOWN
+519895748,cnf_proj/vlsat2_37758_5364539.dimacs.cnf.xz,13218492,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4985.83,5000.01,2399492,UNKNOWN
+519895627,cnf_proj/satch2ways14u.cnf.xz,13218491,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4991.38,5000.09,3738608,UNKNOWN
+519895418,cnf_proj/bv-term-small-rw_1294.smt2.cnf.xz,13218490,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.067208,0.046527,113292,SAT-INCORRECT
+519895667,cnf_proj/sp4-33-bin-nons-flat-noid.cnf.xz,13218489,cadical_m,34795,solve_ignore_gates.sh,567816,complete,96.4201,96.7454,140456,UNSAT
+519895691,cnf_proj/spg_420_280.cnf.xz,13218488,cadical_m,34795,solve_ignore_gates.sh,567816,complete,220.368,217.539,950472,UNSAT
+519895509,cnf_proj/ktf_TF-3.tf_3_0.02_24.cnf.xz,13218487,cadical_m,34795,solve_ignore_gates.sh,567816,complete,184.007,184.589,164408,UNSAT
+519895544,cnf_proj/mp1-squ_any_s09x07_c27_abix_UNS.cnf.xz,13218486,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.019308,0.015184,113292,SAT-INCORRECT
+519895524,cnf_proj/maximum_constrained_partition_14_bits_n200.cnf.xz,13218485,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.306016,0.22031,113292,SAT-INCORRECT
+519895671,cnf_proj/sp5-21-15-bin-stri-flat-noid.cnf.xz,13218484,cadical_m,34795,solve_ignore_gates.sh,567816,complete,219.198,220.31,157040,SAT-INCORRECT
+519895467,cnf_proj/edit_distance035_393.cnf.xz,13218483,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1024.57,1026.3,361512,SAT-INCORRECT
+519895634,cnf_proj/satch2ways18u.cnf.xz,13218482,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4984.63,5000.03,5100628,UNKNOWN
+519895663,cnf_proj/sokoban-p20.sas.cr.21.cnf.xz,13218481,cadical_m,34795,solve_ignore_gates.sh,567816,complete,11.9583,11.4597,330684,SAT-INCORRECT
+519895497,cnf_proj/Kakuro-easy-104-ext.xml.hg_6.cnf.xz,13218480,cadical_m,34795,solve_ignore_gates.sh,567816,complete,163.261,173.396,3028628,UNKNOWN
+519895752,cnf_proj/vlsat2_702_14170.cnf.xz,13218479,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4969.81,5000.11,4271436,UNKNOWN
+519895648,cnf_proj/SC21_Timetable_C_542_E_71_Cl_36_S_35.cnf.xz,13218478,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1082.02,1087.62,867880,UNKNOWN
+519895381,cnf_proj/ak032modbtmodbtisc.cnf.xz,13218477,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.144822,0.098133,113292,SAT-INCORRECT
+519895615,cnf_proj/randomG-n16-d05.cnf.xz,13218476,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3332.38,3342.01,244900,UNSAT
+519895580,cnf_proj/php14e14.cnf.xz,13218475,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4982.58,5000.01,362728,UNKNOWN
+519895688,cnf_proj/spg_300_312.cnf.xz,13218474,cadical_m,34795,solve_ignore_gates.sh,567816,complete,137.177,135.004,740936,UNSAT
+519895646,cnf_proj/SC21_Timetable_C_512_E_66_Cl_34_S_35.cnf.xz,13218473,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4988.37,5000.08,935628,UNKNOWN
+519895607,cnf_proj/quad_res_r35_m36.cnf.xz,13218472,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.098675,0.066299,113292,SAT-INCORRECT
+519895357,cnf_proj/13pipe_k.cnf.xz,13218471,cadical_m,34795,solve_ignore_gates.sh,567816,complete,56.2514,65.7716,2167776,UNKNOWN
+519895612,cnf_proj/randomG-B-Mix-n19-d05.cnf.xz,13218470,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.047205,0.044667,113292,UNKNOWN
+519895750,cnf_proj/vlsat2_51_824.cnf.xz,13218469,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4982.47,5000.11,353156,UNKNOWN
+519895499,cnf_proj/Kakuro-easy-115-ext.xml.hg_5.cnf.xz,13218468,cadical_m,34795,solve_ignore_gates.sh,567816,complete,211.968,224.702,4753584,UNKNOWN
+519895543,cnf_proj/mp1-squ_ali_s10x10_c39_abio_SAT.cnf.xz,13218467,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.025242,0.019216,113292,SAT-INCORRECT
+519895665,cnf_proj/sokoban-p20.sas.ex.13.cnf.xz,13218466,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4971.92,5000.03,1928860,UNKNOWN
+519895384,cnf_proj/at-least-two-aaai10-planning-ipc5-pathways-17-step20.cnf.xz,13218465,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.64429,1.16505,358516,SAT-INCORRECT
+519895592,cnf_proj/puzzle39_sat.cnf.xz,13218464,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.275396,0.188041,113292,SAT-INCORRECT
+519895459,cnf_proj/edit_distance023_281.cnf.xz,13218463,cadical_m,34795,solve_ignore_gates.sh,567816,complete,187.59,187.904,210216,SAT-INCORRECT
+519895390,cnf_proj/at-least-two-sokoban-sequential-p145-microban-sequential.030-NOTKNOWN.cnf.xz,13218462,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3.50053,2.30826,427220,SAT-INCORRECT
+519895466,cnf_proj/edit_distance031_284.cnf.xz,13218461,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1683.53,1688.64,294040,UNSAT
+519895456,cnf_proj/ecarev-110-4099-22-30-4.cnf.xz,13218460,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.17406,1.6924,230468,SAT-INCORRECT
+519895641,cnf_proj/SC21_Timetable_C_140_E_32_Cl_30_S_10.cnf.xz,13218459,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4975.38,5000.02,503108,UNKNOWN
+519895463,cnf_proj/edit_distance025_449.cnf.xz,13218458,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4994.17,5000.09,453384,UNKNOWN
+519895468,cnf_proj/edit_distance041_182.cnf.xz,13218457,cadical_m,34795,solve_ignore_gates.sh,567816,complete,146.245,146.131,296544,UNSAT
+519895574,cnf_proj/p01_lb_05.cnf.xz,13218456,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4988.98,5000.07,380508,UNKNOWN
+519895523,cnf_proj/LABS_n089_goal008.cnf.xz,13218455,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4998.98,5000.05,478368,UNKNOWN
+519895614,cnf_proj/randomG-Mix-n18-d05.cnf.xz,13218454,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4988.39,5000.09,256964,UNKNOWN
+519895408,cnf_proj/b2005-p4-14x14c17h9-Ser8-0.cnf.xz,13218453,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (cpu),5000.01,4968.54,8009364,UNKNOWN
+519895709,cnf_proj/string_compare_safety_cbmc_unwinding_630.cnf.xz,13218452,cadical_m,34795,solve_ignore_gates.sh,567816,complete,84.1786,77.9054,2580488,SAT-INCORRECT
+519895481,cnf_proj/HCP-446-60.cnf.xz,13218451,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4990.46,5000.01,476868,UNKNOWN
+519895591,cnf_proj/puzzle37_unsat.cnf.xz,13218450,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.249454,0.171089,113292,SAT-INCORRECT
+519895649,cnf_proj/SC21_Timetable_C_557_E_73_Cl_37_S_35.cnf.xz,13218449,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3613.06,3650.48,1751648,UNKNOWN
+519895719,cnf_proj/string_compare_safety_cbmc_unwinding_930.cnf.xz,13218448,cadical_m,34795,solve_ignore_gates.sh,567816,complete,114.262,104.551,3809876,SAT-INCORRECT
+519895383,cnf_proj/assoc_mult_err_3.c.cnf.xz,13218447,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.182554,0.127058,113292,SAT-INCORRECT
+519895399,cnf_proj/b2005-p1-12x12c10h7-Ser4-0.cnf.xz,13218446,cadical_m,34795,solve_ignore_gates.sh,567816,complete,429.517,432.653,714436,UNKNOWN
+519895556,cnf_proj/MVD_ADS_S6_6_5.cnf.xz,13218445,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.781085,0.659864,173428,UNSAT
+519895488,cnf_proj/HCP-526-420.cnf.xz,13218444,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4991.45,5000.03,874612,UNKNOWN
+519895710,cnf_proj/string_compare_safety_cbmc_unwinding_670.cnf.xz,13218443,cadical_m,34795,solve_ignore_gates.sh,567816,complete,226.941,221.711,3218728,SAT-INCORRECT
+519895546,cnf_proj/mp1-tri_ali_s11_c35_bail_UNS.cnf.xz,13218442,cadical_m,34795,solve_ignore_gates.sh,567816,complete,106.98,107.222,148044,UNSAT
+519895584,cnf_proj/problem_12.smt2.cnf.xz,13218441,cadical_m,34795,solve_ignore_gates.sh,567816,complete,104.374,104.54,186628,SAT-INCORRECT
+519895650,cnf_proj/scc_1213_40_10_3.apx_0.cnf.xz,13218440,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.5896,0.993489,344932,SAT-INCORRECT
+519895588,cnf_proj/puzzle35_sat.cnf.xz,13218439,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.24881,0.168837,113292,SAT-INCORRECT
+519895374,cnf_proj/51.smt2.cnf.xz,13218438,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.572735,0.390035,113292,SAT-INCORRECT
+519895697,cnf_proj/sted1_0x0-637.cnf.xz,13218437,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3673.97,3680.45,280120,UNKNOWN
+519895510,cnf_proj/ktf_TF-3.tf_4_0.04_48.cnf.xz,13218436,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4990.15,5000.11,318228,UNKNOWN
+519895433,cnf_proj/Circuit_multiplier33.cnf.xz,13218435,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.284872,0.255071,113292,UNKNOWN
+519895589,cnf_proj/puzzle35_unsat.cnf.xz,13218434,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.233709,0.159201,113292,SAT-INCORRECT
+519895498,cnf_proj/Kakuro-easy-112-ext.xml.hg_7.cnf.xz,13218433,cadical_m,34795,solve_ignore_gates.sh,567816,complete,398.812,408.977,3984396,UNKNOWN
+519895672,cnf_proj/sp5-21-15-bin-stri-tree-noid.cnf.xz,13218432,cadical_m,34795,solve_ignore_gates.sh,567816,complete,177.26,177.418,152184,SAT-INCORRECT
+519895369,cnf_proj/20-100-lambda100-89_sat.cnf.xz,13218431,cadical_m,34795,solve_ignore_gates.sh,567816,complete,429.863,430.137,208992,SAT-INCORRECT
+519895658,cnf_proj/snw_13_8_pre-sc2016.cnf.xz,13218430,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1042.85,1042.88,325136,UNSAT
+519895415,cnf_proj/blocks-blocks-36-0.180-SAT.cnf.xz,13218429,cadical_m,34795,solve_ignore_gates.sh,567816,complete,584.903,596.521,2016616,UNKNOWN
+519895747,cnf_proj/vlsat2_29736_3780419.dimacs.cnf.xz,13218428,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4979.96,5000.02,1450880,UNKNOWN
+519895692,cnf_proj/spg_420_350.cnf.xz,13218427,cadical_m,34795,solve_ignore_gates.sh,567816,complete,403.53,400.643,966856,UNSAT
+519895387,cnf_proj/at-least-two-ibm-2004-23-k100.cnf.xz,13218426,cadical_m,34795,solve_ignore_gates.sh,567816,complete,5.41289,3.76087,665660,SAT-INCORRECT
+519895645,cnf_proj/SC21_Timetable_C_466_E_62_Cl_31_S_30.cnf.xz,13218425,cadical_m,34795,solve_ignore_gates.sh,567816,complete,430.539,435.172,699316,UNKNOWN
+519895619,cnf_proj/randomG-n20-d05.cnf.xz,13218424,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4982.96,5000.01,306008,UNKNOWN
+519895461,cnf_proj/edit_distance023_283.cnf.xz,13218423,cadical_m,34795,solve_ignore_gates.sh,567816,complete,237.918,238.312,197760,SAT-INCORRECT
+519895609,cnf_proj/randomG-B-Mix-n15-d05.cnf.xz,13218422,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.017034,0.0147489,113292,SAT-INCORRECT
+519895558,cnf_proj/MVD_ADS_S7_6_6.cnf.xz,13218421,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3.28798,2.88053,351200,UNSAT
+519895476,cnf_proj/ex095_8.cnf.xz,13218420,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3959.83,3955.04,2549160,UNSAT
+519895587,cnf_proj/puzzle34_unsat.cnf.xz,13218419,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.229845,0.156386,113292,SAT-INCORRECT
+519895397,cnf_proj/b04_s_unknown_pre.cnf.xz,13218418,cadical_m,34795,solve_ignore_gates.sh,567816,complete,36.3381,37.1718,341424,UNKNOWN
+519895430,cnf_proj/Circuit_multiplier25.cnf.xz,13218417,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.144036,0.117421,113292,UNKNOWN
+519895407,cnf_proj/b2005-p4-12x12c10h7-Ser3-0.cnf.xz,13218416,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2508.23,2517.9,872296,UNKNOWN
+519895367,cnf_proj/20-100-lambda100-49_sat.cnf.xz,13218415,cadical_m,34795,solve_ignore_gates.sh,567816,complete,84.1031,84.1382,177360,SAT-INCORRECT
+519895527,cnf_proj/mp1-blockpuzzle_5x10_s5_free3.cnf.xz,13218414,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.274501,0.184821,113292,SAT-INCORRECT
+519895742,cnf_proj/vlsat2_113_1150.cnf.xz,13218413,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4978.59,5000.02,988952,UNKNOWN
+519895529,cnf_proj/mp1-blockpuzzle_9x9_s1_free8.cnf.xz,13218412,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.13765,0.772276,355624,SAT-INCORRECT
+519895624,cnf_proj/satch2ways12u.cnf.xz,13218411,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4993.15,5000.05,2994612,UNKNOWN
+519895446,cnf_proj/ctl_4201_555_unsat.cnf.xz,13218410,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1558.57,1559.89,228732,UNSAT
+519895431,cnf_proj/Circuit_multiplier26.cnf.xz,13218409,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.115252,0.089898,113292,UNKNOWN
+519895505,cnf_proj/Kakuro-easy-156-ext.xml.hg_7.cnf.xz,13218408,cadical_m,34795,solve_ignore_gates.sh,567816,complete,420.528,428.364,3732128,UNKNOWN
+519895654,cnf_proj/shift1add.26949.cnf.xz,13218407,cadical_m,34795,solve_ignore_gates.sh,567816,complete,137.534,136.785,626972,UNSAT
+519895379,cnf_proj/ACG-15-10p1.cnf.xz,13218406,cadical_m,34795,solve_ignore_gates.sh,567816,complete,12.6108,11.989,418040,SAT-INCORRECT
+519895368,cnf_proj/20-100-lambda100-65_sat.cnf.xz,13218405,cadical_m,34795,solve_ignore_gates.sh,567816,complete,80.5326,80.4057,180964,SAT-INCORRECT
+519895578,cnf_proj/pb_300_10_lb_06.cnf.xz,13218404,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4968.36,5000.01,682892,UNKNOWN
+519895405,cnf_proj/b2005-p3-12x12c10h7-Ser7-0.cnf.xz,13218403,cadical_m,34795,solve_ignore_gates.sh,567816,complete,820.122,825.792,1843428,UNKNOWN
+519895534,cnf_proj/mp1-klieber2017s-0490-024-t12.cnf.xz,13218402,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.242359,0.169781,113292,SAT-INCORRECT
+519895701,cnf_proj/sted3_0x0_n201-239.cnf.xz,13218401,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.51,5000.01,315452,UNKNOWN
+519895597,cnf_proj/puzzle60_sat.cnf.xz,13218400,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.41369,0.288939,113292,SAT-INCORRECT
+519895401,cnf_proj/b2005-p1-14x14c17h9-Ser3-0.cnf.xz,13218399,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (cpu),5000.02,4989.86,4214316,UNKNOWN
+519895425,cnf_proj/bvsub_19952.smt2.cnf.xz,13218398,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.35161,3.33824,562308,SAT-INCORRECT
+519895545,cnf_proj/mp1-tri_ali_s11_c35_abix_UNS.cnf.xz,13218397,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.019432,0.015303,113292,SAT-INCORRECT
+519895695,cnf_proj/sted12a_0x1e1-67.cnf.xz,13218396,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4994.21,5000.01,317096,UNKNOWN
+519895402,cnf_proj/b2005-p2-12x12c10h7-Ser7-0.cnf.xz,13218395,cadical_m,34795,solve_ignore_gates.sh,567816,complete,946.009,951.631,2110340,UNKNOWN
+519895605,cnf_proj/quad_res_r33_m36.cnf.xz,13218394,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.095007,0.0644281,113292,SAT-INCORRECT
+519895733,cnf_proj/test_v7_r12_vr1_c1_s10576.smt2.cnf.xz,13218393,cadical_m,34795,solve_ignore_gates.sh,567816,complete,5.09174,3.87533,575848,SAT-INCORRECT
+519895734,cnf_proj/toughsat_factoring_426s.cnf.xz,13218392,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.036341,0.026566,113292,SAT-INCORRECT
+519895679,cnf_proj/sp5-26-19-una-nons-tree-noid.cnf.xz,13218391,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4991.33,5000.02,347368,UNKNOWN
+519895526,cnf_proj/maxor128.cnf.xz,13218390,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.46873,1.07067,346936,SAT-INCORRECT
+519895491,cnf_proj/huck.col.11.cnf.xz,13218389,cadical_m,34795,solve_ignore_gates.sh,567816,complete,111.177,111.449,154024,UNSAT
+519895694,cnf_proj/stb_792_333.apx_0.cnf.xz,13218388,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.041811,0.028838,113292,SAT-INCORRECT
+519895600,cnf_proj/quad_res_r26_m27.cnf.xz,13218387,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.058557,0.0406149,113292,SAT-INCORRECT
+519895715,cnf_proj/string_compare_safety_cbmc_unwinding_780.cnf.xz,13218386,cadical_m,34795,solve_ignore_gates.sh,567816,complete,67.1044,59.1318,3327816,SAT-INCORRECT
+519895518,cnf_proj/ktf_TF-8.tf_4_0.06_109.cnf.xz,13218385,cadical_m,34795,solve_ignore_gates.sh,567816,complete,21.9757,21.8873,179480,SAT-INCORRECT
+519895443,cnf_proj/crafted_n12_d6_c3_num18.cnf.xz,13218384,cadical_m,34795,solve_ignore_gates.sh,567816,complete,102.746,100.071,1381220,UNSAT
+519895386,cnf_proj/at-least-two-hwmcc10-timeframe-expansion-k50-pdtviseisenberg2-tseitin.cnf.xz,13218383,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.94466,2.13118,451196,SAT-INCORRECT
+519895519,cnf_proj/LABS_n041_goal003.cnf.xz,13218382,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.07051,2.02542,157852,SAT-INCORRECT
+519895716,cnf_proj/string_compare_safety_cbmc_unwinding_800.cnf.xz,13218381,cadical_m,34795,solve_ignore_gates.sh,567816,complete,69.1805,60.946,3400192,SAT-INCORRECT
+519895735,cnf_proj/toughsat_factoring_895s.cnf.xz,13218380,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.036423,0.0270529,113292,SAT-INCORRECT
+519895713,cnf_proj/string_compare_safety_cbmc_unwinding_700.cnf.xz,13218379,cadical_m,34795,solve_ignore_gates.sh,567816,complete,57.1413,49.971,3045172,SAT-INCORRECT
+519895389,cnf_proj/at-least-two-smtlib-qfbv-aigs-ext_con_032_008_0256-tseitin.cnf.xz,13218378,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.641012,0.463611,113292,SAT-INCORRECT
+519895458,cnf_proj/edit_distance019_312.cnf.xz,13218377,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4991.14,5000.06,352740,UNKNOWN
+519895557,cnf_proj/MVD_ADS_S6_6_6.cnf.xz,13218376,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.99605,2.65224,350088,UNSAT
+519895445,cnf_proj/crafted_n12_d6_c4_num17.cnf.xz,13218375,cadical_m,34795,solve_ignore_gates.sh,567816,complete,145.918,140.633,2238124,UNSAT
+519895373,cnf_proj/2bitcomp_5.hg_20.cnf.xz,13218374,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (cpu),5000.01,4998.42,1665360,UNKNOWN
+519895582,cnf_proj/prime_a22_b22.cnf.xz,13218373,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.99711,1.96823,135996,SAT-INCORRECT
+519895744,cnf_proj/vlsat2_11_42.cnf.xz,13218372,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.83,5000.02,311056,UNKNOWN
+519895745,cnf_proj/vlsat2_142_6781.cnf.xz,13218371,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4999.73,5000.03,997596,UNKNOWN
+519895625,cnf_proj/satch2ways12wu.cnf.xz,13218370,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4990.9,5000.02,2985668,UNKNOWN
+519895568,cnf_proj/Mycielski-11-hints-3.cnf.xz,13218369,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.84053,3.39671,609412,SAT-INCORRECT
+519895722,cnf_proj/sum_of_3_cubes_145_bits_74.cnf.xz,13218368,cadical_m,34795,solve_ignore_gates.sh,567816,complete,7.52235,6.40173,482724,SAT-INCORRECT
+519895604,cnf_proj/quad_res_r32_m35.cnf.xz,13218367,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.134715,0.0936849,113292,SAT-INCORRECT
+519895413,cnf_proj/battleship-12-12-unsat.cnf.xz,13218366,cadical_m,34795,solve_ignore_gates.sh,567816,complete,148.808,149.24,152092,UNSAT
+519895537,cnf_proj/mp1-klieber2017s-1200-022-eq.cnf.xz,13218365,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.064766,0.0445061,113292,SAT-INCORRECT
+519895595,cnf_proj/puzzle47_sat.cnf.xz,13218364,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.334217,0.229642,113292,SAT-INCORRECT
+519895586,cnf_proj/puzzle34_sat.cnf.xz,13218363,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.240463,0.190968,113292,SAT-INCORRECT
+519895507,cnf_proj/ktf_TF-1.tf_4_0.06_101.cnf.xz,13218362,cadical_m,34795,solve_ignore_gates.sh,567816,complete,166.053,167.624,185704,SAT-INCORRECT
+519895406,cnf_proj/b2005-p3-14x14c17h9-Ser3-0.cnf.xz,13218361,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4996.62,5000.03,4007832,UNKNOWN
+519895460,cnf_proj/edit_distance023_282.cnf.xz,13218360,cadical_m,34795,solve_ignore_gates.sh,567816,complete,198.74,198.983,201224,SAT-INCORRECT
+519895740,cnf_proj/vlsat2_111_1186.cnf.xz,13218359,cadical_m,34795,solve_ignore_gates.sh,567816,complete,34.3617,34.0933,358684,SAT-INCORRECT
+519895736,cnf_proj/UCG-20-10p1-sc2009.cnf.xz,13218358,cadical_m,34795,solve_ignore_gates.sh,567816,complete,18.6848,17.3708,414024,SAT-INCORRECT
+519895639,cnf_proj/SC21_Timetable_C_136_E_41_Cl_9_S_15.cnf.xz,13218357,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4974.51,5000.02,463756,UNKNOWN
+519895478,cnf_proj/HCP-424-60.cnf.xz,13218356,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4992.38,5000.1,422612,UNKNOWN
+519895632,cnf_proj/satch2ways16w.cnf.xz,13218355,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4970.13,5000.02,1.23E+07,UNKNOWN
+519895429,cnf_proj/Circuit_multiplier24.cnf.xz,13218354,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.148918,0.118521,113292,UNKNOWN
+519895712,cnf_proj/string_compare_safety_cbmc_unwinding_690.cnf.xz,13218353,cadical_m,34795,solve_ignore_gates.sh,567816,complete,74.9711,67.9556,2870808,SAT-INCORRECT
+519895419,cnf_proj/bv-term-small-rw_1492.smt2.cnf.xz,13218352,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.068265,0.0469011,113292,SAT-INCORRECT
+519895496,cnf_proj/Kakuro-easy-089-ext.xml.hg_4.cnf.xz,13218351,cadical_m,34795,solve_ignore_gates.sh,567816,complete,358.452,365.863,2675980,UNKNOWN
+519895622,cnf_proj/rphp4_090_shuffled.cnf.xz,13218350,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1038.47,1041.9,207728,UNSAT
+519895647,cnf_proj/SC21_Timetable_C_527_E_71_Cl_35_S_35.cnf.xz,13218349,cadical_m,34795,solve_ignore_gates.sh,567816,complete,470.664,474.611,778104,UNKNOWN
+519895449,cnf_proj/ctl_4291_567_6_unsat_pre.cnf.xz,13218348,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4993.66,5000.08,300600,UNKNOWN
+519895682,cnf_proj/spg_200_307.cnf.xz,13218347,cadical_m,34795,solve_ignore_gates.sh,567816,complete,80.6025,79.2703,492616,UNSAT
+519895363,cnf_proj/20-100-frag12-53_sat.cnf.xz,13218346,cadical_m,34795,solve_ignore_gates.sh,567816,complete,361.076,360.856,297940,SAT-INCORRECT
+519895704,cnf_proj/sted5_0x1e3-120.cnf.xz,13218345,cadical_m,34795,solve_ignore_gates.sh,567816,complete,506.382,507.27,189860,SAT-INCORRECT
+519895508,cnf_proj/ktf_TF-3.tf_2_0.02_24.cnf.xz,13218344,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.84,5000.02,323304,UNKNOWN
+519895552,cnf_proj/MVD_ADS_S1_5_5.cnf.xz,13218343,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.25558,1.84256,374836,UNSAT
+519895706,cnf_proj/sted5_0x24204-70.cnf.xz,13218342,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4986.41,5000.07,338592,UNKNOWN
+519895699,cnf_proj/sted2_0x0-343.cnf.xz,13218341,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4990.55,5000.02,275584,UNKNOWN
+519895432,cnf_proj/Circuit_multiplier29.cnf.xz,13218340,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.157614,0.128105,113292,UNKNOWN
+519895503,cnf_proj/Kakuro-easy-142-ext.xml.hg_8.cnf.xz,13218339,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3526.45,3541.02,3637788,UNKNOWN
+519895380,cnf_proj/ak016modbtsimpbisc.cnf.xz,13218338,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.051643,0.035826,113292,SAT-INCORRECT
+519895621,cnf_proj/rphp4_080_shuffled.cnf.xz,13218337,cadical_m,34795,solve_ignore_gates.sh,567816,complete,661.791,665.268,217072,UNSAT
+519895630,cnf_proj/satch2ways15wu.cnf.xz,13218336,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4986.07,5000.06,4090344,UNKNOWN
+519895551,cnf_proj/MVD_ADS_S11_8_7.cnf.xz,13218335,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.44739,1.20767,330488,SAT-INCORRECT
+519895438,cnf_proj/Circuit_multiplier45.cnf.xz,13218334,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.13002,0.100916,113292,UNKNOWN
+519895525,cnf_proj/maximum_constrained_partition_18_bits_n200.cnf.xz,13218333,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.379688,0.272133,113292,SAT-INCORRECT
+519895550,cnf_proj/MVD_ADS_S11_7_7.cnf.xz,13218332,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.05589,1.8189,325216,SAT-INCORRECT
+519895531,cnf_proj/mp1-bsat201-707.cnf.xz,13218331,cadical_m,34795,solve_ignore_gates.sh,567816,complete,813.725,815.556,175168,UNSAT
+519895513,cnf_proj/ktf_TF-4.tf_4_0.06_52.cnf.xz,13218330,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4988.32,5000.03,325280,UNKNOWN
+519895471,cnf_proj/erin2_0x0-379.cnf.xz,13218329,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3618.74,3629.96,263440,UNKNOWN
+519895378,cnf_proj/9dlx_vliw_at_b_iq8.cnf.xz,13218328,cadical_m,34795,solve_ignore_gates.sh,567816,complete,13.1131,9.47496,976760,SAT-INCORRECT
+519895439,cnf_proj/Circuit_multiplier53.cnf.xz,13218327,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.135537,0.107149,113292,UNKNOWN
+519895514,cnf_proj/ktf_TF-6.tf_4_0.04_51.cnf.xz,13218326,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4988.42,5000.08,347976,UNKNOWN
+519895487,cnf_proj/HCP-526-105.cnf.xz,13218325,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4989.02,5000.11,854476,UNKNOWN
+519895606,cnf_proj/quad_res_r34_m36.cnf.xz,13218324,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.095884,0.06536,113292,SAT-INCORRECT
+519895423,cnf_proj/bvsub_08985.smt2.cnf.xz,13218323,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.91324,1.44992,397288,SAT-INCORRECT
+519895728,cnf_proj/sum_of_3_cubes_76_bits_84.cnf.xz,13218322,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.03036,1.70225,308428,SAT-INCORRECT
+519895690,cnf_proj/spg_400_281.cnf.xz,13218321,cadical_m,34795,solve_ignore_gates.sh,567816,complete,206.835,203.351,1054432,UNSAT
+519895462,cnf_proj/edit_distance025_448.cnf.xz,13218320,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4992.97,5000.03,404080,UNKNOWN
+519895370,cnf_proj/20-100-lambda100-89_unsat.cnf.xz,13218319,cadical_m,34795,solve_ignore_gates.sh,567816,complete,409.844,411.167,212472,UNSAT
+519895707,cnf_proj/sted6_0x1e3-97.cnf.xz,13218318,cadical_m,34795,solve_ignore_gates.sh,567816,complete,434.795,435.986,189348,SAT-INCORRECT
+519895457,cnf_proj/edit_distance007_85.cnf.xz,13218317,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1042.4,1043.2,210876,UNSAT
+519895611,cnf_proj/randomG-B-Mix-n18-d05.cnf.xz,13218316,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.015036,0.0125141,113292,SAT-INCORRECT
+519895638,cnf_proj/SC21_Timetable_C_136_E_36_Cl_9_S_15.cnf.xz,13218315,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4969.5,5000.1,470268,UNKNOWN
+519895726,cnf_proj/sum_of_3_cubes_51_bits_80.cnf.xz,13218314,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.50502,1.35101,173836,SAT-INCORRECT
+519895377,cnf_proj/9dlx_vliw_at_b_iq5.cnf.xz,13218313,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.44453,3.16707,518824,SAT-INCORRECT
+519895566,cnf_proj/Mycielski-11-hints-1.cnf.xz,13218312,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.76498,3.32593,616800,SAT-INCORRECT
+519895451,cnf_proj/dist10.c.cnf.xz,13218311,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.171169,0.118226,113292,SAT-INCORRECT
+519895616,cnf_proj/randomG-n17-d05.cnf.xz,13218310,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4986.39,5000.03,273124,UNKNOWN
+519895732,cnf_proj/Sz512_15128_1.smt2.cnf.xz,13218309,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.086626,0.057124,113292,SAT-INCORRECT
+519895469,cnf_proj/edit_distance041_183.cnf.xz,13218308,cadical_m,34795,solve_ignore_gates.sh,567816,complete,144.759,144.911,296544,UNSAT
+519895681,cnf_proj/spg_200_301.cnf.xz,13218307,cadical_m,34795,solve_ignore_gates.sh,567816,complete,80.1622,78.8972,488064,UNSAT
+519895417,cnf_proj/blocks-blocks-37-1.130-NOTKNOWN.cnf.xz,13218306,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.97,5000.03,1830012,UNKNOWN
+519895633,cnf_proj/satch2ways17w.cnf.xz,13218305,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4978.61,5000.03,1.17E+07,UNKNOWN
+519895434,cnf_proj/Circuit_multiplier34.cnf.xz,13218304,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.12072,0.095474,113292,UNKNOWN
+519895711,cnf_proj/string_compare_safety_cbmc_unwinding_680.cnf.xz,13218303,cadical_m,34795,solve_ignore_gates.sh,567816,complete,71.6718,64.7808,3034920,SAT-INCORRECT
+519895502,cnf_proj/Kakuro-easy-132-ext.xml.hg_8.cnf.xz,13218302,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4010.82,4023.89,4601020,UNKNOWN
+519895411,cnf_proj/barman-pfile10-039.sas.ex.15.cnf.xz,13218301,cadical_m,34795,solve_ignore_gates.sh,567816,complete,505.59,502.202,1429328,UNSAT
+519895565,cnf_proj/Mycielski-10-hints-9.cnf.xz,13218300,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.23344,0.822928,341432,SAT-INCORRECT
+519895522,cnf_proj/LABS_n072_goal006.cnf.xz,13218299,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3444.63,3446.13,312624,SAT-INCORRECT
+519895392,cnf_proj/at-least-two-traffic_f_unknown.cnf.xz,13218298,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.26732,3.09767,424988,SAT-INCORRECT
+519895708,cnf_proj/string_compare_safety_cbmc_unwinding_600.cnf.xz,13218297,cadical_m,34795,solve_ignore_gates.sh,567816,complete,166.128,161.797,2716384,SAT-INCORRECT
+519895655,cnf_proj/size_5_5_5_i003_r12.cnf.xz,13218296,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4993.46,5000.05,308844,UNKNOWN
+519895718,cnf_proj/string_compare_safety_cbmc_unwinding_900.cnf.xz,13218295,cadical_m,34795,solve_ignore_gates.sh,567816,complete,96.78,87.5783,3689560,SAT-INCORRECT
+519895455,cnf_proj/ecarev-110-1031-23-40-8.cnf.xz,13218294,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.736048,0.567458,162444,SAT-INCORRECT
+519895720,cnf_proj/string_compare_safety_cbmc_unwinding_940.cnf.xz,13218293,cadical_m,34795,solve_ignore_gates.sh,567816,complete,116.147,106.266,3880000,SAT-INCORRECT
+519895504,cnf_proj/Kakuro-easy-150-ext.xml.hg_9.cnf.xz,13218292,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1409.53,1421.37,4119196,UNKNOWN
+519895395,cnf_proj/at-least-two-vmpc_26.cnf.xz,13218291,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.251548,0.154484,113292,SAT-INCORRECT
+519895626,cnf_proj/satch2ways13wu.cnf.xz,13218290,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4986.68,5000.02,3372620,UNKNOWN
+519895689,cnf_proj/spg_330_400.cnf.xz,13218289,cadical_m,34795,solve_ignore_gates.sh,567816,complete,322.392,319.943,992920,UNSAT
+519895361,cnf_proj/20-100-frag12-14_sat.cnf.xz,13218288,cadical_m,34795,solve_ignore_gates.sh,567816,complete,200.894,200.686,243484,SAT-INCORRECT
+519895372,cnf_proj/20-100-p100-55_unsat.cnf.xz,13218287,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1691.66,1692.6,375452,UNSAT
+519895684,cnf_proj/spg_200_317.cnf.xz,13218286,cadical_m,34795,solve_ignore_gates.sh,567816,complete,225.202,223.277,706312,UNSAT
+519895376,cnf_proj/79.smt2.cnf.xz,13218285,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.860534,0.590959,180192,SAT-INCORRECT
+519895410,cnf_proj/b2005-p5-14x14c17h9-Ser5-0.cnf.xz,13218284,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (cpu),5000.03,4988.84,3919088,UNKNOWN
+519895428,cnf_proj/Circuit_multiplier22.cnf.xz,13218283,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.127108,0.101965,113292,UNKNOWN
+519895528,cnf_proj/mp1-blockpuzzle_5x12_s6_free3.cnf.xz,13218282,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.453409,0.306924,113292,SAT-INCORRECT
+519895687,cnf_proj/spg_300_301.cnf.xz,13218281,cadical_m,34795,solve_ignore_gates.sh,567816,complete,485.806,482.496,1014016,UNSAT
+519895442,cnf_proj/crafted_n11_d6_c4_num14.cnf.xz,13218280,cadical_m,34795,solve_ignore_gates.sh,567816,complete,382.647,379.427,1930284,UNSAT
+519895535,cnf_proj/mp1-klieber2017s-1000-023-eq.cnf.xz,13218279,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.055595,0.0386369,113292,SAT-INCORRECT
+519895659,cnf_proj/snw_13_8_pre.cnf.xz,13218278,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1063.49,1064.41,324280,UNSAT
+519895506,cnf_proj/ktf_TF-1.tf_3_0.02_34.cnf.xz,13218277,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4989.38,5000.01,378292,UNKNOWN
+519895500,cnf_proj/Kakuro-easy-118-ext.xml.hg_4.cnf.xz,13218276,cadical_m,34795,solve_ignore_gates.sh,567816,complete,372.579,381.097,3265420,UNKNOWN
+519895364,cnf_proj/20-100-lambda100-14_sat.cnf.xz,13218275,cadical_m,34795,solve_ignore_gates.sh,567816,complete,71.3046,71.2434,174012,SAT-INCORRECT
+519895479,cnf_proj/HCP-446-105.cnf.xz,13218274,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4994.96,5000.04,468632,UNKNOWN
+519895454,cnf_proj/E02F17.cnf.xz,13218273,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.166243,0.120216,113292,SAT-INCORRECT
+519895548,cnf_proj/MVD_ADS_S10_6_6.cnf.xz,13218272,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.15997,1.94855,309968,UNSAT
+519895628,cnf_proj/satch2ways15.cnf.xz,13218271,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4978.8,5000.09,1.14E+07,UNKNOWN
+519895560,cnf_proj/Mycielski-10-hints-10.cnf.xz,13218270,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.33515,0.90913,334124,SAT-INCORRECT
+519895596,cnf_proj/puzzle51_unsat.cnf.xz,13218269,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.351779,0.240945,113292,SAT-INCORRECT
+519895520,cnf_proj/LABS_n068_goal001.cnf.xz,13218268,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2265.24,2267.79,270512,UNSAT
+519895754,cnf_proj/WS_400_16_90_70.apx_0.cnf.xz,13218267,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.029696,0.021634,113292,SAT-INCORRECT
+519895542,cnf_proj/mp1-Nb7T46.cnf.xz,13218266,cadical_m,34795,solve_ignore_gates.sh,567816,complete,52.1793,52.2074,272624,SAT-INCORRECT
+519895554,cnf_proj/MVD_ADS_S4_5_5.cnf.xz,13218265,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.15958,1.77549,361324,UNSAT
+519895705,cnf_proj/sted5_0x1e3-20.cnf.xz,13218264,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4983.01,5000.05,349528,UNKNOWN
+519895741,cnf_proj/vlsat2_112_4223.cnf.xz,13218263,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4992.76,5000.02,744248,UNKNOWN
+519895623,cnf_proj/rpoc_xits_10_UNKNOWN.cnf.xz,13218262,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.145049,0.102634,113292,SAT-INCORRECT
+519895447,cnf_proj/ctl_4291_567_11_unsat.cnf.xz,13218261,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4998.38,5000.05,275176,UNKNOWN
+519895530,cnf_proj/mp1-blockpuzzle_9x9_s5_free3.cnf.xz,13218260,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.08887,0.742002,336892,SAT-INCORRECT
+519895416,cnf_proj/blocks-blocks-37-1.120-NOTKNOWN.cnf.xz,13218259,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4963.52,5000.11,1572840,UNKNOWN
+519895472,cnf_proj/erin2_0x0_n207-379.cnf.xz,13218258,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4979.1,5000.1,322532,UNKNOWN
+519895590,cnf_proj/puzzle36_sat.cnf.xz,13218257,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.332723,0.234417,113292,SAT-INCORRECT
+519895427,cnf_proj/Circuit_multiplier18.cnf.xz,13218256,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.131437,0.101871,113292,UNKNOWN
+519895618,cnf_proj/randomG-n19-d05.cnf.xz,13218255,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.74,5000.03,316888,UNKNOWN
+519895420,cnf_proj/bvsdiv_19.smt2.cnf.xz,13218254,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.324341,0.229781,113292,SAT-INCORRECT
+519895511,cnf_proj/ktf_TF-4.tf_2_0.02_18.cnf.xz,13218253,cadical_m,34795,solve_ignore_gates.sh,567816,complete,56.4243,56.6369,152996,UNSAT
+519895512,cnf_proj/ktf_TF-4.tf_4_0.04_35.cnf.xz,13218252,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1707.55,1708.88,219912,UNSAT
+519895610,cnf_proj/randomG-B-Mix-n16-d05.cnf.xz,13218251,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.042016,0.039663,113292,UNKNOWN
+519895492,cnf_proj/IBM_FV_2004_rule_batch_30_SAT_dat.k75.cnf.xz,13218250,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.44959,0.974125,344844,SAT-INCORRECT
+519895532,cnf_proj/mp1-bsat210-739.cnf.xz,13218249,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4142.77,4144.46,212756,UNSAT
+519895539,cnf_proj/mp1-Nb6T06.cnf.xz,13218248,cadical_m,34795,solve_ignore_gates.sh,567816,complete,21.4911,21.5392,141152,UNSAT
+519895414,cnf_proj/battleship-14-26-sat.cnf.xz,13218247,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.01182,4.00794,132228,SAT-INCORRECT
+519895678,cnf_proj/sp5-26-19-bin-stri-flat-noid.cnf.xz,13218246,cadical_m,34795,solve_ignore_gates.sh,567816,complete,3303.18,3309.63,264552,SAT-INCORRECT
+519895489,cnf_proj/HCP-529-420.cnf.xz,13218245,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.92,5000.04,749184,UNKNOWN
+519895394,cnf_proj/at-least-two-traffic_pcb_unknown.cnf.xz,13218244,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.34882,3.15997,432792,SAT-INCORRECT
+519895570,cnf_proj/n320p5q2_n.apx_16.cnf.xz,13218243,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.098362,0.0636671,113292,SAT-INCORRECT
+519895642,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_4.cnf.xz,13218242,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4966.04,5000.01,1161524,UNKNOWN
+519895533,cnf_proj/mp1-klieber2017s-0300-034-t12.cnf.xz,13218241,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.156607,0.106393,113292,SAT-INCORRECT
+519895482,cnf_proj/HCP-470-105.cnf.xz,13218240,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4994.14,5000.01,512860,UNKNOWN
+519895696,cnf_proj/sted1_0x0-380.cnf.xz,13218239,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4993.57,5000.01,350688,UNKNOWN
+519895725,cnf_proj/sum_of_3_cubes_50_bits_91.cnf.xz,13218238,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.821387,0.664927,166312,UNKNOWN
+519895593,cnf_proj/puzzle42_sat.cnf.xz,13218237,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.294015,0.201115,113292,SAT-INCORRECT
+519895493,cnf_proj/k2fix_gr_rcs_w8.shuffled.cnf.xz,13218236,cadical_m,34795,solve_ignore_gates.sh,567816,complete,4.99317,4.79873,175340,UNSAT
+519895477,cnf_proj/ex175_20.cnf.xz,13218235,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1857.45,1849.55,3261104,SAT-INCORRECT
+519895436,cnf_proj/Circuit_multiplier36.cnf.xz,13218234,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.268329,0.237321,113292,UNKNOWN
+519895549,cnf_proj/MVD_ADS_S11_6_7.cnf.xz,13218233,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.56791,1.32857,326124,SAT-INCORRECT
+519895553,cnf_proj/MVD_ADS_S3_5_5.cnf.xz,13218232,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2.37591,1.9534,372600,UNSAT
+519895727,cnf_proj/sum_of_3_cubes_52_bits_39.cnf.xz,13218231,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.50091,1.3407,168132,SAT-INCORRECT
+519895403,cnf_proj/b2005-p2-14x14c17h9-Ser5-0.cnf.xz,13218230,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (cpu),5000.04,4989.38,3675584,UNKNOWN
+519895602,cnf_proj/quad_res_r29_m32.cnf.xz,13218229,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.075767,0.051622,113292,SAT-INCORRECT
+519895613,cnf_proj/randomG-Mix-n17-d05.cnf.xz,13218228,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4987.98,5000.11,285120,UNKNOWN
+519895465,cnf_proj/edit_distance031_283.cnf.xz,13218227,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1241.37,1243.85,262504,UNSAT
+519895637,cnf_proj/SC21_Timetable_C_121_E_34_Cl_8_S_4.cnf.xz,13218226,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4952.42,5000.11,1008304,UNKNOWN
+519895562,cnf_proj/Mycielski-10-hints-6.cnf.xz,13218225,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.960059,0.635061,316448,SAT-INCORRECT
+519895644,cnf_proj/SC21_Timetable_C_241_E_34_Cl_16_S_13.cnf.xz,13218224,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4943.6,5000.02,1693240,UNKNOWN
+519895576,cnf_proj/pb_300_05_lb_17.cnf.xz,13218223,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2180.82,2187.21,493072,UNKNOWN
+519895536,cnf_proj/mp1-klieber2017s-1000-024-eq.cnf.xz,13218222,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.053456,0.0371709,113292,SAT-INCORRECT
+519895541,cnf_proj/mp1-Nb7T44.cnf.xz,13218221,cadical_m,34795,solve_ignore_gates.sh,567816,complete,46.4593,46.3943,268288,SAT-INCORRECT
+519895700,cnf_proj/sted2_0x1e3-216.cnf.xz,13218220,cadical_m,34795,solve_ignore_gates.sh,567816,complete,2461.78,2467.11,246880,SAT-INCORRECT
+519895581,cnf_proj/prime_a20_b20.cnf.xz,13218219,cadical_m,34795,solve_ignore_gates.sh,567816,complete,1.88814,1.86308,134492,SAT-INCORRECT
+519895677,cnf_proj/sp5-26-19-bin-nons-tree-noid.cnf.xz,13218218,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4989.06,5000.11,271220,UNKNOWN
+519895731,cnf_proj/Sz1024_34824.smt2.cnf.xz,13218217,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.22365,0.14756,113292,SAT-INCORRECT
+519895656,cnf_proj/size_5_5_5_i223_r12.cnf.xz,13218216,cadical_m,34795,solve_ignore_gates.sh,567816,complete,305.498,307.721,204448,UNKNOWN
+519895382,cnf_proj/ak128paralparalisc.cnf.xz,13218215,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4970.33,5000.05,1740308,UNKNOWN
+519895538,cnf_proj/mp1-klieber2017s-2000-022-eq.cnf.xz,13218214,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.091731,0.062218,113292,SAT-INCORRECT
+519895620,cnf_proj/rphp4_065_shuffled.cnf.xz,13218213,cadical_m,34795,solve_ignore_gates.sh,567816,complete,205.25,206.224,162928,UNSAT
+519895484,cnf_proj/HCP-470-60.cnf.xz,13218212,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4985.5,5000.03,534172,UNKNOWN
+519895440,cnf_proj/crafted_n10_d6_c4_num15.cnf.xz,13218211,cadical_m,34795,solve_ignore_gates.sh,567816,complete,145.599,143.408,1705844,UNSAT
+519895661,cnf_proj/snw_16_9_Encpre.cnf.xz,13218210,cadical_m,34795,solve_ignore_gates.sh,567816,timeout (wallclock),4999.34,5000.06,549912,UNKNOWN
+519895573,cnf_proj/ndhf_xits_09_UNSAT.cnf.xz,13218209,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.224221,0.163895,113292,SAT-INCORRECT
+519895422,cnf_proj/bvsmod_19.smt2.cnf.xz,13218208,cadical_m,34795,solve_ignore_gates.sh,567816,complete,0.329779,0.233324,113292,SAT-INCORRECT
