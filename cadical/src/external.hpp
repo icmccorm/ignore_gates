@@ -130,8 +130,6 @@ struct External {
   
   std::unordered_map<int, bool> aux;          // List of auxiliary variables 
 
-  void init_aux (int* aux, int num_aux);      // Load hashmap with auxiliary variables
-
   bool is_aux (int elit);                     // Check if a given variable is aux
 
   void add_aux (int aux_lit);

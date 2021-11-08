@@ -133,7 +133,7 @@ generate_resolvents (kissat * solver, unsigned lit,
 	}
 
       bool first_antecedent_satisfied = false;
-/*
+
       for (all_literals_in_clause (other, c))
 	{
 	  if (other == lit)
@@ -145,11 +145,11 @@ generate_resolvents (kissat * solver, unsigned lit,
 	    {
 	      first_antecedent_satisfied = true;
 	      if (c != &tmp0)
-		kissat_eliminate_clause (solver, c, other);
+		//kissat_eliminate_clause (solver, c, other);
 	      break;
 	    }
 	}
-*/
+
       if (first_antecedent_satisfied)
 	continue;
 
@@ -190,15 +190,15 @@ generate_resolvents (kissat * solver, unsigned lit,
 		  LOG2 ("dropping falsified literal %s", LOGLIT (other));
 		  continue;
 		}
-/*		
+		
 	      if (value > 0)
 		{
 		  if (d != &tmp1)
-		    kissat_eliminate_clause (solver, d, other);
+		    //kissat_eliminate_clause (solver, d, other);
 		  resolvent_satisfied_or_tautological = true;
 		  break;
 		}
-*/		
+	
 	      if (marks[other])
 		{
 		  LOG2 ("dropping repeated %s literal", LOGLIT (other));
