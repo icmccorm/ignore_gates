@@ -26,15 +26,18 @@ void Internal::shuffle_scores () {
   vector<int> shuffle;
   if (opts.shufflerandom){
     scores.erase ();
+    int numAuxiliary = 0;
     for (int idx = max_var; idx; idx--){
       if(!external->is_aux(i2e[idx])){
         shuffle.push_back (idx);
+      }else{
+        ++numAuxiliary;
       }
     }
     Random random (opts.seed);                  // global seed
     random += stats.shuffled;                   // different every time
-    for (int i = 0; i <= max_var-2; i++) {
-      const int j = random.pick_int (i, max_var-1);
+    for (int i = 0; i <= max_var-2-numAuxiliary; i++) {
+      const int j = random.pick_int (i, max_var-1-numAuxiliary);
       swap (shuffle[i], shuffle[j]);
     }
   } else {
