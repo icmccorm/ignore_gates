@@ -10,24 +10,25 @@ if(not os.path.exists('./original.csv') or not os.path.exists('./nogates.csv')):
     print("     * nogates.csv : modded CaDiCaL, ignoring gate literals")
     exit(1)
 original = pd.read_csv("./original.csv")
-nogates = pd.read_csv("./.csv")
+nogates = pd.read_csv("./nogates.csv")
 
 if(os.path.exists('./incorrect.txt')): os.remove("./incorrect.txt")
 incorrect = open("./incorrect.txt", "a")
 
 print()
 print("------- Unknown Results -------")
-original_unknown_benchmark_ids = original.loc[original['result'] == 'UNKNOWN']
+original_unknown_benchmark_ids = original[original['result'] == 'UNKNOWN']
+original_crashed = original_unknown_benchmark_ids[original_unknown_benchmark_ids['status'] == 'complete']
 print("* Cadical: " + str(len(original_unknown_benchmark_ids)))
-original_timed_out = original_unknown_benchmark_ids.loc[(original_unknown_benchmark_ids['cpu time']) >= 5000 | (original_unknown_benchmark_ids['wallclock time'] >= 5000)]
-print("     - # Timed Out: " + str(len(original_timed_out)))
-print("     - # Crashed: " + str(len(original_unknown_benchmark_ids) - len(original_timed_out)))
+original_timed_out = original_unknown_benchmark_ids[original_unknown_benchmark_ids['status'] == 'complete']
+print("     - # Timed Out: " + str(len(original_unknown_benchmark_ids) - len(original_crashed)))
+print("     - # Crashed: " + str(len(original_crashed)))
 
-nogates_unknown_benchmark_ids = nogates.loc[nogates['result'] == 'UNKNOWN']
+nogates_unknown_benchmark_ids = nogates[nogates['result'] == 'UNKNOWN']
+nogates_crashed = nogates_unknown_benchmark_ids[nogates_unknown_benchmark_ids['status'] == 'complete']
 print("* Cadical w/o Gates: " + str(len(nogates_unknown_benchmark_ids)))
-nogates_timed_out = nogates_unknown_benchmark_ids.loc[(nogates_unknown_benchmark_ids['cpu time']) >= 5000 | (nogates_unknown_benchmark_ids['wallclock time'] >= 5000)]
-print("     - # Timed Out: " + str(len(nogates_timed_out)))
-print("     - # Crashed: " + str(len(nogates_unknown_benchmark_ids) - len(nogates_timed_out)))
+print("     - # Timed Out: " + str(len(nogates_unknown_benchmark_ids) - len(nogates_crashed)))
+print("     - # Crashed: " + str(len(nogates_crashed)))
 
 
 print("")
@@ -94,13 +95,15 @@ mdiff = memory_usage_diff[0]
 mdiff.sort()
 
 fig, axs = plt.subplots(2)
-t = nogates["benchmark id"]
+t = linspace(1, len(memory_usage_diff[0]), len(memory_usage_diff[0]))
 axs[0].plot(t, cdiff, 'b')
 axs[0].axhline(y=0, linestyle='-')
-axs[0].title.set_text("Percent reduction in CPU time (sec)")
+axs[0].title.set_text("Reduction in CPU time (sec) from ignoring gate literals")
+axs[0].axes.xaxis.set_visible(False)
 axs[1].plot(t, mdiff, 'r')
 axs[1].axhline(y=0, linestyle='-')
-axs[1].title.set_text("Percent reduction in Memory usage (MB)")
+axs[1].title.set_text("Reduction in memory usage (MB) from ignoring gate literals")
+axs[1].axes.xaxis.set_visible(False)
 plt.subplots_adjust(hspace = .75)
 plt.show()
 
