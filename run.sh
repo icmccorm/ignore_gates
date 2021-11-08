@@ -1,0 +1,1 @@
+./bin/kissat $1 | ./bin/cadical $1 ./proof.drat
