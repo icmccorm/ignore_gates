@@ -334,7 +334,6 @@ Solver::Solver () {
   internal = new Internal ();
   TRACE ("init");
   external = new External (internal);
-  external->init_aux(NULL, 0);
   STATE (CONFIGURING);
 #ifndef NTRACING
   if (tracing_api_calls_through_environment_variable_method)

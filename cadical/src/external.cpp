@@ -71,14 +71,6 @@ void External::init (int new_max_var) {
   max_var = new_max_var;
 }
 
-void External::init_aux (int* aux_list, int num_aux) {
-  int* ref = aux_list;
-  for(int index = 0; index < num_aux; ++index){
-    aux[*ref] = true;
-    ref += 1;
-  }
-}
-
 void External::add_aux (int aux_lit) {
   aux[aux_lit] = true;
 }
