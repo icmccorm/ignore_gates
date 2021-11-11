@@ -103,7 +103,7 @@ static PyObject* extract_gate_features(PyObject* self, PyObject* arg) {
     GateStats stats(formula, limits);
     try {
         limits.within_limits_or_throw();
-        stats.analyze(1, 0);
+        stats.analyze(1, 0, 100);
     } catch (ResourceLimitsExceeded& e) {
         PyObject *key = Py_BuildValue("s", "gate_features_runtime");
         PyObject *val = Py_BuildValue("s", limits.within_memory_limit() ?  "timeout" : "memout");

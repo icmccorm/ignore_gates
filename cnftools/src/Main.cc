@@ -110,7 +110,7 @@ int main(int argc, char** argv) {
         formula.readDimacsFromFile(filename.c_str());
         std::cout << "Finished Reading " << std::endl;
         GateStats stats(formula, limits);
-        stats.analyze(repeat, verbose);
+        stats.analyze(repeat, verbose, limits.get_runtime());
         std::vector<float> record = stats.GateFeatures();
         std::vector<std::string> names = GateStats::GateFeatureNames();
         for (unsigned i = 0; i < record.size(); i++) {
@@ -121,7 +121,10 @@ int main(int argc, char** argv) {
         formula.readDimacsFromFile(filename.c_str());
         std::set<Lit> all_gates;
         GateStats stats(formula, limits);
-        stats.analyze(repeat, verbose);
+        unsigned runtime = limits.get_runtime();
+        if(runtime == 0)
+            runtime = 100;
+        stats.analyze(repeat, verbose, runtime);
         std::set<unsigned int> gate_list = stats.GateList();
         for(std::__1::set<unsigned int>::iterator it = gate_list.begin(); it != gate_list.end(); it++){
             std::cout << *it << std::endl;

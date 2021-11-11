@@ -1,6 +1,10 @@
 .DS_Store
 *.zip
-./cadical/build
-./kissat/build
-./cnftools/build
+cadical/build
+kissat/build
+cnftools/build/*
 incorrect.txt
+*.cnf
+output
+*.drat
+.vscode

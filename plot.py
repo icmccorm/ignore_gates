@@ -30,7 +30,6 @@ print("* Cadical w/o Gates: " + str(len(nogates_unknown_benchmark_ids)))
 print("     - # Timed Out: " + str(len(nogates_unknown_benchmark_ids) - len(nogates_crashed)))
 print("     - # Crashed: " + str(len(nogates_crashed)))
 
-
 print("")
 original = original.loc[~original['benchmark id'].isin(original_unknown_benchmark_ids['benchmark id'])]
 original = original.loc[~original['benchmark id'].isin(nogates_unknown_benchmark_ids['benchmark id'])]

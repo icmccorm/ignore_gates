@@ -27,6 +27,7 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #include <vector>
 #include <unordered_set>
 #include <climits>
+#include <chrono>
 
 #include "lib/ipasir.h"
 
@@ -57,11 +58,12 @@ class GateAnalyzer {
     bool semantic = false;
     unsigned max_ = 1;
     unsigned verbose_ = 0;
+    unsigned timeout_ = 100;
 
  public:
-    GateAnalyzer(const CNFFormula& formula, const ResourceLimits& limits, bool patterns_, bool semantic_, unsigned max, unsigned verbose = 0) :
+    GateAnalyzer(const CNFFormula& formula, const ResourceLimits& limits, bool patterns_, bool semantic_, unsigned max, unsigned verbose = 0, unsigned timeout = 100) :
      formula_(formula), limits_(limits), gate_formula(formula.nVars(), verbose), index(formula),
-     patterns(patterns_), semantic(semantic_), max_(max), verbose_(verbose) {
+     patterns(patterns_), semantic(semantic_), max_(max), verbose_(verbose), timeout_(timeout) {
         if (semantic) S = ipasir_init();
     }
 
@@ -78,7 +80,8 @@ class GateAnalyzer {
      */
     void analyze() {
         std::vector<Cl*> root_clauses = index.estimateRoots();
-
+        std::chrono::steady_clock::time_point start;
+        start = std::chrono::steady_clock::now();
         for (unsigned count = 0; count < max_ && !root_clauses.empty(); count++) {
             std::vector<Lit> candidates;
             for (Cl* clause : root_clauses) {
@@ -89,6 +92,8 @@ class GateAnalyzer {
             gate_recognition(candidates);
 
             root_clauses = index.estimateRoots();
+            if(std::chrono::steady_clock::now() - start > std::chrono::seconds(timeout_)) 
+                break;
         }
 
         std::unordered_set<Cl*> remainder;

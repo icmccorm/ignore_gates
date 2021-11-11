@@ -405,7 +405,7 @@ const char * Parser::parse_aux () {
               PER ("Syntax error on line %d, invalid gate type.", currentLine);
             }
           } break;
-          default: PER ("Syntax error on line %d.", currentLine); break;
+          default: break;
         }
         if(parse_char() != '\n'){
           PER ("Syntax error on line %d, invalid gate type.", currentLine);

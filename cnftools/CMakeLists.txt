@@ -1,11 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(cnftools VERSION 1.0)
-include_directories("/opt/homebrew/Cellar/libarchive/3.5.2/include")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(LibArchive_INCLUDE_DIR "/usr/local/opt/libarchive/lib")
-set(LIBARCHIVE_INCLUDE_DIR "/usr/local/opt/libarchive/lib")
 
 set(CADICAL_CONFIGURE "./configure")
 set(CADICAL_CONFIGURE_OPTION "-fPIC")
@@ -19,7 +16,7 @@ endif()
 
 include(ExternalProject)
 ExternalProject_Add(Cadical
-    GIT_REPOSITORY https://github.com/icmccorm/cadical.git
+    GIT_REPOSITORY https://github.com/arminbiere/cadical
     GIT_TAG "origin/master"
     PREFIX "${CMAKE_BINARY_DIR}/cadical"
     CONFIGURE_COMMAND "${CADICAL_CONFIGURE}" "${CADICAL_CONFIGURE_OPTION}"
