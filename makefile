@@ -1,5 +1,5 @@
 default: clean
-	@zip -D -r starexec.zip * -x *.csv -x *.py -x run.sh -x makefile -x README.md -x ./cnftools
+	@zip -D -r starexec.zip * -x *.csv -x *.py -x run.sh -x makefile -x README.md -x output/* -x *.cnf
 
 build: clean
 	cd kissat; ./configure && make && cp ./build/kissat ../bin/kissat
@@ -16,4 +16,5 @@ clean:
 	@rm -f ./drat-trim/lrat-check
 	@rm -f ./bin/kissat
 	@rm -f ./bin/cadical
+	@rm -f ./cnftools/build
 	@rm -f ./bin/drat-trim

@@ -182,10 +182,7 @@ class GateAnalyzer {
         // std::cout << "check add gate " << out << std::endl;
         if (index[~out].size() > 0 && index.isBlockedSet(out)) {
             GateType type = NONE;
-
-            if (gate_formula.isNestedMonotonic(out)) {
-                type = MONO;
-            } else if (patterns) {
+            if (patterns) {
                 unsigned input_size = constrainSameInputVariables(out, index[~out], index[out]);
                 if (input_size > 0) {
                     type = fPattern(out, index[~out], index[out], input_size);

@@ -85,12 +85,6 @@ class GateStats {
                     gate_list.insert(i);
                     levels_generic.push_back(levels[i]);
                     break;
-                case MONO:  // monotonically nested gate
-                    ++n_mono;
-                    if(mono)
-                        gate_list.insert(i);
-                    levels_mono.push_back(levels[i]);
-                    break;
                 case AND:  // non-monotonically nested and-gate
                     ++n_and;
                     gate_list.insert(i);
@@ -115,6 +109,8 @@ class GateStats {
                     ++n_full;
                     gate_list.insert(i);
                     levels_full.push_back(levels[i]);
+                    break;
+                default:
                     break;
             }
         }
