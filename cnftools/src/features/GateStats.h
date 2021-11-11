@@ -48,7 +48,7 @@ class GateStats {
      formula_(formula), limits_(limits), record(), n_vars(formula.nVars()), n_gates(), n_roots(),
      n_none(0), n_generic(0), n_mono(0), n_and(0), n_or(0), n_triv(0), n_equiv(0), n_full(0) { }
 
-    void analyze(unsigned repeat, unsigned verbose, unsigned timeout) {
+    void analyze(unsigned repeat, unsigned verbose, unsigned timeout, bool mono) {
         std::vector<unsigned> levels, levels_none, levels_generic, levels_mono, levels_and, levels_or, levels_triv, levels_equiv, levels_full;
         GateAnalyzer<> analyzer(formula_, limits_, true, true, repeat, verbose, timeout);
         analyzer.analyze();
@@ -87,7 +87,8 @@ class GateStats {
                     break;
                 case MONO:  // monotonically nested gate
                     ++n_mono;
-                    gate_list.insert(i);
+                    if(mono)
+                        gate_list.insert(i);
                     levels_mono.push_back(levels[i]);
                     break;
                 case AND:  // non-monotonically nested and-gate

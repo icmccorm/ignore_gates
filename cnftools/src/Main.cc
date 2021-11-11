@@ -70,7 +70,10 @@ int main(int argc, char** argv) {
         .help("Give number of root selections for gate recognition")
         .default_value(1)
         .scan<'i', int>();
-
+    argparse.add_argument("-o", "--mono")
+        .help("Include monotonic gates in aux output.")
+        .default_value(0)
+        .scan<'i', int>();
     try {
         argparse.parse_args(argc, argv);
     }
@@ -82,6 +85,7 @@ int main(int argc, char** argv) {
 
     std::string filename = argparse.get("file");
     std::string toolname = argparse.get("tool");
+    bool mono = argparse.get<int>("mono") > 0;
     int repeat = argparse.get<int>("repeat");
     ResourceLimits limits(argparse.get<int>("timeout"), argparse.get<int>("memout"));
     int verbose = argparse.get<int>("verbose");
@@ -110,7 +114,7 @@ int main(int argc, char** argv) {
         formula.readDimacsFromFile(filename.c_str());
         std::cout << "Finished Reading " << std::endl;
         GateStats stats(formula, limits);
-        stats.analyze(repeat, verbose, limits.get_runtime());
+        stats.analyze(repeat, verbose, limits.get_runtime(), mono);
         std::vector<float> record = stats.GateFeatures();
         std::vector<std::string> names = GateStats::GateFeatureNames();
         for (unsigned i = 0; i < record.size(); i++) {
@@ -124,9 +128,9 @@ int main(int argc, char** argv) {
         unsigned runtime = limits.get_runtime();
         if(runtime == 0)
             runtime = 100;
-        stats.analyze(repeat, verbose, runtime);
+        stats.analyze(repeat, verbose, runtime, mono);
         std::set<unsigned int> gate_list = stats.GateList();
-        for(std::__1::set<unsigned int>::iterator it = gate_list.begin(); it != gate_list.end(); it++){
+        for(std::set<unsigned int>::iterator it = gate_list.begin(); it != gate_list.end(); it++){
             std::cout << *it << std::endl;
         }
     }
