@@ -28,7 +28,6 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #include <unordered_set>
 #include <climits>
 #include <chrono>
-
 #include "lib/ipasir.h"
 
 #include "src/util/CNFFormula.h"
@@ -80,9 +79,9 @@ class GateAnalyzer {
      */
     void analyze() {
         std::vector<Cl*> root_clauses = index.estimateRoots();
-        std::chrono::steady_clock::time_point start;
-        start = std::chrono::steady_clock::now();
-        for (unsigned count = 0; count < max_ && !root_clauses.empty(); count++) {
+        auto start = std::chrono::steady_clock::now();
+        bool timeout = false;
+        for (unsigned count = 0; !root_clauses.empty() && !timeout; count++) {
             std::vector<Lit> candidates;
             for (Cl* clause : root_clauses) {
                 gate_formula.addRoot(clause);
@@ -92,8 +91,10 @@ class GateAnalyzer {
             gate_recognition(candidates);
 
             root_clauses = index.estimateRoots();
-            if(std::chrono::steady_clock::now() - start > std::chrono::seconds(timeout_)) 
-                break;
+
+            auto current = std::chrono::steady_clock::now();
+            std::chrono::duration<double> elapsed_seconds = current-start;
+            timeout = elapsed_seconds.count() >= 100;
         }
 
         std::unordered_set<Cl*> remainder;
