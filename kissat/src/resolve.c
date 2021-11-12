@@ -133,7 +133,7 @@ generate_resolvents (kissat * solver, unsigned lit,
 	}
 
       bool first_antecedent_satisfied = false;
-
+/*
       for (all_literals_in_clause (other, c))
 	{
 	  if (other == lit)
@@ -145,11 +145,11 @@ generate_resolvents (kissat * solver, unsigned lit,
 	    {
 	      first_antecedent_satisfied = true;
 	      if (c != &tmp0)
-		//kissat_eliminate_clause (solver, c, other);
+		kissat_eliminate_clause (solver, c, other);
 	      break;
 	    }
 	}
-
+*/
       if (first_antecedent_satisfied)
 	continue;
 
@@ -190,15 +190,15 @@ generate_resolvents (kissat * solver, unsigned lit,
 		  LOG2 ("dropping falsified literal %s", LOGLIT (other));
 		  continue;
 		}
-		
+/*		
 	      if (value > 0)
 		{
 		  if (d != &tmp1)
-		    //kissat_eliminate_clause (solver, d, other);
+		    kissat_eliminate_clause (solver, d, other);
 		  resolvent_satisfied_or_tautological = true;
 		  break;
 		}
-	
+*/		
 	      if (marks[other])
 		{
 		  LOG2 ("dropping repeated %s literal", LOGLIT (other));
@@ -356,6 +356,39 @@ kissat_generate_resolvents (kissat * solver, unsigned idx, unsigned *lit_ptr)
 
   statches *const gates0 = &solver->gates[0];
   statches *const gates1 = &solver->gates[1];
+
+//-------------------------//
+  if(gates){
+  //fprintf(stdout, "GateType %d OutLit %d\n", gate_type, kissat_export_literal (solver, lit));
+	ward *const arena = BEGIN_STACK (solver->arena);
+	clause tmp0, tmp1;
+	memset (&tmp0, 0, sizeof tmp0);
+	memset (&tmp1, 0, sizeof tmp1);
+	tmp0.size = tmp1.size = 2;
+	watches *watchesP = &WATCHES (lit);
+	watches *watchesN = &WATCHES (not_lit);
+	for (all_stack (watch, watch0, *gates0))
+	{
+		clause *c = watch_to_clause (solver, arena, &tmp0, lit, watch0);
+		for (size_t i = 0; i < c->size; i++)
+		fprintf(stdout, "%d ", kissat_export_literal (solver, c->lits[i]));
+		fprintf(stdout, "\n");
+	}
+	for (all_stack (watch, watch0, *gates1))
+	{
+		clause *c = watch_to_clause (solver, arena, &tmp0, lit, watch0);
+		
+		for (size_t i = 0; i < c->size; i++) {
+		if ( c->lits[i] == lit)
+			fprintf(stdout, "%d ", kissat_export_literal (solver,not_lit));
+		else
+			fprintf(stdout, "%d ", kissat_export_literal (solver, c->lits[i]));
+		}
+		fprintf(stdout, "\n");
+	}
+	fprintf(stdout, "endG\n");
+  }
+//-------------------------//
 
   if (solver->values[lit])
     {
