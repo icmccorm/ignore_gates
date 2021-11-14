@@ -27,8 +27,8 @@ int Internal::next_decision_variable_on_queue () {
 int Internal::next_decision_variable_with_best_score () {
   int res = 0;
   for (;;) {
-    if(scores.empty()){
-      printf("RAN OUT\n");
+    if(scores.empty ()){
+      printf("RAN OUT");
       abort();
     }
     res = scores.front ();
