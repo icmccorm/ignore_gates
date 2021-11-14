@@ -81,7 +81,7 @@ class GateAnalyzer {
         std::vector<Cl*> root_clauses = index.estimateRoots();
         auto start = std::chrono::steady_clock::now();
         bool timeout = false;
-        for (unsigned count = 0; !root_clauses.empty() && !timeout; count++) {
+        while(!root_clauses.empty() && !timeout) {
             std::vector<Lit> candidates;
             for (Cl* clause : root_clauses) {
                 gate_formula.addRoot(clause);

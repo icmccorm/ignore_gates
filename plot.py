@@ -65,6 +65,10 @@ nogates = nogates[~nogates['benchmark'].isin(differing)]
 original = original.sort_values("benchmark id")
 nogates = nogates.sort_values("benchmark id")
 
+num_unsat = len(original[original['result'] == 'UNSAT'])
+num_sat = len(original) - num_unsat
+
+
 def calculateDiff(key, original, nogates):
     diff = []
     usedMore = []
@@ -82,7 +86,9 @@ def calculateDiff(key, original, nogates):
 
     return (diff, usedLess, usedSame, usedMore)
 
-print("Total results to compare: " + str(len(original)))
+print("* Total results to compare: " + str(len(original)))
+print("     - # SAT: " + str(num_sat))
+print("     - # UNSAT: " + str(num_unsat))
 
 cpu_time_diff = calculateDiff("cpu time", original, nogates)
 memory_usage_diff = calculateDiff("memory usage", original, nogates)
