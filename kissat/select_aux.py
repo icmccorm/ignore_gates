@@ -1,46 +1,33 @@
 import sys
-
 aux_list = []
-used_literals = []
-
-def add_aux(lit, literals, gate_type):
-    for l in literals:
-        if l in used_literals:
-            return
-
+USED = set()
+# EQV, ITE, DEF
+def add_aux(lit, clauses, gate_type):
+    newly_used = set()
+    for c in clauses:
+        if tuple(c) in USED:
+            return set()
+        newly_used.add(tuple(c))
     aux_list.append(lit)
     print(str(lit) + " " + gate_type)
-    for l in literals:
-        used_literals.append(l)
-    
-    used_literals.append(lit)
+    return newly_used
 
-
-
-fname =sys.argv[1]
-fp = open(fname, "r")
-
-line = fp.readline()
+line = sys.stdin.readline()
 while line:
     # line = lit, gate_type 
     words = line.split()
     lit =  int(words[0])
     gate_type = words[1]
-    literals = []
+    clauses = []
     while True:
-        line = fp.readline()
+        line = sys.stdin.readline()
         if "endG" in line:
             break
         clause = [int(x) for x in line.split()]
-        for l in clause:
-            if l < 0:
-                l = -l
-            if l != lit and l not in literals:
-                literals.append(l)
-        
-    literals = sorted(literals)
-    add_aux(lit, literals, gate_type)
-    line = fp.readline()
+        clauses.append(clause)
+    clauses.sort(key=len)
+    USED = USED.union(add_aux(lit, clauses, gate_type))
+    line = sys.stdin.readline()
 
 
 
