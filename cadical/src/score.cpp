@@ -10,9 +10,8 @@ void Internal::init_scores (int old_max_var, int new_max_var) {
   LOG ("initializing EVSIDS scores from %d to %d",
     old_max_var + 1, new_max_var);
   for (int i = old_max_var; i < new_max_var; i++)
-    if(!external->is_aux(i2e[i+1])){
-      scores.push_back (i + 1);
-    }
+    scores.push_back (i + 1);
+    
 }
 
 // Shuffle the EVSIDS heap.
@@ -26,18 +25,12 @@ void Internal::shuffle_scores () {
   vector<int> shuffle;
   if (opts.shufflerandom){
     scores.erase ();
-    int numAuxiliary = 0;
-    for (int idx = max_var; idx; idx--){
-      if(!external->is_aux(i2e[idx])){
-        shuffle.push_back (idx);
-      }else{
-        ++numAuxiliary;
-      }
-    }
+    for (int idx = max_var; idx; idx--)
+      shuffle.push_back (idx);
     Random random (opts.seed);                  // global seed
     random += stats.shuffled;                   // different every time
-    for (int i = 0; i <= max_var-2-numAuxiliary; i++) {
-      const int j = random.pick_int (i, max_var-1-numAuxiliary);
+    for (int i = 0; i <= max_var-2; i++) {
+      const int j = random.pick_int (i, max_var-1);
       swap (shuffle[i], shuffle[j]);
     }
   } else {

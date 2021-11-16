@@ -17,7 +17,6 @@ inline void Internal::unassign (int lit) {
     // In the standard EVSIDS variable decision heuristic of MiniSAT, we need
     // to push variables which become unassigned back to the heap.
     //
-  if(!external->is_aux(i2e[idx])){
 
     if (!scores.contains (idx)) scores.push_back (idx);
 
@@ -26,7 +25,7 @@ inline void Internal::unassign (int lit) {
     // points.  See our SAT'15 paper for more details on this aspect.
     //
     if (queue.bumped < btab[idx]) update_queue_unassigned (idx);
-  }
+  
 }
 
 /*------------------------------------------------------------------------*/

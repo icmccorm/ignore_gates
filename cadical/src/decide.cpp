@@ -10,14 +10,17 @@ namespace CaDiCaL {
 // the assigned variables (if 'opts.restartreusetrail' is non-zero).
 
 int Internal::next_decision_variable_on_queue () {
-  int64_t searched = 0;
-  int res = queue.unassigned;
-  while (val (res))
-    res = link (res).prev, searched++;
-  if (searched) {
-    stats.searched += searched;
-    update_queue_unassigned (res);
-  }
+  int res = 0;
+  do {
+    int64_t searched = 0;
+    int res = queue.unassigned;
+    while (val (res))
+      res = link (res).prev, searched++;
+    if (searched) {
+      stats.searched += searched;
+      update_queue_unassigned (res);
+    }
+  } while(external->is_aux(i2e[res]));
   LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
   return res;
 }
@@ -26,15 +29,21 @@ int Internal::next_decision_variable_on_queue () {
 //
 int Internal::next_decision_variable_with_best_score () {
   int res = 0;
-  for (;;) {
-    if(scores.empty ()){
-      printf("RAN OUT");
-      abort();
+  do {
+    for (;;) {
+      if(scores.empty ()){
+        printf("RAN OUT");
+        abort();
+      }
+      res = scores.front ();
+      if (!val (res)) break;
+      (void) scores.pop_front ();
     }
-    res = scores.front ();
-    if (!val (res)) break;
-    (void) scores.pop_front ();
-  }
+    if (scores.empty()) {
+      printf("e RAN OUT");
+      exit (1);
+    }
+  } while(external->is_aux(i2e[res]));
   LOG ("next decision variable %d with score %g", res, score (res));
   return res;
 }

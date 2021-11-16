@@ -52,9 +52,8 @@ void Internal::init_queue (int old_max_var, int new_max_var) {
   assert (old_max_var < new_max_var);
   assert (!level);
   for (int idx = old_max_var; idx < new_max_var; idx++)
-    if(!external->is_aux(i2e[idx+1])){
-      init_enqueue (idx + 1);
-    }
+    init_enqueue (idx + 1);
+    
 }
 
 // Shuffle the VMTF queue.
