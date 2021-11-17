@@ -348,7 +348,6 @@ const char * Parser::parse_solution_non_profiled () {
 /*------------------------------------------------------------------------*/
 
 const char * Parser::parse_aux () {
-  START (parse);
   double start = internal->time ();
 
   const char * err = NULL;
@@ -425,7 +424,6 @@ const char * Parser::parse_aux () {
     MSG ("parsed %d auxiliary variables in %.2f seconds %s time",
       num_parsed, end - start, internal->opts.realtime ? "real" : "process");
   #endif
-  STOP (parse);
   return (const char *) err;
 }
 

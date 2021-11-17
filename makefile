@@ -14,6 +14,7 @@ clean: clean-cnf
 	@rm -f ./bin/kissat
 	@rm -f ./bin/cadical
 	@rm -f ./bin/drabt
+	@rm -f ./bin/select_aux.py
 
 clean-cnf:
 	@rm -rf ./cnftools/build

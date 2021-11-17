@@ -4,7 +4,7 @@
 /*------------------------------------------------------------------------*/
 
 #include "range.hpp"
-#include <unordered_map>
+#include <unordered_set>
 
 /*------------------------------------------------------------------------*/
 
@@ -128,7 +128,7 @@ struct External {
   }
   /*----------------------------------------------------------------------*/
   
-  std::unordered_map<int, bool> aux;          // List of auxiliary variables 
+  std::unordered_set<int> aux;          // List of auxiliary variables 
 
   bool is_aux (int elit);                     // Check if a given variable is aux
 

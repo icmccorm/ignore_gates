@@ -24,6 +24,7 @@ inline void Internal::unassign (int lit) {
     // variable sits after the variable to which 'queue.unassigned' currently
     // points.  See our SAT'15 paper for more details on this aspect.
     //
+    
     if (queue.bumped < btab[idx]) update_queue_unassigned (idx);
   
 }

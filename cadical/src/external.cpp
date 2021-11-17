@@ -40,6 +40,7 @@ void External::init (int new_max_var) {
   int new_vars = new_max_var - max_var;
   int old_internal_max_var = internal->max_var;
   int new_internal_max_var = old_internal_max_var + new_vars;
+  internal->init_vars (new_internal_max_var);
   if ((size_t) new_max_var >= vsize) enlarge (new_max_var);
   LOG ("initialized %d external variables", new_vars);
   if (!max_var) {
@@ -62,7 +63,6 @@ void External::init (int new_max_var) {
     assert (internal->i2e[iidx] == (int) eidx);
     assert (e2i[eidx] == (int) iidx);
   }
-  internal->init_vars (new_internal_max_var);
   if (internal->opts.checkfrozen)
     while (new_max_var >= (int64_t) moltentab.size ())
       moltentab.push_back (false);
@@ -72,7 +72,7 @@ void External::init (int new_max_var) {
 }
 
 void External::add_aux (int aux_lit) {
-  aux[aux_lit] = true;
+  aux.insert(aux_lit);
 }
 
 bool External::is_aux (int elit) {
