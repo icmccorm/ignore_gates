@@ -6,6 +6,7 @@ import os, re, sys, os
 from shutil import which
 from subprocess import Popen, PIPE, STDOUT, Popen
 from threading import Thread
+import os
 NUMBER = re.compile('p cnf ([0-9]*) ([0-9]*)')
 
 class Command(object):
@@ -60,7 +61,7 @@ def getAssigned(contents):
             varlist = variables.split(" ")
             for var in varlist:
                 int_var = int(var)
-                if int_var > 0:
+                if int_var != 0:
                     assigned_list.append(int_var)
                     assigned += str(int_var) + " 0\n"
     return assigned_list
@@ -85,6 +86,7 @@ dirs = next(os.walk(OUTPUT_DIR))[1]
 
 UNSAT_INCORRECT_COUNT = 0
 SAT_INCORRECT_COUNT = 0
+NUM_COMPLETED = 0
 for currRoot in dirs:
     currFiles = next(os.walk(OUTPUT_DIR + "/" + currRoot))[2]
     BENCH_OUTPUT = None
@@ -92,6 +94,13 @@ for currRoot in dirs:
         if OUTPUT_TEXT_REGEX.match(file):
             BENCH_OUTPUT = OUTPUT_DIR + '/' + currRoot + "/" + file
     if(BENCH_OUTPUT != None):
+        benchname = currRoot[:-3]
+        os.system('cls' if os.name == 'nt' else "printf '\033c'")
+        print("Completed: " + str(NUM_COMPLETED) + " | Current: " + benchname)
+        print('____________\n')
+        print('# incorrect UNSAT: ' + str(UNSAT_INCORRECT_COUNT))
+        print('# incorrect SAT: ' + str(SAT_INCORRECT_COUNT))
+        print('____________\n')
         file = open(BENCH_OUTPUT, mode='r')
         contents = file.read()
         if ' SATISFIABLE' in contents:
@@ -107,11 +116,10 @@ for currRoot in dirs:
                     varlist = variables.split()
                     for var in varlist:
                         int_var = int(var)
-                        if(int_var > 0):
+                        if(int_var != 0):
                             num_clauses += 1
                             assigned_list.append(int_var)
                             assigned += str(int_var) + " " + "0\n"
-            benchname = currRoot[:-3]
             benchmark_location = BENCHMARK_DIR + "/" + benchname
             if(not os.path.exists(benchmark_location)):
                 print("ERROR: unable to locate " + benchname + " in " + BENCHMARK_DIR)
@@ -133,12 +141,15 @@ for currRoot in dirs:
                 if ' SATISFIABLE' not in cadical_result:
                     print("Error: SAT result for " + benchname + " is incorrect.")
                     SAT_INCORRECT_COUNT += 1
-                    incorrect_sat.write(benchname + "\n") 
+                    incorrect_sat.write(benchname + "\n")
+                else:
+                    print("completed " + benchname)
         elif ' UNSATISFIABLE' in contents:
             if 'NOT VERIFIED' in contents:
                 print("Error: UNSAT result for " + currRoot + " is incorrect.")
                 UNSAT_INCORRECT_COUNT += 1
                 incorrect_unsat.write(currRoot[:-3] + "\n")
+        NUM_COMPLETED += 1
         file.close()
     else:
         print("Unable to locate benchmark output for " + currRoot + '.')
