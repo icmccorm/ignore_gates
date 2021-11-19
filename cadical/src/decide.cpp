@@ -12,12 +12,27 @@ namespace CaDiCaL {
 int Internal::next_decision_variable_on_queue () {
   int64_t searched = 0;
   int res = queue.unassigned;
-  while (val (res) && !external->is_aux(i2e[vidx(res)]))
+  while (val (res)) {
+    if(!link (res).prev){
+      printf("e RAN OUT\n");
+    }
+    int temp = res;
     res = link (res).prev, searched++;
+    if(external->is_aux(i2e[vidx(temp)])){
+      queue.dequeue (links, temp);
+      links[temp].next = queue.first;
+      links[queue.first].prev = temp;
+      queue.first = temp;
+      links[temp].prev = 0;
+      btab[temp] = btab[links[temp].next]-1;
+    }
+  }
+
   if (searched) {
     stats.searched += searched;
     update_queue_unassigned (res);
   }
+  
   LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
   return res;
 }
@@ -28,11 +43,11 @@ int Internal::next_decision_variable_with_best_score () {
   int res = 0;
   for (;;) {
     if(scores.empty ()){
-      printf("e RAN OUT");
+      printf("e RAN OUT\n");
       abort();
     }
     res = scores.front ();
-    if (!val (res) && !external->is_aux(i2e[vidx(res)])) break;
+    if (!val (res)) break;
     (void) scores.pop_front ();
   }
   LOG ("next decision variable %d with score %g", res, score (res));

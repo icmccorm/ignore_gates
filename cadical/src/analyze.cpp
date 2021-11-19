@@ -34,7 +34,6 @@ void Internal::learn_unit_clause (int lit) {
 // whether the 'queue.assigned' pointer has to be moved in 'unassign'.
 
 void Internal::bump_queue (int lit) {
-  if(external->is_aux(vidx(lit))) return;
   assert (opts.bump);
   const int idx = vidx (lit);
   if (!links[idx].next) return;
@@ -86,7 +85,6 @@ void Internal::rescale_variable_scores () {
 void Internal::bump_variable_score (int lit) {
   assert (opts.bump);
   int idx = vidx (lit);
-  if(external->is_aux(idx)) return;
   double old_score = score (idx);
   assert (!evsids_limit_hit (old_score));
   double new_score = old_score + score_inc;
@@ -173,8 +171,12 @@ void Internal::bump_variables () {
       analyze_bumped_rank (this), analyze_bumped_smaller (this));
   }
 
-  for (const auto & lit : analyzed)
-    bump_variable (lit);
+  for (const auto & lit : analyzed){
+    if(!external->is_aux(i2e[vidx(lit)])){
+      bump_variable (lit);
+    }
+  }
+    
 
   if (use_scores ()) bump_variable_score_inc ();
 

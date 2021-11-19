@@ -142,8 +142,6 @@ for currRoot in dirs:
                     print("Error: SAT result for " + benchname + " is incorrect.")
                     SAT_INCORRECT_COUNT += 1
                     incorrect_sat.write(benchname + "\n")
-                else:
-                    print("completed " + benchname)
         elif ' UNSATISFIABLE' in contents:
             if 'NOT VERIFIED' in contents:
                 print("Error: UNSAT result for " + currRoot + " is incorrect.")
@@ -154,7 +152,7 @@ for currRoot in dirs:
     else:
         print("Unable to locate benchmark output for " + currRoot + '.')
         exit(1)
-
+os.system('cls' if os.name == 'nt' else "printf '\033c'")
 print('____________\n')
 print('# incorrect UNSAT: ' + str(UNSAT_INCORRECT_COUNT))
 print('# incorrect SAT: ' + str(SAT_INCORRECT_COUNT))

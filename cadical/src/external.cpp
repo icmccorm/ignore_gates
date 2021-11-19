@@ -40,7 +40,6 @@ void External::init (int new_max_var) {
   int new_vars = new_max_var - max_var;
   int old_internal_max_var = internal->max_var;
   int new_internal_max_var = old_internal_max_var + new_vars;
-  internal->init_vars (new_internal_max_var);
   if ((size_t) new_max_var >= vsize) enlarge (new_max_var);
   LOG ("initialized %d external variables", new_vars);
   if (!max_var) {
@@ -52,6 +51,7 @@ void External::init (int new_max_var) {
     assert (e2i.size () == (size_t) max_var + 1);
     assert (internal->i2e.size () == (size_t) old_internal_max_var + 1);
   }
+  internal->init_vars (new_internal_max_var);
   unsigned iidx = old_internal_max_var + 1, eidx;
   for (eidx = max_var + 1u;
        eidx <= (unsigned) new_max_var;
