@@ -12,3 +12,6 @@ output
 cnf
 results
 *.txt
+bin/cadical
+bin/drabt
+bin/kissat
