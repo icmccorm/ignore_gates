@@ -10,7 +10,7 @@ output
 .vscode
 .sudo_as_admin_successful
 cnf
-results
+results/*/output
 *.txt
 bin/cadical
 bin/drabt
