@@ -16,11 +16,26 @@ class Graph:
                 self.children_to_parents[child].add(parent)
         return True
 
+SWITCH = {
+    "EQV": 0,
+    "ITE": 0,
+    "DEF": 0,
+    "AND": 0,
+    "XOR": 0
+}
+
+SUMMARY = False
+if(len(sys.argv) > 1 and sys.argv[1] == '-s'):
+    SUMMARY = True
+
 dependencies = Graph()
 # EQV, ITE, DEF
 def add_aux(lit, inputs, gate_type):
     if(dependencies.add_parent(inputs, lit)):
-        print(str(lit) + " " + gate_type)
+        if(SUMMARY):
+            SWITCH[gate_type] += 1
+        else:
+            print(str(lit) + " " + gate_type)
 line = sys.stdin.readline()
 while line:
     # line = lit, gate_type 
@@ -37,3 +52,4 @@ while line:
                 inputs.add(int(x))
     add_aux(lit, inputs, gate_type)
     line = sys.stdin.readline()
+if(SUMMARY): print("%d,%d,%d,%d,%d" % (SWITCH["EQV"], SWITCH["ITE"], SWITCH["DEF"], SWITCH["AND"], SWITCH["XOR"]))
