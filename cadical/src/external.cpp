@@ -16,8 +16,6 @@ External::External (Internal * i)
   assert (internal);
   assert (!internal->external);
   internal->external = this;
-  
-
 }
 
 External::~External () {

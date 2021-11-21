@@ -176,7 +176,6 @@ void Internal::bump_variables () {
       bump_variable (lit);
     }
   }
-    
 
   if (use_scores ()) bump_variable_score_inc ();
 
@@ -712,12 +711,16 @@ void Internal::analyze () {
       if (!flags (lit).seen) continue;
       if (var (lit).level == level) uip = lit;
     }
-    if (!--open) break;
     reason = var (uip).reason;
+    if (!--open)
+      if (reason == 0)
+        break;
     LOG (reason, "analyzing %d reason", uip);
   }
+
   LOG ("first UIP %d", uip);
   clause.push_back (-uip);
+  //check for variables in clause for which (lit).reason != 0, remove them using analyze_reason(lit, reason, open)
 
   // Update glue and learned (1st UIP literals) statistics.
   //
