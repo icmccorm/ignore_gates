@@ -345,13 +345,6 @@ public:
     else                            return 0;
   }
 
-  /*----------------------------------------------------------------------*/
-
-  const char * read_aux (const char* path);
-  const char * read_aux (File* file);
-  const char * read_aux(FILE * externalFile, const char * name);
-
-  /*----------------------------------------------------------------------*/
 
   static const char * version ();    // return version string
 
@@ -687,6 +680,8 @@ public:
   const char * read_dimacs (const char * path, int & vars, int strict,
                             bool & incremental, std::vector<int> & cubes);
 
+
+
   //------------------------------------------------------------------------
   // Write current irredundant clauses and all derived unit clauses
   // to a file in DIMACS format.  Clauses on the extension stack are
@@ -710,6 +705,11 @@ public:
   // is '<stdout>' or '<stderr>' then terminal color codes might be used.
   //
   static void build (FILE * file, const char * prefix = "c ");
+
+
+  const char * read_aux (const char* path);
+  const char * read_aux (File* file);
+  const char * read_aux(FILE * externalFile, const char * name);
 
 private:
 

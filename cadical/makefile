@@ -1,4 +1,4 @@
-CADICALBUILD=/Users/icmccorm/git/cadical/build
+CADICALBUILD=/Users/icmccorm/git/ig/cadical/build
 all:
 	$(MAKE) -C "$(CADICALBUILD)"
 clean:
@@ -11,8 +11,8 @@ clean:
 	  fi; \
 	  rm -rf "$(CADICALBUILD)"; \
 	fi
-	rm -f "/Users/icmccorm/git/cadical/src/makefile"
-	rm -f "/Users/icmccorm/git/cadical/makefile"
+	rm -f "/Users/icmccorm/git/ig/cadical/src/makefile"
+	rm -f "/Users/icmccorm/git/ig/cadical/makefile"
 test:
 	$(MAKE) -C "$(CADICALBUILD)" test
 cadical:

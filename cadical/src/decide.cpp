@@ -54,8 +54,15 @@ int Internal::next_decision_variable_with_best_score () {
 }
 
 int Internal::next_decision_variable () {
-  if (use_scores ()) return next_decision_variable_with_best_score ();
-  else               return next_decision_variable_on_queue ();
+  int var = 0;
+  if (use_scores ()) var = next_decision_variable_with_best_score ();
+  else               var = next_decision_variable_on_queue ();
+
+  if(external->is_aux(i2e[vidx(var)])){
+    printf("ERROR: chose aux variable.");
+    abort();
+  }
+  return var;
 }
 
 /*------------------------------------------------------------------------*/

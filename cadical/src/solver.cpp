@@ -288,54 +288,6 @@ Solver::trace_api_call (const char * s0, const char * s1, int i2) const {
 }
 
 
-/*------------------------------------------------------------------------*/
-
-const char * Solver::read_aux(File* file)
-{
-  REQUIRE_VALID_STATE ();
-  REQUIRE (state () == CONFIGURING,
-    "can only read DIMACS file right after initialization");
-  std::vector<int, std::allocator<int> > cubes;
-  bool incremental = false;
-  Parser * parser = new Parser (this, file, &incremental, &cubes);
-  const char * err = parser->parse_aux ();
-  delete parser;
-  return err;
-}
-
-const char * Solver::read_aux(FILE * external_file, const char* name)
-{
-  LOG_API_CALL_BEGIN ("read_aux", name);
-  REQUIRE_VALID_STATE ();
-  REQUIRE (state () == CONFIGURING,
-    "can only read auxiliary variable file right after initialization");
-  File * file = File::read (internal, external_file, name);
-  assert (file);
-  const char * err =
-    read_aux (file);
-  delete file;
-  LOG_API_CALL_RETURNS ("read_aux", name, err);
-  return err;
-}
-
-const char * Solver::read_aux(const char* path)
-{
-  LOG_API_CALL_BEGIN ("read_aux", path);
-  REQUIRE_VALID_STATE ();
-  REQUIRE (state () == CONFIGURING,
-    "can only read auxiliary file right after initialization");
-  File * file = File::read (internal, path);
-  if (!file)
-    return internal->error_message.init (
-             "failed to read auxiliary file '%s'", path);
-  const char * err = read_aux (file);
-  delete file;
-  LOG_API_CALL_RETURNS ("read_aux", path, err);
-  return err;
-}
-
-/*------------------------------------------------------------------------*/
-
 // The global 'tracing_api_calls_through_environment_variable_method' flag
 // is used to ensure that only one solver traces to a file.  Otherwise the
 // method to use an environment variable to point to the trace file is
@@ -1003,6 +955,52 @@ void Solver::resources () {
   REQUIRE_VALID_OR_SOLVING_STATE ();
   internal->print_resource_usage ();
   LOG_API_CALL_END ("resources");
+}
+
+/*------------------------------------------------------------------------*/
+
+const char * Solver::read_aux(File* file)
+{
+  REQUIRE_VALID_STATE ();
+  REQUIRE (state () == CONFIGURING,
+    "can only read DIMACS file right after initialization");
+  std::vector<int, std::allocator<int> > cubes;
+  bool incremental = false;
+  Parser * parser = new Parser (this, file, &incremental, &cubes);
+  const char * err = parser->parse_aux ();
+  delete parser;
+  return err;
+}
+
+const char * Solver::read_aux(FILE * external_file, const char* name)
+{
+  LOG_API_CALL_BEGIN ("read_aux", name);
+  REQUIRE_VALID_STATE ();
+  REQUIRE (state () == CONFIGURING,
+    "can only read auxiliary variable file right after initialization");
+  File * file = File::read (internal, external_file, name);
+  assert (file);
+  const char * err =
+    read_aux (file);
+  delete file;
+  LOG_API_CALL_RETURNS ("read_aux", name, err);
+  return err;
+}
+
+const char * Solver::read_aux(const char* path)
+{
+  LOG_API_CALL_BEGIN ("read_aux", path);
+  REQUIRE_VALID_STATE ();
+  REQUIRE (state () == CONFIGURING,
+    "can only read auxiliary file right after initialization");
+  File * file = File::read (internal, path);
+  if (!file)
+    return internal->error_message.init (
+             "failed to read auxiliary file '%s'", path);
+  const char * err = read_aux (file);
+  delete file;
+  LOG_API_CALL_RETURNS ("read_aux", path, err);
+  return err;
 }
 
 /*------------------------------------------------------------------------*/

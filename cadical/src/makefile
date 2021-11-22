@@ -1,1 +1,1 @@
-/Users/icmccorm/git/cadical/makefile
+/Users/icmccorm/git/ig/cadical/makefile

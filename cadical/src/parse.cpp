@@ -381,7 +381,9 @@ const char * Parser::parse_aux () {
   int NUM_ITE = 0;
   int NUM_AND = 0;
   int NUM_XOR = 0;
-
+  int NUM_FUL = 0;
+  int NUM_OR = 0;
+  int NUM_TRI = 0;
   for(;;){
     ch = parse_char();
     if(ch == ' ' || ch == '\t'){
@@ -403,6 +405,34 @@ const char * Parser::parse_aux () {
               PER ("Syntax error on line %d, invalid gate type.", currentLine);
             }
           } break;
+          case 'F': {
+            if(parse_char() == 'U' && parse_char() == 'L'){
+              NUM_AND += 1;
+            }else{
+              PER ("Syntax error on line %d, invalid gate type.", currentLine);
+            }
+          } break;
+          case 'O': {
+            if(parse_char() == 'R'){
+              NUM_OR += 1;
+            }else{
+              PER ("Syntax error on line %d, invalid gate type.", currentLine);
+            }
+          } break;       
+          case 'T': {
+            if(parse_char() == 'R' && parse_char() == 'I'){
+              NUM_OR += 1;
+            }else{
+              PER ("Syntax error on line %d, invalid gate type.", currentLine);
+            }
+          } break;    
+          case 'G': {
+            if(parse_char() == 'E' && parse_char() == 'N'){
+              NUM_OR += 1;
+            }else{
+              PER ("Syntax error on line %d, invalid gate type.", currentLine);
+            }
+          } break;        
           case 'E': {
             if(parse_char() == 'Q' && parse_char() == 'V'){
               NUM_EQV += 1;
@@ -454,5 +484,4 @@ const char * Parser::parse_aux () {
   #endif
   return (const char *) err;
 }
-
 }
