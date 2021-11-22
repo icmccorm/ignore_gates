@@ -49,6 +49,7 @@ Internal::Internal ()
   vars (this->max_var),
   lits (this->max_var)
 {
+  NUM_AUX_DECISIONS = 0;
   control.push_back (Level (0, 0));
 }
 
@@ -600,6 +601,7 @@ int Internal::solve (bool preprocess_only) {
   reset_solving ();
   report_solving (res);
   STOP (solve);
+  printf("\nAUX DECISIONS: %l\n", NUM_AUX_DECISIONS);
   return res;
 }
 

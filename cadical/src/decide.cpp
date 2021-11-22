@@ -9,6 +9,8 @@ namespace CaDiCaL {
 // largest decision level to backtrack to during 'restart' without changing
 // the assigned variables (if 'opts.restartreusetrail' is non-zero).
 
+#ifdef BRANCHAUX
+
 int Internal::next_decision_variable_on_queue () {
   int64_t searched = 0;
   int res = queue.unassigned;
@@ -36,6 +38,42 @@ int Internal::next_decision_variable_on_queue () {
   LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
   return res;
 }
+#else
+int Internal::next_decision_variable_on_queue () {
+  int64_t searched = 0;
+  int res = queue.unassigned;
+  while (val (res))
+    res = link (res).prev, searched++;
+  if (searched) {
+    stats.searched += searched;
+    update_queue_unassigned (res);
+  }
+  LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
+  return res;
+}
+#endif
+
+
+#ifdef BRANCH_AUX
+int Internal::next_decision_variable_with_best_score () {
+  int res = 0;
+  for (;;) {
+    if(scores.empty ()){
+      printf("e RAN OUT\n");
+      abort();
+    }
+    res = scores.front ();
+    while(external->is_aux(i2e[vidx(res)])){
+      score (vidx(res)) = -1;
+      scores.update(vidx(res));
+    }
+    if (!val (res)) break;
+    (void) scores.pop_front ();
+  }
+  LOG ("next decision variable %d with score %g", res, score (res));
+  return res;
+}
+#else
 // This function determines the best decision with respect to score.
 //
 int Internal::next_decision_variable_with_best_score () {
@@ -52,16 +90,23 @@ int Internal::next_decision_variable_with_best_score () {
   LOG ("next decision variable %d with score %g", res, score (res));
   return res;
 }
+#endif
 
 int Internal::next_decision_variable () {
   int var = 0;
   if (use_scores ()) var = next_decision_variable_with_best_score ();
   else               var = next_decision_variable_on_queue ();
 
+  #ifdef BRANCHAUX
   if(external->is_aux(i2e[vidx(var)])){
     printf("ERROR: chose aux variable.");
     abort();
   }
+  #else
+  if(external->is_aux(i2e[vidx(var)])){
+    ++NUM_AUX_DECISIONS;
+  }
+  #endif
   return var;
 }
 

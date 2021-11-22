@@ -10,9 +10,6 @@ void Internal::init_scores (int old_max_var, int new_max_var) {
   LOG ("initializing EVSIDS scores from %d to %d",
     old_max_var + 1, new_max_var);
   for (int i = old_max_var; i < new_max_var; i++){
-    if(external->is_aux(i2e[vidx(i+1)])){
-      score(vidx(i+1)) = -1;
-    }
     scores.push_back (i + 1);
   }
 }
@@ -45,11 +42,15 @@ void Internal::shuffle_scores () {
   }
   score_inc = 0;
   for (const auto & idx : shuffle) {
+    #ifdef BRANCHAUX
     if(!external->is_aux(i2e[idx])){
       stab[idx] = score_inc++;
     }else{
       stab[idx] = -1;
     }
+    #else:
+      stab[idx] = score_inc++;
+    #endif
     scores.push_back (idx);
   }
 }
