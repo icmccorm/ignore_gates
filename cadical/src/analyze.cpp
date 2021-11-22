@@ -711,16 +711,12 @@ void Internal::analyze () {
       if (!flags (lit).seen) continue;
       if (var (lit).level == level) uip = lit;
     }
+    if (!--open) break;
     reason = var (uip).reason;
-    if (!--open)
-      if (reason == 0)
-        break;
     LOG (reason, "analyzing %d reason", uip);
   }
-
   LOG ("first UIP %d", uip);
   clause.push_back (-uip);
-  //check for variables in clause for which (lit).reason != 0, remove them using analyze_reason(lit, reason, open)
 
   // Update glue and learned (1st UIP literals) statistics.
   //
@@ -739,22 +735,9 @@ void Internal::analyze () {
   //
   if (size > 1) {
     if (opts.shrink)
-      {
       shrink_and_minimize_clause();
-#if 0 // Useful to test if shrinking does fully minimize
-      minimize_sort_clause();
-#endif
-      } else
-      if (!opts.minimize)
-        minimize_clause();
-#if 0
-    else {
-      const int old_size = clause.size();
-      if (opts.minimize)
-        minimize_clause();
-      assert(!opts.shrink || old_size == clause.size());
-    }
-#endif
+    else if (opts.minimize)
+      minimize_clause();
 
     size = (int) clause.size ();
 

@@ -347,6 +347,27 @@ const char * Parser::parse_solution_non_profiled () {
 
 /*------------------------------------------------------------------------*/
 
+// Wrappers to profile parsing and at the same time use the convenient
+// implicit 'return' in PER in the non-profiled versions.
+
+const char * Parser::parse_dimacs (int & vars, int strict) {
+  assert (strict == FORCED || strict == RELAXED || strict == STRICT);
+  START (parse);
+  const char * err = parse_dimacs_non_profiled (vars, strict);
+  STOP (parse);
+  return err;
+}
+
+const char * Parser::parse_solution () {
+  START (parse);
+  const char * err = parse_solution_non_profiled ();
+  STOP (parse);
+  return err;
+}
+
+/*------------------------------------------------------------------------*/
+
+
 const char * Parser::parse_aux () {
   double start = internal->time ();
 
@@ -432,26 +453,6 @@ const char * Parser::parse_aux () {
     printf("\nAUXLIST:%d,%d,%d,%d,%d\n", NUM_EQV, NUM_DEF, NUM_ITE, NUM_AND, NUM_XOR);
   #endif
   return (const char *) err;
-}
-
-/*------------------------------------------------------------------------*/
-
-// Wrappers to profile parsing and at the same time use the convenient
-// implicit 'return' in PER in the non-profiled versions.
-
-const char * Parser::parse_dimacs (int & vars, int strict) {
-  assert (strict == FORCED || strict == RELAXED || strict == STRICT);
-  START (parse);
-  const char * err = parse_dimacs_non_profiled (vars, strict);
-  STOP (parse);
-  return err;
-}
-
-const char * Parser::parse_solution () {
-  START (parse);
-  const char * err = parse_solution_non_profiled ();
-  STOP (parse);
-  return err;
 }
 
 }

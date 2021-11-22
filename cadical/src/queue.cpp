@@ -5,8 +5,6 @@ namespace CaDiCaL {
 // Slightly different than 'bump_variable' since the variable is not
 // enqueued at all.
 
-
-
 inline void Internal::init_enqueue (int idx) {
   Link & l = links[idx];
   if (opts.reverse) {
@@ -51,9 +49,8 @@ void Internal::init_queue (int old_max_var, int new_max_var) {
     old_max_var + 1, new_max_var);
   assert (old_max_var < new_max_var);
   assert (!level);
-  for (int idx = old_max_var; idx < new_max_var; idx++) {
+  for (int idx = old_max_var; idx < new_max_var; idx++)
     init_enqueue (idx + 1);
-  }
 }
 
 // Shuffle the VMTF queue.
@@ -65,7 +62,6 @@ void Internal::shuffle_queue () {
   LOG ("shuffling queue");
   vector<int> shuffle;
   if (opts.shufflerandom) {
-    int numAux = 0;
     for (int idx = max_var; idx; idx--)
       shuffle.push_back (idx);
     Random random (opts.seed);                  // global seed

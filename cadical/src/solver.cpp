@@ -48,10 +48,12 @@ void Solver::transition_to_unknown_state () {
     LOG ("API leaves state %sSATISFIED%s",
       tout.emph_code (), tout.normal_code ());
     external->reset_assumptions ();
+    external->reset_constraint ();
   } else if (state () == UNSATISFIED) {
     LOG ("API leaves state %sUNSATISFIED%s",
       tout.emph_code (), tout.normal_code ());
     external->reset_assumptions ();
+    external->reset_constraint ();
   }
   if (state () != UNKNOWN) STATE (UNKNOWN);
 }
@@ -285,6 +287,53 @@ Solver::trace_api_call (const char * s0, const char * s1, int i2) const {
   fflush (trace_api_file);
 }
 
+
+/*------------------------------------------------------------------------*/
+
+const char * Solver::read_aux(File* file)
+{
+  REQUIRE_VALID_STATE ();
+  REQUIRE (state () == CONFIGURING,
+    "can only read DIMACS file right after initialization");
+  std::vector<int, std::allocator<int> > cubes;
+  bool incremental = false;
+  Parser * parser = new Parser (this, file, &incremental, &cubes);
+  const char * err = parser->parse_aux ();
+  delete parser;
+  return err;
+}
+
+const char * Solver::read_aux(FILE * external_file, const char* name)
+{
+  LOG_API_CALL_BEGIN ("read_aux", name);
+  REQUIRE_VALID_STATE ();
+  REQUIRE (state () == CONFIGURING,
+    "can only read auxiliary variable file right after initialization");
+  File * file = File::read (internal, external_file, name);
+  assert (file);
+  const char * err =
+    read_aux (file);
+  delete file;
+  LOG_API_CALL_RETURNS ("read_aux", name, err);
+  return err;
+}
+
+const char * Solver::read_aux(const char* path)
+{
+  LOG_API_CALL_BEGIN ("read_aux", path);
+  REQUIRE_VALID_STATE ();
+  REQUIRE (state () == CONFIGURING,
+    "can only read auxiliary file right after initialization");
+  File * file = File::read (internal, path);
+  if (!file)
+    return internal->error_message.init (
+             "failed to read auxiliary file '%s'", path);
+  const char * err = read_aux (file);
+  delete file;
+  LOG_API_CALL_RETURNS ("read_aux", path, err);
+  return err;
+}
+
 /*------------------------------------------------------------------------*/
 
 // The global 'tracing_api_calls_through_environment_variable_method' flag
@@ -330,6 +379,8 @@ Solver::Solver () {
   }
 #endif
 
+  adding_clause     = false;
+  adding_constraint = false;
   _state = INITIALIZING;
   internal = new Internal ();
   TRACE ("init");
@@ -526,9 +577,22 @@ void Solver::add (int lit) {
   if (lit) REQUIRE_VALID_LIT (lit);
   transition_to_unknown_state ();
   external->add (lit);
-  if (lit) STATE (ADDING);
-  else     STATE (UNKNOWN);
+  adding_clause = lit;
+  if (adding_clause) STATE (ADDING);
+  else if (!adding_constraint) STATE (UNKNOWN);
   LOG_API_CALL_END ("add", lit);
+}
+
+void Solver::constrain (int lit) {
+  TRACE ("constrain", lit);
+  REQUIRE_VALID_STATE ();
+  if (lit) REQUIRE_VALID_LIT (lit);
+  transition_to_unknown_state ();
+  external->constrain (lit);
+  adding_constraint = lit;
+  if (adding_constraint) STATE (ADDING);
+  else if (!adding_clause) STATE (UNKNOWN);
+  LOG_API_CALL_END ("constrain", lit);
 }
 
 void Solver::assume (int lit) {
@@ -566,6 +630,14 @@ void Solver::reset_assumptions () {
   transition_to_unknown_state ();
   external->reset_assumptions ();
   LOG_API_CALL_END ("reset_assumptions");
+}
+
+void Solver::reset_constraint () {
+  TRACE ("reset_constraint");
+  REQUIRE_VALID_STATE ();
+  transition_to_unknown_state ();
+  external->reset_constraint ();
+  LOG_API_CALL_END ("reset_constraint");
 }
 
 /*------------------------------------------------------------------------*/
@@ -628,6 +700,7 @@ int Solver::val (int lit) {
   REQUIRE_VALID_LIT (lit);
   REQUIRE (state () == SATISFIED,
     "can only get value in satisfied state");
+  if (!external->extended) external->extend ();
   int res = external->ival (lit);
   LOG_API_CALL_RETURNS ("val", lit, res);
   return res;
@@ -641,6 +714,16 @@ bool Solver::failed (int lit) {
     "can only get failed assumptions in unsatisfied state");
   bool res = external->failed (lit);
   LOG_API_CALL_RETURNS ("failed", lit, res);
+  return res;
+}
+
+bool Solver::constraint_failed () {
+  TRACE ("constraint_failed");
+  REQUIRE_VALID_STATE ();
+  REQUIRE (state () == UNSATISFIED,
+    "can only determine if constraint failed in unsatisfied state");
+  bool res = external->failed_constraint ();
+  LOG_API_CALL_RETURNS ("constraint_failed", res);
   return res;
 }
 
@@ -920,52 +1003,6 @@ void Solver::resources () {
   REQUIRE_VALID_OR_SOLVING_STATE ();
   internal->print_resource_usage ();
   LOG_API_CALL_END ("resources");
-}
-
-/*------------------------------------------------------------------------*/
-
-const char * Solver::read_aux(File* file)
-{
-  REQUIRE_VALID_STATE ();
-  REQUIRE (state () == CONFIGURING,
-    "can only read DIMACS file right after initialization");
-  std::vector<int, std::allocator<int> > cubes;
-  bool incremental = false;
-  Parser * parser = new Parser (this, file, &incremental, &cubes);
-  const char * err = parser->parse_aux ();
-  delete parser;
-  return err;
-}
-
-const char * Solver::read_aux(FILE * external_file, const char* name)
-{
-  LOG_API_CALL_BEGIN ("read_aux", name);
-  REQUIRE_VALID_STATE ();
-  REQUIRE (state () == CONFIGURING,
-    "can only read auxiliary variable file right after initialization");
-  File * file = File::read (internal, external_file, name);
-  assert (file);
-  const char * err =
-    read_aux (file);
-  delete file;
-  LOG_API_CALL_RETURNS ("read_aux", name, err);
-  return err;
-}
-
-const char * Solver::read_aux(const char* path)
-{
-  LOG_API_CALL_BEGIN ("read_aux", path);
-  REQUIRE_VALID_STATE ();
-  REQUIRE (state () == CONFIGURING,
-    "can only read auxiliary file right after initialization");
-  File * file = File::read (internal, path);
-  if (!file)
-    return internal->error_message.init (
-             "failed to read auxiliary file '%s'", path);
-  const char * err = read_aux (file);
-  delete file;
-  LOG_API_CALL_RETURNS ("read_aux", path, err);
-  return err;
 }
 
 /*------------------------------------------------------------------------*/

@@ -70,7 +70,6 @@ public:
   const char * parse_solution ();
 
   const char * parse_aux ();
-
 };
 
 }

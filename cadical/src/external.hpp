@@ -60,8 +60,9 @@ struct External {
 
   vector<bool> vals;          // Current external (extended) assignment.
   vector<int> e2i;            // External 'idx' to internal 'lit'.
-  
+
   vector<int> assumptions;    // External assumptions.
+  vector<int> constraint;     // External constraint. Terminated by zero.
 
   // The extension stack for reconstructing complete satisfying assignments
   // (models) of the original external formula is kept in this external
@@ -126,13 +127,6 @@ struct External {
     assert (abs (elit) <= max_var);
     return elit;
   }
-  /*----------------------------------------------------------------------*/
-  
-  std::unordered_set<int> aux;          // List of auxiliary variables 
-
-  bool is_aux (int elit);                     // Check if a given variable is aux
-
-  void add_aux (int aux_lit);
 
   /*----------------------------------------------------------------------*/
 
@@ -160,6 +154,14 @@ struct External {
   void extend ();
 
   /*----------------------------------------------------------------------*/
+  
+  std::unordered_set<int> aux;          // List of auxiliary variables 
+
+  bool is_aux (int elit);                     // Check if a given variable is aux
+
+  void add_aux (int aux_lit);
+
+  /*----------------------------------------------------------------------*/
 
   // Marking external literals.
 
@@ -178,7 +180,8 @@ struct External {
 
   void mark (vector<bool> & map, int elit) {
     const unsigned ulit = elit2ulit (elit);
-    while (ulit >= map.size ()) map.push_back (false);
+    if (ulit >= map.size ())
+      map.resize (ulit + 1, false);
     map[ulit] = true;
   }
 
@@ -281,6 +284,24 @@ struct External {
 
   // Other important non IPASIR functions.
 
+  /*----------------------------------------------------------------------*/
+
+  // Add literal to external constraint.
+  //
+  void constrain (int elit);
+
+  // Returns true if 'solve' returned 20 because of the constraint.
+  //
+  bool failed_constraint ();
+
+  // Deletes the current constraint clause. Called on
+  // 'transition_to_unknown_state' and if a new constraint is added. Can be
+  // called directly using the API.
+  //
+  void reset_constraint ();
+
+  /*----------------------------------------------------------------------*/
+
   int lookahead();
   CaDiCaL::CubesWithStatus generate_cubes(int, int);
 
@@ -312,7 +333,8 @@ struct External {
   // Check solver behaves as expected during testing and debugging.
 
   void check_assumptions_satisfied ();
-  void check_assumptions_failing ();
+  void check_constraint_satisfied ();
+  void check_failing ();
 
   void check_solution_on_learned_clause ();
   void check_solution_on_shrunken_clause (Clause *);
