@@ -94,7 +94,7 @@ class GateAnalyzer {
 
             auto current = std::chrono::steady_clock::now();
             std::chrono::duration<double> elapsed_seconds = current-start;
-            timeout = elapsed_seconds.count() >= 100;
+            timeout = elapsed_seconds.count() >= 60;
         }
 
         std::unordered_set<Cl*> remainder;

@@ -129,10 +129,6 @@ int main(int argc, char** argv) {
         if(runtime == 0)
             runtime = 100;
         stats.analyze(repeat, verbose, runtime, mono);
-        std::set<unsigned int> gate_list = stats.GateList();
-        for(std::set<unsigned int>::iterator it = gate_list.begin(); it != gate_list.end(); it++){
-            std::cout << *it << " AND" << std::endl;
-        }
     }
 
     return 0;
