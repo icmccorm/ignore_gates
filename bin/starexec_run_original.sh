@@ -1,3 +1,4 @@
 echo "SOLVE"
-./cadical $1 ./proof.out
+echo -n | ./cadical $1 ./proof.out
+echo "VERIFY"
 ./drabt $1 ./proof.out
