@@ -96,17 +96,9 @@ int Internal::next_decision_variable () {
   int var = 0;
   if (use_scores ()) var = next_decision_variable_with_best_score ();
   else               var = next_decision_variable_on_queue ();
-
-  #ifdef BRANCHAUX
-  if(external->is_aux(i2e[vidx(var)])){
-    printf("ERROR: chose aux variable.");
-    abort();
-  }
-  #else
   if(external->is_aux(i2e[vidx(var)])){
     ++NUM_AUX_DECISIONS;
   }
-  #endif
   return var;
 }
 
