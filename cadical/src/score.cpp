@@ -48,7 +48,7 @@ void Internal::shuffle_scores () {
     }else{
       stab[idx] = -1;
     }
-    #else:
+    #else
       stab[idx] = score_inc++;
     #endif
     scores.push_back (idx);

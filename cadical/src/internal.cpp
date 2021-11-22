@@ -601,7 +601,7 @@ int Internal::solve (bool preprocess_only) {
   reset_solving ();
   report_solving (res);
   STOP (solve);
-  printf("\nAUX DECISIONS: %l\n", NUM_AUX_DECISIONS);
+  printf("\nAUX DECISIONS: %ld\n", NUM_AUX_DECISIONS);
   return res;
 }
 

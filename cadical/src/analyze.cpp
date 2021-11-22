@@ -713,7 +713,7 @@ void Internal::analyze () {
     }
     #ifdef UIPAUX
       reason = var (uip).reason;
-      if (!--open && (reason == 0 || !external->is_aux(i2e[vidx(lit)])))
+      if (!--open && (reason == 0 || !external->is_aux(i2e[abs(uip)])))
         break;
       LOG (reason, "analyzing %d reason", uip);
     #else
@@ -727,10 +727,9 @@ void Internal::analyze () {
   #ifdef UIPAUX
   vector<int>::iterator it = clause.begin();
   while(it != clause.end()){
-    if(var(*it).reason != 0 && external->is_aux(i2e[vidx(*it)])){
-      int lit = *it;
+    if(external->is_aux(i2e[vidx(*it)]) && var(*it).reason != 0){
+      analyze_reason(*it, var(*it).reason, open);
       it = clause.erase(it);
-      analyze_reason(lit, var(lit).reason, open);
     }else{
       ++it;
     }

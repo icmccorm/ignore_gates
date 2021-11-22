@@ -407,7 +407,7 @@ const char * Parser::parse_aux () {
           } break;
           case 'F': {
             if(parse_char() == 'U' && parse_char() == 'L'){
-              NUM_AND += 1;
+              NUM_FUL += 1;
             }else{
               PER ("Syntax error on line %d, invalid gate type.", currentLine);
             }
@@ -421,7 +421,7 @@ const char * Parser::parse_aux () {
           } break;       
           case 'T': {
             if(parse_char() == 'R' && parse_char() == 'I'){
-              NUM_OR += 1;
+              NUM_TRI += 1;
             }else{
               PER ("Syntax error on line %d, invalid gate type.", currentLine);
             }
