@@ -39,7 +39,6 @@ class GateStats {
     const CNFFormula& formula_;
     const ResourceLimits& limits_;
     std::vector<float> record;
-    std::set<unsigned int> gate_list; 
  public:
     unsigned n_vars, n_gates, n_roots;
     unsigned n_none, n_generic, n_mono, n_and, n_or, n_triv, n_equiv, n_full;
@@ -82,38 +81,32 @@ class GateStats {
                     break;
                 case GENERIC:  // generically recognized gate
                     ++n_generic;
-                    printf("%lu GEN\n");
-                    gate_list.insert(i);
+                    printf("%u GEN\n", i);
                     levels_generic.push_back(levels[i]);
                     break;
                 case AND:  // non-monotonically nested and-gate
                     ++n_and;
-                    printf("%lu AND\n");
-                    gate_list.insert(i);
+                    printf("%u AND\n", i);
                     levels_and.push_back(levels[i]);
                     break;
                 case OR:  // non-monotonically nested or-gate
                     ++n_or;
-                    printf("%lu OR\n");
-                    gate_list.insert(i);
+                    printf("%u OR\n", i);
                     levels_or.push_back(levels[i]);
                     break;
                 case TRIV:  // non-monotonically nested trivial equivalence gate
                     ++n_triv;
-                    printf("%lu TRI\n");
-                    gate_list.insert(i);
+                    printf("%u TRI\n", i);
                     levels_triv.push_back(levels[i]);
                     break;
                 case EQIV:  // non-monotonically nested equiv- or xor-gate
                     ++n_equiv;
-                    printf("%lu EQV\n");
-                    gate_list.insert(i);
+                    printf("%u EQV\n", i);
                     levels_equiv.push_back(levels[i]);
                     break;
                 case FULL:  // non-monotonically nested full gate (=maxterm encoding) with more than two inputs
                     ++n_full;
-                    printf("%lu FUL\n");
-                    gate_list.insert(i);
+                    printf("%u FUL\n", i);
                     levels_full.push_back(levels[i]);
                     break;
                 default:
@@ -147,10 +140,6 @@ class GateStats {
     // Gate Structural Features
     std::vector<float> GateFeatures() {
         return record;
-    }
-
-    std::set<unsigned int> GateList(){
-        return gate_list;
     }
 
     static std::vector<std::string> GateFeatureNames() {
