@@ -5,7 +5,7 @@
 
 #include <limits.h>
 
-void
+static void
 kissat_assign_unit (kissat * solver, unsigned lit, const char *reason)
 {
   kissat_assign (solver, solver->probing, 0, false, false, lit, UNIT_REASON);

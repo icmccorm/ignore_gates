@@ -33,6 +33,7 @@ do { \
     printf ("checked '!kissat_set_configuration (..., \"invalid\")'\n");
   }
 }
+
 #endif
 
 void

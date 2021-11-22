@@ -217,6 +217,8 @@ struct kissat
   bool resolve_gate;
 
   struct kitten *kitten;
+  unsigned *map;
+
 #ifdef METRICS
   uint64_t *gate_eliminated;
 #else

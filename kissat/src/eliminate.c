@@ -682,8 +682,10 @@ setup_elim_bounds (kissat * solver)
 static void
 init_map_and_kitten (kissat * solver)
 {
+  assert (!solver->map);
   if (!GET_OPTION (definitions))
     return;
+  CALLOC (solver->map, solver->vars);
   assert (!solver->kitten);
   solver->kitten = kitten_embedded (solver);
 }
@@ -691,6 +693,11 @@ init_map_and_kitten (kissat * solver)
 static void
 reset_map_and_kitten (kissat * solver)
 {
+  if (solver->map)
+    {
+      DEALLOC (solver->map, solver->vars);
+      solver->map = 0;
+    }
   if (solver->kitten)
     {
       kitten_release (solver->kitten);

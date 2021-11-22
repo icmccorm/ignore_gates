@@ -188,8 +188,6 @@ init_enabled (kissat * solver)
     probe = true;
   else if (GET_OPTION (transitive))
     probe = true;
-  else if (GET_OPTION (sweep))
-    probe = true;
   else if (GET_OPTION (vivify))
     probe = true;
   else

@@ -38,7 +38,6 @@ PROF(shrink,3) \
 PROF(simplify,1) \
 PROF(sort,4) \
 PROF(stable,2) \
-PROF(sweep,2) \
 PROF(substitute,2) \
 PROF(subsume,2) \
 PROF(ternary,2) \
