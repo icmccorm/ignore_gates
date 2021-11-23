@@ -15,3 +15,8 @@ results/*/output
 bin/cadical
 bin/drabt
 bin/kissat
+bin/br*
+bin/elim*
+bin/uip*
+bin/control*
+*.aux

@@ -384,6 +384,7 @@ const char * Parser::parse_aux () {
   int NUM_FUL = 0;
   int NUM_OR = 0;
   int NUM_TRI = 0;
+  int NUM_GEN = 0;
   for(;;){
     ch = parse_char();
     if(ch == ' ' || ch == '\t'){
@@ -396,7 +397,6 @@ const char * Parser::parse_aux () {
         external->add_aux(curr_aux);
         ++num_parsed;
         ch = parse_char();
-        //EQV, AND, ITE, XOR, DEF
         switch(ch){
           case 'A': {
             if(parse_char() == 'N' && parse_char() == 'D'){
@@ -407,7 +407,7 @@ const char * Parser::parse_aux () {
           } break;
           case 'F': {
             if(parse_char() == 'U' && parse_char() == 'L'){
-              NUM_AND += 1;
+              NUM_FUL += 1;
             }else{
               PER ("Syntax error on line %d, invalid gate type.", currentLine);
             }
@@ -421,14 +421,14 @@ const char * Parser::parse_aux () {
           } break;       
           case 'T': {
             if(parse_char() == 'R' && parse_char() == 'I'){
-              NUM_OR += 1;
+              NUM_TRI += 1;
             }else{
               PER ("Syntax error on line %d, invalid gate type.", currentLine);
             }
           } break;    
           case 'G': {
             if(parse_char() == 'E' && parse_char() == 'N'){
-              NUM_OR += 1;
+              NUM_GEN += 1;
             }else{
               PER ("Syntax error on line %d, invalid gate type.", currentLine);
             }
@@ -480,7 +480,7 @@ const char * Parser::parse_aux () {
     double end = internal->time ();
     MSG ("parsed %d auxiliary variables in %.2f seconds %s time",
       num_parsed, end - start, internal->opts.realtime ? "real" : "process");
-    printf("\nAUXLIST:%d,%d,%d,%d,%d\n", NUM_EQV, NUM_DEF, NUM_ITE, NUM_AND, NUM_XOR);
+    printf("\nAUXLIST: %d,%d,%d,%d,%d,%d,%d,%d,%d\n", NUM_EQV, NUM_DEF, NUM_ITE, NUM_AND, NUM_XOR, NUM_FUL, NUM_OR, NUM_TRI, NUM_GEN);
   #endif
   return (const char *) err;
 }

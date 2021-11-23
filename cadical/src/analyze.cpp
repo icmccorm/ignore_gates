@@ -711,17 +711,39 @@ void Internal::analyze () {
       if (!flags (lit).seen) continue;
       if (var (lit).level == level) uip = lit;
     }
-    if (!--open) break;
-    reason = var (uip).reason;
-    LOG (reason, "analyzing %d reason", uip);
+    #ifdef UIPAUX
+      reason = var (uip).reason;
+      if (!--open && (!external->is_aux(i2e[vidx(uip)]) || reason == 0) )
+        break;
+      LOG (reason, "analyzing %d reason", uip);
+    #else
+      if (!--open) break;
+      reason = var (uip).reason;
+      LOG (reason, "analyzing %d reason", uip);
+    #endif
   }
   LOG ("first UIP %d", uip);
   clause.push_back (-uip);
 
+  #ifdef UIPAUX
+  for(int i = 0; ((unsigned long) i)<clause.size();){
+    int lit = clause.at(i);
+    if(external->is_aux(i2e[vidx(lit)])){
+      if(var(lit).reason != 0){
+        analyze_reason(lit, var(lit).reason, open);
+      }
+      clause.erase(clause.begin() + i);
+    }else{
+      ++i;
+    }
+  }
+  #endif
+  
   // Update glue and learned (1st UIP literals) statistics.
   //
   int size = (int) clause.size ();
   const int glue = (int) levels.size () - 1;
+
   LOG (clause, "1st UIP size %d and glue %d clause", size, glue);
   UPDATE_AVERAGE (averages.current.glue.fast, glue);
   UPDATE_AVERAGE (averages.current.glue.slow, glue);
@@ -733,6 +755,7 @@ void Internal::analyze () {
   // Minimize the 1st UIP clause as pioneered by Niklas Soerensson in
   // MiniSAT and described in our joint SAT'09 paper.
   //
+  
   if (size > 1) {
     if (opts.shrink)
       shrink_and_minimize_clause();

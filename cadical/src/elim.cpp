@@ -725,7 +725,13 @@ int Internal::elim_round (bool & completed) {
     int idx = schedule.front ();
     schedule.pop_front ();
     flags (idx).elim = false;
-    try_to_eliminate_variable (eliminator, idx);
+    #ifdef ELIMAUX
+    if(external->is_aux(i2e[idx])){
+      try_to_eliminate_variable (eliminator, idx);
+    }
+    #else
+      try_to_eliminate_variable (eliminator, idx);
+    #endif
 #ifndef QUIET
     tried++;
 #endif
