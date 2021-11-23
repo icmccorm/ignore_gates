@@ -54,7 +54,7 @@ int Internal::next_decision_variable_on_queue () {
 #endif
 
 
-#ifdef BRANCH_AUX
+#ifdef BRANCHAUX
 int Internal::next_decision_variable_with_best_score () {
   int res = 0;
   for (;;) {
@@ -66,6 +66,7 @@ int Internal::next_decision_variable_with_best_score () {
     while(external->is_aux(i2e[vidx(res)])){
       score (vidx(res)) = -1;
       scores.update(vidx(res));
+      res = scores.front ();
     }
     if (!val (res)) break;
     (void) scores.pop_front ();
