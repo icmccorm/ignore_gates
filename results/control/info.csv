@@ -1,0 +1,801 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result
+520292850,cnf_proj/10pipe_k.cnf.xz,13219654,igrev2,34949,control.sh,568380,timeout (wallclock),4995.59,5000.05,2618448,UNSAT
+520292851,cnf_proj/10pipe_k.cnf.xz,13219654,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.91,5000.02,2879320,UNSAT
+520292853,cnf_proj/13pipe_k.cnf.xz,13219688,igrev2,34949,control.sh,568380,timeout (wallclock),4998.66,5000.02,2161240,UNKNOWN
+520292854,cnf_proj/13pipe_k.cnf.xz,13219688,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.39,5000.03,2146496,UNKNOWN
+520292856,cnf_proj/143.smt2.cnf.xz,13219805,igrev2,34949,control.sh,568380,timeout (wallclock),4986.2,5000.1,555792,UNKNOWN
+520292857,cnf_proj/143.smt2.cnf.xz,13219805,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.8,5000.02,701328,UNKNOWN
+520292859,cnf_proj/14pipe_q0_k.cnf.xz,13219627,igrev2,34949,control.sh,568380,timeout (wallclock),4988.69,5000.01,1479680,UNKNOWN
+520292860,cnf_proj/14pipe_q0_k.cnf.xz,13219627,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.12,5000.11,1409076,UNKNOWN
+520292862,cnf_proj/20-100-frag12-0_sat.cnf.xz,13219641,igrev2,34949,control.sh,568380,complete,914.663,914.805,554048,SAT-INCORRECT
+520292863,cnf_proj/20-100-frag12-0_sat.cnf.xz,13219641,igrev2,34949,control_noelim.sh,568386,complete,1168.44,1168.36,558924,SAT-INCORRECT
+520292865,cnf_proj/20-100-frag12-14_sat.cnf.xz,13219623,igrev2,34949,control.sh,568380,complete,583.343,583.196,412800,SAT-INCORRECT
+520292866,cnf_proj/20-100-frag12-14_sat.cnf.xz,13219623,igrev2,34949,control_noelim.sh,568386,complete,753.946,753.661,373048,SAT-INCORRECT
+520292868,cnf_proj/20-100-frag12-32_sat.cnf.xz,13219699,igrev2,34949,control.sh,568380,timeout (wallclock),4998.42,5000.01,2220144,SAT-INCORRECT
+520292869,cnf_proj/20-100-frag12-32_sat.cnf.xz,13219699,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.38,5000.01,1832368,SAT-INCORRECT
+520292871,cnf_proj/20-100-frag12-53_sat.cnf.xz,13219465,igrev2,34949,control.sh,568380,complete,891.726,891.635,541592,SAT-INCORRECT
+520292872,cnf_proj/20-100-frag12-53_sat.cnf.xz,13219465,igrev2,34949,control_noelim.sh,568386,complete,1073.92,1073.89,509940,SAT-INCORRECT
+520292874,cnf_proj/20-100-lambda100-14_sat.cnf.xz,13219734,igrev2,34949,control.sh,568380,complete,188.66,188.614,252672,SAT-INCORRECT
+520292875,cnf_proj/20-100-lambda100-14_sat.cnf.xz,13219734,igrev2,34949,control_noelim.sh,568386,complete,421.536,421.544,312632,SAT-INCORRECT
+520292877,cnf_proj/20-100-lambda100-14_unsat.cnf.xz,13219543,igrev2,34949,control.sh,568380,complete,194.406,194.616,254060,UNSAT
+520292878,cnf_proj/20-100-lambda100-14_unsat.cnf.xz,13219543,igrev2,34949,control_noelim.sh,568386,complete,271.199,271.216,243968,UNSAT
+520292880,cnf_proj/20-100-lambda100-47_unsat.cnf.xz,13219541,igrev2,34949,control.sh,568380,complete,1174.78,1175.25,548652,UNSAT
+520292881,cnf_proj/20-100-lambda100-47_unsat.cnf.xz,13219541,igrev2,34949,control_noelim.sh,568386,complete,2273.2,2274.03,685712,UNSAT
+520292883,cnf_proj/20-100-lambda100-49_sat.cnf.xz,13219852,igrev2,34949,control.sh,568380,complete,212.398,212.388,257736,SAT-INCORRECT
+520292884,cnf_proj/20-100-lambda100-49_sat.cnf.xz,13219852,igrev2,34949,control_noelim.sh,568386,complete,409.388,409.401,301548,SAT-INCORRECT
+520292886,cnf_proj/20-100-lambda100-65_sat.cnf.xz,13219843,igrev2,34949,control.sh,568380,complete,172.243,172.239,254520,SAT-INCORRECT
+520292887,cnf_proj/20-100-lambda100-65_sat.cnf.xz,13219843,igrev2,34949,control_noelim.sh,568386,complete,358.945,359.11,262892,SAT-INCORRECT
+520292889,cnf_proj/20-100-lambda100-89_sat.cnf.xz,13219463,igrev2,34949,control.sh,568380,complete,1107.87,1108.66,580524,SAT-INCORRECT
+520292890,cnf_proj/20-100-lambda100-89_sat.cnf.xz,13219463,igrev2,34949,control_noelim.sh,568386,complete,453.639,453.795,307956,SAT-INCORRECT
+520292892,cnf_proj/20-100-lambda100-89_unsat.cnf.xz,13219764,igrev2,34949,control.sh,568380,complete,1358.09,1358.56,593792,UNSAT
+520292893,cnf_proj/20-100-lambda100-89_unsat.cnf.xz,13219764,igrev2,34949,control_noelim.sh,568386,complete,1422.71,1423.68,603064,UNSAT
+520292895,cnf_proj/20-100-p100-55_sat.cnf.xz,13219493,igrev2,34949,control.sh,568380,complete,2178.35,2178.08,490944,SAT-INCORRECT
+520292896,cnf_proj/20-100-p100-55_sat.cnf.xz,13219493,igrev2,34949,control_noelim.sh,568386,complete,2645.9,2644.83,461308,SAT-INCORRECT
+520292898,cnf_proj/20-100-p100-55_unsat.cnf.xz,13219622,igrev2,34949,control.sh,568380,timeout (wallclock),4999.62,5000.03,742756,UNSAT
+520292899,cnf_proj/20-100-p100-55_unsat.cnf.xz,13219622,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.83,5000.06,1046580,UNSAT
+520292901,cnf_proj/2bitcomp_5.hg_20.cnf.xz,13219526,igrev2,34949,control.sh,568380,timeout (wallclock),4998.71,5000.02,1669156,UNKNOWN
+520292902,cnf_proj/2bitcomp_5.hg_20.cnf.xz,13219526,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.81,5000.03,1669156,UNKNOWN
+520292904,cnf_proj/51.smt2.cnf.xz,13219613,igrev2,34949,control.sh,568380,complete,799.345,800.231,702876,UNSAT
+520292905,cnf_proj/51.smt2.cnf.xz,13219613,igrev2,34949,control_noelim.sh,568386,complete,3451.33,3452.34,860804,UNSAT
+520292907,cnf_proj/73.smt2.cnf.xz,13219593,igrev2,34949,control.sh,568380,complete,1066.71,1067.98,731964,UNSAT
+520292908,cnf_proj/73.smt2.cnf.xz,13219593,igrev2,34949,control_noelim.sh,568386,complete,1573.13,1573.7,580636,UNSAT
+520292910,cnf_proj/79.smt2.cnf.xz,13219786,igrev2,34949,control.sh,568380,timeout (wallclock),4989.69,5000.02,377600,UNKNOWN
+520292911,cnf_proj/79.smt2.cnf.xz,13219786,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4991.29,5000.04,370596,UNKNOWN
+520292913,cnf_proj/9dlx_vliw_at_b_iq5.cnf.xz,13219739,igrev2,34949,control.sh,568380,complete,3183.74,3183.68,1109852,UNSAT
+520292914,cnf_proj/9dlx_vliw_at_b_iq5.cnf.xz,13219739,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.02,5000.04,1214208,UNSAT
+520292916,cnf_proj/9dlx_vliw_at_b_iq8.cnf.xz,13219748,igrev2,34949,control.sh,568380,timeout (wallclock),4998.9,5000.07,3314348,UNSAT
+520292917,cnf_proj/9dlx_vliw_at_b_iq8.cnf.xz,13219748,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.57,5000.02,3186676,UNSAT
+520292919,cnf_proj/ACG-15-10p1.cnf.xz,13219820,igrev2,34949,control.sh,568380,complete,3966.36,3965.78,518656,SAT-INCORRECT
+520292920,cnf_proj/ACG-15-10p1.cnf.xz,13219820,igrev2,34949,control_noelim.sh,568386,complete,1341.11,1340.75,392372,SAT-INCORRECT
+520292922,cnf_proj/ak016modbtsimpbisc.cnf.xz,13219753,igrev2,34949,control.sh,568380,timeout (wallclock),4997.85,5000.04,1445048,UNSAT
+520292923,cnf_proj/ak016modbtsimpbisc.cnf.xz,13219753,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.75,5000.01,1301172,UNSAT
+520292925,cnf_proj/ak032modbtmodbtisc.cnf.xz,13219597,igrev2,34949,control.sh,568380,timeout (wallclock),4997.21,5000.01,2047492,UNSAT
+520292926,cnf_proj/ak032modbtmodbtisc.cnf.xz,13219597,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.49,5000.06,328800,UNKNOWN
+520292928,cnf_proj/ak128paralparalisc.cnf.xz,13219842,igrev2,34949,control.sh,568380,timeout (wallclock),4979.92,5000.11,1210052,UNKNOWN
+520292929,cnf_proj/ak128paralparalisc.cnf.xz,13219842,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4987.46,5000.03,846848,UNKNOWN
+520292931,cnf_proj/assoc_mult_err_3.c.cnf.xz,13219612,igrev2,34949,control.sh,568380,complete,121.714,121.762,190012,UNSAT
+520292932,cnf_proj/assoc_mult_err_3.c.cnf.xz,13219612,igrev2,34949,control_noelim.sh,568386,complete,134.709,134.705,186024,UNSAT
+520292934,cnf_proj/at-least-two-aaai10-planning-ipc5-pathways-17-step20.cnf.xz,13219758,igrev2,34949,control.sh,568380,complete,1148.05,1149.06,666608,UNSAT
+520292935,cnf_proj/at-least-two-aaai10-planning-ipc5-pathways-17-step20.cnf.xz,13219758,igrev2,34949,control_noelim.sh,568386,complete,1204.04,1204.9,586676,UNSAT
+520292937,cnf_proj/at-least-two-aaai10-planning-ipc5-pipesworld-12-step15.cnf.xz,13219628,igrev2,34949,control.sh,568380,complete,1750.93,1754.09,1674312,UNSAT
+520292938,cnf_proj/at-least-two-aaai10-planning-ipc5-pipesworld-12-step15.cnf.xz,13219628,igrev2,34949,control_noelim.sh,568386,complete,1842.45,1845.64,1934132,UNSAT
+520292940,cnf_proj/at-least-two-hwmcc10-timeframe-expansion-k50-pdtviseisenberg2-tseitin.cnf.xz,13219752,igrev2,34949,control.sh,568380,timeout (wallclock),5000.02,5000.04,412940,UNKNOWN
+520292941,cnf_proj/at-least-two-hwmcc10-timeframe-expansion-k50-pdtviseisenberg2-tseitin.cnf.xz,13219752,igrev2,34949,control_noelim.sh,568386,complete,351.8,351.042,506876,UNSAT
+520292943,cnf_proj/at-least-two-ibm-2004-23-k100.cnf.xz,13219667,igrev2,34949,control.sh,568380,complete,1352.76,1353.3,1577276,SAT-INCORRECT
+520292944,cnf_proj/at-least-two-ibm-2004-23-k100.cnf.xz,13219667,igrev2,34949,control_noelim.sh,568386,complete,3106.06,3106.59,1997556,SAT-INCORRECT
+520292946,cnf_proj/at-least-two-maris-s03-gripper11.cnf.xz,13219486,igrev2,34949,control.sh,568380,complete,103.227,103.305,254224,SAT-INCORRECT
+520292947,cnf_proj/at-least-two-maris-s03-gripper11.cnf.xz,13219486,igrev2,34949,control_noelim.sh,568386,complete,307.336,307.644,393832,SAT-INCORRECT
+520292949,cnf_proj/at-least-two-smtlib-qfbv-aigs-ext_con_032_008_0256-tseitin.cnf.xz,13219850,igrev2,34949,control.sh,568380,complete,2378.36,2379.13,563104,UNSAT
+520292950,cnf_proj/at-least-two-smtlib-qfbv-aigs-ext_con_032_008_0256-tseitin.cnf.xz,13219850,igrev2,34949,control_noelim.sh,568386,complete,2500.17,2503.76,1788388,UNSAT
+520292952,cnf_proj/at-least-two-sokoban-sequential-p145-microban-sequential.030-NOTKNOWN.cnf.xz,13219638,igrev2,34949,control.sh,568380,complete,2846.62,2849.5,2197184,UNSAT
+520292953,cnf_proj/at-least-two-sokoban-sequential-p145-microban-sequential.030-NOTKNOWN.cnf.xz,13219638,igrev2,34949,control_noelim.sh,568386,complete,2226.04,2230.08,2148036,UNSAT
+520292955,cnf_proj/at-least-two-traffic_b_unsat.cnf.xz,13219668,igrev2,34949,control.sh,568380,complete,1536.6,1536.32,633852,UNSAT
+520292956,cnf_proj/at-least-two-traffic_b_unsat.cnf.xz,13219668,igrev2,34949,control_noelim.sh,568386,complete,1222.89,1222.25,573660,UNSAT
+520292958,cnf_proj/at-least-two-traffic_f_unknown.cnf.xz,13219496,igrev2,34949,control.sh,568380,complete,1614.85,1614.48,728640,UNSAT
+520292959,cnf_proj/at-least-two-traffic_f_unknown.cnf.xz,13219496,igrev2,34949,control_noelim.sh,568386,complete,1195,1194.27,624252,UNSAT
+520292961,cnf_proj/at-least-two-traffic_kkb_unknown.cnf.xz,13219647,igrev2,34949,control.sh,568380,complete,1687.99,1687.75,721904,UNSAT
+520292962,cnf_proj/at-least-two-traffic_kkb_unknown.cnf.xz,13219647,igrev2,34949,control_noelim.sh,568386,complete,1242.57,1241.93,624640,UNSAT
+520292964,cnf_proj/at-least-two-traffic_pcb_unknown.cnf.xz,13219801,igrev2,34949,control.sh,568380,complete,2607.41,2607.52,777592,UNSAT
+520292965,cnf_proj/at-least-two-traffic_pcb_unknown.cnf.xz,13219801,igrev2,34949,control_noelim.sh,568386,complete,1247.09,1246.48,647144,UNSAT
+520292967,cnf_proj/at-least-two-vmpc_26.cnf.xz,13219618,igrev2,34949,control.sh,568380,complete,3186.01,3187.9,1510700,UNSAT
+520292968,cnf_proj/at-least-two-vmpc_26.cnf.xz,13219618,igrev2,34949,control_noelim.sh,568386,complete,4672.25,4674.43,1714088,UNSAT
+520292970,cnf_proj/at-least-two-vmpc_28.cnf.xz,13219703,igrev2,34949,control.sh,568380,timeout (wallclock),4992.72,5000.06,4455836,SAT-INCORRECT
+520292971,cnf_proj/at-least-two-vmpc_28.cnf.xz,13219703,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.15,5000.06,3727380,SAT-INCORRECT
+520292973,cnf_proj/b04_s_unknown_pre.cnf.xz,13219657,igrev2,34949,control.sh,568380,complete,68.3971,67.7154,296124,SAT-INCORRECT
+520292974,cnf_proj/b04_s_unknown_pre.cnf.xz,13219657,igrev2,34949,control_noelim.sh,568386,complete,63.7198,63.0499,314136,SAT-INCORRECT
+520292976,cnf_proj/b2005-p1-12x12c10h7-Ser3-0.cnf.xz,13219835,igrev2,34949,control.sh,568380,timeout (wallclock),4986.61,5000.05,813636,UNKNOWN
+520292977,cnf_proj/b2005-p1-12x12c10h7-Ser3-0.cnf.xz,13219835,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4989.04,5000.04,805608,UNKNOWN
+520292979,cnf_proj/b2005-p1-12x12c10h7-Ser4-0.cnf.xz,13219800,igrev2,34949,control.sh,568380,timeout (wallclock),4985.78,5000.09,901384,UNKNOWN
+520292980,cnf_proj/b2005-p1-12x12c10h7-Ser4-0.cnf.xz,13219800,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4984.3,5000.02,846020,UNKNOWN
+520292982,cnf_proj/b2005-p1-12x12c10h7-Ser5-0.cnf.xz,13219681,igrev2,34949,control.sh,568380,timeout (wallclock),4984.14,5000.12,807100,UNKNOWN
+520292983,cnf_proj/b2005-p1-12x12c10h7-Ser5-0.cnf.xz,13219681,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4986.98,5000.04,838912,UNKNOWN
+520292985,cnf_proj/b2005-p1-14x14c17h9-Ser3-0.cnf.xz,13219527,igrev2,34949,control.sh,568380,timeout (cpu),5000.05,4997.73,4159476,UNKNOWN
+520292986,cnf_proj/b2005-p1-14x14c17h9-Ser3-0.cnf.xz,13219527,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.33,5000.05,4159476,UNKNOWN
+520292988,cnf_proj/b2005-p2-12x12c10h7-Ser7-0.cnf.xz,13219546,igrev2,34949,control.sh,568380,timeout (wallclock),4988.48,5000.1,2107440,UNKNOWN
+520292989,cnf_proj/b2005-p2-12x12c10h7-Ser7-0.cnf.xz,13219546,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.96,5000.03,2107440,UNKNOWN
+520292991,cnf_proj/b2005-p2-14x14c17h9-Ser5-0.cnf.xz,13219598,igrev2,34949,control.sh,568380,timeout (wallclock),4999.49,5000.05,3674476,UNKNOWN
+520292992,cnf_proj/b2005-p2-14x14c17h9-Ser5-0.cnf.xz,13219598,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.06,4996.71,3674476,UNKNOWN
+520292994,cnf_proj/b2005-p2-14x14c17h9-Ser6-0.cnf.xz,13219726,igrev2,34949,control.sh,568380,timeout (wallclock),4997.23,5000.04,3576748,UNKNOWN
+520292995,cnf_proj/b2005-p2-14x14c17h9-Ser6-0.cnf.xz,13219726,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.02,4997.69,3622868,UNKNOWN
+520292997,cnf_proj/b2005-p3-12x12c10h7-Ser7-0.cnf.xz,13219525,igrev2,34949,control.sh,568380,timeout (wallclock),4989.51,5000.03,1840672,UNKNOWN
+520292998,cnf_proj/b2005-p3-12x12c10h7-Ser7-0.cnf.xz,13219525,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4993.75,5000.02,1840672,UNKNOWN
+520293000,cnf_proj/b2005-p3-14x14c17h9-Ser3-0.cnf.xz,13219511,igrev2,34949,control.sh,568380,timeout (wallclock),4999.05,5000.03,3941076,UNKNOWN
+520293001,cnf_proj/b2005-p3-14x14c17h9-Ser3-0.cnf.xz,13219511,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.01,4998.09,3941076,UNKNOWN
+520293003,cnf_proj/b2005-p4-12x12c10h7-Ser3-0.cnf.xz,13219774,igrev2,34949,control.sh,568380,timeout (wallclock),4984.45,5000.02,875468,UNKNOWN
+520293004,cnf_proj/b2005-p4-12x12c10h7-Ser3-0.cnf.xz,13219774,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.63,5000.05,793024,UNKNOWN
+520293006,cnf_proj/b2005-p4-14x14c17h9-Ser8-0.cnf.xz,13219781,igrev2,34949,control.sh,568380,timeout (cpu),5000.08,4987.75,7963648,UNKNOWN
+520293007,cnf_proj/b2005-p4-14x14c17h9-Ser8-0.cnf.xz,13219781,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.05,4988.01,7963648,UNKNOWN
+520293009,cnf_proj/b2005-p5-12x12c10h7-Ser5-0.cnf.xz,13219754,igrev2,34949,control.sh,568380,timeout (wallclock),4984.96,5000.02,930536,UNKNOWN
+520293010,cnf_proj/b2005-p5-12x12c10h7-Ser5-0.cnf.xz,13219754,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4989.33,5000.02,926784,UNKNOWN
+520293012,cnf_proj/b2005-p5-14x14c17h9-Ser5-0.cnf.xz,13219648,igrev2,34949,control.sh,568380,timeout (cpu),5000.06,4998.03,3909420,UNKNOWN
+520293013,cnf_proj/b2005-p5-14x14c17h9-Ser5-0.cnf.xz,13219648,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.03,4999.23,3909420,UNKNOWN
+520293015,cnf_proj/barman-pfile10-039.sas.ex.15.cnf.xz,13219651,igrev2,34949,control.sh,568380,complete,344.605,341.289,1418520,UNSAT
+520293016,cnf_proj/barman-pfile10-039.sas.ex.15.cnf.xz,13219651,igrev2,34949,control_noelim.sh,568386,complete,564.012,559.935,1023420,UNSAT
+520293018,cnf_proj/barman-pfile10-040.sas.ex.15.cnf.xz,13219743,igrev2,34949,control.sh,568380,complete,215.2,211.047,1375008,UNSAT
+520293019,cnf_proj/barman-pfile10-040.sas.ex.15.cnf.xz,13219743,igrev2,34949,control_noelim.sh,568386,complete,927.278,923.654,1002712,UNSAT
+520293021,cnf_proj/battleship-12-12-unsat.cnf.xz,13219629,igrev2,34949,control.sh,568380,complete,464.438,465.358,599936,UNSAT
+520293022,cnf_proj/battleship-12-12-unsat.cnf.xz,13219629,igrev2,34949,control_noelim.sh,568386,complete,484.485,485.001,583316,UNSAT
+520293024,cnf_proj/battleship-14-26-sat.cnf.xz,13219652,igrev2,34949,control.sh,568380,complete,8.2517,8.25437,146060,SAT-INCORRECT
+520293025,cnf_proj/battleship-14-26-sat.cnf.xz,13219652,igrev2,34949,control_noelim.sh,568386,complete,217.452,218.468,529580,SAT-INCORRECT
+520293027,cnf_proj/blocks-blocks-36-0.180-SAT.cnf.xz,13219755,igrev2,34949,control.sh,568380,complete,2824.68,2818.84,2655964,SAT-INCORRECT
+520293028,cnf_proj/blocks-blocks-36-0.180-SAT.cnf.xz,13219755,igrev2,34949,control_noelim.sh,568386,complete,2888.1,2885.34,3132376,SAT-INCORRECT
+520293030,cnf_proj/blocks-blocks-37-1.120-NOTKNOWN.cnf.xz,13219573,igrev2,34949,control.sh,568380,complete,648.648,643.153,1566840,UNSAT
+520293031,cnf_proj/blocks-blocks-37-1.120-NOTKNOWN.cnf.xz,13219573,igrev2,34949,control_noelim.sh,568386,complete,453.336,448.228,1612536,UNSAT
+520293033,cnf_proj/blocks-blocks-37-1.130-NOTKNOWN.cnf.xz,13219596,igrev2,34949,control.sh,568380,timeout (wallclock),4992.85,5000.01,5648264,UNSAT
+520293034,cnf_proj/blocks-blocks-37-1.130-NOTKNOWN.cnf.xz,13219596,igrev2,34949,control_noelim.sh,568386,complete,4162.58,4162.15,3976232,UNSAT
+520293036,cnf_proj/bv-term-small-rw_1294.smt2.cnf.xz,13219847,igrev2,34949,control.sh,568380,timeout (wallclock),4994.71,5000.02,359908,UNKNOWN
+520293037,cnf_proj/bv-term-small-rw_1294.smt2.cnf.xz,13219847,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.67,5000.02,331436,UNKNOWN
+520293039,cnf_proj/bv-term-small-rw_1492.smt2.cnf.xz,13219472,igrev2,34949,control.sh,568380,complete,0.095243,0.074998,113292,SAT-INCORRECT
+520293040,cnf_proj/bv-term-small-rw_1492.smt2.cnf.xz,13219472,igrev2,34949,control_noelim.sh,568386,complete,0.095043,0.074842,113292,SAT-INCORRECT
+520293042,cnf_proj/bvsdiv_19.smt2.cnf.xz,13219675,igrev2,34949,control.sh,568380,timeout (wallclock),4997.73,5000.02,1710704,UNSAT
+520293043,cnf_proj/bvsdiv_19.smt2.cnf.xz,13219675,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.82,5000.01,2120340,UNSAT
+520293045,cnf_proj/bvsmod_18.smt2.cnf.xz,13219635,igrev2,34949,control.sh,568380,timeout (wallclock),4992.74,5000.03,245180,UNKNOWN
+520293046,cnf_proj/bvsmod_18.smt2.cnf.xz,13219635,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.95,5000.05,271656,UNKNOWN
+520293048,cnf_proj/bvsmod_19.smt2.cnf.xz,13219724,igrev2,34949,control.sh,568380,timeout (wallclock),4980.72,5000.02,245588,UNKNOWN
+520293049,cnf_proj/bvsmod_19.smt2.cnf.xz,13219724,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.59,5000.04,260476,UNKNOWN
+520293051,cnf_proj/bvsub_08985.smt2.cnf.xz,13219470,igrev2,34949,control.sh,568380,complete,977.918,982.261,2268080,UNSAT
+520293052,cnf_proj/bvsub_08985.smt2.cnf.xz,13219470,igrev2,34949,control_noelim.sh,568386,complete,1088.37,1088.19,454812,UNSAT
+520293054,cnf_proj/bvsub_12973.smt2.cnf.xz,13219655,igrev2,34949,control.sh,568380,complete,2056.85,2069.65,3792280,UNSAT
+520293055,cnf_proj/bvsub_12973.smt2.cnf.xz,13219655,igrev2,34949,control_noelim.sh,568386,complete,1313.67,1313.83,634680,UNSAT
+520293057,cnf_proj/bvsub_19952.smt2.cnf.xz,13219521,igrev2,34949,control.sh,568380,timeout (wallclock),4952.92,5000.03,1.27E+07,UNSAT
+520293058,cnf_proj/bvsub_19952.smt2.cnf.xz,13219521,igrev2,34949,control_noelim.sh,568386,complete,4218.38,4218.56,682720,UNSAT
+520293060,cnf_proj/bvurem_20.smt2.cnf.xz,13219621,igrev2,34949,control.sh,568380,timeout (wallclock),4995.01,5000.02,270272,UNKNOWN
+520293061,cnf_proj/bvurem_20.smt2.cnf.xz,13219621,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.38,5000.02,276032,UNKNOWN
+520293063,cnf_proj/Circuit_multiplier18.cnf.xz,13219645,igrev2,34949,control.sh,568380,timeout (wallclock),4996.32,5000.02,290760,UNKNOWN
+520293064,cnf_proj/Circuit_multiplier18.cnf.xz,13219645,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.15,5000.02,347404,UNKNOWN
+520293066,cnf_proj/Circuit_multiplier22.cnf.xz,13219626,igrev2,34949,control.sh,568380,complete,1381.3,1382.25,485648,SAT-INCORRECT
+520293067,cnf_proj/Circuit_multiplier22.cnf.xz,13219626,igrev2,34949,control_noelim.sh,568386,complete,418.467,419.29,298764,SAT-INCORRECT
+520293069,cnf_proj/Circuit_multiplier24.cnf.xz,13219454,igrev2,34949,control.sh,568380,timeout (wallclock),4998.24,5000.75,1555348,SAT-INCORRECT
+520293070,cnf_proj/Circuit_multiplier24.cnf.xz,13219454,igrev2,34949,control_noelim.sh,568386,complete,517.973,518.443,384176,SAT-INCORRECT
+520293072,cnf_proj/Circuit_multiplier25.cnf.xz,13219803,igrev2,34949,control.sh,568380,timeout (wallclock),4997.31,5000.03,294652,UNKNOWN
+520293073,cnf_proj/Circuit_multiplier25.cnf.xz,13219803,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.34,5000.03,281260,UNKNOWN
+520293075,cnf_proj/Circuit_multiplier26.cnf.xz,13219504,igrev2,34949,control.sh,568380,timeout (wallclock),4993.92,5000.02,324296,UNKNOWN
+520293076,cnf_proj/Circuit_multiplier26.cnf.xz,13219504,igrev2,34949,control_noelim.sh,568386,complete,2216.61,2217.18,700340,SAT-INCORRECT
+520293078,cnf_proj/Circuit_multiplier29.cnf.xz,13219469,igrev2,34949,control.sh,568380,timeout (wallclock),4993.14,5000.05,329816,UNKNOWN
+520293079,cnf_proj/Circuit_multiplier29.cnf.xz,13219469,igrev2,34949,control_noelim.sh,568386,complete,4111.14,4111.69,815452,SAT-INCORRECT
+520293081,cnf_proj/Circuit_multiplier33.cnf.xz,13219783,igrev2,34949,control.sh,568380,complete,284.705,284.862,249244,SAT-INCORRECT
+520293082,cnf_proj/Circuit_multiplier33.cnf.xz,13219783,igrev2,34949,control_noelim.sh,568386,complete,300.523,300.687,248032,SAT-INCORRECT
+520293084,cnf_proj/Circuit_multiplier34.cnf.xz,13219599,igrev2,34949,control.sh,568380,complete,4319.77,4321.94,719692,SAT-INCORRECT
+520293085,cnf_proj/Circuit_multiplier34.cnf.xz,13219599,igrev2,34949,control_noelim.sh,568386,complete,4617.18,4618.3,726348,SAT-INCORRECT
+520293087,cnf_proj/Circuit_multiplier35.cnf.xz,13219750,igrev2,34949,control.sh,568380,complete,785.813,786.574,401436,SAT-INCORRECT
+520293088,cnf_proj/Circuit_multiplier35.cnf.xz,13219750,igrev2,34949,control_noelim.sh,568386,complete,522.693,522.927,310988,SAT-INCORRECT
+520293090,cnf_proj/Circuit_multiplier36.cnf.xz,13219564,igrev2,34949,control.sh,568380,timeout (wallclock),4998.94,5000.03,304672,UNKNOWN
+520293091,cnf_proj/Circuit_multiplier36.cnf.xz,13219564,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.17,5000.06,340660,UNKNOWN
+520293093,cnf_proj/Circuit_multiplier37.cnf.xz,13219698,igrev2,34949,control.sh,568380,complete,327.777,328.634,265236,SAT-INCORRECT
+520293094,cnf_proj/Circuit_multiplier37.cnf.xz,13219698,igrev2,34949,control_noelim.sh,568386,complete,22.8801,23.5893,152924,SAT-INCORRECT
+520293096,cnf_proj/Circuit_multiplier45.cnf.xz,13219475,igrev2,34949,control.sh,568380,timeout (wallclock),4996.42,5000.02,298984,UNKNOWN
+520293097,cnf_proj/Circuit_multiplier45.cnf.xz,13219475,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.1,5000.1,305960,UNKNOWN
+520293099,cnf_proj/Circuit_multiplier53.cnf.xz,13219481,igrev2,34949,control.sh,568380,timeout (wallclock),4996.93,5000.02,313144,UNKNOWN
+520293100,cnf_proj/Circuit_multiplier53.cnf.xz,13219481,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4992.12,5000.05,307192,UNKNOWN
+520293102,cnf_proj/crafted_n10_d6_c4_num15.cnf.xz,13219662,igrev2,34949,control.sh,568380,complete,448.043,444.291,1704392,UNSAT
+520293103,cnf_proj/crafted_n10_d6_c4_num15.cnf.xz,13219662,igrev2,34949,control_noelim.sh,568386,complete,313.518,309.683,1597044,UNSAT
+520293105,cnf_proj/crafted_n10_d6_c4_num21.cnf.xz,13219602,igrev2,34949,control.sh,568380,complete,417.574,414.26,1697492,UNSAT
+520293106,cnf_proj/crafted_n10_d6_c4_num21.cnf.xz,13219602,igrev2,34949,control_noelim.sh,568386,complete,566.811,563.445,1675244,UNSAT
+520293108,cnf_proj/crafted_n11_d6_c4_num14.cnf.xz,13219733,igrev2,34949,control.sh,568380,complete,1431.34,1427.77,1928412,UNSAT
+520293109,cnf_proj/crafted_n11_d6_c4_num14.cnf.xz,13219733,igrev2,34949,control_noelim.sh,568386,complete,1425.79,1422.35,1928412,UNSAT
+520293111,cnf_proj/crafted_n12_d6_c3_num18.cnf.xz,13219821,igrev2,34949,control.sh,568380,complete,379.799,282.166,1389032,UNSAT
+520293112,cnf_proj/crafted_n12_d6_c3_num18.cnf.xz,13219821,igrev2,34949,control_noelim.sh,568386,complete,294.636,292.435,1389032,UNSAT
+520293114,cnf_proj/crafted_n12_d6_c3_num28.cnf.xz,13219565,igrev2,34949,control.sh,568380,complete,518.8,515.939,1449580,UNSAT
+520293115,cnf_proj/crafted_n12_d6_c3_num28.cnf.xz,13219565,igrev2,34949,control_noelim.sh,568386,complete,283.789,280.673,1416412,UNSAT
+520293117,cnf_proj/crafted_n12_d6_c4_num17.cnf.xz,13219816,igrev2,34949,control.sh,568380,complete,374.721,369.189,2296860,UNSAT
+520293118,cnf_proj/crafted_n12_d6_c4_num17.cnf.xz,13219816,igrev2,34949,control_noelim.sh,568386,complete,394.564,389.011,2186860,UNSAT
+520293120,cnf_proj/ctl_4201_555_unsat.cnf.xz,13219677,igrev2,34949,control.sh,568380,complete,4792.22,4794.47,1371252,UNSAT
+520293121,cnf_proj/ctl_4201_555_unsat.cnf.xz,13219677,igrev2,34949,control_noelim.sh,568386,complete,4219.23,4223.25,1355720,UNSAT
+520293123,cnf_proj/ctl_4291_567_11_unsat.cnf.xz,13219722,igrev2,34949,control.sh,568380,timeout (wallclock),4996.49,5000.05,299856,UNKNOWN
+520293124,cnf_proj/ctl_4291_567_11_unsat.cnf.xz,13219722,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.06,5000.02,282780,UNKNOWN
+520293126,cnf_proj/ctl_4291_567_1_unsat.cnf.xz,13219678,igrev2,34949,control.sh,568380,complete,4128.48,4129.9,1208924,UNSAT
+520293127,cnf_proj/ctl_4291_567_1_unsat.cnf.xz,13219678,igrev2,34949,control_noelim.sh,568386,complete,4697.48,4698.75,1368284,UNSAT
+520293129,cnf_proj/ctl_4291_567_6_unsat_pre.cnf.xz,13219588,igrev2,34949,control.sh,568380,timeout (wallclock),4997.16,5000.11,274560,UNKNOWN
+520293130,cnf_proj/ctl_4291_567_6_unsat_pre.cnf.xz,13219588,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.86,5000.02,286160,UNKNOWN
+520293132,cnf_proj/ctl_4291_567_9_unsat.cnf.xz,13219809,igrev2,34949,control.sh,568380,complete,1756.42,1757.27,774376,UNSAT
+520293133,cnf_proj/ctl_4291_567_9_unsat.cnf.xz,13219809,igrev2,34949,control_noelim.sh,568386,complete,1916.01,1916.49,790928,UNSAT
+520293135,cnf_proj/dist10.c.cnf.xz,13219649,igrev2,34949,control.sh,568380,complete,337.824,338.233,317608,UNSAT
+520293136,cnf_proj/dist10.c.cnf.xz,13219649,igrev2,34949,control_noelim.sh,568386,complete,471.119,471.474,323600,UNSAT
+520293138,cnf_proj/dist4.c.cnf.xz,13219467,igrev2,34949,control.sh,568380,complete,330.892,331.039,311780,UNSAT
+520293139,cnf_proj/dist4.c.cnf.xz,13219467,igrev2,34949,control_noelim.sh,568386,complete,485.709,486.207,323696,UNSAT
+520293141,cnf_proj/E00X23.cnf.xz,13219836,igrev2,34949,control.sh,568380,timeout (wallclock),4994.34,5000.04,740440,UNKNOWN
+520293142,cnf_proj/E00X23.cnf.xz,13219836,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996,5000.08,806864,UNKNOWN
+520293144,cnf_proj/E02F17.cnf.xz,13219460,igrev2,34949,control.sh,568380,complete,85.6406,85.6872,232036,UNSAT
+520293145,cnf_proj/E02F17.cnf.xz,13219460,igrev2,34949,control_noelim.sh,568386,complete,79.6121,79.6634,228824,UNSAT
+520293147,cnf_proj/ecarev-110-1031-23-40-8.cnf.xz,13219746,igrev2,34949,control.sh,568380,complete,788.102,789.296,978328,SAT-INCORRECT
+520293148,cnf_proj/ecarev-110-1031-23-40-8.cnf.xz,13219746,igrev2,34949,control_noelim.sh,568386,complete,628.601,630.039,858840,SAT-INCORRECT
+520293150,cnf_proj/ecarev-110-4099-22-30-4.cnf.xz,13219494,igrev2,34949,control.sh,568380,complete,670.905,671.792,1225512,SAT-INCORRECT
+520293151,cnf_proj/ecarev-110-4099-22-30-4.cnf.xz,13219494,igrev2,34949,control_noelim.sh,568386,complete,656.076,656.377,1259412,SAT-INCORRECT
+520293153,cnf_proj/edit_distance007_85.cnf.xz,13219826,igrev2,34949,control.sh,568380,complete,3211.81,3213.75,1153524,UNSAT
+520293154,cnf_proj/edit_distance007_85.cnf.xz,13219826,igrev2,34949,control_noelim.sh,568386,complete,1994,1995.36,787792,UNSAT
+520293156,cnf_proj/edit_distance019_312.cnf.xz,13219535,igrev2,34949,control.sh,568380,timeout (wallclock),4990.95,5000.01,363008,UNKNOWN
+520293157,cnf_proj/edit_distance019_312.cnf.xz,13219535,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4993.39,5000.05,382044,UNKNOWN
+520293159,cnf_proj/edit_distance023_281.cnf.xz,13219849,igrev2,34949,control.sh,568380,complete,476.016,476.395,366068,SAT-INCORRECT
+520293160,cnf_proj/edit_distance023_281.cnf.xz,13219849,igrev2,34949,control_noelim.sh,568386,complete,1991.46,1992.6,796280,SAT-INCORRECT
+520293162,cnf_proj/edit_distance023_282.cnf.xz,13219453,igrev2,34949,control.sh,568380,complete,589.669,590.331,380912,SAT-INCORRECT
+520293163,cnf_proj/edit_distance023_282.cnf.xz,13219453,igrev2,34949,control_noelim.sh,568386,complete,1723.29,1725.16,768052,SAT-INCORRECT
+520293165,cnf_proj/edit_distance023_283.cnf.xz,13219797,igrev2,34949,control.sh,568380,complete,584.534,584.855,425184,SAT-INCORRECT
+520293166,cnf_proj/edit_distance023_283.cnf.xz,13219797,igrev2,34949,control_noelim.sh,568386,complete,1667.43,1668.63,706672,SAT-INCORRECT
+520293168,cnf_proj/edit_distance025_448.cnf.xz,13219478,igrev2,34949,control.sh,568380,timeout (wallclock),4985.54,5000.1,403800,UNKNOWN
+520293169,cnf_proj/edit_distance025_448.cnf.xz,13219478,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.43,5000.02,402960,UNKNOWN
+520293171,cnf_proj/edit_distance025_449.cnf.xz,13219757,igrev2,34949,control.sh,568380,timeout (wallclock),4992.85,5000.04,453236,UNKNOWN
+520293172,cnf_proj/edit_distance025_449.cnf.xz,13219757,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.53,5000.01,2860776,SAT-INCORRECT
+520293174,cnf_proj/edit_distance025_450.cnf.xz,13219810,igrev2,34949,control.sh,568380,timeout (wallclock),4994.37,5000.05,2662780,SAT-INCORRECT
+520293175,cnf_proj/edit_distance025_450.cnf.xz,13219810,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.76,5000.1,388804,UNKNOWN
+520293177,cnf_proj/edit_distance031_283.cnf.xz,13219574,igrev2,34949,control.sh,568380,complete,4345.23,4346.51,1023836,UNSAT
+520293178,cnf_proj/edit_distance031_283.cnf.xz,13219574,igrev2,34949,control_noelim.sh,568386,complete,3703.41,3706.05,972984,UNSAT
+520293180,cnf_proj/edit_distance031_284.cnf.xz,13219851,igrev2,34949,control.sh,568380,timeout (wallclock),4998.21,5000.07,1441376,UNSAT
+520293181,cnf_proj/edit_distance031_284.cnf.xz,13219851,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4993.8,5000.11,1386080,UNSAT
+520293183,cnf_proj/edit_distance035_393.cnf.xz,13219827,igrev2,34949,control.sh,568380,complete,3192.48,3196.55,960808,SAT-INCORRECT
+520293184,cnf_proj/edit_distance035_393.cnf.xz,13219827,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.62,5000.02,381272,UNKNOWN
+520293186,cnf_proj/edit_distance041_182.cnf.xz,13219767,igrev2,34949,control.sh,568380,complete,330.269,330.235,277476,UNSAT
+520293187,cnf_proj/edit_distance041_182.cnf.xz,13219767,igrev2,34949,control_noelim.sh,568386,complete,323.724,323.667,274264,UNSAT
+520293189,cnf_proj/edit_distance041_183.cnf.xz,13219497,igrev2,34949,control.sh,568380,complete,343.904,343.904,296888,UNSAT
+520293190,cnf_proj/edit_distance041_183.cnf.xz,13219497,igrev2,34949,control_noelim.sh,568386,complete,440.018,439.913,296888,UNSAT
+520293195,cnf_proj/erin2_0x0-379.cnf.xz,13219737,igrev2,34949,control.sh,568380,timeout (wallclock),4997.92,5000.02,1165752,SAT-INCORRECT
+520293196,cnf_proj/erin2_0x0-379.cnf.xz,13219737,igrev2,34949,control_noelim.sh,568386,complete,2818.16,2819.52,750572,SAT-INCORRECT
+520293198,cnf_proj/erin2_0x0_n207-379.cnf.xz,13219796,igrev2,34949,control.sh,568380,timeout (wallclock),4996.25,5000.05,1297952,SAT-INCORRECT
+520293199,cnf_proj/erin2_0x0_n207-379.cnf.xz,13219796,igrev2,34949,control_noelim.sh,568386,complete,4183.27,4184.08,991212,SAT-INCORRECT
+520293201,cnf_proj/erin2_0x1e3-216.cnf.xz,13219498,igrev2,34949,control.sh,568380,timeout (wallclock),4996.9,5000.02,2611100,SAT-INCORRECT
+520293202,cnf_proj/erin2_0x1e3-216.cnf.xz,13219498,igrev2,34949,control_noelim.sh,568386,complete,2001.03,2002.72,919544,SAT-INCORRECT
+520293192,cnf_proj/ER_500_40_2.apx_0.cnf.xz,13219770,igrev2,34949,control.sh,568380,complete,229.804,229.926,354904,UNSAT
+520293193,cnf_proj/ER_500_40_2.apx_0.cnf.xz,13219770,igrev2,34949,control_noelim.sh,568386,complete,270.725,271.392,381780,UNSAT
+520293204,cnf_proj/ex045_7.cnf.xz,13219513,igrev2,34949,control.sh,568380,complete,2107.07,2101.67,2606252,SAT-INCORRECT
+520293205,cnf_proj/ex045_7.cnf.xz,13219513,igrev2,34949,control_noelim.sh,568386,complete,961.953,955.153,2606552,SAT-INCORRECT
+520293207,cnf_proj/ex065_25.cnf.xz,13219658,igrev2,34949,control.sh,568380,timeout (wallclock),4995.44,5000.01,2387684,SAT-INCORRECT
+520293208,cnf_proj/ex065_25.cnf.xz,13219658,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.69,5000.06,409320,UNKNOWN
+520293210,cnf_proj/ex095_8.cnf.xz,13219606,igrev2,34949,control.sh,568380,timeout (cpu),5000.01,4996.82,2572632,UNSAT
+520293211,cnf_proj/ex095_8.cnf.xz,13219606,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.07,4995.94,2783428,UNSAT
+520293213,cnf_proj/ex175_20.cnf.xz,13219508,igrev2,34949,control.sh,568380,complete,832.266,822.664,3207988,SAT-INCORRECT
+520293214,cnf_proj/ex175_20.cnf.xz,13219508,igrev2,34949,control_noelim.sh,568386,complete,1818.71,1809.81,3277768,SAT-INCORRECT
+520293216,cnf_proj/HCP-424-60.cnf.xz,13219615,igrev2,34949,control.sh,568380,complete,1552.4,1554.03,1370528,SAT-INCORRECT
+520293217,cnf_proj/HCP-424-60.cnf.xz,13219615,igrev2,34949,control_noelim.sh,568386,complete,1510.69,1512.08,1297128,SAT-INCORRECT
+520293219,cnf_proj/HCP-446-105.cnf.xz,13219707,igrev2,34949,control.sh,568380,complete,3730.38,3734.03,2492868,SAT-INCORRECT
+520293220,cnf_proj/HCP-446-105.cnf.xz,13219707,igrev2,34949,control_noelim.sh,568386,complete,2767.39,2769.81,1926304,SAT-INCORRECT
+520293222,cnf_proj/HCP-446-420.cnf.xz,13219631,igrev2,34949,control.sh,568380,complete,2392.91,2394.47,1981108,SAT-INCORRECT
+520293223,cnf_proj/HCP-446-420.cnf.xz,13219631,igrev2,34949,control_noelim.sh,568386,complete,3043.84,3046.85,2049164,SAT-INCORRECT
+520293225,cnf_proj/HCP-446-60.cnf.xz,13219718,igrev2,34949,control.sh,568380,complete,1443.82,1446.46,1341072,SAT-INCORRECT
+520293226,cnf_proj/HCP-446-60.cnf.xz,13219718,igrev2,34949,control_noelim.sh,568386,complete,2186.24,2187.65,1643668,SAT-INCORRECT
+520293228,cnf_proj/HCP-470-105.cnf.xz,13219676,igrev2,34949,control.sh,568380,complete,1561.66,1564.34,1293300,SAT-INCORRECT
+520293229,cnf_proj/HCP-470-105.cnf.xz,13219676,igrev2,34949,control_noelim.sh,568386,complete,2035.66,2036.75,1555952,SAT-INCORRECT
+520293231,cnf_proj/HCP-470-420.cnf.xz,13219592,igrev2,34949,control.sh,568380,complete,4527.06,4531.08,3034892,SAT-INCORRECT
+520293232,cnf_proj/HCP-470-420.cnf.xz,13219592,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.04,5000.02,3184500,SAT-INCORRECT
+520293234,cnf_proj/HCP-470-60.cnf.xz,13219537,igrev2,34949,control.sh,568380,complete,3617.94,3621.16,2437144,SAT-INCORRECT
+520293235,cnf_proj/HCP-470-60.cnf.xz,13219537,igrev2,34949,control_noelim.sh,568386,complete,1839.07,1842.05,1629280,SAT-INCORRECT
+520293237,cnf_proj/HCP-506-60.cnf.xz,13219823,igrev2,34949,control.sh,568380,complete,129.099,129.071,325380,SAT-INCORRECT
+520293238,cnf_proj/HCP-506-60.cnf.xz,13219823,igrev2,34949,control_noelim.sh,568386,complete,283.165,283.211,479004,SAT-INCORRECT
+520293240,cnf_proj/HCP-522-105.cnf.xz,13219558,igrev2,34949,control.sh,568380,complete,354.439,354.752,565544,SAT-INCORRECT
+520293241,cnf_proj/HCP-522-105.cnf.xz,13219558,igrev2,34949,control_noelim.sh,568386,complete,128.783,128.881,306040,SAT-INCORRECT
+520293243,cnf_proj/HCP-526-105.cnf.xz,13219792,igrev2,34949,control.sh,568380,complete,399.719,400.651,641584,SAT-INCORRECT
+520293244,cnf_proj/HCP-526-105.cnf.xz,13219792,igrev2,34949,control_noelim.sh,568386,complete,147.222,147.284,327472,SAT-INCORRECT
+520293246,cnf_proj/HCP-526-420.cnf.xz,13219455,igrev2,34949,control.sh,568380,complete,366.41,366.941,589204,SAT-INCORRECT
+520293247,cnf_proj/HCP-526-420.cnf.xz,13219455,igrev2,34949,control_noelim.sh,568386,complete,598.85,600.605,726700,SAT-INCORRECT
+520293249,cnf_proj/HCP-529-420.cnf.xz,13219680,igrev2,34949,control.sh,568380,complete,354.639,354.835,568536,SAT-INCORRECT
+520293250,cnf_proj/HCP-529-420.cnf.xz,13219680,igrev2,34949,control_noelim.sh,568386,complete,272.265,272.326,468252,SAT-INCORRECT
+520293252,cnf_proj/HCP-529-60.cnf.xz,13219794,igrev2,34949,control.sh,568380,complete,124.092,124.099,324904,SAT-INCORRECT
+520293253,cnf_proj/HCP-529-60.cnf.xz,13219794,igrev2,34949,control_noelim.sh,568386,complete,93.9586,93.9124,272584,SAT-INCORRECT
+520293255,cnf_proj/huck.col.11.cnf.xz,13219807,igrev2,34949,control.sh,568380,complete,388.394,388.919,615084,UNSAT
+520293256,cnf_proj/huck.col.11.cnf.xz,13219807,igrev2,34949,control_noelim.sh,568386,complete,324.472,325.27,553836,UNSAT
+520293258,cnf_proj/IBM_FV_2004_rule_batch_30_SAT_dat.k75.cnf.xz,13219550,igrev2,34949,control.sh,568380,complete,1632.94,1635.17,1004344,SAT-INCORRECT
+520293259,cnf_proj/IBM_FV_2004_rule_batch_30_SAT_dat.k75.cnf.xz,13219550,igrev2,34949,control_noelim.sh,568386,complete,2905.83,2906.59,1124792,SAT-INCORRECT
+520293261,cnf_proj/k2fix_gr_rcs_w8.shuffled.cnf.xz,13219484,igrev2,34949,control.sh,568380,complete,7.69919,7.44794,175212,UNSAT
+520293262,cnf_proj/k2fix_gr_rcs_w8.shuffled.cnf.xz,13219484,igrev2,34949,control_noelim.sh,568386,complete,6.18428,5.93384,172892,UNSAT
+520293264,cnf_proj/Kakuro-easy-045-ext.xml.hg_4.cnf.xz,13219684,igrev2,34949,control.sh,568380,timeout (wallclock),4996.69,5000.08,664932,UNKNOWN
+520293265,cnf_proj/Kakuro-easy-045-ext.xml.hg_4.cnf.xz,13219684,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4992.66,5000.1,672176,UNKNOWN
+520293267,cnf_proj/Kakuro-easy-051-ext.xml.hg_4.cnf.xz,13219679,igrev2,34949,control.sh,568380,complete,2077.3,2078.45,1187388,UNSAT
+520293268,cnf_proj/Kakuro-easy-051-ext.xml.hg_4.cnf.xz,13219679,igrev2,34949,control_noelim.sh,568386,complete,2569.6,2568.01,1187388,UNSAT
+520293270,cnf_proj/Kakuro-easy-089-ext.xml.hg_4.cnf.xz,13219483,igrev2,34949,control.sh,568380,complete,147.078,137.86,2668856,SAT-INCORRECT
+520293271,cnf_proj/Kakuro-easy-089-ext.xml.hg_4.cnf.xz,13219483,igrev2,34949,control_noelim.sh,568386,complete,289.421,280.359,2668856,SAT-INCORRECT
+520293273,cnf_proj/Kakuro-easy-104-ext.xml.hg_6.cnf.xz,13219825,igrev2,34949,control.sh,568380,complete,213.888,205.402,3000484,SAT-INCORRECT
+520293274,cnf_proj/Kakuro-easy-104-ext.xml.hg_6.cnf.xz,13219825,igrev2,34949,control_noelim.sh,568386,complete,312.075,303.456,3005424,SAT-INCORRECT
+520293276,cnf_proj/Kakuro-easy-112-ext.xml.hg_7.cnf.xz,13219775,igrev2,34949,control.sh,568380,complete,283.147,269.446,3945812,SAT-INCORRECT
+520293277,cnf_proj/Kakuro-easy-112-ext.xml.hg_7.cnf.xz,13219775,igrev2,34949,control_noelim.sh,568386,complete,187.174,173.715,3876484,SAT-INCORRECT
+520293279,cnf_proj/Kakuro-easy-115-ext.xml.hg_5.cnf.xz,13219812,igrev2,34949,control.sh,568380,complete,687.019,669.71,4717860,SAT-INCORRECT
+520293280,cnf_proj/Kakuro-easy-115-ext.xml.hg_5.cnf.xz,13219812,igrev2,34949,control_noelim.sh,568386,complete,561.846,544.738,4717860,SAT-INCORRECT
+520293282,cnf_proj/Kakuro-easy-118-ext.xml.hg_4.cnf.xz,13219633,igrev2,34949,control.sh,568380,complete,413.484,403.543,3315648,SAT-INCORRECT
+520293283,cnf_proj/Kakuro-easy-118-ext.xml.hg_4.cnf.xz,13219633,igrev2,34949,control_noelim.sh,568386,complete,368.909,359.065,3315648,SAT-INCORRECT
+520293285,cnf_proj/Kakuro-easy-127-ext.xml.hg_7.cnf.xz,13219837,igrev2,34949,control.sh,568380,complete,1511.8,1495.99,4609156,SAT-INCORRECT
+520293286,cnf_proj/Kakuro-easy-127-ext.xml.hg_7.cnf.xz,13219837,igrev2,34949,control_noelim.sh,568386,complete,540.429,524.137,4608868,SAT-INCORRECT
+520293288,cnf_proj/Kakuro-easy-132-ext.xml.hg_8.cnf.xz,13219653,igrev2,34949,control.sh,568380,complete,1751.9,1737.35,4605188,SAT-INCORRECT
+520293289,cnf_proj/Kakuro-easy-132-ext.xml.hg_8.cnf.xz,13219653,igrev2,34949,control_noelim.sh,568386,complete,1726.42,1712.74,4605012,SAT-INCORRECT
+520293291,cnf_proj/Kakuro-easy-142-ext.xml.hg_8.cnf.xz,13219466,igrev2,34949,control.sh,568380,complete,513.846,502.482,3632480,SAT-INCORRECT
+520293292,cnf_proj/Kakuro-easy-142-ext.xml.hg_8.cnf.xz,13219466,igrev2,34949,control_noelim.sh,568386,complete,1755.95,1745.57,3521580,SAT-INCORRECT
+520293294,cnf_proj/Kakuro-easy-150-ext.xml.hg_9.cnf.xz,13219646,igrev2,34949,control.sh,568380,complete,1678.86,1665.03,4131236,SAT-INCORRECT
+520293295,cnf_proj/Kakuro-easy-150-ext.xml.hg_9.cnf.xz,13219646,igrev2,34949,control_noelim.sh,568386,complete,498.007,483.641,4087816,SAT-INCORRECT
+520293297,cnf_proj/Kakuro-easy-156-ext.xml.hg_7.cnf.xz,13219549,igrev2,34949,control.sh,568380,complete,537.708,524.894,3665796,SAT-INCORRECT
+520293298,cnf_proj/Kakuro-easy-156-ext.xml.hg_7.cnf.xz,13219549,igrev2,34949,control_noelim.sh,568386,complete,445.327,432.601,3638124,SAT-INCORRECT
+520293300,cnf_proj/ktf_TF-1.tf_3_0.02_34.cnf.xz,13219740,igrev2,34949,control.sh,568380,timeout (wallclock),4987.81,5000.03,377492,UNKNOWN
+520293301,cnf_proj/ktf_TF-1.tf_3_0.02_34.cnf.xz,13219740,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.27,5000.05,267036,UNKNOWN
+520293303,cnf_proj/ktf_TF-1.tf_4_0.06_101.cnf.xz,13219620,igrev2,34949,control.sh,568380,complete,440.036,440.216,360280,SAT-INCORRECT
+520293304,cnf_proj/ktf_TF-1.tf_4_0.06_101.cnf.xz,13219620,igrev2,34949,control_noelim.sh,568386,complete,286.96,286.99,227804,SAT-INCORRECT
+520293306,cnf_proj/ktf_TF-3.tf_2_0.02_24.cnf.xz,13219788,igrev2,34949,control.sh,568380,timeout (wallclock),4987.06,5000.04,334800,UNKNOWN
+520293307,cnf_proj/ktf_TF-3.tf_2_0.02_24.cnf.xz,13219788,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.56,5000.05,253428,UNKNOWN
+520293309,cnf_proj/ktf_TF-3.tf_3_0.02_24.cnf.xz,13219536,igrev2,34949,control.sh,568380,complete,472.918,473.087,331196,UNSAT
+520293310,cnf_proj/ktf_TF-3.tf_3_0.02_24.cnf.xz,13219536,igrev2,34949,control_noelim.sh,568386,complete,957.951,958.298,335248,UNSAT
+520293312,cnf_proj/ktf_TF-3.tf_4_0.04_48.cnf.xz,13219468,igrev2,34949,control.sh,568380,timeout (wallclock),4991.14,5000.08,318292,UNKNOWN
+520293313,cnf_proj/ktf_TF-3.tf_4_0.04_48.cnf.xz,13219468,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.08,5000.02,263948,UNKNOWN
+520293315,cnf_proj/ktf_TF-4.tf_2_0.02_18.cnf.xz,13219709,igrev2,34949,control.sh,568380,complete,134.39,134.586,266312,UNSAT
+520293316,cnf_proj/ktf_TF-4.tf_2_0.02_18.cnf.xz,13219709,igrev2,34949,control_noelim.sh,568386,complete,540.032,540.174,296184,UNSAT
+520293318,cnf_proj/ktf_TF-4.tf_4_0.04_35.cnf.xz,13219705,igrev2,34949,control.sh,568380,complete,4782.4,4784.52,2011140,UNSAT
+520293319,cnf_proj/ktf_TF-4.tf_4_0.04_35.cnf.xz,13219705,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.12,5000.02,1175348,UNSAT
+520293321,cnf_proj/ktf_TF-4.tf_4_0.06_52.cnf.xz,13219776,igrev2,34949,control.sh,568380,timeout (wallclock),4986.71,5000.02,332664,UNKNOWN
+520293322,cnf_proj/ktf_TF-4.tf_4_0.06_52.cnf.xz,13219776,igrev2,34949,control_noelim.sh,568386,complete,96.3959,96.373,162212,SAT-INCORRECT
+520293324,cnf_proj/ktf_TF-6.tf_4_0.04_51.cnf.xz,13219765,igrev2,34949,control.sh,568380,timeout (wallclock),4990.36,5000.02,336004,UNKNOWN
+520293325,cnf_proj/ktf_TF-6.tf_4_0.04_51.cnf.xz,13219765,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.94,5000.11,278864,UNKNOWN
+520293327,cnf_proj/ktf_TF-6.tf_4_0.06_77.cnf.xz,13219639,igrev2,34949,control.sh,568380,complete,340.318,340.476,323748,SAT-INCORRECT
+520293328,cnf_proj/ktf_TF-6.tf_4_0.06_77.cnf.xz,13219639,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.34,5000.03,1607384,SAT-INCORRECT
+520293330,cnf_proj/ktf_TF-7.tf_3_0.06_113.cnf.xz,13219791,igrev2,34949,control.sh,568380,complete,40.2225,40.073,197780,SAT-INCORRECT
+520293331,cnf_proj/ktf_TF-7.tf_3_0.06_113.cnf.xz,13219791,igrev2,34949,control_noelim.sh,568386,complete,364.739,364.977,253720,SAT-INCORRECT
+520293333,cnf_proj/ktf_TF-8.tf_4_0.02_37.cnf.xz,13219562,igrev2,34949,control.sh,568380,timeout (wallclock),4990.48,5000.02,342976,UNKNOWN
+520293334,cnf_proj/ktf_TF-8.tf_4_0.02_37.cnf.xz,13219562,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.64,5000.02,253124,UNKNOWN
+520293336,cnf_proj/ktf_TF-8.tf_4_0.06_109.cnf.xz,13219600,igrev2,34949,control.sh,568380,complete,42.9598,42.8429,177984,SAT-INCORRECT
+520293337,cnf_proj/ktf_TF-8.tf_4_0.06_109.cnf.xz,13219600,igrev2,34949,control_noelim.sh,568386,complete,3836.17,3837.89,887208,SAT-INCORRECT
+520293339,cnf_proj/LABS_n041_goal003.cnf.xz,13219619,igrev2,34949,control.sh,568380,complete,375.207,375.614,240008,SAT-INCORRECT
+520293340,cnf_proj/LABS_n041_goal003.cnf.xz,13219619,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.01,5000.01,728548,SAT-INCORRECT
+520293342,cnf_proj/LABS_n068_goal001.cnf.xz,13219522,igrev2,34949,control.sh,568380,complete,3392.76,3393.11,559292,UNSAT
+520293343,cnf_proj/LABS_n068_goal001.cnf.xz,13219522,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.48,5000.04,540624,UNSAT
+520293345,cnf_proj/LABS_n069_goal001.cnf.xz,13219779,igrev2,34949,control.sh,568380,timeout (wallclock),4999.64,5000.05,604128,UNSAT
+520293346,cnf_proj/LABS_n069_goal001.cnf.xz,13219779,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.73,5000.04,664204,UNSAT
+520293348,cnf_proj/LABS_n072_goal006.cnf.xz,13219538,igrev2,34949,control.sh,568380,complete,4021.15,4021.96,473324,SAT-INCORRECT
+520293349,cnf_proj/LABS_n072_goal006.cnf.xz,13219538,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.75,5000.08,471400,SAT-INCORRECT
+520293351,cnf_proj/LABS_n089_goal008.cnf.xz,13219695,igrev2,34949,control.sh,568380,timeout (cpu),5000.04,4999.62,653284,SAT-INCORRECT
+520293352,cnf_proj/LABS_n089_goal008.cnf.xz,13219695,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.05,5000.04,728572,SAT-INCORRECT
+520293354,cnf_proj/maximum_constrained_partition_14_bits_n200.cnf.xz,13219566,igrev2,34949,control.sh,568380,complete,180.019,180.144,317480,SAT-INCORRECT
+520293355,cnf_proj/maximum_constrained_partition_14_bits_n200.cnf.xz,13219566,igrev2,34949,control_noelim.sh,568386,complete,306.918,307.143,433376,SAT-INCORRECT
+520293357,cnf_proj/maximum_constrained_partition_18_bits_n200.cnf.xz,13219738,igrev2,34949,control.sh,568380,complete,180.036,180.17,335552,SAT-INCORRECT
+520293358,cnf_proj/maximum_constrained_partition_18_bits_n200.cnf.xz,13219738,igrev2,34949,control_noelim.sh,568386,complete,35.1592,35.1166,208044,SAT-INCORRECT
+520293360,cnf_proj/maxor128.cnf.xz,13219583,igrev2,34949,control.sh,568380,timeout (wallclock),4997.3,5000.02,2026104,UNSAT
+520293361,cnf_proj/maxor128.cnf.xz,13219583,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.77,5000.07,603308,UNKNOWN
+520293363,cnf_proj/mp1-blockpuzzle_5x10_s5_free3.cnf.xz,13219650,igrev2,34949,control.sh,568380,complete,1878.68,1881.54,2384624,UNSAT
+520293364,cnf_proj/mp1-blockpuzzle_5x10_s5_free3.cnf.xz,13219650,igrev2,34949,control_noelim.sh,568386,complete,224.304,224.422,400784,UNSAT
+520293366,cnf_proj/mp1-blockpuzzle_5x12_s6_free3.cnf.xz,13219531,igrev2,34949,control.sh,568380,timeout (wallclock),4992.22,5000.02,4204712,UNSAT
+520293367,cnf_proj/mp1-blockpuzzle_5x12_s6_free3.cnf.xz,13219531,igrev2,34949,control_noelim.sh,568386,complete,1974.79,1977.93,1704712,UNSAT
+520293369,cnf_proj/mp1-blockpuzzle_9x9_s1_free8.cnf.xz,13219545,igrev2,34949,control.sh,568380,complete,1202.06,1202.9,1464864,SAT-INCORRECT
+520293370,cnf_proj/mp1-blockpuzzle_9x9_s1_free8.cnf.xz,13219545,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4978.27,5000.04,592892,UNKNOWN
+520293372,cnf_proj/mp1-blockpuzzle_9x9_s5_free3.cnf.xz,13219617,igrev2,34949,control.sh,568380,complete,1299.44,1302.12,1572500,UNSAT
+520293373,cnf_proj/mp1-blockpuzzle_9x9_s5_free3.cnf.xz,13219617,igrev2,34949,control_noelim.sh,568386,complete,626.894,627.448,675400,UNSAT
+520293375,cnf_proj/mp1-bsat201-707.cnf.xz,13219690,igrev2,34949,control.sh,568380,complete,2573.04,2575.19,755584,UNSAT
+520293376,cnf_proj/mp1-bsat201-707.cnf.xz,13219690,igrev2,34949,control_noelim.sh,568386,complete,2462.33,2466.65,694008,UNSAT
+520293378,cnf_proj/mp1-bsat210-739.cnf.xz,13219846,igrev2,34949,control.sh,568380,timeout (wallclock),4997.57,5000.03,1680848,UNSAT
+520293379,cnf_proj/mp1-bsat210-739.cnf.xz,13219846,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.93,5000.02,1695212,UNSAT
+520293381,cnf_proj/mp1-klieber2017s-0300-034-t12.cnf.xz,13219488,igrev2,34949,control.sh,568380,complete,291.153,291.388,235676,SAT-INCORRECT
+520293382,cnf_proj/mp1-klieber2017s-0300-034-t12.cnf.xz,13219488,igrev2,34949,control_noelim.sh,568386,complete,770.216,770.46,223044,SAT-INCORRECT
+520293384,cnf_proj/mp1-klieber2017s-0490-024-t12.cnf.xz,13219643,igrev2,34949,control.sh,568380,complete,2758.15,2760.35,551380,SAT-INCORRECT
+520293385,cnf_proj/mp1-klieber2017s-0490-024-t12.cnf.xz,13219643,igrev2,34949,control_noelim.sh,568386,complete,911.678,912.362,203188,SAT-INCORRECT
+520293387,cnf_proj/mp1-klieber2017s-1000-023-eq.cnf.xz,13219634,igrev2,34949,control.sh,568380,complete,3380.45,3384.18,1072984,UNSAT
+520293388,cnf_proj/mp1-klieber2017s-1000-023-eq.cnf.xz,13219634,igrev2,34949,control_noelim.sh,568386,complete,1590.04,1590.61,400364,UNSAT
+520293390,cnf_proj/mp1-klieber2017s-1000-024-eq.cnf.xz,13219584,igrev2,34949,control.sh,568380,complete,691.41,691.915,413276,UNSAT
+520293391,cnf_proj/mp1-klieber2017s-1000-024-eq.cnf.xz,13219584,igrev2,34949,control_noelim.sh,568386,complete,1115.91,1116.47,375200,UNSAT
+520293393,cnf_proj/mp1-klieber2017s-1200-022-eq.cnf.xz,13219501,igrev2,34949,control.sh,568380,complete,3245.91,3247.79,1055572,UNSAT
+520293394,cnf_proj/mp1-klieber2017s-1200-022-eq.cnf.xz,13219501,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.77,5000.02,1072448,UNSAT
+520293396,cnf_proj/mp1-klieber2017s-2000-022-eq.cnf.xz,13219559,igrev2,34949,control.sh,568380,complete,4550.69,4552.92,1147532,UNSAT
+520293397,cnf_proj/mp1-klieber2017s-2000-022-eq.cnf.xz,13219559,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.44,5000.02,1131584,UNSAT
+520293399,cnf_proj/mp1-Nb6T06.cnf.xz,13219473,igrev2,34949,control.sh,568380,complete,59.6472,59.7005,215132,UNSAT
+520293400,cnf_proj/mp1-Nb6T06.cnf.xz,13219473,igrev2,34949,control_noelim.sh,568386,complete,123.859,123.954,231484,UNSAT
+520293402,cnf_proj/mp1-Nb6T07.cnf.xz,13219772,igrev2,34949,control.sh,568380,complete,2878.1,2880.51,1720816,UNSAT
+520293403,cnf_proj/mp1-Nb6T07.cnf.xz,13219772,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.61,5000.02,1747544,UNSAT
+520293405,cnf_proj/mp1-Nb7T44.cnf.xz,13219551,igrev2,34949,control.sh,568380,complete,209.112,209.881,513468,SAT-INCORRECT
+520293406,cnf_proj/mp1-Nb7T44.cnf.xz,13219551,igrev2,34949,control_noelim.sh,568386,complete,86.8056,86.7629,254240,SAT-INCORRECT
+520293408,cnf_proj/mp1-Nb7T46.cnf.xz,13219479,igrev2,34949,control.sh,568380,complete,54.5061,54.4804,321544,SAT-INCORRECT
+520293409,cnf_proj/mp1-Nb7T46.cnf.xz,13219479,igrev2,34949,control_noelim.sh,568386,complete,237.524,238.384,391432,SAT-INCORRECT
+520293411,cnf_proj/mp1-squ_ali_s10x10_c39_abio_SAT.cnf.xz,13219759,igrev2,34949,control.sh,568380,complete,2147.02,2149.69,1138268,SAT-INCORRECT
+520293412,cnf_proj/mp1-squ_ali_s10x10_c39_abio_SAT.cnf.xz,13219759,igrev2,34949,control_noelim.sh,568386,complete,1046.01,1047.25,680144,SAT-INCORRECT
+520293414,cnf_proj/mp1-squ_any_s09x07_c27_abix_UNS.cnf.xz,13219787,igrev2,34949,control.sh,568380,complete,2517.56,2519.49,1024028,UNSAT
+520293415,cnf_proj/mp1-squ_any_s09x07_c27_abix_UNS.cnf.xz,13219787,igrev2,34949,control_noelim.sh,568386,complete,1559.59,1560.6,710632,UNSAT
+520293417,cnf_proj/mp1-tri_ali_s11_c35_abix_UNS.cnf.xz,13219533,igrev2,34949,control.sh,568380,complete,266.121,266.447,317392,UNSAT
+520293418,cnf_proj/mp1-tri_ali_s11_c35_abix_UNS.cnf.xz,13219533,igrev2,34949,control_noelim.sh,568386,complete,201.253,201.607,238056,UNSAT
+520293420,cnf_proj/mp1-tri_ali_s11_c35_bail_UNS.cnf.xz,13219790,igrev2,34949,control.sh,568380,complete,346.208,346.824,319544,UNSAT
+520293421,cnf_proj/mp1-tri_ali_s11_c35_bail_UNS.cnf.xz,13219790,igrev2,34949,control_noelim.sh,568386,complete,233.39,233.696,257140,UNSAT
+520293423,cnf_proj/MVD_ADS_S10_5_6.cnf.xz,13219457,igrev2,34949,control.sh,568380,complete,2.87606,2.65334,289124,UNSAT
+520293424,cnf_proj/MVD_ADS_S10_5_6.cnf.xz,13219457,igrev2,34949,control_noelim.sh,568386,complete,2.8727,2.65428,288860,UNSAT
+520293426,cnf_proj/MVD_ADS_S10_6_6.cnf.xz,13219830,igrev2,34949,control.sh,568380,complete,20.8981,20.6836,292820,UNSAT
+520293427,cnf_proj/MVD_ADS_S10_6_6.cnf.xz,13219830,igrev2,34949,control_noelim.sh,568386,complete,20.8447,20.631,293744,UNSAT
+520293429,cnf_proj/MVD_ADS_S11_6_7.cnf.xz,13219762,igrev2,34949,control.sh,568380,complete,2.41699,2.17739,303776,SAT-INCORRECT
+520293430,cnf_proj/MVD_ADS_S11_6_7.cnf.xz,13219762,igrev2,34949,control_noelim.sh,568386,complete,2.39727,2.15818,304832,SAT-INCORRECT
+520293432,cnf_proj/MVD_ADS_S11_7_7.cnf.xz,13219689,igrev2,34949,control.sh,568380,complete,3.24551,2.95925,305888,SAT-INCORRECT
+520293433,cnf_proj/MVD_ADS_S11_7_7.cnf.xz,13219689,igrev2,34949,control_noelim.sh,568386,complete,3.22646,2.94322,306284,SAT-INCORRECT
+520293435,cnf_proj/MVD_ADS_S11_8_7.cnf.xz,13219687,igrev2,34949,control.sh,568380,complete,2.10805,1.86392,305888,SAT-INCORRECT
+520293436,cnf_proj/MVD_ADS_S11_8_7.cnf.xz,13219687,igrev2,34949,control_noelim.sh,568386,complete,2.10206,1.858,305888,SAT-INCORRECT
+520293438,cnf_proj/MVD_ADS_S1_5_5.cnf.xz,13219844,igrev2,34949,control.sh,568380,complete,5.6595,5.23233,367212,UNSAT
+520293439,cnf_proj/MVD_ADS_S1_5_5.cnf.xz,13219844,igrev2,34949,control_noelim.sh,568386,complete,5.63433,5.20464,367212,UNSAT
+520293441,cnf_proj/MVD_ADS_S3_5_5.cnf.xz,13219735,igrev2,34949,control.sh,568380,complete,4.20024,3.76342,370904,UNSAT
+520293442,cnf_proj/MVD_ADS_S3_5_5.cnf.xz,13219735,igrev2,34949,control_noelim.sh,568386,complete,4.22485,3.78701,369892,UNSAT
+520293444,cnf_proj/MVD_ADS_S4_5_5.cnf.xz,13219659,igrev2,34949,control.sh,568380,complete,15.2196,14.8235,361532,UNSAT
+520293445,cnf_proj/MVD_ADS_S4_5_5.cnf.xz,13219659,igrev2,34949,control_noelim.sh,568386,complete,15.2733,14.8784,336664,UNSAT
+520293447,cnf_proj/MVD_ADS_S5_6_6.cnf.xz,13219611,igrev2,34949,control.sh,568380,complete,39.6308,39.27,310508,UNSAT
+520293448,cnf_proj/MVD_ADS_S5_6_6.cnf.xz,13219611,igrev2,34949,control_noelim.sh,568386,complete,39.5684,39.2105,307208,UNSAT
+520293450,cnf_proj/MVD_ADS_S6_6_5.cnf.xz,13219547,igrev2,34949,control.sh,568380,complete,1.05619,0.936268,265356,UNSAT
+520293451,cnf_proj/MVD_ADS_S6_6_5.cnf.xz,13219547,igrev2,34949,control_noelim.sh,568386,complete,1.05634,0.935858,264696,UNSAT
+520293453,cnf_proj/MVD_ADS_S6_6_6.cnf.xz,13219756,igrev2,34949,control.sh,568380,complete,4.44542,4.09709,326872,UNSAT
+520293454,cnf_proj/MVD_ADS_S6_6_6.cnf.xz,13219756,igrev2,34949,control_noelim.sh,568386,complete,4.46682,4.1238,348700,UNSAT
+520293456,cnf_proj/MVD_ADS_S7_6_6.cnf.xz,13219520,igrev2,34949,control.sh,568380,complete,5.10799,4.68804,344488,UNSAT
+520293457,cnf_proj/MVD_ADS_S7_6_6.cnf.xz,13219520,igrev2,34949,control_noelim.sh,568386,complete,5.0885,4.76582,351068,UNSAT
+520293459,cnf_proj/MVD_ADS_S9_6_6.cnf.xz,13219570,igrev2,34949,control.sh,568380,complete,4.02944,3.63473,314072,UNSAT
+520293460,cnf_proj/MVD_ADS_S9_6_6.cnf.xz,13219570,igrev2,34949,control_noelim.sh,568386,complete,3.99403,3.59305,346832,UNSAT
+520293462,cnf_proj/Mycielski-10-hints-10.cnf.xz,13219731,igrev2,34949,control.sh,568380,complete,208.567,208.701,397344,UNSAT
+520293463,cnf_proj/Mycielski-10-hints-10.cnf.xz,13219731,igrev2,34949,control_noelim.sh,568386,complete,317.104,316.943,454552,UNSAT
+520293465,cnf_proj/Mycielski-10-hints-5.cnf.xz,13219741,igrev2,34949,control.sh,568380,timeout (wallclock),4991.29,5000.04,366128,UNKNOWN
+520293466,cnf_proj/Mycielski-10-hints-5.cnf.xz,13219741,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4993.46,5000.02,377900,UNKNOWN
+520293468,cnf_proj/Mycielski-10-hints-6.cnf.xz,13219582,igrev2,34949,control.sh,568380,timeout (wallclock),4990.79,5000.03,340272,UNKNOWN
+520293469,cnf_proj/Mycielski-10-hints-6.cnf.xz,13219582,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4991.62,5000.02,389980,UNKNOWN
+520293471,cnf_proj/Mycielski-10-hints-7.cnf.xz,13219685,igrev2,34949,control.sh,568380,timeout (wallclock),4989.68,5000.03,345940,UNKNOWN
+520293472,cnf_proj/Mycielski-10-hints-7.cnf.xz,13219685,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4987.31,5000.1,405208,UNKNOWN
+520293474,cnf_proj/Mycielski-10-hints-8.cnf.xz,13219747,igrev2,34949,control.sh,568380,timeout (wallclock),4992.47,5000.11,380008,UNKNOWN
+520293475,cnf_proj/Mycielski-10-hints-8.cnf.xz,13219747,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4993.25,5000.02,394676,UNKNOWN
+520293477,cnf_proj/Mycielski-10-hints-9.cnf.xz,13219604,igrev2,34949,control.sh,568380,timeout (wallclock),4991.86,5000.1,366688,UNKNOWN
+520293478,cnf_proj/Mycielski-10-hints-9.cnf.xz,13219604,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4992.37,5000.11,391676,UNKNOWN
+520293480,cnf_proj/Mycielski-11-hints-1.cnf.xz,13219489,igrev2,34949,control.sh,568380,complete,2667.24,2667.9,1577160,UNSAT
+520293481,cnf_proj/Mycielski-11-hints-1.cnf.xz,13219489,igrev2,34949,control_noelim.sh,568386,complete,3251.58,3252.5,1622220,UNSAT
+520293483,cnf_proj/Mycielski-11-hints-2.cnf.xz,13219808,igrev2,34949,control.sh,568380,complete,2492.95,2493.17,1561108,UNSAT
+520293484,cnf_proj/Mycielski-11-hints-2.cnf.xz,13219808,igrev2,34949,control_noelim.sh,568386,complete,2886.58,2887.35,1610620,UNSAT
+520293486,cnf_proj/Mycielski-11-hints-3.cnf.xz,13219544,igrev2,34949,control.sh,568380,complete,2187.62,2187.89,1471116,UNSAT
+520293487,cnf_proj/Mycielski-11-hints-3.cnf.xz,13219544,igrev2,34949,control_noelim.sh,568386,complete,2914.02,2916.38,1641680,UNSAT
+520293489,cnf_proj/Mycielski-11-hints-4.cnf.xz,13219673,igrev2,34949,control.sh,568380,complete,2250.58,2251.07,1493876,UNSAT
+520293490,cnf_proj/Mycielski-11-hints-4.cnf.xz,13219673,igrev2,34949,control_noelim.sh,568386,complete,2496.08,2497.6,1547168,UNSAT
+520293492,cnf_proj/n320p5q2_n.apx_16.cnf.xz,13219495,igrev2,34949,control.sh,568380,complete,81.4525,81.5189,227596,SAT-INCORRECT
+520293493,cnf_proj/n320p5q2_n.apx_16.cnf.xz,13219495,igrev2,34949,control_noelim.sh,568386,complete,213.685,214.038,352984,SAT-INCORRECT
+520293495,cnf_proj/n320p5q2_n.apx_17.cnf.xz,13219760,igrev2,34949,control.sh,568380,complete,255.137,255.757,392088,UNSAT
+520293496,cnf_proj/n320p5q2_n.apx_17.cnf.xz,13219760,igrev2,34949,control_noelim.sh,568386,complete,266.456,267.57,393120,UNSAT
+520293498,cnf_proj/Nb51T6.cnf.xz,13219838,igrev2,34949,control.sh,568380,complete,4389.28,4383.57,4647504,UNSAT
+520293499,cnf_proj/Nb51T6.cnf.xz,13219838,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.02,4996.97,2413604,UNKNOWN
+520293501,cnf_proj/ndhf_xits_09_UNSAT.cnf.xz,13219833,igrev2,34949,control.sh,568380,timeout (wallclock),4991.47,5000.01,337684,UNKNOWN
+520293502,cnf_proj/ndhf_xits_09_UNSAT.cnf.xz,13219833,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.85,5000.07,323308,UNKNOWN
+520293504,cnf_proj/p01_lb_05.cnf.xz,13219487,igrev2,34949,control.sh,568380,complete,52.5076,52.5064,182328,UNSAT
+520293505,cnf_proj/p01_lb_05.cnf.xz,13219487,igrev2,34949,control_noelim.sh,568386,complete,34.0952,34.0269,166020,UNSAT
+520293507,cnf_proj/pb_300_05_lb_16.cnf.xz,13219462,igrev2,34949,control.sh,568380,complete,197.354,197.166,294684,SAT-INCORRECT
+520293508,cnf_proj/pb_300_05_lb_16.cnf.xz,13219462,igrev2,34949,control_noelim.sh,568386,complete,883.472,883.721,370556,SAT-INCORRECT
+520293510,cnf_proj/pb_300_05_lb_17.cnf.xz,13219784,igrev2,34949,control.sh,568380,complete,483.702,484.399,380260,SAT-INCORRECT
+520293511,cnf_proj/pb_300_05_lb_17.cnf.xz,13219784,igrev2,34949,control_noelim.sh,568386,complete,288.421,288.156,288432,SAT-INCORRECT
+520293513,cnf_proj/pb_300_06_lb_02.cnf.xz,13219532,igrev2,34949,control.sh,568380,complete,176.781,176.714,288564,SAT-INCORRECT
+520293514,cnf_proj/pb_300_06_lb_02.cnf.xz,13219532,igrev2,34949,control_noelim.sh,568386,complete,499.99,499.848,318764,SAT-INCORRECT
+520293516,cnf_proj/pb_300_10_lb_06.cnf.xz,13219720,igrev2,34949,control.sh,568380,complete,128.165,127.893,286952,UNSAT
+520293517,cnf_proj/pb_300_10_lb_06.cnf.xz,13219720,igrev2,34949,control_noelim.sh,568386,complete,161.891,161.842,286592,UNSAT
+520293519,cnf_proj/php12e12.cnf.xz,13219780,igrev2,34949,control.sh,568380,timeout (wallclock),4985.7,5000.02,314468,UNKNOWN
+520293520,cnf_proj/php12e12.cnf.xz,13219780,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4988.41,5000.09,304952,UNKNOWN
+520293522,cnf_proj/php14e14.cnf.xz,13219683,igrev2,34949,control.sh,568380,timeout (wallclock),4983.67,5000.11,358316,UNKNOWN
+520293523,cnf_proj/php14e14.cnf.xz,13219683,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4976.42,5000.1,367356,UNKNOWN
+520293525,cnf_proj/prime_a20_b20.cnf.xz,13219828,igrev2,34949,control.sh,568380,complete,367.076,367.288,280444,SAT-INCORRECT
+520293526,cnf_proj/prime_a20_b20.cnf.xz,13219828,igrev2,34949,control_noelim.sh,568386,complete,84.0994,84.1393,191200,SAT-INCORRECT
+520293528,cnf_proj/prime_a22_b22.cnf.xz,13219696,igrev2,34949,control.sh,568380,complete,498.697,498.857,322660,SAT-INCORRECT
+520293529,cnf_proj/prime_a22_b22.cnf.xz,13219696,igrev2,34949,control_noelim.sh,568386,complete,1756.02,1756.57,539096,SAT-INCORRECT
+520293531,cnf_proj/prime_a24_b24.cnf.xz,13219515,igrev2,34949,control.sh,568380,complete,4901.24,4902.35,982732,SAT-INCORRECT
+520293532,cnf_proj/prime_a24_b24.cnf.xz,13219515,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.67,5000.06,1010208,SAT-INCORRECT
+520293534,cnf_proj/problem_12.smt2.cnf.xz,13219575,igrev2,34949,control.sh,568380,timeout (wallclock),4988.36,5000.02,418880,UNKNOWN
+520293535,cnf_proj/problem_12.smt2.cnf.xz,13219575,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4992.53,5000.1,362664,UNKNOWN
+520293537,cnf_proj/puzzle30_sat.cnf.xz,13219670,igrev2,34949,control.sh,568380,complete,2176.34,2179.45,613312,SAT-INCORRECT
+520293538,cnf_proj/puzzle30_sat.cnf.xz,13219670,igrev2,34949,control_noelim.sh,568386,complete,1881.71,1882.42,522640,SAT-INCORRECT
+520293540,cnf_proj/puzzle34_sat.cnf.xz,13219491,igrev2,34949,control.sh,568380,complete,1592.82,1594.1,610280,SAT-INCORRECT
+520293541,cnf_proj/puzzle34_sat.cnf.xz,13219491,igrev2,34949,control_noelim.sh,568386,complete,405.858,406.205,271900,SAT-INCORRECT
+520293543,cnf_proj/puzzle34_unsat.cnf.xz,13219510,igrev2,34949,control.sh,568380,complete,1152.88,1153.53,525296,UNSAT
+520293544,cnf_proj/puzzle34_unsat.cnf.xz,13219510,igrev2,34949,control_noelim.sh,568386,complete,1208.08,1208.66,415824,UNSAT
+520293546,cnf_proj/puzzle35_sat.cnf.xz,13219829,igrev2,34949,control.sh,568380,complete,3656.26,3657.96,859148,SAT-INCORRECT
+520293547,cnf_proj/puzzle35_sat.cnf.xz,13219829,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.54,5000.05,360304,UNKNOWN
+520293549,cnf_proj/puzzle35_unsat.cnf.xz,13219507,igrev2,34949,control.sh,568380,complete,3878.14,3879.37,739868,UNSAT
+520293550,cnf_proj/puzzle35_unsat.cnf.xz,13219507,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.42,5000.11,335844,UNKNOWN
+520293552,cnf_proj/puzzle36_sat.cnf.xz,13219591,igrev2,34949,control.sh,568380,timeout (wallclock),4996.46,5000.07,386876,UNKNOWN
+520293553,cnf_proj/puzzle36_sat.cnf.xz,13219591,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.35,5000.05,369704,UNKNOWN
+520293555,cnf_proj/puzzle37_unsat.cnf.xz,13219548,igrev2,34949,control.sh,568380,complete,3260.65,3262.34,944892,UNSAT
+520293556,cnf_proj/puzzle37_unsat.cnf.xz,13219548,igrev2,34949,control_noelim.sh,568386,complete,1972.77,1974.25,558344,UNSAT
+520293558,cnf_proj/puzzle39_sat.cnf.xz,13219799,igrev2,34949,control.sh,568380,timeout (wallclock),4997.07,5000.05,376672,UNKNOWN
+520293559,cnf_proj/puzzle39_sat.cnf.xz,13219799,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.66,5000.03,992804,SAT-INCORRECT
+520293561,cnf_proj/puzzle42_sat.cnf.xz,13219608,igrev2,34949,control.sh,568380,timeout (wallclock),4992.95,5000.04,385464,UNKNOWN
+520293562,cnf_proj/puzzle42_sat.cnf.xz,13219608,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.17,5000.08,382948,UNKNOWN
+520293564,cnf_proj/puzzle44_unsat.cnf.xz,13219577,igrev2,34949,control.sh,568380,timeout (wallclock),4994.23,5000.08,388852,UNKNOWN
+520293565,cnf_proj/puzzle44_unsat.cnf.xz,13219577,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.94,5000.01,392788,UNKNOWN
+520293567,cnf_proj/puzzle47_sat.cnf.xz,13219490,igrev2,34949,control.sh,568380,timeout (wallclock),4989,5000.01,391840,UNKNOWN
+520293568,cnf_proj/puzzle47_sat.cnf.xz,13219490,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.26,5000.02,382208,UNKNOWN
+520293570,cnf_proj/puzzle51_unsat.cnf.xz,13219665,igrev2,34949,control.sh,568380,timeout (wallclock),4993.23,5000.06,396124,UNKNOWN
+520293571,cnf_proj/puzzle51_unsat.cnf.xz,13219665,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.44,5000.03,420080,UNKNOWN
+520293573,cnf_proj/puzzle60_sat.cnf.xz,13219458,igrev2,34949,control.sh,568380,timeout (wallclock),4992.73,5000.02,388072,UNKNOWN
+520293574,cnf_proj/puzzle60_sat.cnf.xz,13219458,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.89,5000.08,461524,UNKNOWN
+520293576,cnf_proj/quad_res_r21_m22.cnf.xz,13219701,igrev2,34949,control.sh,568380,complete,366.307,366.391,249260,SAT-INCORRECT
+520293577,cnf_proj/quad_res_r21_m22.cnf.xz,13219701,igrev2,34949,control_noelim.sh,568386,complete,98.9538,99.0153,174664,SAT-INCORRECT
+520293579,cnf_proj/quad_res_r26_m27.cnf.xz,13219539,igrev2,34949,control.sh,568380,timeout (wallclock),4997.72,5000.02,271468,UNKNOWN
+520293580,cnf_proj/quad_res_r26_m27.cnf.xz,13219539,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.5,5000.03,301880,UNKNOWN
+520293582,cnf_proj/quad_res_r28_m29.cnf.xz,13219721,igrev2,34949,control.sh,568380,timeout (wallclock),4995.57,5000.08,276960,UNKNOWN
+520293583,cnf_proj/quad_res_r28_m29.cnf.xz,13219721,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.41,5000.06,289892,UNKNOWN
+520293585,cnf_proj/quad_res_r29_m32.cnf.xz,13219555,igrev2,34949,control.sh,568380,timeout (wallclock),4991.08,5000.03,272256,UNKNOWN
+520293586,cnf_proj/quad_res_r29_m32.cnf.xz,13219555,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.91,5000.11,314656,UNKNOWN
+520293588,cnf_proj/quad_res_r31_m35.cnf.xz,13219686,igrev2,34949,control.sh,568380,timeout (wallclock),4995.57,5000.02,269400,UNKNOWN
+520293589,cnf_proj/quad_res_r31_m35.cnf.xz,13219686,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.51,5000.06,327016,UNKNOWN
+520293591,cnf_proj/quad_res_r32_m35.cnf.xz,13219528,igrev2,34949,control.sh,568380,timeout (wallclock),4982.22,5000.06,276168,UNKNOWN
+520293592,cnf_proj/quad_res_r32_m35.cnf.xz,13219528,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.05,5000.1,349840,UNKNOWN
+520293594,cnf_proj/quad_res_r33_m36.cnf.xz,13219502,igrev2,34949,control.sh,568380,timeout (wallclock),4998.92,5000.05,272124,UNKNOWN
+520293595,cnf_proj/quad_res_r33_m36.cnf.xz,13219502,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.43,5000.02,309972,UNKNOWN
+520293597,cnf_proj/quad_res_r34_m36.cnf.xz,13219471,igrev2,34949,control.sh,568380,timeout (wallclock),4995.34,5000.02,257824,UNKNOWN
+520293598,cnf_proj/quad_res_r34_m36.cnf.xz,13219471,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4989.97,5000.04,354032,UNKNOWN
+520293600,cnf_proj/quad_res_r35_m36.cnf.xz,13219848,igrev2,34949,control.sh,568380,timeout (wallclock),4997.03,5000.07,255716,UNKNOWN
+520293601,cnf_proj/quad_res_r35_m36.cnf.xz,13219848,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.39,5000.08,299776,UNKNOWN
+520293603,cnf_proj/quad_res_r37_m39.cnf.xz,13219694,igrev2,34949,control.sh,568380,timeout (wallclock),4995.99,5000.11,236112,UNKNOWN
+520293604,cnf_proj/quad_res_r37_m39.cnf.xz,13219694,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.74,5000.04,321528,UNKNOWN
+520293606,cnf_proj/randomG-B-Mix-n15-d05.cnf.xz,13219456,igrev2,34949,control.sh,568380,complete,495.98,496.8,689560,UNSAT
+520293607,cnf_proj/randomG-B-Mix-n15-d05.cnf.xz,13219456,igrev2,34949,control_noelim.sh,568386,complete,210.003,210.181,328220,UNSAT
+520293609,cnf_proj/randomG-B-Mix-n16-d05.cnf.xz,13219704,igrev2,34949,control.sh,568380,timeout (wallclock),4992.14,5000.02,6372440,UNSAT
+520293610,cnf_proj/randomG-B-Mix-n16-d05.cnf.xz,13219704,igrev2,34949,control_noelim.sh,568386,complete,1459.49,1460.69,1068228,UNSAT
+520293612,cnf_proj/randomG-B-Mix-n18-d05.cnf.xz,13219771,igrev2,34949,control.sh,568380,timeout (wallclock),4988.78,5000.03,314484,UNKNOWN
+520293613,cnf_proj/randomG-B-Mix-n18-d05.cnf.xz,13219771,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.36,5000.02,281124,UNKNOWN
+520293615,cnf_proj/randomG-B-Mix-n19-d05.cnf.xz,13219516,igrev2,34949,control.sh,568380,timeout (wallclock),4982.12,5000.03,311456,UNKNOWN
+520293616,cnf_proj/randomG-B-Mix-n19-d05.cnf.xz,13219516,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4989.38,5000.02,255704,UNKNOWN
+520293618,cnf_proj/randomG-Mix-n17-d05.cnf.xz,13219749,igrev2,34949,control.sh,568380,timeout (wallclock),4987.26,5000.02,271920,UNKNOWN
+520293619,cnf_proj/randomG-Mix-n17-d05.cnf.xz,13219749,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4993.32,5000.02,258036,UNKNOWN
+520293621,cnf_proj/randomG-Mix-n18-d05.cnf.xz,13219529,igrev2,34949,control.sh,568380,timeout (wallclock),4987.43,5000.02,257540,UNKNOWN
+520293622,cnf_proj/randomG-Mix-n18-d05.cnf.xz,13219529,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4991.66,5000.11,271104,UNKNOWN
+520293624,cnf_proj/randomG-n16-d05.cnf.xz,13219630,igrev2,34949,control.sh,568380,timeout (wallclock),4991.24,5000.02,7249460,UNSAT
+520293625,cnf_proj/randomG-n16-d05.cnf.xz,13219630,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.96,5000.01,4537104,UNSAT
+520293627,cnf_proj/randomG-n17-d05.cnf.xz,13219697,igrev2,34949,control.sh,568380,timeout (wallclock),4989.31,5000.02,297736,UNKNOWN
+520293628,cnf_proj/randomG-n17-d05.cnf.xz,13219697,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4988.14,5000.02,273156,UNKNOWN
+520293630,cnf_proj/randomG-n18-d05.cnf.xz,13219477,igrev2,34949,control.sh,568380,timeout (wallclock),4988.37,5000.02,302856,UNKNOWN
+520293631,cnf_proj/randomG-n18-d05.cnf.xz,13219477,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4981.52,5000.01,309620,UNKNOWN
+520293633,cnf_proj/randomG-n19-d05.cnf.xz,13219845,igrev2,34949,control.sh,568380,timeout (wallclock),4981.79,5000.02,312080,UNKNOWN
+520293634,cnf_proj/randomG-n19-d05.cnf.xz,13219845,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4986.97,5000.11,309664,UNKNOWN
+520293636,cnf_proj/randomG-n20-d05.cnf.xz,13219594,igrev2,34949,control.sh,568380,timeout (wallclock),4982.78,5000.01,330440,UNKNOWN
+520293637,cnf_proj/randomG-n20-d05.cnf.xz,13219594,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4987.14,5000.11,353136,UNKNOWN
+520293639,cnf_proj/rphp4_065_shuffled.cnf.xz,13219840,igrev2,34949,control.sh,568380,complete,645.602,646.518,1066856,UNSAT
+520293640,cnf_proj/rphp4_065_shuffled.cnf.xz,13219840,igrev2,34949,control_noelim.sh,568386,complete,631.768,633.163,995012,UNSAT
+520293642,cnf_proj/rphp4_080_shuffled.cnf.xz,13219751,igrev2,34949,control.sh,568380,complete,2429.2,2432.24,2760868,UNSAT
+520293643,cnf_proj/rphp4_080_shuffled.cnf.xz,13219751,igrev2,34949,control_noelim.sh,568386,complete,3376.27,3379.06,3155396,UNSAT
+520293645,cnf_proj/rphp4_090_shuffled.cnf.xz,13219723,igrev2,34949,control.sh,568380,complete,3801.28,3805.19,3781752,UNSAT
+520293646,cnf_proj/rphp4_090_shuffled.cnf.xz,13219723,igrev2,34949,control_noelim.sh,568386,complete,4341.89,4348.28,3691684,UNSAT
+520293648,cnf_proj/rpoc_xits_10_UNKNOWN.cnf.xz,13219637,igrev2,34949,control.sh,568380,timeout (wallclock),4985.87,5000.02,337176,UNKNOWN
+520293649,cnf_proj/rpoc_xits_10_UNKNOWN.cnf.xz,13219637,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4987.51,5000.01,357692,UNKNOWN
+520293651,cnf_proj/satch2ways12u.cnf.xz,13219666,igrev2,34949,control.sh,568380,timeout (wallclock),4991.3,5000.05,3982544,UNKNOWN
+520293652,cnf_proj/satch2ways12u.cnf.xz,13219666,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4986.89,5000.08,3992576,UNKNOWN
+520293654,cnf_proj/satch2ways12wu.cnf.xz,13219777,igrev2,34949,control.sh,568380,timeout (wallclock),4992.65,5000.04,3999236,UNKNOWN
+520293655,cnf_proj/satch2ways12wu.cnf.xz,13219777,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4987.53,5000.05,3997912,UNKNOWN
+520293657,cnf_proj/satch2ways13wu.cnf.xz,13219702,igrev2,34949,control.sh,568380,timeout (wallclock),4991.08,5000.05,4448072,UNKNOWN
+520293658,cnf_proj/satch2ways13wu.cnf.xz,13219702,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4977.86,5000.02,4490784,UNKNOWN
+520293660,cnf_proj/satch2ways14u.cnf.xz,13219581,igrev2,34949,control.sh,568380,timeout (wallclock),4980.58,5000.04,4949224,UNKNOWN
+520293661,cnf_proj/satch2ways14u.cnf.xz,13219581,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4988.63,5000.03,4969684,UNKNOWN
+520293663,cnf_proj/satch2ways15.cnf.xz,13219585,igrev2,34949,control.sh,568380,timeout (wallclock),4979.29,5000.02,1.25E+07,UNKNOWN
+520293664,cnf_proj/satch2ways15.cnf.xz,13219585,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4976.86,5000.02,1.26E+07,UNKNOWN
+520293666,cnf_proj/satch2ways15u.cnf.xz,13219514,igrev2,34949,control.sh,568380,timeout (wallclock),4986.94,5000.07,5418448,UNKNOWN
+520293667,cnf_proj/satch2ways15u.cnf.xz,13219514,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4981.08,5000.04,5418068,UNKNOWN
+520293669,cnf_proj/satch2ways15wu.cnf.xz,13219815,igrev2,34949,control.sh,568380,timeout (wallclock),4989.16,5000.02,5423040,UNKNOWN
+520293670,cnf_proj/satch2ways15wu.cnf.xz,13219815,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4979.48,5000.03,5404468,UNKNOWN
+520293672,cnf_proj/satch2ways16.cnf.xz,13219728,igrev2,34949,control.sh,568380,timeout (wallclock),4964.48,5000.1,1.56E+07,UNKNOWN
+520293673,cnf_proj/satch2ways16.cnf.xz,13219728,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4963.86,5000.08,1.56E+07,UNKNOWN
+520293675,cnf_proj/satch2ways16w.cnf.xz,13219708,igrev2,34949,control.sh,568380,timeout (wallclock),4970.77,5000.01,1.56E+07,UNKNOWN
+520293676,cnf_proj/satch2ways16w.cnf.xz,13219708,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4971.55,5000.02,1.56E+07,UNKNOWN
+520293678,cnf_proj/satch2ways17w.cnf.xz,13219766,igrev2,34949,control.sh,568380,timeout (wallclock),4969.33,5000.02,1.75E+07,UNKNOWN
+520293679,cnf_proj/satch2ways17w.cnf.xz,13219766,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4966.94,5000.06,1.76E+07,UNKNOWN
+520293681,cnf_proj/satch2ways18u.cnf.xz,13219572,igrev2,34949,control.sh,568380,timeout (wallclock),4986.42,5000.04,6759052,UNKNOWN
+520293682,cnf_proj/satch2ways18u.cnf.xz,13219572,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4986.31,5000.02,6800676,UNKNOWN
+520293684,cnf_proj/satch2ways18wu.cnf.xz,13219556,igrev2,34949,control.sh,568380,timeout (wallclock),4986.59,5000.05,6742032,UNKNOWN
+520293685,cnf_proj/satch2ways18wu.cnf.xz,13219556,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4985.52,5000.05,6772268,UNKNOWN
+520293687,cnf_proj/satch2ways19u.cnf.xz,13219523,igrev2,34949,control.sh,568380,timeout (wallclock),4981.22,5000.02,7264924,UNKNOWN
+520293688,cnf_proj/satch2ways19u.cnf.xz,13219523,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4984.18,5000.07,7157464,UNKNOWN
+520293690,cnf_proj/SC21_Timetable_C_121_E_34_Cl_8_S_4.cnf.xz,13219561,igrev2,34949,control.sh,568380,timeout (wallclock),4961.9,5000.1,931748,UNKNOWN
+520293691,cnf_proj/SC21_Timetable_C_121_E_34_Cl_8_S_4.cnf.xz,13219561,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4973.83,5000.03,835216,UNKNOWN
+520293693,cnf_proj/SC21_Timetable_C_136_E_36_Cl_9_S_15.cnf.xz,13219778,igrev2,34949,control.sh,568380,timeout (wallclock),4968.32,5000.06,481384,UNKNOWN
+520293694,cnf_proj/SC21_Timetable_C_136_E_36_Cl_9_S_15.cnf.xz,13219778,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4984.86,5000.01,370624,UNKNOWN
+520293696,cnf_proj/SC21_Timetable_C_136_E_41_Cl_9_S_15.cnf.xz,13219789,igrev2,34949,control.sh,568380,timeout (wallclock),4962.95,5000.12,471656,UNKNOWN
+520293697,cnf_proj/SC21_Timetable_C_136_E_41_Cl_9_S_15.cnf.xz,13219789,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4984.39,5000.11,365776,UNKNOWN
+520293699,cnf_proj/SC21_Timetable_C_140_E_29_Cl_10_S_15.cnf.xz,13219656,igrev2,34949,control.sh,568380,timeout (wallclock),4966.79,5000.11,453280,UNKNOWN
+520293700,cnf_proj/SC21_Timetable_C_140_E_29_Cl_10_S_15.cnf.xz,13219656,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4991,5000.05,360792,UNKNOWN
+520293702,cnf_proj/SC21_Timetable_C_140_E_32_Cl_30_S_10.cnf.xz,13219824,igrev2,34949,control.sh,568380,timeout (wallclock),4971.29,5000.1,478692,UNKNOWN
+520293703,cnf_proj/SC21_Timetable_C_140_E_32_Cl_30_S_10.cnf.xz,13219824,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.39,5000.02,366900,UNKNOWN
+520293705,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_4.cnf.xz,13219691,igrev2,34949,control.sh,568380,timeout (wallclock),4953.87,5000.05,966364,UNKNOWN
+520293706,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_4.cnf.xz,13219691,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4977.53,5000.02,847608,UNKNOWN
+520293708,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_8.cnf.xz,13219563,igrev2,34949,control.sh,568380,timeout (wallclock),4945.86,5000.02,1771652,UNKNOWN
+520293709,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_8.cnf.xz,13219563,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4970.88,5000.02,1380168,UNKNOWN
+520293711,cnf_proj/SC21_Timetable_C_241_E_34_Cl_16_S_13.cnf.xz,13219605,igrev2,34949,control.sh,568380,timeout (wallclock),4946.54,5000.02,2388584,UNKNOWN
+520293712,cnf_proj/SC21_Timetable_C_241_E_34_Cl_16_S_13.cnf.xz,13219605,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4983.73,5000.04,987580,UNKNOWN
+520293714,cnf_proj/SC21_Timetable_C_466_E_62_Cl_31_S_30.cnf.xz,13219834,igrev2,34949,control.sh,568380,complete,205.954,204.799,670568,SAT-INCORRECT
+520293715,cnf_proj/SC21_Timetable_C_466_E_62_Cl_31_S_30.cnf.xz,13219834,igrev2,34949,control_noelim.sh,568386,complete,797.767,796.971,797928,SAT-INCORRECT
+520293717,cnf_proj/SC21_Timetable_C_512_E_66_Cl_34_S_35.cnf.xz,13219795,igrev2,34949,control.sh,568380,timeout (wallclock),4983.77,5000.02,934688,UNKNOWN
+520293718,cnf_proj/SC21_Timetable_C_512_E_66_Cl_34_S_35.cnf.xz,13219795,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4981.83,5000.04,884924,UNKNOWN
+520293720,cnf_proj/SC21_Timetable_C_527_E_71_Cl_35_S_35.cnf.xz,13219506,igrev2,34949,control.sh,568380,complete,136.76,135.706,750272,SAT-INCORRECT
+520293721,cnf_proj/SC21_Timetable_C_527_E_71_Cl_35_S_35.cnf.xz,13219506,igrev2,34949,control_noelim.sh,568386,complete,50.7191,49.2516,648556,SAT-INCORRECT
+520293723,cnf_proj/SC21_Timetable_C_542_E_71_Cl_36_S_35.cnf.xz,13219798,igrev2,34949,control.sh,568380,complete,316.734,315.47,945244,SAT-INCORRECT
+520293724,cnf_proj/SC21_Timetable_C_542_E_71_Cl_36_S_35.cnf.xz,13219798,igrev2,34949,control_noelim.sh,568386,complete,405.758,404.725,784280,SAT-INCORRECT
+520293726,cnf_proj/SC21_Timetable_C_557_E_73_Cl_37_S_35.cnf.xz,13219813,igrev2,34949,control.sh,568380,complete,519.685,518.794,999160,SAT-INCORRECT
+520293727,cnf_proj/SC21_Timetable_C_557_E_73_Cl_37_S_35.cnf.xz,13219813,igrev2,34949,control_noelim.sh,568386,complete,140.339,138.758,681772,SAT-INCORRECT
+520293729,cnf_proj/scc_1213_40_10_3.apx_0.cnf.xz,13219664,igrev2,34949,control.sh,568380,complete,2039.08,2043.07,2279924,SAT-INCORRECT
+520293730,cnf_proj/scc_1213_40_10_3.apx_0.cnf.xz,13219664,igrev2,34949,control_noelim.sh,568386,complete,187.738,187.767,541992,SAT-INCORRECT
+520293732,cnf_proj/SE_PR_stb_531_83.apx_1.cnf.xz,13219763,igrev2,34949,control.sh,568380,complete,220.461,220.674,279948,SAT-INCORRECT
+520293733,cnf_proj/SE_PR_stb_531_83.apx_1.cnf.xz,13219763,igrev2,34949,control_noelim.sh,568386,complete,1118.06,1118.73,616084,SAT-INCORRECT
+520293735,cnf_proj/SE_PR_stb_588_138.apx_1.cnf.xz,13219554,igrev2,34949,control.sh,568380,complete,2024.62,2025.84,817892,SAT-INCORRECT
+520293736,cnf_proj/SE_PR_stb_588_138.apx_1.cnf.xz,13219554,igrev2,34949,control_noelim.sh,568386,complete,190.605,190.767,241580,SAT-INCORRECT
+520293738,cnf_proj/SE_PR_WS_500_16_70_10.apx_0.cnf.xz,13219552,igrev2,34949,control.sh,568380,timeout (wallclock),4994.97,5000.02,2755816,SAT-INCORRECT
+520293739,cnf_proj/SE_PR_WS_500_16_70_10.apx_0.cnf.xz,13219552,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.38,5000.11,2033392,SAT-INCORRECT
+520293741,cnf_proj/shift1add.26949.cnf.xz,13219706,igrev2,34949,control.sh,568380,complete,37.0936,36.3267,492036,UNSAT
+520293742,cnf_proj/shift1add.26949.cnf.xz,13219706,igrev2,34949,control_noelim.sh,568386,complete,23.0031,22.1965,423788,UNSAT
+520293744,cnf_proj/size_5_5_5_i003_r12.cnf.xz,13219682,igrev2,34949,control.sh,568380,complete,995.145,996.345,800908,SAT-INCORRECT
+520293745,cnf_proj/size_5_5_5_i003_r12.cnf.xz,13219682,igrev2,34949,control_noelim.sh,568386,complete,1306.65,1307.92,931348,SAT-INCORRECT
+520293747,cnf_proj/size_5_5_5_i223_r12.cnf.xz,13219716,igrev2,34949,control.sh,568380,timeout (wallclock),4996.17,5000.02,2953188,SAT-INCORRECT
+520293748,cnf_proj/size_5_5_5_i223_r12.cnf.xz,13219716,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.35,5000.03,2432464,SAT-INCORRECT
+520293750,cnf_proj/size_5_5_5_i251_r12.cnf.xz,13219578,igrev2,34949,control.sh,568380,timeout (wallclock),4995.44,5000.02,2330356,SAT-INCORRECT
+520293751,cnf_proj/size_5_5_5_i251_r12.cnf.xz,13219578,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4988.8,5000.05,3849840,SAT-INCORRECT
+520293753,cnf_proj/snw_13_8_pre-sc2016.cnf.xz,13219500,igrev2,34949,control.sh,568380,timeout (wallclock),4999.7,5000.1,711900,UNSAT
+520293754,cnf_proj/snw_13_8_pre-sc2016.cnf.xz,13219500,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.02,5000.03,681808,UNSAT
+520293756,cnf_proj/snw_13_8_pre.cnf.xz,13219579,igrev2,34949,control.sh,568380,complete,4635.22,4635.53,679760,UNSAT
+520293757,cnf_proj/snw_13_8_pre.cnf.xz,13219579,igrev2,34949,control_noelim.sh,568386,complete,4924.43,4924.81,690896,UNSAT
+520293759,cnf_proj/snw_13_9_pre.cnf.xz,13219712,igrev2,34949,control.sh,568380,complete,198.99,198.477,303912,SAT-INCORRECT
+520293760,cnf_proj/snw_13_9_pre.cnf.xz,13219712,igrev2,34949,control_noelim.sh,568386,complete,41.0948,40.557,303648,SAT-INCORRECT
+520293762,cnf_proj/snw_16_9_Encpre.cnf.xz,13219802,igrev2,34949,control.sh,568380,timeout (wallclock),4998.25,5000.02,1343812,SAT-INCORRECT
+520293763,cnf_proj/snw_16_9_Encpre.cnf.xz,13219802,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.64,5000.02,511044,UNKNOWN
+520293765,cnf_proj/sokoban-p16.sas.ex.19-sc2016.cnf.xz,13219663,igrev2,34949,control.sh,568380,timeout (wallclock),4977.04,5000.11,1791268,UNKNOWN
+520293766,cnf_proj/sokoban-p16.sas.ex.19-sc2016.cnf.xz,13219663,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.26,5000.02,1672108,UNKNOWN
+520293768,cnf_proj/sokoban-p20.sas.cr.21.cnf.xz,13219519,igrev2,34949,control.sh,568380,complete,1634.36,1634.56,764796,UNSAT
+520293769,cnf_proj/sokoban-p20.sas.cr.21.cnf.xz,13219519,igrev2,34949,control_noelim.sh,568386,complete,2733.03,2733.43,912072,UNSAT
+520293771,cnf_proj/sokoban-p20.sas.cr.27.cnf.xz,13219560,igrev2,34949,control.sh,568380,timeout (wallclock),4987.64,5000.1,583572,UNKNOWN
+520293772,cnf_proj/sokoban-p20.sas.cr.27.cnf.xz,13219560,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4989.65,5000.1,633552,UNKNOWN
+520293774,cnf_proj/sokoban-p20.sas.ex.13.cnf.xz,13219509,igrev2,34949,control.sh,568380,timeout (wallclock),4975.73,5000.02,1476752,UNKNOWN
+520293775,cnf_proj/sokoban-p20.sas.ex.13.cnf.xz,13219509,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4987.92,5000.06,1460368,UNKNOWN
+520293777,cnf_proj/sokoban-sequential-p145-microban-sequential.070-NOTKNOWN.cnf.xz,13219609,igrev2,34949,control.sh,568380,timeout (wallclock),4936.16,5000.1,1856028,UNKNOWN
+520293778,cnf_proj/sokoban-sequential-p145-microban-sequential.070-NOTKNOWN.cnf.xz,13219609,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4940.47,5000.01,1479772,UNKNOWN
+520293780,cnf_proj/sp4-33-bin-nons-flat-noid.cnf.xz,13219534,igrev2,34949,control.sh,568380,complete,269.511,269.802,480916,UNSAT
+520293781,cnf_proj/sp4-33-bin-nons-flat-noid.cnf.xz,13219534,igrev2,34949,control_noelim.sh,568386,complete,216.25,216.45,391008,UNSAT
+520293783,cnf_proj/sp4-33-one-nons-flat-noid.cnf.xz,13219580,igrev2,34949,control.sh,568380,complete,38.3118,38.3872,182892,SAT-INCORRECT
+520293784,cnf_proj/sp4-33-one-nons-flat-noid.cnf.xz,13219580,igrev2,34949,control_noelim.sh,568386,complete,21.7264,21.7549,156640,SAT-INCORRECT
+520293786,cnf_proj/sp4-33-one-stri-tree-noid.cnf.xz,13219607,igrev2,34949,control.sh,568380,complete,1043.9,1045.22,1169156,UNSAT
+520293787,cnf_proj/sp4-33-one-stri-tree-noid.cnf.xz,13219607,igrev2,34949,control_noelim.sh,568386,complete,469.112,469.712,538992,UNSAT
+520293789,cnf_proj/sp4-33-una-stri-flat-noid.cnf.xz,13219595,igrev2,34949,control.sh,568380,complete,396.134,396.971,609288,UNSAT
+520293790,cnf_proj/sp4-33-una-stri-flat-noid.cnf.xz,13219595,igrev2,34949,control_noelim.sh,568386,complete,282.565,282.969,498696,UNSAT
+520293792,cnf_proj/sp5-21-15-bin-stri-flat-noid.cnf.xz,13219831,igrev2,34949,control.sh,568380,complete,601.575,602.359,460592,SAT-INCORRECT
+520293793,cnf_proj/sp5-21-15-bin-stri-flat-noid.cnf.xz,13219831,igrev2,34949,control_noelim.sh,568386,complete,1667.99,1668.76,699988,SAT-INCORRECT
+520293795,cnf_proj/sp5-21-15-bin-stri-tree-noid.cnf.xz,13219773,igrev2,34949,control.sh,568380,complete,480.223,480.644,394300,SAT-INCORRECT
+520293796,cnf_proj/sp5-21-15-bin-stri-tree-noid.cnf.xz,13219773,igrev2,34949,control_noelim.sh,568386,complete,4420.29,4424.35,1145112,SAT-INCORRECT
+520293798,cnf_proj/sp5-21-15-one-nons-tree-noid.cnf.xz,13219710,igrev2,34949,control.sh,568380,complete,2391.61,2394.72,1370516,SAT-INCORRECT
+520293799,cnf_proj/sp5-21-15-one-nons-tree-noid.cnf.xz,13219710,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.54,5000.1,1422332,SAT-INCORRECT
+520293801,cnf_proj/sp5-21-15-one-stri-tree-noid.cnf.xz,13219736,igrev2,34949,control.sh,568380,complete,323.419,323.939,344320,SAT-INCORRECT
+520293802,cnf_proj/sp5-21-15-one-stri-tree-noid.cnf.xz,13219736,igrev2,34949,control_noelim.sh,568386,complete,227.517,227.709,252544,SAT-INCORRECT
+520293804,cnf_proj/sp5-21-15-una-nons-tree-noid.cnf.xz,13219711,igrev2,34949,control.sh,568380,complete,824.713,825.328,514168,SAT-INCORRECT
+520293805,cnf_proj/sp5-21-15-una-nons-tree-noid.cnf.xz,13219711,igrev2,34949,control_noelim.sh,568386,complete,1870.01,1870.73,706600,SAT-INCORRECT
+520293807,cnf_proj/sp5-21-15-una-stri-flat-noid.cnf.xz,13219669,igrev2,34949,control.sh,568380,complete,1153.4,1155,766180,SAT-INCORRECT
+520293808,cnf_proj/sp5-21-15-una-stri-flat-noid.cnf.xz,13219669,igrev2,34949,control_noelim.sh,568386,complete,844.193,844.728,530932,SAT-INCORRECT
+520293810,cnf_proj/sp5-26-19-bin-nons-tree-noid.cnf.xz,13219567,igrev2,34949,control.sh,568380,timeout (wallclock),4993.06,5000.02,272176,UNKNOWN
+520293811,cnf_proj/sp5-26-19-bin-nons-tree-noid.cnf.xz,13219567,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.34,5000.08,340756,UNKNOWN
+520293813,cnf_proj/sp5-26-19-bin-stri-flat-noid.cnf.xz,13219603,igrev2,34949,control.sh,568380,timeout (wallclock),4989.78,5000.03,3728956,SAT-INCORRECT
+520293814,cnf_proj/sp5-26-19-bin-stri-flat-noid.cnf.xz,13219603,igrev2,34949,control_noelim.sh,568386,complete,1684.28,1685.93,792200,SAT-INCORRECT
+520293816,cnf_proj/sp5-26-19-una-nons-tree-noid.cnf.xz,13219530,igrev2,34949,control.sh,568380,timeout (wallclock),4987.2,5000.03,323636,UNKNOWN
+520293817,cnf_proj/sp5-26-19-una-nons-tree-noid.cnf.xz,13219530,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.35,5000.02,360128,UNKNOWN
+520293819,cnf_proj/spg_200_300.cnf.xz,13219636,igrev2,34949,control.sh,568380,complete,758.237,756.647,734940,UNSAT
+520293820,cnf_proj/spg_200_300.cnf.xz,13219636,igrev2,34949,control_noelim.sh,568386,complete,665.404,663.56,582052,UNSAT
+520293822,cnf_proj/spg_200_301.cnf.xz,13219729,igrev2,34949,control.sh,568380,complete,1141.34,1140.98,1095412,UNSAT
+520293823,cnf_proj/spg_200_301.cnf.xz,13219729,igrev2,34949,control_noelim.sh,568386,complete,2012.4,2011.31,677268,UNSAT
+520293825,cnf_proj/spg_200_307.cnf.xz,13219768,igrev2,34949,control.sh,568380,complete,383.42,382.215,630532,UNSAT
+520293826,cnf_proj/spg_200_307.cnf.xz,13219768,igrev2,34949,control_noelim.sh,568386,complete,452.842,451.575,493336,UNSAT
+520293828,cnf_proj/spg_200_316.cnf.xz,13219642,igrev2,34949,control.sh,568380,complete,572.313,570.893,755332,UNSAT
+520293829,cnf_proj/spg_200_316.cnf.xz,13219642,igrev2,34949,control_noelim.sh,568386,complete,261.141,259.611,533800,UNSAT
+520293831,cnf_proj/spg_200_317.cnf.xz,13219714,igrev2,34949,control.sh,568380,complete,740.96,738.816,834324,UNSAT
+520293832,cnf_proj/spg_200_317.cnf.xz,13219714,igrev2,34949,control_noelim.sh,568386,complete,649.191,646.882,725488,UNSAT
+520293834,cnf_proj/spg_200_321.cnf.xz,13219610,igrev2,34949,control.sh,568380,complete,145.197,143.761,524292,UNSAT
+520293835,cnf_proj/spg_200_321.cnf.xz,13219610,igrev2,34949,control_noelim.sh,568386,complete,496.094,494.771,491864,UNSAT
+520293837,cnf_proj/spg_300_300.cnf.xz,13219644,igrev2,34949,control.sh,568380,timeout (wallclock),4999.21,5000.02,2435196,UNSAT
+520293838,cnf_proj/spg_300_300.cnf.xz,13219644,igrev2,34949,control_noelim.sh,568386,complete,168.662,166.33,684728,UNSAT
+520293840,cnf_proj/spg_300_301.cnf.xz,13219715,igrev2,34949,control.sh,568380,complete,803.361,799.948,996376,UNSAT
+520293841,cnf_proj/spg_300_301.cnf.xz,13219715,igrev2,34949,control_noelim.sh,568386,complete,2820.72,2817.24,982812,UNSAT
+520293843,cnf_proj/spg_300_312.cnf.xz,13219542,igrev2,34949,control.sh,568380,complete,256.141,253.935,769196,UNSAT
+520293844,cnf_proj/spg_300_312.cnf.xz,13219542,igrev2,34949,control_noelim.sh,568386,complete,144.456,142.091,672068,UNSAT
+520293846,cnf_proj/spg_330_400.cnf.xz,13219717,igrev2,34949,control.sh,568380,complete,414.771,412.091,928264,UNSAT
+520293847,cnf_proj/spg_330_400.cnf.xz,13219717,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.02,4999.11,2169908,UNSAT
+520293849,cnf_proj/spg_400_281.cnf.xz,13219793,igrev2,34949,control.sh,568380,complete,355.983,352.287,1002984,UNSAT
+520293850,cnf_proj/spg_400_281.cnf.xz,13219793,igrev2,34949,control_noelim.sh,568386,complete,363.378,359.664,1001776,UNSAT
+520293852,cnf_proj/spg_420_280.cnf.xz,13219505,igrev2,34949,control.sh,568380,complete,304.314,301.274,884128,UNSAT
+520293853,cnf_proj/spg_420_280.cnf.xz,13219505,igrev2,34949,control_noelim.sh,568386,complete,305.207,302.17,877676,UNSAT
+520293855,cnf_proj/spg_420_350.cnf.xz,13219476,igrev2,34949,control.sh,568380,complete,810.069,808.421,1208084,UNSAT
+520293856,cnf_proj/spg_420_350.cnf.xz,13219476,igrev2,34949,control_noelim.sh,568386,complete,475.783,472.604,943904,UNSAT
+520293858,cnf_proj/stb_531_83.apx_0.cnf.xz,13219671,igrev2,34949,control.sh,568380,complete,476.477,477.208,420040,SAT-INCORRECT
+520293859,cnf_proj/stb_531_83.apx_0.cnf.xz,13219671,igrev2,34949,control_noelim.sh,568386,complete,844.604,845.422,643396,SAT-INCORRECT
+520293861,cnf_proj/stb_792_333.apx_0.cnf.xz,13219625,igrev2,34949,control.sh,568380,timeout (wallclock),4997.51,5000.1,2214144,SAT-INCORRECT
+520293862,cnf_proj/stb_792_333.apx_0.cnf.xz,13219625,igrev2,34949,control_noelim.sh,568386,complete,1553.55,1554.81,731556,SAT-INCORRECT
+520293864,cnf_proj/sted12a_0x1e1-67.cnf.xz,13219499,igrev2,34949,control.sh,568380,timeout (wallclock),4996.77,5000.1,314332,UNKNOWN
+520293865,cnf_proj/sted12a_0x1e1-67.cnf.xz,13219499,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.99,5000.02,314616,UNKNOWN
+520293867,cnf_proj/sted1_0x0-380.cnf.xz,13219806,igrev2,34949,control.sh,568380,timeout (wallclock),4993.15,5000.02,314680,UNKNOWN
+520293868,cnf_proj/sted1_0x0-380.cnf.xz,13219806,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.5,5000.08,376160,UNKNOWN
+520293870,cnf_proj/sted1_0x0-637.cnf.xz,13219640,igrev2,34949,control.sh,568380,complete,1558.28,1559.5,674524,SAT-INCORRECT
+520293871,cnf_proj/sted1_0x0-637.cnf.xz,13219640,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4997.94,5000.05,1874420,SAT-INCORRECT
+520293873,cnf_proj/sted1_0x1e3-393.cnf.xz,13219524,igrev2,34949,control.sh,568380,complete,1373.04,1373.69,739472,SAT-INCORRECT
+520293874,cnf_proj/sted1_0x1e3-393.cnf.xz,13219524,igrev2,34949,control_noelim.sh,568386,complete,2539.4,2541.02,997844,SAT-INCORRECT
+520293876,cnf_proj/sted2_0x0-343.cnf.xz,13219725,igrev2,34949,control.sh,568380,timeout (wallclock),4993.39,5000.02,2190680,SAT-INCORRECT
+520293877,cnf_proj/sted2_0x0-343.cnf.xz,13219725,igrev2,34949,control_noelim.sh,568386,complete,194.558,194.594,260372,SAT-INCORRECT
+520293879,cnf_proj/sted2_0x1e3-216.cnf.xz,13219782,igrev2,34949,control.sh,568380,complete,1208.1,1209.72,701732,SAT-INCORRECT
+520293880,cnf_proj/sted2_0x1e3-216.cnf.xz,13219782,igrev2,34949,control_noelim.sh,568386,complete,1648.09,1649.34,858920,SAT-INCORRECT
+520293882,cnf_proj/sted3_0x0_n201-239.cnf.xz,13219672,igrev2,34949,control.sh,568380,complete,2185.15,2186.67,767604,SAT-INCORRECT
+520293883,cnf_proj/sted3_0x0_n201-239.cnf.xz,13219672,igrev2,34949,control_noelim.sh,568386,complete,483.225,483.649,362636,SAT-INCORRECT
+520293885,cnf_proj/sted4_0x0_n159-185.cnf.xz,13219518,igrev2,34949,control.sh,568380,complete,1535.58,1536.49,678940,SAT-INCORRECT
+520293886,cnf_proj/sted4_0x0_n159-185.cnf.xz,13219518,igrev2,34949,control_noelim.sh,568386,complete,3570.44,3572.51,1038660,SAT-INCORRECT
+520293888,cnf_proj/sted5_0x0_n90-157.cnf.xz,13219804,igrev2,34949,control.sh,568380,timeout (wallclock),4997.06,5000.03,1513820,SAT-INCORRECT
+520293889,cnf_proj/sted5_0x0_n90-157.cnf.xz,13219804,igrev2,34949,control_noelim.sh,568386,complete,168.16,168.233,231208,SAT-INCORRECT
+520293891,cnf_proj/sted5_0x1e3-120.cnf.xz,13219674,igrev2,34949,control.sh,568380,timeout (wallclock),4993.54,5000.08,1376968,SAT-INCORRECT
+520293892,cnf_proj/sted5_0x1e3-120.cnf.xz,13219674,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.14,5000.02,1521772,SAT-INCORRECT
+520293894,cnf_proj/sted5_0x1e3-20.cnf.xz,13219660,igrev2,34949,control.sh,568380,timeout (wallclock),4989.49,5000.04,361840,UNKNOWN
+520293895,cnf_proj/sted5_0x1e3-20.cnf.xz,13219660,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4991.71,5000.07,385044,UNKNOWN
+520293897,cnf_proj/sted5_0x24204-70.cnf.xz,13219461,igrev2,34949,control.sh,568380,timeout (wallclock),4997.23,5000.02,297668,UNKNOWN
+520293898,cnf_proj/sted5_0x24204-70.cnf.xz,13219461,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4983.4,5000.05,318728,UNKNOWN
+520293900,cnf_proj/sted6_0x1e3-97.cnf.xz,13219822,igrev2,34949,control.sh,568380,complete,2369.79,2370.8,873764,SAT-INCORRECT
+520293901,cnf_proj/sted6_0x1e3-97.cnf.xz,13219822,igrev2,34949,control_noelim.sh,568386,complete,2336.97,2338.14,837248,SAT-INCORRECT
+520293903,cnf_proj/string_compare_safety_cbmc_unwinding_600.cnf.xz,13219568,igrev2,34949,control.sh,568380,timeout (cpu),5000.01,4996.97,5513128,UNSAT
+520293904,cnf_proj/string_compare_safety_cbmc_unwinding_600.cnf.xz,13219568,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.05,4995.29,9273132,UNSAT
+520293906,cnf_proj/string_compare_safety_cbmc_unwinding_630.cnf.xz,13219811,igrev2,34949,control.sh,568380,timeout (cpu),5000.06,4996.93,5369280,UNSAT
+520293907,cnf_proj/string_compare_safety_cbmc_unwinding_630.cnf.xz,13219811,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.04,4998.31,9725204,UNSAT
+520293909,cnf_proj/string_compare_safety_cbmc_unwinding_670.cnf.xz,13219817,igrev2,34949,control.sh,568380,timeout (cpu),5000.04,4995.19,6181244,UNSAT
+520293910,cnf_proj/string_compare_safety_cbmc_unwinding_670.cnf.xz,13219817,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.02,4995.88,9873688,UNSAT
+520293912,cnf_proj/string_compare_safety_cbmc_unwinding_680.cnf.xz,13219576,igrev2,34949,control.sh,568380,timeout (cpu),5000.04,4994.68,6357700,UNSAT
+520293913,cnf_proj/string_compare_safety_cbmc_unwinding_680.cnf.xz,13219576,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.06,4996.05,1.02E+07,UNSAT
+520293915,cnf_proj/string_compare_safety_cbmc_unwinding_690.cnf.xz,13219512,igrev2,34949,control.sh,568380,timeout (cpu),5000.1,4996.32,6589504,UNSAT
+520293916,cnf_proj/string_compare_safety_cbmc_unwinding_690.cnf.xz,13219512,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.06,4995.8,9482172,UNSAT
+520293918,cnf_proj/string_compare_safety_cbmc_unwinding_700.cnf.xz,13219485,igrev2,34949,control.sh,568380,timeout (cpu),5000.07,4997.6,6121200,UNSAT
+520293919,cnf_proj/string_compare_safety_cbmc_unwinding_700.cnf.xz,13219485,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.02,4995.31,1.06E+07,UNSAT
+520293921,cnf_proj/string_compare_safety_cbmc_unwinding_730.cnf.xz,13219744,igrev2,34949,control.sh,568380,timeout (cpu),5000.06,4994.55,6411204,UNSAT
+520293922,cnf_proj/string_compare_safety_cbmc_unwinding_730.cnf.xz,13219744,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.03,4995.57,9553724,UNSAT
+520293924,cnf_proj/string_compare_safety_cbmc_unwinding_780.cnf.xz,13219492,igrev2,34949,control.sh,568380,timeout (cpu),5000.03,4996.48,6567420,UNSAT
+520293925,cnf_proj/string_compare_safety_cbmc_unwinding_780.cnf.xz,13219492,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.05,4995.12,1.00E+07,UNSAT
+520293927,cnf_proj/string_compare_safety_cbmc_unwinding_800.cnf.xz,13219482,igrev2,34949,control.sh,568380,timeout (cpu),5000.01,4995.66,6598240,UNSAT
+520293928,cnf_proj/string_compare_safety_cbmc_unwinding_800.cnf.xz,13219482,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.07,4994.62,1.07E+07,UNSAT
+520293930,cnf_proj/string_compare_safety_cbmc_unwinding_870.cnf.xz,13219742,igrev2,34949,control.sh,568380,timeout (cpu),5000.06,4996.7,7108060,UNSAT
+520293931,cnf_proj/string_compare_safety_cbmc_unwinding_870.cnf.xz,13219742,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.05,4993.93,1.55E+07,UNSAT
+520293933,cnf_proj/string_compare_safety_cbmc_unwinding_900.cnf.xz,13219569,igrev2,34949,control.sh,568380,timeout (cpu),5000.09,4997.41,7506732,UNSAT
+520293934,cnf_proj/string_compare_safety_cbmc_unwinding_900.cnf.xz,13219569,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.05,4994.72,1.59E+07,UNSAT
+520293936,cnf_proj/string_compare_safety_cbmc_unwinding_930.cnf.xz,13219814,igrev2,34949,control.sh,568380,timeout (cpu),5000.03,4997.39,8578120,UNSAT
+520293937,cnf_proj/string_compare_safety_cbmc_unwinding_930.cnf.xz,13219814,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.07,4998.48,1.83E+07,UNSAT
+520293939,cnf_proj/string_compare_safety_cbmc_unwinding_940.cnf.xz,13219571,igrev2,34949,control.sh,568380,timeout (cpu),5000.04,4995.84,8401876,UNSAT
+520293940,cnf_proj/string_compare_safety_cbmc_unwinding_940.cnf.xz,13219571,igrev2,34949,control_noelim.sh,568386,timeout (cpu),5000.01,4996.9,1.70E+07,UNSAT
+520293942,cnf_proj/sum_of_3_cubes_108_bits_52.cnf.xz,13219719,igrev2,34949,control.sh,568380,timeout (wallclock),4989.15,5000.07,360020,UNKNOWN
+520293943,cnf_proj/sum_of_3_cubes_108_bits_52.cnf.xz,13219719,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.57,5000.09,428060,UNKNOWN
+520293945,cnf_proj/sum_of_3_cubes_145_bits_74.cnf.xz,13219517,igrev2,34949,control.sh,568380,timeout (wallclock),4984.89,5000.03,565068,UNKNOWN
+520293946,cnf_proj/sum_of_3_cubes_145_bits_74.cnf.xz,13219517,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4993.05,5000.05,622064,UNKNOWN
+520293948,cnf_proj/sum_of_3_cubes_37_bits_87.cnf.xz,13219624,igrev2,34949,control.sh,568380,complete,3196.46,3196.76,596244,SAT-INCORRECT
+520293949,cnf_proj/sum_of_3_cubes_37_bits_87.cnf.xz,13219624,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.72,5000.03,1070708,SAT-INCORRECT
+520293951,cnf_proj/sum_of_3_cubes_42_bits_96.cnf.xz,13219590,igrev2,34949,control.sh,568380,complete,1097.76,1098.24,344944,SAT-INCORRECT
+520293952,cnf_proj/sum_of_3_cubes_42_bits_96.cnf.xz,13219590,igrev2,34949,control_noelim.sh,568386,complete,1561.44,1561.69,412476,SAT-INCORRECT
+520293954,cnf_proj/sum_of_3_cubes_50_bits_91.cnf.xz,13219693,igrev2,34949,control.sh,568380,complete,276.591,276.885,230164,SAT-INCORRECT
+520293955,cnf_proj/sum_of_3_cubes_50_bits_91.cnf.xz,13219693,igrev2,34949,control_noelim.sh,568386,complete,208.19,208.426,248096,SAT-INCORRECT
+520293957,cnf_proj/sum_of_3_cubes_51_bits_80.cnf.xz,13219761,igrev2,34949,control.sh,568380,timeout (wallclock),4997.35,5000.03,285424,UNKNOWN
+520293958,cnf_proj/sum_of_3_cubes_51_bits_80.cnf.xz,13219761,igrev2,34949,control_noelim.sh,568386,complete,277.096,277.223,246320,SAT-INCORRECT
+520293960,cnf_proj/sum_of_3_cubes_52_bits_39.cnf.xz,13219692,igrev2,34949,control.sh,568380,timeout (wallclock),4997.85,5000.07,255784,UNKNOWN
+520293961,cnf_proj/sum_of_3_cubes_52_bits_39.cnf.xz,13219692,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4995.75,5000.02,285180,UNKNOWN
+520293963,cnf_proj/sum_of_3_cubes_76_bits_84.cnf.xz,13219769,igrev2,34949,control.sh,568380,timeout (wallclock),4997.18,5000.04,365248,UNKNOWN
+520293964,cnf_proj/sum_of_3_cubes_76_bits_84.cnf.xz,13219769,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.51,5000.02,348744,UNKNOWN
+520293966,cnf_proj/sum_of_3_cubes_87_bits_75.cnf.xz,13219616,igrev2,34949,control.sh,568380,timeout (wallclock),4996.38,5000.04,315412,UNKNOWN
+520293967,cnf_proj/sum_of_3_cubes_87_bits_75.cnf.xz,13219616,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.87,5000.06,371548,UNKNOWN
+520293969,cnf_proj/sum_of_3_cubes_94_bits_30.cnf.xz,13219601,igrev2,34949,control.sh,568380,timeout (wallclock),4996.9,5000.09,352000,UNKNOWN
+520293970,cnf_proj/sum_of_3_cubes_94_bits_30.cnf.xz,13219601,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4989.3,5000.07,360636,UNKNOWN
+520293972,cnf_proj/Sz1024_34824.smt2.cnf.xz,13219464,igrev2,34949,control.sh,568380,complete,3869.05,3872.8,2383476,SAT-INCORRECT
+520293973,cnf_proj/Sz1024_34824.smt2.cnf.xz,13219464,igrev2,34949,control_noelim.sh,568386,complete,2837.67,2839.93,1365228,SAT-INCORRECT
+520293975,cnf_proj/Sz512_15128_1.smt2.cnf.xz,13219732,igrev2,34949,control.sh,568380,complete,1094.92,1096.84,714024,SAT-INCORRECT
+520293976,cnf_proj/Sz512_15128_1.smt2.cnf.xz,13219732,igrev2,34949,control_noelim.sh,568386,complete,3395.98,3398.28,1099104,SAT-INCORRECT
+520293978,cnf_proj/test_v7_r12_vr1_c1_s10576.smt2.cnf.xz,13219589,igrev2,34949,control.sh,568380,complete,1544.65,1544.55,1179608,UNSAT
+520293979,cnf_proj/test_v7_r12_vr1_c1_s10576.smt2.cnf.xz,13219589,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.98,5000.03,1112192,UNSAT
+520293981,cnf_proj/toughsat_factoring_426s.cnf.xz,13219832,igrev2,34949,control.sh,568380,complete,1280.79,1281.24,421956,SAT-INCORRECT
+520293982,cnf_proj/toughsat_factoring_426s.cnf.xz,13219832,igrev2,34949,control_noelim.sh,568386,complete,567.02,567.268,282268,SAT-INCORRECT
+520293984,cnf_proj/toughsat_factoring_895s.cnf.xz,13219818,igrev2,34949,control.sh,568380,complete,939.389,940.09,377336,SAT-INCORRECT
+520293985,cnf_proj/toughsat_factoring_895s.cnf.xz,13219818,igrev2,34949,control_noelim.sh,568386,complete,2892.01,2892.75,586264,SAT-INCORRECT
+520293987,cnf_proj/UCG-20-10p1-sc2009.cnf.xz,13219727,igrev2,34949,control.sh,568380,complete,4009.72,4008.34,676660,SAT-INCORRECT
+520293988,cnf_proj/UCG-20-10p1-sc2009.cnf.xz,13219727,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4999.07,5000.03,607772,SAT-INCORRECT
+520293990,cnf_proj/UR-15-10p0.cnf.xz,13219785,igrev2,34949,control.sh,568380,complete,1073.3,1073.01,421656,UNSAT
+520293991,cnf_proj/UR-15-10p0.cnf.xz,13219785,igrev2,34949,control_noelim.sh,568386,complete,2620.32,2620.75,437612,UNSAT
+520293993,cnf_proj/UR-20-5p1.cnf.xz,13219614,igrev2,34949,control.sh,568380,complete,2314.28,2314.24,604556,SAT-INCORRECT
+520293994,cnf_proj/UR-20-5p1.cnf.xz,13219614,igrev2,34949,control_noelim.sh,568386,complete,3492.88,3493.14,589600,SAT-INCORRECT
+520293996,cnf_proj/uum32.smt2.cnf.xz,13219819,igrev2,34949,control.sh,568380,timeout (wallclock),4984.82,5000.02,312176,UNKNOWN
+520293997,cnf_proj/uum32.smt2.cnf.xz,13219819,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4990.24,5000.03,352188,UNKNOWN
+520293999,cnf_proj/vlsat2_111_1186.cnf.xz,13219661,igrev2,34949,control.sh,568380,complete,110.921,111.104,356504,SAT-INCORRECT
+520294000,cnf_proj/vlsat2_111_1186.cnf.xz,13219661,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4986.83,5000.02,571552,UNKNOWN
+520294002,cnf_proj/vlsat2_112_4223.cnf.xz,13219839,igrev2,34949,control.sh,568380,timeout (wallclock),4996.49,5000.09,763832,UNKNOWN
+520294003,cnf_proj/vlsat2_112_4223.cnf.xz,13219839,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4996.74,5000.02,780820,UNKNOWN
+520294005,cnf_proj/vlsat2_113_1150.cnf.xz,13219713,igrev2,34949,control.sh,568380,timeout (wallclock),4971.99,5000.02,988560,UNKNOWN
+520294006,cnf_proj/vlsat2_113_1150.cnf.xz,13219713,igrev2,34949,control_noelim.sh,568386,complete,1590.23,1591.49,1352552,SAT-INCORRECT
+520294008,cnf_proj/vlsat2_11_26.cnf.xz,13219700,igrev2,34949,control.sh,568380,timeout (wallclock),4984.74,5000.12,337676,UNKNOWN
+520294009,cnf_proj/vlsat2_11_26.cnf.xz,13219700,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4980.29,5000.04,352740,UNKNOWN
+520294011,cnf_proj/vlsat2_11_42.cnf.xz,13219480,igrev2,34949,control.sh,568380,timeout (wallclock),4989.1,5000.02,346884,UNKNOWN
+520294012,cnf_proj/vlsat2_11_42.cnf.xz,13219480,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4974.27,5000.01,330528,UNKNOWN
+520294014,cnf_proj/vlsat2_142_6781.cnf.xz,13219745,igrev2,34949,control.sh,568380,timeout (wallclock),4998.32,5000.08,997512,UNKNOWN
+520294015,cnf_proj/vlsat2_142_6781.cnf.xz,13219745,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4994.37,5000.04,1100032,UNKNOWN
+520294017,cnf_proj/vlsat2_144_7585.cnf.xz,13219503,igrev2,34949,control.sh,568380,timeout (wallclock),4997.7,5000.02,1301776,UNKNOWN
+520294018,cnf_proj/vlsat2_144_7585.cnf.xz,13219503,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.39,5000.03,1289048,UNKNOWN
+520294020,cnf_proj/vlsat2_29736_3780419.dimacs.cnf.xz,13219459,igrev2,34949,control.sh,568380,timeout (wallclock),4979.3,5000.01,1450784,UNKNOWN
+520294021,cnf_proj/vlsat2_29736_3780419.dimacs.cnf.xz,13219459,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4978.16,5000.1,2184656,UNKNOWN
+520294023,cnf_proj/vlsat2_37758_5364539.dimacs.cnf.xz,13219540,igrev2,34949,control.sh,568380,timeout (wallclock),4978.63,5000.05,2396548,UNKNOWN
+520294024,cnf_proj/vlsat2_37758_5364539.dimacs.cnf.xz,13219540,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4974.13,5000.01,2022584,UNKNOWN
+520294026,cnf_proj/vlsat2_44_545.cnf.xz,13219553,igrev2,34949,control.sh,568380,timeout (wallclock),4990.41,5000.02,314948,UNKNOWN
+520294027,cnf_proj/vlsat2_44_545.cnf.xz,13219553,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4991.12,5000.1,314692,UNKNOWN
+520294029,cnf_proj/vlsat2_51_824.cnf.xz,13219587,igrev2,34949,control.sh,568380,timeout (wallclock),4988.9,5000.02,353136,UNKNOWN
+520294030,cnf_proj/vlsat2_51_824.cnf.xz,13219587,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4989.85,5000.07,346224,UNKNOWN
+520294032,cnf_proj/vlsat2_56_1042.cnf.xz,13219474,igrev2,34949,control.sh,568380,timeout (wallclock),4990.17,5000.01,371820,UNKNOWN
+520294033,cnf_proj/vlsat2_56_1042.cnf.xz,13219474,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4987.57,5000.03,345392,UNKNOWN
+520294035,cnf_proj/vlsat2_702_14170.cnf.xz,13219841,igrev2,34949,control.sh,568380,timeout (wallclock),4974.93,5000.1,4198584,UNKNOWN
+520294036,cnf_proj/vlsat2_702_14170.cnf.xz,13219841,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4975.96,5000.02,4973980,UNKNOWN
+520294038,cnf_proj/WS_300_24_90_10.apx_0.cnf.xz,13219586,igrev2,34949,control.sh,568380,complete,183.634,183.875,257944,UNSAT
+520294039,cnf_proj/WS_300_24_90_10.apx_0.cnf.xz,13219586,igrev2,34949,control_noelim.sh,568386,complete,192.268,192.491,261560,UNSAT
+520294041,cnf_proj/WS_400_16_90_70.apx_0.cnf.xz,13219730,igrev2,34949,control.sh,568380,complete,308.476,309.066,317256,UNSAT
+520294042,cnf_proj/WS_400_16_90_70.apx_0.cnf.xz,13219730,igrev2,34949,control_noelim.sh,568386,complete,487.121,487.315,355924,UNSAT
+520294044,cnf_proj/WS_500_16_70_10.apx_0.cnf.xz,13219557,igrev2,34949,control.sh,568380,timeout (wallclock),4997.23,5000.06,2304956,SAT-INCORRECT
+520294045,cnf_proj/WS_500_16_70_10.apx_0.cnf.xz,13219557,igrev2,34949,control_noelim.sh,568386,timeout (wallclock),4998.25,5000.02,2146632,SAT-INCORRECT
+520294047,cnf_proj/WS_500_32_30_10.apx_0.cnf.xz,13219632,igrev2,34949,control.sh,568380,complete,3278.82,3280.49,1244688,UNSAT
+520294048,cnf_proj/WS_500_32_30_10.apx_0.cnf.xz,13219632,igrev2,34949,control_noelim.sh,568386,complete,3686.25,3687.43,1281888,UNSAT

@@ -1,0 +1,401 @@
+﻿pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result
+520292852,cnf_proj/10pipe_k.cnf.xz,13219654,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4997.05,757124,UNKNOWN
+520292855,cnf_proj/13pipe_k.cnf.xz,13219688,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4989.5,2166552,UNKNOWN
+520292858,cnf_proj/143.smt2.cnf.xz,13219805,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,4999.01,591144,UNKNOWN
+520292861,cnf_proj/14pipe_q0_k.cnf.xz,13219627,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,4992.74,1430164,UNKNOWN
+520292864,cnf_proj/20-100-frag12-0_sat.cnf.xz,13219641,igrev2,34949,kissat_br.sh,568381,complete,1025.62,1025.18,554048,SAT-INCORRECT
+520292867,cnf_proj/20-100-frag12-14_sat.cnf.xz,13219623,igrev2,34949,kissat_br.sh,568381,complete,557.027,556.737,412800,SAT-INCORRECT
+520292870,cnf_proj/20-100-frag12-32_sat.cnf.xz,13219699,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.83,5000.03,2218536,SAT-INCORRECT
+520292873,cnf_proj/20-100-frag12-53_sat.cnf.xz,13219465,igrev2,34949,kissat_br.sh,568381,complete,917.63,916.691,541592,SAT-INCORRECT
+520292876,cnf_proj/20-100-lambda100-14_sat.cnf.xz,13219734,igrev2,34949,kissat_br.sh,568381,complete,186.01,185.978,243740,SAT-INCORRECT
+520292879,cnf_proj/20-100-lambda100-14_unsat.cnf.xz,13219543,igrev2,34949,kissat_br.sh,568381,complete,198.85,198.647,254060,UNSAT
+520292882,cnf_proj/20-100-lambda100-47_unsat.cnf.xz,13219541,igrev2,34949,kissat_br.sh,568381,complete,1132.86,1133.18,548652,UNSAT
+520292885,cnf_proj/20-100-lambda100-49_sat.cnf.xz,13219852,igrev2,34949,kissat_br.sh,568381,complete,212.444,212.314,257736,SAT-INCORRECT
+520292888,cnf_proj/20-100-lambda100-65_sat.cnf.xz,13219843,igrev2,34949,kissat_br.sh,568381,complete,211.264,211.048,243968,SAT-INCORRECT
+520292891,cnf_proj/20-100-lambda100-89_sat.cnf.xz,13219463,igrev2,34949,kissat_br.sh,568381,complete,1149.06,1149.5,580524,SAT-INCORRECT
+520292894,cnf_proj/20-100-lambda100-89_unsat.cnf.xz,13219764,igrev2,34949,kissat_br.sh,568381,complete,1082.85,1083.14,593792,UNSAT
+520292897,cnf_proj/20-100-p100-55_sat.cnf.xz,13219493,igrev2,34949,kissat_br.sh,568381,complete,2442.92,2443.31,490944,SAT-INCORRECT
+520292900,cnf_proj/20-100-p100-55_unsat.cnf.xz,13219622,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.4,5000.06,741948,UNSAT
+520292903,cnf_proj/2bitcomp_5.hg_20.cnf.xz,13219526,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4998.72,1645508,UNKNOWN
+520292906,cnf_proj/51.smt2.cnf.xz,13219613,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4999.66,313980,UNKNOWN
+520292909,cnf_proj/73.smt2.cnf.xz,13219593,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.65,5000.08,313700,UNKNOWN
+520292912,cnf_proj/79.smt2.cnf.xz,13219786,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.08,5000.01,355620,UNKNOWN
+520292915,cnf_proj/9dlx_vliw_at_b_iq5.cnf.xz,13219739,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4997.49,662328,UNKNOWN
+520292918,cnf_proj/9dlx_vliw_at_b_iq8.cnf.xz,13219748,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.02,4992.2,1412840,UNKNOWN
+520292921,cnf_proj/ACG-15-10p1.cnf.xz,13219820,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.44,5000.05,421732,UNKNOWN
+520292924,cnf_proj/ak016modbtsimpbisc.cnf.xz,13219753,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.3,5000.05,131672,UNKNOWN
+520292927,cnf_proj/ak032modbtmodbtisc.cnf.xz,13219597,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.07,5000.07,254768,UNKNOWN
+520292930,cnf_proj/ak128paralparalisc.cnf.xz,13219842,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4977.19,5000.03,1502208,UNKNOWN
+520292933,cnf_proj/assoc_mult_err_3.c.cnf.xz,13219612,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.04,5000.02,249140,UNKNOWN
+520292936,cnf_proj/at-least-two-aaai10-planning-ipc5-pathways-17-step20.cnf.xz,13219758,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.12,5000.1,2204580,UNSAT
+520292939,cnf_proj/at-least-two-aaai10-planning-ipc5-pipesworld-12-step15.cnf.xz,13219628,igrev2,34949,kissat_br.sh,568381,complete,1246.05,1247.29,1173740,UNSAT
+520292942,cnf_proj/at-least-two-hwmcc10-timeframe-expansion-k50-pdtviseisenberg2-tseitin.cnf.xz,13219752,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,4998.73,572488,UNKNOWN
+520292945,cnf_proj/at-least-two-ibm-2004-23-k100.cnf.xz,13219667,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,4996.96,922308,UNKNOWN
+520292948,cnf_proj/at-least-two-maris-s03-gripper11.cnf.xz,13219486,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.95,5000.02,7312780,SAT-INCORRECT
+520292951,cnf_proj/at-least-two-smtlib-qfbv-aigs-ext_con_032_008_0256-tseitin.cnf.xz,13219850,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.02,4999.92,320472,UNKNOWN
+520292954,cnf_proj/at-least-two-sokoban-sequential-p145-microban-sequential.030-NOTKNOWN.cnf.xz,13219638,igrev2,34949,kissat_br.sh,568381,complete,1581.46,1583.08,1472820,UNSAT
+520292957,cnf_proj/at-least-two-traffic_b_unsat.cnf.xz,13219668,igrev2,34949,kissat_br.sh,568381,complete,1120.39,1117.74,505592,UNSAT
+520292960,cnf_proj/at-least-two-traffic_f_unknown.cnf.xz,13219496,igrev2,34949,kissat_br.sh,568381,complete,1573.58,1571.3,670160,UNSAT
+520292963,cnf_proj/at-least-two-traffic_kkb_unknown.cnf.xz,13219647,igrev2,34949,kissat_br.sh,568381,complete,1656.07,1653.68,652368,UNSAT
+520292966,cnf_proj/at-least-two-traffic_pcb_unknown.cnf.xz,13219801,igrev2,34949,kissat_br.sh,568381,complete,2071.89,2069.98,603440,UNSAT
+520292969,cnf_proj/at-least-two-vmpc_26.cnf.xz,13219618,igrev2,34949,kissat_br.sh,568381,complete,2550.01,2551.21,1350260,UNSAT
+520292972,cnf_proj/at-least-two-vmpc_28.cnf.xz,13219703,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.5,5000.01,341704,UNKNOWN
+520292975,cnf_proj/b04_s_unknown_pre.cnf.xz,13219657,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.68,5000.09,338344,UNKNOWN
+520292978,cnf_proj/b2005-p1-12x12c10h7-Ser3-0.cnf.xz,13219835,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.46,5000.03,809444,UNKNOWN
+520292981,cnf_proj/b2005-p1-12x12c10h7-Ser4-0.cnf.xz,13219800,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4985.64,5000.06,889328,UNKNOWN
+520292984,cnf_proj/b2005-p1-12x12c10h7-Ser5-0.cnf.xz,13219681,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4984.3,5000.11,794456,UNKNOWN
+520292987,cnf_proj/b2005-p1-14x14c17h9-Ser3-0.cnf.xz,13219527,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.08,4985.91,4166636,UNKNOWN
+520292990,cnf_proj/b2005-p2-12x12c10h7-Ser7-0.cnf.xz,13219546,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.77,5000.07,2108708,UNKNOWN
+520292993,cnf_proj/b2005-p2-14x14c17h9-Ser5-0.cnf.xz,13219598,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.37,5000.02,3667428,UNKNOWN
+520292996,cnf_proj/b2005-p2-14x14c17h9-Ser6-0.cnf.xz,13219726,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4989.01,3670184,UNKNOWN
+520292999,cnf_proj/b2005-p3-12x12c10h7-Ser7-0.cnf.xz,13219525,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.67,5000.11,1841212,UNKNOWN
+520293002,cnf_proj/b2005-p3-14x14c17h9-Ser3-0.cnf.xz,13219511,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.02,4989.5,3951520,UNKNOWN
+520293005,cnf_proj/b2005-p4-12x12c10h7-Ser3-0.cnf.xz,13219774,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4985.11,5000.02,888368,UNKNOWN
+520293008,cnf_proj/b2005-p4-14x14c17h9-Ser8-0.cnf.xz,13219781,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.06,4967.92,7966620,UNKNOWN
+520293011,cnf_proj/b2005-p5-12x12c10h7-Ser5-0.cnf.xz,13219754,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4988.09,5000.03,948000,UNKNOWN
+520293014,cnf_proj/b2005-p5-14x14c17h9-Ser5-0.cnf.xz,13219648,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4988.75,3901176,UNKNOWN
+520293017,cnf_proj/barman-pfile10-039.sas.ex.15.cnf.xz,13219651,igrev2,34949,kissat_br.sh,568381,complete,682.57,676.443,1420328,UNSAT
+520293020,cnf_proj/barman-pfile10-040.sas.ex.15.cnf.xz,13219743,igrev2,34949,kissat_br.sh,568381,complete,629.503,624.087,1188772,UNSAT
+520293023,cnf_proj/battleship-12-12-unsat.cnf.xz,13219629,igrev2,34949,kissat_br.sh,568381,complete,508.92,509.477,599936,UNSAT
+520293026,cnf_proj/battleship-14-26-sat.cnf.xz,13219652,igrev2,34949,kissat_br.sh,568381,complete,8.27767,8.32889,146060,SAT-INCORRECT
+520293029,cnf_proj/blocks-blocks-36-0.180-SAT.cnf.xz,13219755,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.06,4985.92,2002808,UNKNOWN
+520293032,cnf_proj/blocks-blocks-37-1.120-NOTKNOWN.cnf.xz,13219573,igrev2,34949,kissat_br.sh,568381,complete,271.716,260.683,1311180,UNSAT
+520293035,cnf_proj/blocks-blocks-37-1.130-NOTKNOWN.cnf.xz,13219596,igrev2,34949,kissat_br.sh,568381,complete,1282.34,1269.82,1803780,UNSAT
+520293038,cnf_proj/bv-term-small-rw_1294.smt2.cnf.xz,13219847,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.06,4999.91,136456,UNKNOWN
+520293041,cnf_proj/bv-term-small-rw_1492.smt2.cnf.xz,13219472,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.04,5000.11,135792,UNKNOWN
+520293044,cnf_proj/bvsdiv_19.smt2.cnf.xz,13219675,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.88,5000.08,149952,UNKNOWN
+520293047,cnf_proj/bvsmod_18.smt2.cnf.xz,13219635,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),5000.02,5000.06,148960,UNKNOWN
+520293050,cnf_proj/bvsmod_19.smt2.cnf.xz,13219724,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.49,5000.02,149488,UNKNOWN
+520293053,cnf_proj/bvsub_08985.smt2.cnf.xz,13219470,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4999.03,451308,UNKNOWN
+520293056,cnf_proj/bvsub_12973.smt2.cnf.xz,13219655,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4998.62,517840,UNKNOWN
+520293059,cnf_proj/bvsub_19952.smt2.cnf.xz,13219521,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.07,4998.18,692652,UNKNOWN
+520293062,cnf_proj/bvurem_20.smt2.cnf.xz,13219621,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.7,5000.02,150444,UNKNOWN
+520293065,cnf_proj/Circuit_multiplier18.cnf.xz,13219645,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.16,5000.02,287960,UNKNOWN
+520293068,cnf_proj/Circuit_multiplier22.cnf.xz,13219626,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.55,5000.05,144980,UNKNOWN
+520293071,cnf_proj/Circuit_multiplier24.cnf.xz,13219454,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.93,5000.05,211796,UNKNOWN
+520293074,cnf_proj/Circuit_multiplier25.cnf.xz,13219803,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.57,5000.05,286956,UNKNOWN
+520293077,cnf_proj/Circuit_multiplier26.cnf.xz,13219504,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.26,5000.03,319948,UNKNOWN
+520293080,cnf_proj/Circuit_multiplier29.cnf.xz,13219469,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.7,5000.06,326532,UNKNOWN
+520293083,cnf_proj/Circuit_multiplier33.cnf.xz,13219783,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.65,5000.07,162100,UNKNOWN
+520293086,cnf_proj/Circuit_multiplier34.cnf.xz,13219599,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.42,5000.06,756244,SAT-INCORRECT
+520293089,cnf_proj/Circuit_multiplier35.cnf.xz,13219750,igrev2,34949,kissat_br.sh,568381,complete,819.456,819.736,418348,SAT-INCORRECT
+520293092,cnf_proj/Circuit_multiplier36.cnf.xz,13219564,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.3,5000.02,322976,UNKNOWN
+520293095,cnf_proj/Circuit_multiplier37.cnf.xz,13219698,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.71,5000.04,161008,UNKNOWN
+520293098,cnf_proj/Circuit_multiplier45.cnf.xz,13219475,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.45,5000.07,319692,UNKNOWN
+520293101,cnf_proj/Circuit_multiplier53.cnf.xz,13219481,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4989.3,5000.07,305384,UNKNOWN
+520293104,cnf_proj/crafted_n10_d6_c4_num15.cnf.xz,13219662,igrev2,34949,kissat_br.sh,568381,complete,453.515,447.895,1704396,UNSAT
+520293107,cnf_proj/crafted_n10_d6_c4_num21.cnf.xz,13219602,igrev2,34949,kissat_br.sh,568381,complete,419.319,413.891,1685692,UNSAT
+520293110,cnf_proj/crafted_n11_d6_c4_num14.cnf.xz,13219733,igrev2,34949,kissat_br.sh,568381,complete,1364.77,1359.31,1911024,UNSAT
+520293113,cnf_proj/crafted_n12_d6_c3_num18.cnf.xz,13219821,igrev2,34949,kissat_br.sh,568381,complete,286.648,282.425,1378672,UNSAT
+520293116,cnf_proj/crafted_n12_d6_c3_num28.cnf.xz,13219565,igrev2,34949,kissat_br.sh,568381,complete,526.904,522.293,1416420,UNSAT
+520293119,cnf_proj/crafted_n12_d6_c4_num17.cnf.xz,13219816,igrev2,34949,kissat_br.sh,568381,complete,380.12,372.776,2296864,UNSAT
+520293122,cnf_proj/ctl_4201_555_unsat.cnf.xz,13219677,igrev2,34949,kissat_br.sh,568381,complete,4880.01,4880.82,1371252,UNSAT
+520293125,cnf_proj/ctl_4291_567_11_unsat.cnf.xz,13219722,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.29,5000.07,299860,UNKNOWN
+520293128,cnf_proj/ctl_4291_567_1_unsat.cnf.xz,13219678,igrev2,34949,kissat_br.sh,568381,complete,4203.53,4204.78,1208924,UNSAT
+520293131,cnf_proj/ctl_4291_567_6_unsat_pre.cnf.xz,13219588,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.65,5000.05,274564,UNKNOWN
+520293134,cnf_proj/ctl_4291_567_9_unsat.cnf.xz,13219809,igrev2,34949,kissat_br.sh,568381,complete,1783.24,1783.66,774376,UNSAT
+520293137,cnf_proj/dist10.c.cnf.xz,13219649,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.02,5000.08,249368,UNKNOWN
+520293140,cnf_proj/dist4.c.cnf.xz,13219467,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.94,5000.04,142268,UNKNOWN
+520293143,cnf_proj/E00X23.cnf.xz,13219836,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.89,5000.02,710904,UNKNOWN
+520293146,cnf_proj/E02F17.cnf.xz,13219460,igrev2,34949,kissat_br.sh,568381,complete,678.844,679.479,659484,UNSAT
+520293149,cnf_proj/ecarev-110-1031-23-40-8.cnf.xz,13219746,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.31,5000.02,349892,UNKNOWN
+520293152,cnf_proj/ecarev-110-4099-22-30-4.cnf.xz,13219494,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),5000.01,5000.02,438216,UNKNOWN
+520293155,cnf_proj/edit_distance007_85.cnf.xz,13219826,igrev2,34949,kissat_br.sh,568381,complete,3399.73,3401.48,1153524,UNSAT
+520293158,cnf_proj/edit_distance019_312.cnf.xz,13219535,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.21,5000.02,363012,UNKNOWN
+520293161,cnf_proj/edit_distance023_281.cnf.xz,13219849,igrev2,34949,kissat_br.sh,568381,complete,466.113,466.372,366068,SAT-INCORRECT
+520293164,cnf_proj/edit_distance023_282.cnf.xz,13219453,igrev2,34949,kissat_br.sh,568381,complete,584.453,584.644,380912,SAT-INCORRECT
+520293167,cnf_proj/edit_distance023_283.cnf.xz,13219797,igrev2,34949,kissat_br.sh,568381,complete,602.741,602.967,425184,SAT-INCORRECT
+520293170,cnf_proj/edit_distance025_448.cnf.xz,13219478,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.98,5000.02,403804,UNKNOWN
+520293173,cnf_proj/edit_distance025_449.cnf.xz,13219757,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.52,5000.02,453240,UNKNOWN
+520293176,cnf_proj/edit_distance025_450.cnf.xz,13219810,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.88,5000.02,2663324,SAT-INCORRECT
+520293179,cnf_proj/edit_distance031_283.cnf.xz,13219574,igrev2,34949,kissat_br.sh,568381,complete,4030.2,4032.89,1023836,UNSAT
+520293182,cnf_proj/edit_distance031_284.cnf.xz,13219851,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4995.09,5000.02,1441376,UNSAT
+520293185,cnf_proj/edit_distance035_393.cnf.xz,13219827,igrev2,34949,kissat_br.sh,568381,complete,3188.33,3189.53,960808,SAT-INCORRECT
+520293188,cnf_proj/edit_distance041_182.cnf.xz,13219767,igrev2,34949,kissat_br.sh,568381,complete,314.102,313.811,294832,UNSAT
+520293191,cnf_proj/edit_distance041_183.cnf.xz,13219497,igrev2,34949,kissat_br.sh,568381,complete,353.072,352.889,296888,UNSAT
+520293197,cnf_proj/erin2_0x0-379.cnf.xz,13219737,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.03,5000.02,1453944,SAT-INCORRECT
+520293200,cnf_proj/erin2_0x0_n207-379.cnf.xz,13219796,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.47,5000.02,223820,UNKNOWN
+520293203,cnf_proj/erin2_0x1e3-216.cnf.xz,13219498,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.64,5000.02,201308,UNKNOWN
+520293194,cnf_proj/ER_500_40_2.apx_0.cnf.xz,13219770,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,5000.01,137672,UNKNOWN
+520293206,cnf_proj/ex045_7.cnf.xz,13219513,igrev2,34949,kissat_br.sh,568381,complete,1757.63,1748.36,2586088,SAT-INCORRECT
+520293209,cnf_proj/ex065_25.cnf.xz,13219658,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.49,5000.01,423620,UNKNOWN
+520293212,cnf_proj/ex095_8.cnf.xz,13219606,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.08,4992.38,2736060,UNSAT
+520293215,cnf_proj/ex175_20.cnf.xz,13219508,igrev2,34949,kissat_br.sh,568381,complete,981.514,966.906,3283100,SAT-INCORRECT
+520293218,cnf_proj/HCP-424-60.cnf.xz,13219615,igrev2,34949,kissat_br.sh,568381,complete,1772.24,1773.82,1642348,SAT-INCORRECT
+520293221,cnf_proj/HCP-446-105.cnf.xz,13219707,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4995.48,5000.01,3570260,SAT-INCORRECT
+520293224,cnf_proj/HCP-446-420.cnf.xz,13219631,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.7,5000.1,299752,UNKNOWN
+520293227,cnf_proj/HCP-446-60.cnf.xz,13219718,igrev2,34949,kissat_br.sh,568381,complete,1525.7,1528.17,1388004,SAT-INCORRECT
+520293230,cnf_proj/HCP-470-105.cnf.xz,13219676,igrev2,34949,kissat_br.sh,568381,complete,2108.54,2110.11,1660348,SAT-INCORRECT
+520293233,cnf_proj/HCP-470-420.cnf.xz,13219592,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.21,5000.07,396000,UNKNOWN
+520293236,cnf_proj/HCP-470-60.cnf.xz,13219537,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.81,5000.02,4222240,SAT-INCORRECT
+520293239,cnf_proj/HCP-506-60.cnf.xz,13219823,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.82,5000.07,272712,UNKNOWN
+520293242,cnf_proj/HCP-522-105.cnf.xz,13219558,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,5000.02,274160,UNKNOWN
+520293245,cnf_proj/HCP-526-105.cnf.xz,13219792,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.58,5000.09,274092,UNKNOWN
+520293248,cnf_proj/HCP-526-420.cnf.xz,13219455,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.77,5000.04,278540,UNKNOWN
+520293251,cnf_proj/HCP-529-420.cnf.xz,13219680,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.45,5000.09,244160,UNKNOWN
+520293254,cnf_proj/HCP-529-60.cnf.xz,13219794,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4999.87,269768,UNKNOWN
+520293257,cnf_proj/huck.col.11.cnf.xz,13219807,igrev2,34949,kissat_br.sh,568381,complete,401.06,401.82,615084,UNSAT
+520293260,cnf_proj/IBM_FV_2004_rule_batch_30_SAT_dat.k75.cnf.xz,13219550,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4999.02,407892,UNKNOWN
+520293263,cnf_proj/k2fix_gr_rcs_w8.shuffled.cnf.xz,13219484,igrev2,34949,kissat_br.sh,568381,complete,7.94176,7.60037,175216,UNSAT
+520293266,cnf_proj/Kakuro-easy-045-ext.xml.hg_4.cnf.xz,13219684,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.98,5000.01,689336,UNKNOWN
+520293269,cnf_proj/Kakuro-easy-051-ext.xml.hg_4.cnf.xz,13219679,igrev2,34949,kissat_br.sh,568381,complete,3389.83,3387.32,1405572,UNSAT
+520293272,cnf_proj/Kakuro-easy-089-ext.xml.hg_4.cnf.xz,13219483,igrev2,34949,kissat_br.sh,568381,complete,437.505,424.28,2683912,SAT-INCORRECT
+520293275,cnf_proj/Kakuro-easy-104-ext.xml.hg_6.cnf.xz,13219825,igrev2,34949,kissat_br.sh,568381,complete,219.323,206.49,3028268,SAT-INCORRECT
+520293278,cnf_proj/Kakuro-easy-112-ext.xml.hg_7.cnf.xz,13219775,igrev2,34949,kissat_br.sh,568381,complete,618.158,598.211,3972716,SAT-INCORRECT
+520293281,cnf_proj/Kakuro-easy-115-ext.xml.hg_5.cnf.xz,13219812,igrev2,34949,kissat_br.sh,568381,complete,741.78,716.019,4882028,SAT-INCORRECT
+520293284,cnf_proj/Kakuro-easy-118-ext.xml.hg_4.cnf.xz,13219633,igrev2,34949,kissat_br.sh,568381,complete,953.606,939.089,3245292,SAT-INCORRECT
+520293287,cnf_proj/Kakuro-easy-127-ext.xml.hg_7.cnf.xz,13219837,igrev2,34949,kissat_br.sh,568381,complete,680.554,656.454,4600504,SAT-INCORRECT
+520293290,cnf_proj/Kakuro-easy-132-ext.xml.hg_8.cnf.xz,13219653,igrev2,34949,kissat_br.sh,568381,complete,2347.04,2326.17,4603248,SAT-INCORRECT
+520293293,cnf_proj/Kakuro-easy-142-ext.xml.hg_8.cnf.xz,13219466,igrev2,34949,kissat_br.sh,568381,complete,544.271,527.502,3643048,SAT-INCORRECT
+520293296,cnf_proj/Kakuro-easy-150-ext.xml.hg_9.cnf.xz,13219646,igrev2,34949,kissat_br.sh,568381,complete,604.855,583.818,4078820,SAT-INCORRECT
+520293299,cnf_proj/Kakuro-easy-156-ext.xml.hg_7.cnf.xz,13219549,igrev2,34949,kissat_br.sh,568381,complete,1261.93,1243.36,3725604,SAT-INCORRECT
+520293302,cnf_proj/ktf_TF-1.tf_3_0.02_34.cnf.xz,13219740,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.05,5000.02,377496,UNKNOWN
+520293305,cnf_proj/ktf_TF-1.tf_4_0.06_101.cnf.xz,13219620,igrev2,34949,kissat_br.sh,568381,complete,383.53,383.653,360280,SAT-INCORRECT
+520293308,cnf_proj/ktf_TF-3.tf_2_0.02_24.cnf.xz,13219788,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4984.29,5000.1,316312,UNKNOWN
+520293311,cnf_proj/ktf_TF-3.tf_3_0.02_24.cnf.xz,13219536,igrev2,34949,kissat_br.sh,568381,complete,454.699,454.903,331196,UNSAT
+520293314,cnf_proj/ktf_TF-3.tf_4_0.04_48.cnf.xz,13219468,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.11,5000.1,318296,UNKNOWN
+520293317,cnf_proj/ktf_TF-4.tf_2_0.02_18.cnf.xz,13219709,igrev2,34949,kissat_br.sh,568381,complete,142.773,142.974,266312,UNSAT
+520293320,cnf_proj/ktf_TF-4.tf_4_0.04_35.cnf.xz,13219705,igrev2,34949,kissat_br.sh,568381,complete,4843.64,4845.86,2011140,UNSAT
+520293323,cnf_proj/ktf_TF-4.tf_4_0.06_52.cnf.xz,13219776,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4983.29,5000.02,332668,UNKNOWN
+520293326,cnf_proj/ktf_TF-6.tf_4_0.04_51.cnf.xz,13219765,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.38,5000.02,329692,UNKNOWN
+520293329,cnf_proj/ktf_TF-6.tf_4_0.06_77.cnf.xz,13219639,igrev2,34949,kissat_br.sh,568381,complete,325.399,325.664,323748,SAT-INCORRECT
+520293332,cnf_proj/ktf_TF-7.tf_3_0.06_113.cnf.xz,13219791,igrev2,34949,kissat_br.sh,568381,complete,40.1914,39.9171,262044,SAT-INCORRECT
+520293335,cnf_proj/ktf_TF-8.tf_4_0.02_37.cnf.xz,13219562,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.02,5000.11,342980,UNKNOWN
+520293338,cnf_proj/ktf_TF-8.tf_4_0.06_109.cnf.xz,13219600,igrev2,34949,kissat_br.sh,568381,complete,43.4054,43.3957,177984,SAT-INCORRECT
+520293341,cnf_proj/LABS_n041_goal003.cnf.xz,13219619,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.48,5000.04,178636,UNKNOWN
+520293344,cnf_proj/LABS_n068_goal001.cnf.xz,13219522,igrev2,34949,kissat_br.sh,568381,complete,3304.88,3305.15,520244,UNSAT
+520293347,cnf_proj/LABS_n069_goal001.cnf.xz,13219779,igrev2,34949,kissat_br.sh,568381,complete,4633.61,4633.72,587632,UNSAT
+520293350,cnf_proj/LABS_n072_goal006.cnf.xz,13219538,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.05,5000.06,799180,SAT-INCORRECT
+520293353,cnf_proj/LABS_n089_goal008.cnf.xz,13219695,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4999.79,411788,UNKNOWN
+520293356,cnf_proj/maximum_constrained_partition_14_bits_n200.cnf.xz,13219566,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,4999.86,274948,UNKNOWN
+520293359,cnf_proj/maximum_constrained_partition_18_bits_n200.cnf.xz,13219738,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.51,5000.1,307180,UNKNOWN
+520293362,cnf_proj/maxor128.cnf.xz,13219583,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4999.66,419960,UNKNOWN
+520293365,cnf_proj/mp1-blockpuzzle_5x10_s5_free3.cnf.xz,13219650,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.74,5000.07,161060,UNKNOWN
+520293368,cnf_proj/mp1-blockpuzzle_5x12_s6_free3.cnf.xz,13219531,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.55,5000.03,179056,UNKNOWN
+520293371,cnf_proj/mp1-blockpuzzle_9x9_s1_free8.cnf.xz,13219545,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4999.52,351328,UNKNOWN
+520293374,cnf_proj/mp1-blockpuzzle_9x9_s5_free3.cnf.xz,13219617,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.04,5000.04,274052,UNKNOWN
+520293377,cnf_proj/mp1-bsat201-707.cnf.xz,13219690,igrev2,34949,kissat_br.sh,568381,complete,2476.7,2478.39,755584,UNSAT
+520293380,cnf_proj/mp1-bsat210-739.cnf.xz,13219846,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.46,5000.02,1678928,UNSAT
+520293383,cnf_proj/mp1-klieber2017s-0300-034-t12.cnf.xz,13219488,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.66,5000.03,251916,UNKNOWN
+520293386,cnf_proj/mp1-klieber2017s-0490-024-t12.cnf.xz,13219643,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,5000.07,271876,UNKNOWN
+520293389,cnf_proj/mp1-klieber2017s-1000-023-eq.cnf.xz,13219634,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.07,4999.86,131696,UNKNOWN
+520293392,cnf_proj/mp1-klieber2017s-1000-024-eq.cnf.xz,13219584,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.47,5000.04,132036,UNKNOWN
+520293395,cnf_proj/mp1-klieber2017s-1200-022-eq.cnf.xz,13219501,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.92,5000.04,132360,UNKNOWN
+520293398,cnf_proj/mp1-klieber2017s-2000-022-eq.cnf.xz,13219559,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.94,5000.05,136916,UNKNOWN
+520293401,cnf_proj/mp1-Nb6T06.cnf.xz,13219473,igrev2,34949,kissat_br.sh,568381,complete,50.6407,50.6618,212856,UNSAT
+520293404,cnf_proj/mp1-Nb6T07.cnf.xz,13219772,igrev2,34949,kissat_br.sh,568381,complete,2383.05,2385.55,1715176,UNSAT
+520293407,cnf_proj/mp1-Nb7T44.cnf.xz,13219551,igrev2,34949,kissat_br.sh,568381,complete,60.6391,60.3296,315860,SAT-INCORRECT
+520293410,cnf_proj/mp1-Nb7T46.cnf.xz,13219479,igrev2,34949,kissat_br.sh,568381,complete,8.7438,8.31756,311744,SAT-INCORRECT
+520293413,cnf_proj/mp1-squ_ali_s10x10_c39_abio_SAT.cnf.xz,13219759,igrev2,34949,kissat_br.sh,568381,complete,1977.91,1979.48,1398444,SAT-INCORRECT
+520293416,cnf_proj/mp1-squ_any_s09x07_c27_abix_UNS.cnf.xz,13219787,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.11,5000.02,3848692,UNSAT
+520293419,cnf_proj/mp1-tri_ali_s11_c35_abix_UNS.cnf.xz,13219533,igrev2,34949,kissat_br.sh,568381,complete,758.277,758.998,606032,UNSAT
+520293422,cnf_proj/mp1-tri_ali_s11_c35_bail_UNS.cnf.xz,13219790,igrev2,34949,kissat_br.sh,568381,complete,345.708,345.981,319544,UNSAT
+520293425,cnf_proj/MVD_ADS_S10_5_6.cnf.xz,13219457,igrev2,34949,kissat_br.sh,568381,complete,3.61971,3.26324,318688,UNSAT
+520293428,cnf_proj/MVD_ADS_S10_6_6.cnf.xz,13219830,igrev2,34949,kissat_br.sh,568381,complete,21.6249,21.2831,318824,UNSAT
+520293431,cnf_proj/MVD_ADS_S11_6_7.cnf.xz,13219762,igrev2,34949,kissat_br.sh,568381,complete,3.23796,2.85012,356992,SAT-INCORRECT
+520293434,cnf_proj/MVD_ADS_S11_7_7.cnf.xz,13219689,igrev2,34949,kissat_br.sh,568381,complete,4.11377,3.66625,357128,SAT-INCORRECT
+520293437,cnf_proj/MVD_ADS_S11_8_7.cnf.xz,13219687,igrev2,34949,kissat_br.sh,568381,complete,3.00375,2.61381,389900,SAT-INCORRECT
+520293440,cnf_proj/MVD_ADS_S1_5_5.cnf.xz,13219844,igrev2,34949,kissat_br.sh,568381,complete,6.86446,6.21133,384240,UNSAT
+520293443,cnf_proj/MVD_ADS_S3_5_5.cnf.xz,13219735,igrev2,34949,kissat_br.sh,568381,complete,5.43954,4.76867,384032,UNSAT
+520293446,cnf_proj/MVD_ADS_S4_5_5.cnf.xz,13219659,igrev2,34949,kissat_br.sh,568381,complete,16.4527,15.8439,384392,UNSAT
+520293449,cnf_proj/MVD_ADS_S5_6_6.cnf.xz,13219611,igrev2,34949,kissat_br.sh,568381,complete,40.4688,39.9279,389272,UNSAT
+520293452,cnf_proj/MVD_ADS_S6_6_5.cnf.xz,13219547,igrev2,34949,kissat_br.sh,568381,complete,1.4263,1.22062,173644,UNSAT
+520293455,cnf_proj/MVD_ADS_S6_6_6.cnf.xz,13219756,igrev2,34949,kissat_br.sh,568381,complete,5.62077,5.08395,389576,UNSAT
+520293458,cnf_proj/MVD_ADS_S7_6_6.cnf.xz,13219520,igrev2,34949,kissat_br.sh,568381,complete,6.26969,5.62758,389636,UNSAT
+520293461,cnf_proj/MVD_ADS_S9_6_6.cnf.xz,13219570,igrev2,34949,kissat_br.sh,568381,complete,5.1446,4.53547,390132,UNSAT
+520293464,cnf_proj/Mycielski-10-hints-10.cnf.xz,13219731,igrev2,34949,kissat_br.sh,568381,complete,248.344,248.457,415664,UNSAT
+520293467,cnf_proj/Mycielski-10-hints-5.cnf.xz,13219741,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4989.18,5000.04,365156,UNKNOWN
+520293470,cnf_proj/Mycielski-10-hints-6.cnf.xz,13219582,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.09,5000.02,353760,UNKNOWN
+520293473,cnf_proj/Mycielski-10-hints-7.cnf.xz,13219685,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.53,5000.02,360268,UNKNOWN
+520293476,cnf_proj/Mycielski-10-hints-8.cnf.xz,13219747,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.3,5000.08,384312,UNKNOWN
+520293479,cnf_proj/Mycielski-10-hints-9.cnf.xz,13219604,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.51,5000.02,366356,UNKNOWN
+520293482,cnf_proj/Mycielski-11-hints-1.cnf.xz,13219489,igrev2,34949,kissat_br.sh,568381,complete,2832.21,2831.57,1632592,UNSAT
+520293485,cnf_proj/Mycielski-11-hints-2.cnf.xz,13219808,igrev2,34949,kissat_br.sh,568381,complete,2774.58,2775.03,1624076,UNSAT
+520293488,cnf_proj/Mycielski-11-hints-3.cnf.xz,13219544,igrev2,34949,kissat_br.sh,568381,complete,2464.4,2464.24,1551844,UNSAT
+520293491,cnf_proj/Mycielski-11-hints-4.cnf.xz,13219673,igrev2,34949,kissat_br.sh,568381,complete,2670.34,2670.32,1627800,UNSAT
+520293494,cnf_proj/n320p5q2_n.apx_16.cnf.xz,13219495,igrev2,34949,kissat_br.sh,568381,complete,57.5264,57.4906,205228,SAT-INCORRECT
+520293497,cnf_proj/n320p5q2_n.apx_17.cnf.xz,13219760,igrev2,34949,kissat_br.sh,568381,complete,227.927,228.319,381800,UNSAT
+520293500,cnf_proj/Nb51T6.cnf.xz,13219838,igrev2,34949,kissat_br.sh,568381,complete,4114.69,4098.62,4650032,UNSAT
+520293503,cnf_proj/ndhf_xits_09_UNSAT.cnf.xz,13219833,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.06,4999.97,158436,UNKNOWN
+520293506,cnf_proj/p01_lb_05.cnf.xz,13219487,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4986.18,5000.03,332876,UNKNOWN
+520293509,cnf_proj/pb_300_05_lb_16.cnf.xz,13219462,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.94,5000.02,472092,UNKNOWN
+520293512,cnf_proj/pb_300_05_lb_17.cnf.xz,13219784,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.39,5000.05,488484,UNKNOWN
+520293515,cnf_proj/pb_300_06_lb_02.cnf.xz,13219532,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.73,5000.03,481720,UNKNOWN
+520293518,cnf_proj/pb_300_10_lb_06.cnf.xz,13219720,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4967.82,5000.02,641828,UNKNOWN
+520293521,cnf_proj/php12e12.cnf.xz,13219780,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4981.97,5000.02,314472,UNKNOWN
+520293524,cnf_proj/php14e14.cnf.xz,13219683,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4984.08,5000.01,358320,UNKNOWN
+520293527,cnf_proj/prime_a20_b20.cnf.xz,13219828,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4999.86,151748,UNKNOWN
+520293530,cnf_proj/prime_a22_b22.cnf.xz,13219696,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.22,5000.1,162368,UNKNOWN
+520293533,cnf_proj/prime_a24_b24.cnf.xz,13219515,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.35,5000.03,1426348,SAT-INCORRECT
+520293536,cnf_proj/problem_12.smt2.cnf.xz,13219575,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4989.69,5000.03,386276,UNKNOWN
+520293539,cnf_proj/puzzle30_sat.cnf.xz,13219670,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.12,5000.04,268976,UNKNOWN
+520293542,cnf_proj/puzzle34_sat.cnf.xz,13219491,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.6,5000.06,287244,UNKNOWN
+520293545,cnf_proj/puzzle34_unsat.cnf.xz,13219510,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.5,5000.03,1258228,UNSAT
+520293548,cnf_proj/puzzle35_sat.cnf.xz,13219829,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.88,5000.04,275440,UNKNOWN
+520293551,cnf_proj/puzzle35_unsat.cnf.xz,13219507,igrev2,34949,kissat_br.sh,568381,complete,667.004,667.351,380048,UNSAT
+520293554,cnf_proj/puzzle36_sat.cnf.xz,13219591,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.44,5000.11,406288,UNKNOWN
+520293557,cnf_proj/puzzle37_unsat.cnf.xz,13219548,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.37,5000.08,384020,UNKNOWN
+520293560,cnf_proj/puzzle39_sat.cnf.xz,13219799,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.34,5000.02,419836,UNKNOWN
+520293563,cnf_proj/puzzle42_sat.cnf.xz,13219608,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.25,5000.04,390448,UNKNOWN
+520293566,cnf_proj/puzzle44_unsat.cnf.xz,13219577,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.21,5000.09,394068,UNKNOWN
+520293569,cnf_proj/puzzle47_sat.cnf.xz,13219490,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4985.01,5000.04,386384,UNKNOWN
+520293572,cnf_proj/puzzle51_unsat.cnf.xz,13219665,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.52,5000.04,349792,UNKNOWN
+520293575,cnf_proj/puzzle60_sat.cnf.xz,13219458,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4995.63,5000.01,364020,UNKNOWN
+520293578,cnf_proj/quad_res_r21_m22.cnf.xz,13219701,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.38,5000.09,193196,UNKNOWN
+520293581,cnf_proj/quad_res_r26_m27.cnf.xz,13219539,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.12,5000.06,311444,UNKNOWN
+520293584,cnf_proj/quad_res_r28_m29.cnf.xz,13219721,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.58,5000.02,315132,UNKNOWN
+520293587,cnf_proj/quad_res_r29_m32.cnf.xz,13219555,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4995.48,5000.02,315104,UNKNOWN
+520293590,cnf_proj/quad_res_r31_m35.cnf.xz,13219686,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.78,5000.03,337776,UNKNOWN
+520293593,cnf_proj/quad_res_r32_m35.cnf.xz,13219528,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.67,5000.08,359700,UNKNOWN
+520293596,cnf_proj/quad_res_r33_m36.cnf.xz,13219502,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.7,5000.04,331288,UNKNOWN
+520293599,cnf_proj/quad_res_r34_m36.cnf.xz,13219471,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.14,5000.05,349124,UNKNOWN
+520293602,cnf_proj/quad_res_r35_m36.cnf.xz,13219848,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.91,5000.08,313892,UNKNOWN
+520293605,cnf_proj/quad_res_r37_m39.cnf.xz,13219694,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.23,5000.02,370668,UNKNOWN
+520293608,cnf_proj/randomG-B-Mix-n15-d05.cnf.xz,13219456,igrev2,34949,kissat_br.sh,568381,complete,671.963,672.784,943940,UNSAT
+520293611,cnf_proj/randomG-B-Mix-n16-d05.cnf.xz,13219704,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4984.93,5000.11,8477952,UNSAT
+520293614,cnf_proj/randomG-B-Mix-n18-d05.cnf.xz,13219771,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4984.33,5000.02,322476,UNKNOWN
+520293617,cnf_proj/randomG-B-Mix-n19-d05.cnf.xz,13219516,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4980.38,5000.02,343764,UNKNOWN
+520293620,cnf_proj/randomG-Mix-n17-d05.cnf.xz,13219749,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4989.42,5000.02,271924,UNKNOWN
+520293623,cnf_proj/randomG-Mix-n18-d05.cnf.xz,13219529,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.09,5000.02,257544,UNKNOWN
+520293626,cnf_proj/randomG-n16-d05.cnf.xz,13219630,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4988.58,5000.02,7247924,UNSAT
+520293629,cnf_proj/randomG-n17-d05.cnf.xz,13219697,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4988.75,5000.02,297740,UNKNOWN
+520293632,cnf_proj/randomG-n18-d05.cnf.xz,13219477,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4987.24,5000.02,302860,UNKNOWN
+520293635,cnf_proj/randomG-n19-d05.cnf.xz,13219845,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4976.35,5000.11,312084,UNKNOWN
+520293638,cnf_proj/randomG-n20-d05.cnf.xz,13219594,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4985.5,5000.1,330444,UNKNOWN
+520293641,cnf_proj/rphp4_065_shuffled.cnf.xz,13219840,igrev2,34949,kissat_br.sh,568381,complete,656.404,658.162,1066856,UNSAT
+520293644,cnf_proj/rphp4_080_shuffled.cnf.xz,13219751,igrev2,34949,kissat_br.sh,568381,complete,2424.12,2426.98,2760868,UNSAT
+520293647,cnf_proj/rphp4_090_shuffled.cnf.xz,13219723,igrev2,34949,kissat_br.sh,568381,complete,3713.4,3717.6,3781752,UNSAT
+520293650,cnf_proj/rpoc_xits_10_UNKNOWN.cnf.xz,13219637,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.76,5000.05,146772,UNKNOWN
+520293653,cnf_proj/satch2ways12u.cnf.xz,13219666,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.54,5000.01,3449076,UNKNOWN
+520293656,cnf_proj/satch2ways12wu.cnf.xz,13219777,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4988.89,5000.07,3367304,UNKNOWN
+520293659,cnf_proj/satch2ways13wu.cnf.xz,13219702,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.18,5000.02,3774888,UNKNOWN
+520293662,cnf_proj/satch2ways14u.cnf.xz,13219581,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.4,5000.07,4043508,UNKNOWN
+520293665,cnf_proj/satch2ways15.cnf.xz,13219585,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4979.04,5000.02,1.32E+07,UNKNOWN
+520293668,cnf_proj/satch2ways15u.cnf.xz,13219514,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.31,5000.08,4432180,UNKNOWN
+520293671,cnf_proj/satch2ways15wu.cnf.xz,13219815,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.12,5000.07,4437704,UNKNOWN
+520293674,cnf_proj/satch2ways16.cnf.xz,13219728,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4968.8,5000.1,1.51E+07,UNKNOWN
+520293677,cnf_proj/satch2ways16w.cnf.xz,13219708,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4972.09,5000.09,1.50E+07,UNKNOWN
+520293680,cnf_proj/satch2ways17w.cnf.xz,13219766,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4968.7,5000.04,1.44E+07,UNKNOWN
+520293683,cnf_proj/satch2ways18u.cnf.xz,13219572,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4990.76,5000.1,5251600,UNKNOWN
+520293686,cnf_proj/satch2ways18wu.cnf.xz,13219556,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4985.76,5000.03,5345424,UNKNOWN
+520293689,cnf_proj/satch2ways19u.cnf.xz,13219523,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4988.24,5000.11,5757648,UNKNOWN
+520293692,cnf_proj/SC21_Timetable_C_121_E_34_Cl_8_S_4.cnf.xz,13219561,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4961.1,5000.02,905640,UNKNOWN
+520293695,cnf_proj/SC21_Timetable_C_136_E_36_Cl_9_S_15.cnf.xz,13219778,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4978.49,5000.11,490984,UNKNOWN
+520293698,cnf_proj/SC21_Timetable_C_136_E_41_Cl_9_S_15.cnf.xz,13219789,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4970.16,5000.02,458516,UNKNOWN
+520293701,cnf_proj/SC21_Timetable_C_140_E_29_Cl_10_S_15.cnf.xz,13219656,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4966.42,5000.01,462228,UNKNOWN
+520293704,cnf_proj/SC21_Timetable_C_140_E_32_Cl_30_S_10.cnf.xz,13219824,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4972.37,5000.02,425656,UNKNOWN
+520293707,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_4.cnf.xz,13219691,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4963.74,5000.01,1357108,UNKNOWN
+520293710,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_8.cnf.xz,13219563,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4933.94,5000.11,1522064,UNKNOWN
+520293713,cnf_proj/SC21_Timetable_C_241_E_34_Cl_16_S_13.cnf.xz,13219605,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4959.47,5000.04,1532880,UNKNOWN
+520293716,cnf_proj/SC21_Timetable_C_466_E_62_Cl_31_S_30.cnf.xz,13219834,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.07,4999.74,667128,UNKNOWN
+520293719,cnf_proj/SC21_Timetable_C_512_E_66_Cl_34_S_35.cnf.xz,13219795,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4988.75,5000.1,980668,UNKNOWN
+520293722,cnf_proj/SC21_Timetable_C_527_E_71_Cl_35_S_35.cnf.xz,13219506,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.07,4998.87,724112,UNKNOWN
+520293725,cnf_proj/SC21_Timetable_C_542_E_71_Cl_36_S_35.cnf.xz,13219798,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.02,4998.53,762244,UNKNOWN
+520293728,cnf_proj/SC21_Timetable_C_557_E_73_Cl_37_S_35.cnf.xz,13219813,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4975.87,5000.01,2559732,UNKNOWN
+520293731,cnf_proj/scc_1213_40_10_3.apx_0.cnf.xz,13219664,igrev2,34949,kissat_br.sh,568381,complete,63.5245,62.171,359448,SAT-INCORRECT
+520293734,cnf_proj/SE_PR_stb_531_83.apx_1.cnf.xz,13219763,igrev2,34949,kissat_br.sh,568381,complete,2066.74,2068.19,1019148,SAT-INCORRECT
+520293737,cnf_proj/SE_PR_stb_588_138.apx_1.cnf.xz,13219554,igrev2,34949,kissat_br.sh,568381,complete,501.321,502.104,405856,SAT-INCORRECT
+520293740,cnf_proj/SE_PR_WS_500_16_70_10.apx_0.cnf.xz,13219552,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.07,5000.01,204788,UNKNOWN
+520293743,cnf_proj/shift1add.26949.cnf.xz,13219706,igrev2,34949,kissat_br.sh,568381,complete,50.2298,48.6035,539852,UNSAT
+520293746,cnf_proj/size_5_5_5_i003_r12.cnf.xz,13219682,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.56,5000.01,341632,UNKNOWN
+520293749,cnf_proj/size_5_5_5_i223_r12.cnf.xz,13219716,igrev2,34949,kissat_br.sh,568381,complete,971.603,972.556,936060,SAT-INCORRECT
+520293752,cnf_proj/size_5_5_5_i251_r12.cnf.xz,13219578,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.08,5000.03,296920,UNKNOWN
+520293755,cnf_proj/snw_13_8_pre-sc2016.cnf.xz,13219500,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.2,5000.02,712780,UNSAT
+520293758,cnf_proj/snw_13_8_pre.cnf.xz,13219579,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.44,5000.03,814996,UNSAT
+520293761,cnf_proj/snw_13_9_pre.cnf.xz,13219712,igrev2,34949,kissat_br.sh,568381,complete,80.8659,79.9776,329864,SAT-INCORRECT
+520293764,cnf_proj/snw_16_9_Encpre.cnf.xz,13219802,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4998.71,491940,UNKNOWN
+520293767,cnf_proj/sokoban-p16.sas.ex.19-sc2016.cnf.xz,13219663,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4977.65,5000.02,1795368,UNKNOWN
+520293770,cnf_proj/sokoban-p20.sas.cr.21.cnf.xz,13219519,igrev2,34949,kissat_br.sh,568381,complete,1417.89,1417.47,909524,UNSAT
+520293773,cnf_proj/sokoban-p20.sas.cr.27.cnf.xz,13219560,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4965.54,5000.08,758556,UNKNOWN
+520293776,cnf_proj/sokoban-p20.sas.ex.13.cnf.xz,13219509,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4970.69,5000.11,1476752,UNKNOWN
+520293779,cnf_proj/sokoban-sequential-p145-microban-sequential.070-NOTKNOWN.cnf.xz,13219609,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4957.55,5000.04,1796244,UNKNOWN
+520293782,cnf_proj/sp4-33-bin-nons-flat-noid.cnf.xz,13219534,igrev2,34949,kissat_br.sh,568381,complete,271.924,272.274,480916,UNSAT
+520293785,cnf_proj/sp4-33-one-nons-flat-noid.cnf.xz,13219580,igrev2,34949,kissat_br.sh,568381,complete,38.1881,38.2115,182892,SAT-INCORRECT
+520293788,cnf_proj/sp4-33-one-stri-tree-noid.cnf.xz,13219607,igrev2,34949,kissat_br.sh,568381,complete,1029.83,1031.15,1169156,UNSAT
+520293791,cnf_proj/sp4-33-una-stri-flat-noid.cnf.xz,13219595,igrev2,34949,kissat_br.sh,568381,complete,399.346,399.883,609288,UNSAT
+520293794,cnf_proj/sp5-21-15-bin-stri-flat-noid.cnf.xz,13219831,igrev2,34949,kissat_br.sh,568381,complete,615.291,615.948,460592,SAT-INCORRECT
+520293797,cnf_proj/sp5-21-15-bin-stri-tree-noid.cnf.xz,13219773,igrev2,34949,kissat_br.sh,568381,complete,480.7,481.05,394300,SAT-INCORRECT
+520293800,cnf_proj/sp5-21-15-one-nons-tree-noid.cnf.xz,13219710,igrev2,34949,kissat_br.sh,568381,complete,2334.7,2337.18,1370516,SAT-INCORRECT
+520293803,cnf_proj/sp5-21-15-one-stri-tree-noid.cnf.xz,13219736,igrev2,34949,kissat_br.sh,568381,complete,337.529,337.843,344320,SAT-INCORRECT
+520293806,cnf_proj/sp5-21-15-una-nons-tree-noid.cnf.xz,13219711,igrev2,34949,kissat_br.sh,568381,complete,820.763,821.677,514168,SAT-INCORRECT
+520293809,cnf_proj/sp5-21-15-una-stri-flat-noid.cnf.xz,13219669,igrev2,34949,kissat_br.sh,568381,complete,1210.57,1211.66,766180,SAT-INCORRECT
+520293812,cnf_proj/sp5-26-19-bin-nons-tree-noid.cnf.xz,13219567,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4982.22,5000.02,272180,UNKNOWN
+520293815,cnf_proj/sp5-26-19-bin-stri-flat-noid.cnf.xz,13219603,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.62,5000.02,3727548,SAT-INCORRECT
+520293818,cnf_proj/sp5-26-19-una-nons-tree-noid.cnf.xz,13219530,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4987.9,5000.01,323640,UNKNOWN
+520293821,cnf_proj/spg_200_300.cnf.xz,13219636,igrev2,34949,kissat_br.sh,568381,complete,478.467,473.353,616000,UNSAT
+520293824,cnf_proj/spg_200_301.cnf.xz,13219729,igrev2,34949,kissat_br.sh,568381,complete,208.597,204.93,544172,UNSAT
+520293827,cnf_proj/spg_200_307.cnf.xz,13219768,igrev2,34949,kissat_br.sh,568381,complete,108.97,105.499,580536,UNSAT
+520293830,cnf_proj/spg_200_316.cnf.xz,13219642,igrev2,34949,kissat_br.sh,568381,complete,273.53,268.896,601384,UNSAT
+520293833,cnf_proj/spg_200_317.cnf.xz,13219714,igrev2,34949,kissat_br.sh,568381,complete,612.293,606.116,855620,UNSAT
+520293836,cnf_proj/spg_200_321.cnf.xz,13219610,igrev2,34949,kissat_br.sh,568381,complete,213.216,209.355,587964,UNSAT
+520293839,cnf_proj/spg_300_300.cnf.xz,13219644,igrev2,34949,kissat_br.sh,568381,complete,335.665,329.48,793200,UNSAT
+520293842,cnf_proj/spg_300_301.cnf.xz,13219715,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.2,5000.08,3441040,UNSAT
+520293845,cnf_proj/spg_300_312.cnf.xz,13219542,igrev2,34949,kissat_br.sh,568381,complete,2818.5,2814.1,1599356,UNSAT
+520293848,cnf_proj/spg_330_400.cnf.xz,13219717,igrev2,34949,kissat_br.sh,568381,complete,1004.34,996.139,992124,UNSAT
+520293851,cnf_proj/spg_400_281.cnf.xz,13219793,igrev2,34949,kissat_br.sh,568381,complete,923.356,914.033,1379016,UNSAT
+520293854,cnf_proj/spg_420_280.cnf.xz,13219505,igrev2,34949,kissat_br.sh,568381,complete,3114.03,3106.8,1823008,UNSAT
+520293857,cnf_proj/spg_420_350.cnf.xz,13219476,igrev2,34949,kissat_br.sh,568381,complete,2063.76,2056.44,2186364,UNSAT
+520293860,cnf_proj/stb_531_83.apx_0.cnf.xz,13219671,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),5000,5000.01,128796,UNKNOWN
+520293863,cnf_proj/stb_792_333.apx_0.cnf.xz,13219625,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.83,5000.03,129044,UNKNOWN
+520293866,cnf_proj/sted12a_0x1e1-67.cnf.xz,13219499,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.47,5000.03,1787904,SAT-INCORRECT
+520293869,cnf_proj/sted1_0x0-380.cnf.xz,13219806,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.22,5000.08,327836,UNKNOWN
+520293872,cnf_proj/sted1_0x0-637.cnf.xz,13219640,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.55,5000.02,217772,UNKNOWN
+520293875,cnf_proj/sted1_0x1e3-393.cnf.xz,13219524,igrev2,34949,kissat_br.sh,568381,complete,2673.35,2674.89,1065848,SAT-INCORRECT
+520293878,cnf_proj/sted2_0x0-343.cnf.xz,13219725,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4997.86,5000.06,276724,UNKNOWN
+520293881,cnf_proj/sted2_0x1e3-216.cnf.xz,13219782,igrev2,34949,kissat_br.sh,568381,complete,1758.8,1267.81,746556,SAT-INCORRECT
+520293884,cnf_proj/sted3_0x0_n201-239.cnf.xz,13219672,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.37,5000.05,169032,UNKNOWN
+520293887,cnf_proj/sted4_0x0_n159-185.cnf.xz,13219518,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.76,5000.09,157368,UNKNOWN
+520293890,cnf_proj/sted5_0x0_n90-157.cnf.xz,13219804,igrev2,34949,kissat_br.sh,568381,complete,1182.84,1183.26,526388,SAT-INCORRECT
+520293893,cnf_proj/sted5_0x1e3-120.cnf.xz,13219674,igrev2,34949,kissat_br.sh,568381,complete,267.8,268.029,269380,SAT-INCORRECT
+520293896,cnf_proj/sted5_0x1e3-20.cnf.xz,13219660,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.27,5000.02,339996,UNKNOWN
+520293899,cnf_proj/sted5_0x24204-70.cnf.xz,13219461,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4995.76,5000.01,292932,UNKNOWN
+520293902,cnf_proj/sted6_0x1e3-97.cnf.xz,13219822,igrev2,34949,kissat_br.sh,568381,complete,3097.76,3099.22,1019392,SAT-INCORRECT
+520293905,cnf_proj/string_compare_safety_cbmc_unwinding_600.cnf.xz,13219568,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.09,4983.65,2743924,UNKNOWN
+520293908,cnf_proj/string_compare_safety_cbmc_unwinding_630.cnf.xz,13219811,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,4983.5,2829068,UNKNOWN
+520293911,cnf_proj/string_compare_safety_cbmc_unwinding_670.cnf.xz,13219817,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.09,4981.43,2963592,UNKNOWN
+520293914,cnf_proj/string_compare_safety_cbmc_unwinding_680.cnf.xz,13219576,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4980.36,2991280,UNKNOWN
+520293917,cnf_proj/string_compare_safety_cbmc_unwinding_690.cnf.xz,13219512,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.08,4981.12,3116184,UNKNOWN
+520293920,cnf_proj/string_compare_safety_cbmc_unwinding_700.cnf.xz,13219485,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4980.87,3225764,UNKNOWN
+520293923,cnf_proj/string_compare_safety_cbmc_unwinding_730.cnf.xz,13219744,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000,4978.76,3383500,UNKNOWN
+520293926,cnf_proj/string_compare_safety_cbmc_unwinding_780.cnf.xz,13219492,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.07,4976.84,3551532,UNKNOWN
+520293929,cnf_proj/string_compare_safety_cbmc_unwinding_800.cnf.xz,13219482,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.02,4974.79,3608048,UNKNOWN
+520293932,cnf_proj/string_compare_safety_cbmc_unwinding_870.cnf.xz,13219742,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.06,4968.59,4069752,UNKNOWN
+520293935,cnf_proj/string_compare_safety_cbmc_unwinding_900.cnf.xz,13219569,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.06,4972.05,4466356,UNKNOWN
+520293938,cnf_proj/string_compare_safety_cbmc_unwinding_930.cnf.xz,13219814,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.08,4968.87,4404496,UNKNOWN
+520293941,cnf_proj/string_compare_safety_cbmc_unwinding_940.cnf.xz,13219571,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4967.88,4432220,UNKNOWN
+520293944,cnf_proj/sum_of_3_cubes_108_bits_52.cnf.xz,13219719,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.95,5000.07,584184,UNKNOWN
+520293947,cnf_proj/sum_of_3_cubes_145_bits_74.cnf.xz,13219517,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.36,5000.06,659564,UNKNOWN
+520293950,cnf_proj/sum_of_3_cubes_37_bits_87.cnf.xz,13219624,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.46,5000.04,269376,UNKNOWN
+520293953,cnf_proj/sum_of_3_cubes_42_bits_96.cnf.xz,13219590,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.3,5000.06,277628,UNKNOWN
+520293956,cnf_proj/sum_of_3_cubes_50_bits_91.cnf.xz,13219693,igrev2,34949,kissat_br.sh,568381,complete,11.7391,11.3583,288124,SAT-INCORRECT
+520293959,cnf_proj/sum_of_3_cubes_51_bits_80.cnf.xz,13219761,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.6,5000.04,305292,UNKNOWN
+520293962,cnf_proj/sum_of_3_cubes_52_bits_39.cnf.xz,13219692,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4994.87,5000.01,312256,UNKNOWN
+520293965,cnf_proj/sum_of_3_cubes_76_bits_84.cnf.xz,13219769,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4995.55,5000.09,379896,UNKNOWN
+520293968,cnf_proj/sum_of_3_cubes_87_bits_75.cnf.xz,13219616,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.33,5000.11,371804,UNKNOWN
+520293971,cnf_proj/sum_of_3_cubes_94_bits_30.cnf.xz,13219601,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.62,5000.02,414840,UNKNOWN
+520293974,cnf_proj/Sz1024_34824.smt2.cnf.xz,13219464,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.74,5000.08,273380,UNKNOWN
+520293977,cnf_proj/Sz512_15128_1.smt2.cnf.xz,13219732,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.03,4999.97,136844,UNKNOWN
+520293980,cnf_proj/test_v7_r12_vr1_c1_s10576.smt2.cnf.xz,13219589,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.04,4997.87,740588,UNKNOWN
+520293983,cnf_proj/toughsat_factoring_426s.cnf.xz,13219832,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.6,5000.02,207416,UNKNOWN
+520293986,cnf_proj/toughsat_factoring_895s.cnf.xz,13219818,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4998.55,5000.06,202568,UNKNOWN
+520293989,cnf_proj/UCG-20-10p1-sc2009.cnf.xz,13219727,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.06,4999.99,444436,UNKNOWN
+520293992,cnf_proj/UR-15-10p0.cnf.xz,13219785,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.05,4999.98,1053456,UNSAT
+520293995,cnf_proj/UR-20-5p1.cnf.xz,13219614,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4999.1,407400,UNKNOWN
+520293998,cnf_proj/uum32.smt2.cnf.xz,13219819,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.32,5000.05,272264,UNKNOWN
+520294001,cnf_proj/vlsat2_111_1186.cnf.xz,13219661,igrev2,34949,kissat_br.sh,568381,complete,112.898,112.226,360724,SAT-INCORRECT
+520294004,cnf_proj/vlsat2_112_4223.cnf.xz,13219839,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4996.33,5000.02,763448,UNKNOWN
+520294007,cnf_proj/vlsat2_113_1150.cnf.xz,13219713,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4973.81,5000.02,992420,UNKNOWN
+520294010,cnf_proj/vlsat2_11_26.cnf.xz,13219700,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4984.1,5000.02,337680,UNKNOWN
+520294013,cnf_proj/vlsat2_11_42.cnf.xz,13219480,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4988.84,5000.11,346888,UNKNOWN
+520294016,cnf_proj/vlsat2_142_6781.cnf.xz,13219745,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.86,5000.02,997516,UNKNOWN
+520294019,cnf_proj/vlsat2_144_7585.cnf.xz,13219503,igrev2,34949,kissat_br.sh,568381,timeout (cpu),5000.01,4999.72,1288840,UNKNOWN
+520294022,cnf_proj/vlsat2_29736_3780419.dimacs.cnf.xz,13219459,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4978.79,5000.02,1450788,UNKNOWN
+520294025,cnf_proj/vlsat2_37758_5364539.dimacs.cnf.xz,13219540,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4980.44,5000.03,2396552,UNKNOWN
+520294028,cnf_proj/vlsat2_44_545.cnf.xz,13219553,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4991.17,5000.11,314952,UNKNOWN
+520294031,cnf_proj/vlsat2_51_824.cnf.xz,13219587,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4992.1,5000.02,353140,UNKNOWN
+520294034,cnf_proj/vlsat2_56_1042.cnf.xz,13219474,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4993.6,5000.02,371824,UNKNOWN
+520294037,cnf_proj/vlsat2_702_14170.cnf.xz,13219841,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4975.6,5000.11,4198588,UNKNOWN
+520294040,cnf_proj/WS_300_24_90_10.apx_0.cnf.xz,13219586,igrev2,34949,kissat_br.sh,568381,complete,135.519,135.81,248068,UNSAT
+520294043,cnf_proj/WS_400_16_90_70.apx_0.cnf.xz,13219730,igrev2,34949,kissat_br.sh,568381,complete,334.337,334.841,351432,UNSAT
+520294046,cnf_proj/WS_500_16_70_10.apx_0.cnf.xz,13219557,igrev2,34949,kissat_br.sh,568381,timeout (wallclock),4999.45,5000.05,128768,UNKNOWN
+520294049,cnf_proj/WS_500_32_30_10.apx_0.cnf.xz,13219632,igrev2,34949,kissat_br.sh,568381,complete,966.673,967.328,629708,UNSAT
