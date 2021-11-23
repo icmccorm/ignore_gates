@@ -54,9 +54,9 @@ def getAssigned(contents):
     contents = contents.split('\n')
     assigned = ""
     for line in contents:
-        index = line.find('v ')
+        index = line.find('\tv ')
         if (index >= 0):
-            variables = line[index + 1:]
+            variables = line[index + 2:]
             variables = variables.strip()
             varlist = variables.split(" ")
             for var in varlist:
@@ -109,9 +109,9 @@ for currRoot in dirs:
             assigned = ""
             num_clauses = 0
             for line in contents:
-                index = line.find('v ')
+                index = line.find('\tv ')
                 if (index > 0):
-                    variables = line[index + 1:]
+                    variables = line[index + 2:]
                     variables = variables.strip()
                     varlist = variables.split()
                     for var in varlist:
