@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "AUX"
-./cnftools-binary aux $1 > vars.aux
+./cnftools-bin2 aux $1 > vars.aux
 echo "SOLVE"    
 cat vars.aux | ./br-elim-uip $1 ./proof.out
 echo "VERIFY"
