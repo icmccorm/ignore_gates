@@ -13,13 +13,13 @@ namespace CaDiCaL {
 int Internal::next_decision_variable_on_queue () {
   int64_t searched = 0;
   int res = queue.unassigned;
-  while (val (res) && external->is_aux(i2e[vidx(res)])) {
+  while (val (res) || external->is_aux(i2e[vidx(res)])) {
     if(!link (res).prev){
       printf("e RAN OUT\n");
     }
     int temp = res;
     res = link (res).prev, searched++;
-    if(external->is_aux(i2e[vidx(temp)])){
+    if(external->is_aux(i2e[temp])){
       queue.dequeue (links, temp);
       links[temp].next = queue.first;
       links[queue.first].prev = temp;
@@ -33,7 +33,6 @@ int Internal::next_decision_variable_on_queue () {
     stats.searched += searched;
     update_queue_unassigned (res);
   }
-  
   LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
   return res;
 }
@@ -62,13 +61,15 @@ int Internal::next_decision_variable_with_best_score () {
       abort();
     }
     res = scores.front ();
-    while(external->is_aux(i2e[vidx(res)])){
-      score (vidx(res)) = -1;
-      scores.update(vidx(res));
-      res = scores.front ();
+    bool is_aux = external->is_aux(i2e[res]);
+    if (!val (res) && !is_aux) {
+      break;
+    }else if(is_aux){
+      stab[res] = -1;
+      scores.update(res);
+    }else{
+      (void) scores.pop_front ();
     }
-    if (!val (res)) break;
-    (void) scores.pop_front ();
   }
   LOG ("next decision variable %d with score %g", res, score (res));
   return res;
@@ -96,8 +97,12 @@ int Internal::next_decision_variable () {
   int var = 0;
   if (use_scores ()) var = next_decision_variable_with_best_score ();
   else               var = next_decision_variable_on_queue ();
-  if(external->is_aux(i2e[vidx(var)])){
+  if(external->is_aux(i2e[var])){
     ++NUM_AUX_DECISIONS;
+    #ifdef BRANCHAUX
+    printf("ERROR: BRANCHED ON AN AUX VARIABLE.");
+    abort();
+    #endif
   }
   return var;
 }
