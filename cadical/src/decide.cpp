@@ -8,7 +8,6 @@ namespace CaDiCaL {
 // course used below in 'decide' but also in 'reuse_trail' to determine the
 // largest decision level to backtrack to during 'restart' without changing
 // the assigned variables (if 'opts.restartreusetrail' is non-zero).
-
 #ifdef BRANCHAUX
 
 int Internal::next_decision_variable_on_queue () {

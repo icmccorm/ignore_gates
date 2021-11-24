@@ -171,11 +171,8 @@ void Internal::bump_variables () {
       analyze_bumped_rank (this), analyze_bumped_smaller (this));
   }
 
-  for (const auto & lit : analyzed){
-    if(!external->is_aux(i2e[vidx(lit)])){
-      bump_variable (lit);
-    }
-  }
+  for (const auto & lit : analyzed)
+    bump_variable (lit);
 
   if (use_scores ()) bump_variable_score_inc ();
 
@@ -738,12 +735,10 @@ void Internal::analyze () {
     }
   }
   #endif
-  
   // Update glue and learned (1st UIP literals) statistics.
   //
   int size = (int) clause.size ();
   const int glue = (int) levels.size () - 1;
-
   LOG (clause, "1st UIP size %d and glue %d clause", size, glue);
   UPDATE_AVERAGE (averages.current.glue.fast, glue);
   UPDATE_AVERAGE (averages.current.glue.slow, glue);
@@ -755,7 +750,6 @@ void Internal::analyze () {
   // Minimize the 1st UIP clause as pioneered by Niklas Soerensson in
   // MiniSAT and described in our joint SAT'09 paper.
   //
-  
   if (size > 1) {
     /*if (opts.shrink)
       shrink_and_minimize_clause();

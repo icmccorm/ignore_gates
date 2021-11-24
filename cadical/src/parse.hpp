@@ -68,7 +68,6 @@ public:
   // accessed with 'sol (int lit)'.  We use it for checking learned clauses.
   //
   const char * parse_solution ();
-
   const char * parse_aux ();
 };
 

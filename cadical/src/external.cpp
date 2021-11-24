@@ -32,6 +32,14 @@ void External::enlarge (int new_max_var) {
   vsize = new_vsize;
 }
 
+void External::add_aux (int aux_lit) {
+  aux.insert(aux_lit);
+}
+
+bool External::is_aux (int elit) {
+  return aux.find(elit) != aux.end();
+}
+
 void External::init (int new_max_var) {
   assert (!extended);
   if (new_max_var <= max_var) return;
@@ -89,16 +97,6 @@ void External::reset_extended () {
 
 void External::reset_limits () {
   internal->reset_limits ();
-}
-
-/*------------------------------------------------------------------------*/
-
-void External::add_aux (int aux_lit) {
-  aux.insert(aux_lit);
-}
-
-bool External::is_aux (int elit) {
-  return aux.find(elit) != aux.end();
 }
 
 /*------------------------------------------------------------------------*/

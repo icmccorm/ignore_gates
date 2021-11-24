@@ -3,6 +3,12 @@
 
 /*------------------------------------------------------------------------*/
 
+// Wrapped build specific headers which should go first.
+
+#include "inttypes.hpp"
+
+/*------------------------------------------------------------------------*/
+
 // Common 'C' headers.
 
 #include <cassert>
@@ -13,7 +19,6 @@
 #include <cstring>
 #include <cctype>
 #include <csignal>
-#include <cinttypes>
 
 // Less common 'C' header.
 
@@ -74,6 +79,7 @@ extern "C" {
 #include "radix.hpp"
 #include "random.hpp"
 #include "range.hpp"
+#include "reap.hpp"
 #include "reluctant.hpp"
 #include "resources.hpp"
 #include "score.hpp"
@@ -85,7 +91,6 @@ extern "C" {
 #include "version.hpp"
 #include "vivify.hpp"
 #include "watch.hpp"
-#include "reap.hpp"
 
 /*------------------------------------------------------------------------*/
 
@@ -211,11 +216,10 @@ struct Internal {
   Arena arena;                  // memory arena for moving garbage collector
   Format error_message;         // provide persistent error message
   string prefix;                // verbose messages prefix
+  int NUM_AUX_DECISIONS;
 
   Internal * internal;          // proxy to 'this' in macros
   External * external;          // proxy to 'external' buddy in 'Solver'
-
-  long NUM_AUX_DECISIONS;
 
   /*----------------------------------------------------------------------*/
 

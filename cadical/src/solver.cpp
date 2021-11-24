@@ -287,6 +287,7 @@ Solver::trace_api_call (const char * s0, const char * s1, int i2) const {
   fflush (trace_api_file);
 }
 
+/*------------------------------------------------------------------------*/
 
 // The global 'tracing_api_calls_through_environment_variable_method' flag
 // is used to ensure that only one solver traces to a file.  Otherwise the

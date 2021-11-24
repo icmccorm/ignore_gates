@@ -484,4 +484,5 @@ const char * Parser::parse_aux () {
   #endif
   return (const char *) err;
 }
+
 }

@@ -9,9 +9,8 @@ namespace CaDiCaL {
 void Internal::init_scores (int old_max_var, int new_max_var) {
   LOG ("initializing EVSIDS scores from %d to %d",
     old_max_var + 1, new_max_var);
-  for (int i = old_max_var; i < new_max_var; i++){
+  for (int i = old_max_var; i < new_max_var; i++)
     scores.push_back (i + 1);
-  }
 }
 
 // Shuffle the EVSIDS heap.

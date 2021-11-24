@@ -5,8 +5,6 @@
 (cp ./kissat/select_aux.py ./bin/select_aux.py)
 (cd cadical; ./configure CXXFLAGS="-DELIMAUX" && make && cp ./build/cadical ../bin/elim)
 (cd cadical; ./configure CXXFLAGS="-DBRANCHAUX" && make && cp ./build/cadical ../bin/br)
-(cd cadical; ./configure CXXFLAGS="-DUIPAUX" && make && cp ./build/cadical ../bin/uip)
 (cd cadical; ./configure CXXFLAGS="-DBRANCHAUX -DELIMAUX" && make && cp ./build/cadical ../bin/br-elim)
 (cd cadical; ./configure CXXFLAGS="-DBRANCHAUX -DUIPAUX" && make && cp ./build/cadical ../bin/br-uip)
-(cd cadical; ./configure CXXFLAGS="-DUIPAUX -DELIMAUX" && make && cp ./build/cadical ../bin/elim-uip)
 (cd cadical; ./configure CXXFLAGS="-DUIPAUX -DBRANCHAUX -DELIMAUX"&& make && cp ./build/cadical ../bin/br-elim-uip)
