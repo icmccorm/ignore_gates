@@ -14,7 +14,7 @@ namespace CaDiCaL {
 int Internal::next_decision_variable_on_queue () {
   int64_t searched = 0;
   int res = queue.unassigned;
-  while (val (res)) {
+  while (val (res) && external->is_aux(i2e[vidx(res)])) {
     if(!link (res).prev){
       printf("e RAN OUT\n");
     }

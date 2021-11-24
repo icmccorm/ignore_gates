@@ -757,10 +757,10 @@ void Internal::analyze () {
   //
   
   if (size > 1) {
-    if (opts.shrink)
+    /*if (opts.shrink)
       shrink_and_minimize_clause();
     else if (opts.minimize)
-      minimize_clause();
+      minimize_clause();*/
 
     size = (int) clause.size ();
 
