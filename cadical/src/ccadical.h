@@ -33,8 +33,6 @@ void ccadical_set_learn (CCaDiCaL *,
 
 // Non-IPASIR conformant 'C' functions.
 
-void ccadical_constrain (CCaDiCaL *, int lit);
-int ccadical_constraint_failed (CCaDiCaL *);
 void ccadical_set_option (CCaDiCaL *, const char * name, int val);
 void ccadical_limit (CCaDiCaL *, const char * name, int limit);
 int ccadical_get_option (CCaDiCaL *, const char * name);

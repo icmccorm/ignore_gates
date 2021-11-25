@@ -25,11 +25,9 @@ class App : public Handler, public Terminator {
 
   Solver * solver;                // Global solver.
 
-#ifndef __WIN32
   // Command line options.
   //
   int time_limit;               // '-t <sec>'
-#endif
 
   // Strictness of (DIMACS) parsing:
   //
@@ -112,9 +110,7 @@ void App::print_usage (bool all) {
 "  -q             be quiet\n"
 #endif
 "\n"
-#ifndef __WIN32
 "  -t <sec>       set wall clock time limit\n"
-#endif
     );
   } else {         // Print complete list of all options.
     printf (
@@ -127,9 +123,7 @@ void App::print_usage (bool all) {
 "  -v             increase verbosity (see also '--verbose' below)\n"
 "  -q             be quiet (same as '--quiet')\n"
 #endif
-#ifndef __WIN32
 "  -t <sec>       set wall clock time limit\n"
-#endif
 "\n"
 "Or '<option>' is one of the less common options\n"
 "\n"
@@ -165,8 +159,6 @@ void App::print_usage (bool all) {
 "\n"
 "  --build        print build configuration\n"
 "  --copyright    print copyright information\n"
-"\n"
-"  -a <input>  parse list of auxiliary variables to ignore"
     );
 
     printf (
@@ -221,14 +213,8 @@ void App::print_usage (bool all) {
 "For incremental files each cube is solved in turn. The solver\n"
 "stops at the first satisfied cube if there is one and uses that\n"
 "one for the witness to print.  Conflict and decision limits are\n"
-"applied to each individual cube solving call while '-P', '-L'"
-#ifdef __WIN32
-"\n"
-#else
-" and\n"
-"'-t' "
-#endif
-"remain global.  Only if all cubes were unsatisfiable the solver\n"
+"applied to each individual cube solving call while '-P', '-L' and\n"
+"'-t' remain global.  Only if all cubes were unsatisfiable the solver\n"
 "prints the standard unsatisfiable solution line ('s UNSATISFIABLE').\n"
 "\n"
 "By default the proof is stored in the binary DRAT format unless\n"
@@ -447,9 +433,7 @@ int App::main (int argc, char ** argv) {
       else if (decision_limit < 0)
         APPERR ("invalid decision limit");
       else decision_limit_specified = argv[i];
-    }
-#ifndef __WIN32
-    else if (!strcmp (argv[i], "-t")) {
+    } else if (!strcmp (argv[i], "-t")) {
       if (++i == argc) APPERR ("argument to '-t' missing");
       else if (time_limit_specified)
         APPERR ("multiple time limit '-t %s' and '-t %s'",
@@ -460,7 +444,6 @@ int App::main (int argc, char ** argv) {
         APPERR ("invalid time limit");
       else time_limit_specified = argv[i];
     }
-#endif
 #ifndef QUIET
     else if (!strcmp (argv[i], "-q")) set ("--quiet");
     else if (!strcmp (argv[i], "-v"))
@@ -526,7 +509,7 @@ int App::main (int argc, char ** argv) {
         APPERR ("DRAT proof file '%s' not writable", proof_path);
     } else dimacs_specified = true, dimacs_path = argv[i];
   }
-  
+
   /*----------------------------------------------------------------------*/
 
   if (dimacs_specified && dimacs_path && !File::exists (dimacs_path))
@@ -541,7 +524,6 @@ int App::main (int argc, char ** argv) {
   if(!dimacs_specified && !dimacs_path){
     APPERR ("A DIMACS input file must be provided");
   }
-
   /*----------------------------------------------------------------------*/
   // The '--less' option is not fully functional yet (it is also not
   // mentioned in the 'usage' message yet).  It only works as expected if
@@ -575,10 +557,7 @@ int App::main (int argc, char ** argv) {
   }
 #endif
   if (preprocessing > 0 || localsearch > 0 ||
-#ifndef __WIN32
-      time_limit >= 0 || 
-#endif
-      conflict_limit >= 0 || decision_limit >= 0) {
+      time_limit >= 0 || conflict_limit >= 0 || decision_limit >= 0) {
     solver->section ("limit");
     if (preprocessing > 0) {
       solver->message (
@@ -592,7 +571,6 @@ int App::main (int argc, char ** argv) {
         localsearch, localsearch_specified);
       solver->limit ("localsearch", localsearch);
     }
-#ifndef __WIN32
     if (time_limit >= 0) {
       solver->message (
         "setting time limit to %d seconds real time (due to '-t %s')",
@@ -600,7 +578,6 @@ int App::main (int argc, char ** argv) {
       Signal::alarm (time_limit);
       solver->connect_terminator (this);
     }
-#endif
     if (conflict_limit >= 0) {
       solver->message (
         "setting conflict limit to %d conflicts (due to '%s')",
@@ -638,9 +615,10 @@ int App::main (int argc, char ** argv) {
   } else solver->verbose (1, "will not generate nor write DRAT proof");
   solver->section ("parsing input");
 
+
   dimacs_name = dimacs_path;
   const char* aux_name = aux_path ? aux_path : "<stdin>";
-  
+
   solver->message ("reading auxiliary file from %s'%s'%s",
     tout.green_code (), aux_name, tout.normal_code ());
 
@@ -652,11 +630,13 @@ int App::main (int argc, char ** argv) {
 
   solver->message ("reading DIMACS file from %s'%s'%s",
     tout.green_code (), dimacs_name, tout.normal_code ());
+
   bool incremental;
   vector<int> cube_literals;
 
   err = solver->read_dimacs(dimacs_path, max_var, force_strict_parsing,
                           incremental, cube_literals);
+                          
   if (err) APPERR ("%s", err);
   if (read_solution_path) {
     solver->section ("parsing solution");
@@ -846,10 +826,9 @@ int App::main (int argc, char ** argv) {
     close (1);
     pclose (less_pipe);
   }
-#ifndef __WIN32
+
   if (time_limit > 0)
     alarm (0);
-#endif
 
   return res;
 }
@@ -862,9 +841,7 @@ void App::init () {
 
   assert (!solver);
 
-#ifndef __WIN32
   time_limit = -1;
-#endif
   force_strict_parsing = 1;
   force_writing = false;
   max_var = 0;

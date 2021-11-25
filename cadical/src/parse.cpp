@@ -365,9 +365,6 @@ const char * Parser::parse_solution () {
   return err;
 }
 
-/*------------------------------------------------------------------------*/
-
-
 const char * Parser::parse_aux () {
   double start = internal->time ();
 

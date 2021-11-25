@@ -53,7 +53,7 @@ fi
 #
 COMPILER="`sed -e '/^CXX=/!d' -e 's,^CXX=,,' makefile 2>/dev/null`"
 case x"$COMPILER" in 
-  x*g++* | x*clang++*)
+  xg++* | xclang++*)
     COMPILER="`$COMPILER --version 2>/dev/null|head -1`";;
   *) COMPILER="";;
 esac

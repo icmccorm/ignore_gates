@@ -7,8 +7,8 @@ namespace CaDiCaL {
 // Occurrence lists.
 
 void Internal::init_occs () {
-  if (otab.size () < 2*vsize)
-    otab.resize (2*vsize, Occs ());
+  while (otab.size () < 2*vsize)
+    otab.push_back (Occs ());
   LOG ("initialized occurrence lists");
 }
 
@@ -24,8 +24,8 @@ void Internal::reset_occs () {
 
 void Internal::init_noccs () {
   assert (ntab.empty ());
-  if (ntab.size () < 2*vsize)
-    ntab.resize (2*vsize, 0);
+  while (ntab.size () < 2*vsize)
+    ntab.push_back (0);
   LOG ("initialized two-sided occurrence counters");
 }
 

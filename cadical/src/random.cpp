@@ -29,6 +29,9 @@
 */
 
 #ifdef DO_PRINT_HASH
+extern "C" {
+#include <inttypes.h>
+};
 #define PRINT_HASH(H) \
 do { \
   printf ("c PRINT_HASH %32s () = %020" PRIu64 "\n", __func__, H); \
@@ -75,8 +78,7 @@ static uint64_t hash_machine_identifier () {
 // different hash values through this machine identifier machines did not
 // work.  As an additional measure to increase the possibility to get
 // different seeds we are now also using network addresses (explicitly).
-
-#ifndef __WIN32
+// TODO: port and test this to Windows and macOS.
 
 extern "C" {
 #include <sys/socket.h>
@@ -86,20 +88,10 @@ extern "C" {
 #include <stdlib.h>
 }
 
-#endif
-
 namespace CaDiCaL {
 
 static uint64_t hash_network_addresses () {
   uint64_t res = 0;
-
-// We still need to properly port this to Windows, but since accessing the
-// IP address is only required for better randomization during testing
-// (running 'mobical' on a cluster for instance) it is not crucial unless
-// you really need to run 'mobical' on a Windows cluster where each node has
-// identical IP addresses.
-
-#ifndef __WIN32
   struct ifaddrs * addrs;
   if (!getifaddrs (&addrs)) {
     for (struct ifaddrs * addr = addrs; addr; addr = addr->ifa_next) {
@@ -122,8 +114,6 @@ static uint64_t hash_network_addresses () {
     }
     freeifaddrs (addrs);
   }
-#endif
-
   PRINT_HASH (res);
   return res;
 }

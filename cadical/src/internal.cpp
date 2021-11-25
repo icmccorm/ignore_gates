@@ -31,8 +31,6 @@ Internal::Internal ()
   best_assigned (0),
   target_assigned (0),
   no_conflict_until (0),
-  unsat_constraint (false),
-  marked_failed (true),
   proof (0),
   checker (0),
   tracer (0),
@@ -100,14 +98,14 @@ void Internal::enlarge_vals (size_t new_vsize) {
 
 template<class T>
 static void enlarge_init (vector<T> & v, size_t N, const T & i) {
-  if (v.size () < N)
-    v.resize (N, i);
+  while (v.size () < N)
+    v.push_back (i);
 }
 
 template<class T>
 static void enlarge_only (vector<T> & v, size_t N) {
-  if (v.size () < N)
-    v.resize (N, T ());
+  while (v.size () < N)
+    v.push_back (T ());
 }
 
 template<class T>
@@ -198,7 +196,6 @@ int Internal::cdcl_loop_with_inprocessing () {
 
   while (!res) {
          if (unsat) res = 20;
-    else if (unsat_constraint) res = 20;
     else if (!propagate ()) analyze ();      // propagate and analyze
     else if (iterating) iterate ();          // report learned unit
     else if (satisfied ()) res = 10;         // found model
@@ -558,7 +555,6 @@ int Internal::local_search () {
   if (unsat) return 0;
   if (!max_var) return 0;
   if (!opts.walk) return 0;
-  if (constraint.size ()) return 0;
 
   int res = 0;
 
@@ -600,14 +596,14 @@ int Internal::solve (bool preprocess_only) {
   }
   reset_solving ();
   report_solving (res);
-  STOP (solve);
   printf("\nAUX DECISIONS: %d\n", NUM_AUX_DECISIONS);
+  STOP (solve);
   return res;
 }
 
 int Internal::already_solved () {
   int res = 0;
-  if (unsat || unsat_constraint) {
+  if (unsat) {
     LOG ("already inconsistent");
     res = 20;
   } else {

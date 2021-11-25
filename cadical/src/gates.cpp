@@ -187,14 +187,12 @@ void Internal::find_and_gate (Eliminator & eliminator, int pivot) {
 
     bool all_literals_marked = true;
     unsigned arity = 0;
-    int satisfied = 0;
-
     for (const auto & lit : *c) {
       if (lit == -pivot) continue;
       assert (lit != pivot);
       signed char tmp = val (lit);
       if (tmp < 0) continue;
-      if (tmp > 0) { satisfied = lit; break; }
+      assert (!tmp);
       tmp = marked (lit);
       if (tmp < 0) { arity++; continue; }
       all_literals_marked = false;
@@ -202,12 +200,6 @@ void Internal::find_and_gate (Eliminator & eliminator, int pivot) {
     }
 
     if (!all_literals_marked) continue;
-
-    if (satisfied) {
-      LOG (c, "satisfied by %d candidate base clause", satisfied);
-      mark_garbage (c);
-      continue;
-    }
 
 #ifdef LOGGING
     if (opts.log) {

@@ -7,9 +7,9 @@
 #include <assert.h>
 #include <signal.h>
 #include <stdio.h>
-#include <sys/time.h>
+#include <unistd.h>
 
-#if __GNUC__ > 4 || defined(__llvm__)
+#if __GNUC__ > 4
 static const int n = 8;
 #else
 static const int n = 10;
@@ -84,19 +84,8 @@ int main () {
             ++round, active, learners[active].learned);
     fflush (stdout);
     saved = signal (SIGALRM, handler);
-#if __GNUC__ > 4 || defined(__llvm__)
-    struct timeval value;
-    value.tv_sec = 0;
-    value.tv_usec = 2e4;
-
-    struct timeval interval;
-    interval.tv_sec = 0;
-    interval.tv_usec = 0;
-
-    struct itimerval t;
-    t.it_interval = interval;
-    t.it_value = value;
-    setitimer(0, &t, NULL);
+#if __GNUC__ > 4
+    ualarm (2e4, 0);
 #else
     alarm (1);
 #endif

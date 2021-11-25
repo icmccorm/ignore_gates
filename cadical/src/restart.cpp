@@ -69,14 +69,10 @@ bool Internal::restarting () {
 // decision exists top (in which case we do not reuse any level).
 
 int Internal::reuse_trail () {
-  const int trivial_decisions = assumptions.size ()
-    // Plus 1 if the constraint is satisfied via implications of assumptions
-    // and a pseudo-decision level was introduced
-    + !control[assumptions.size () + 1].decision;
-  if (!opts.restartreusetrail) return trivial_decisions;
+  if (!opts.restartreusetrail) return assumptions.size ();
   int decision = next_decision_variable ();
   assert (1 <= decision);
-  int res = trivial_decisions;
+  int res = assumptions.size ();
   if (use_scores ()) {
     while (res < level &&
            score_smaller (this)(decision, abs (control[res+1].decision)))
@@ -86,7 +82,7 @@ int Internal::reuse_trail () {
     while (res < level && bumped (control[res+1].decision) > limit)
       res++;
   }
-  int reused = res - trivial_decisions;
+  int reused = res - assumptions.size ();
   if (reused > 0) {
     stats.reused++;
     stats.reusedlevels += reused;

@@ -48,12 +48,10 @@ void Solver::transition_to_unknown_state () {
     LOG ("API leaves state %sSATISFIED%s",
       tout.emph_code (), tout.normal_code ());
     external->reset_assumptions ();
-    external->reset_constraint ();
   } else if (state () == UNSATISFIED) {
     LOG ("API leaves state %sUNSATISFIED%s",
       tout.emph_code (), tout.normal_code ());
     external->reset_assumptions ();
-    external->reset_constraint ();
   }
   if (state () != UNKNOWN) STATE (UNKNOWN);
 }
@@ -332,8 +330,6 @@ Solver::Solver () {
   }
 #endif
 
-  adding_clause     = false;
-  adding_constraint = false;
   _state = INITIALIZING;
   internal = new Internal ();
   TRACE ("init");
@@ -530,22 +526,9 @@ void Solver::add (int lit) {
   if (lit) REQUIRE_VALID_LIT (lit);
   transition_to_unknown_state ();
   external->add (lit);
-  adding_clause = lit;
-  if (adding_clause) STATE (ADDING);
-  else if (!adding_constraint) STATE (UNKNOWN);
+  if (lit) STATE (ADDING);
+  else     STATE (UNKNOWN);
   LOG_API_CALL_END ("add", lit);
-}
-
-void Solver::constrain (int lit) {
-  TRACE ("constrain", lit);
-  REQUIRE_VALID_STATE ();
-  if (lit) REQUIRE_VALID_LIT (lit);
-  transition_to_unknown_state ();
-  external->constrain (lit);
-  adding_constraint = lit;
-  if (adding_constraint) STATE (ADDING);
-  else if (!adding_clause) STATE (UNKNOWN);
-  LOG_API_CALL_END ("constrain", lit);
 }
 
 void Solver::assume (int lit) {
@@ -565,10 +548,10 @@ int Solver::lookahead () {
   return lit;
 }
 
-Solver::CubesWithStatus Solver::generate_cubes (int depth, int min_depth) {
+Solver::CubesWithStatus Solver::generate_cubes (int depth) {
   TRACE ("lookahead_cubes");
   REQUIRE_VALID_OR_SOLVING_STATE ();
-  auto cubes = external->generate_cubes (depth, min_depth);
+  auto cubes = external->generate_cubes (depth);
   TRACE ("lookahead_cubes");
 
   CubesWithStatus cubes2;
@@ -583,14 +566,6 @@ void Solver::reset_assumptions () {
   transition_to_unknown_state ();
   external->reset_assumptions ();
   LOG_API_CALL_END ("reset_assumptions");
-}
-
-void Solver::reset_constraint () {
-  TRACE ("reset_constraint");
-  REQUIRE_VALID_STATE ();
-  transition_to_unknown_state ();
-  external->reset_constraint ();
-  LOG_API_CALL_END ("reset_constraint");
 }
 
 /*------------------------------------------------------------------------*/
@@ -653,7 +628,6 @@ int Solver::val (int lit) {
   REQUIRE_VALID_LIT (lit);
   REQUIRE (state () == SATISFIED,
     "can only get value in satisfied state");
-  if (!external->extended) external->extend ();
   int res = external->ival (lit);
   LOG_API_CALL_RETURNS ("val", lit, res);
   return res;
@@ -667,16 +641,6 @@ bool Solver::failed (int lit) {
     "can only get failed assumptions in unsatisfied state");
   bool res = external->failed (lit);
   LOG_API_CALL_RETURNS ("failed", lit, res);
-  return res;
-}
-
-bool Solver::constraint_failed () {
-  TRACE ("constraint_failed");
-  REQUIRE_VALID_STATE ();
-  REQUIRE (state () == UNSATISFIED,
-    "can only determine if constraint failed in unsatisfied state");
-  bool res = external->failed_constraint ();
-  LOG_API_CALL_RETURNS ("constraint_failed", res);
   return res;
 }
 
@@ -957,8 +921,6 @@ void Solver::resources () {
   internal->print_resource_usage ();
   LOG_API_CALL_END ("resources");
 }
-
-/*------------------------------------------------------------------------*/
 
 const char * Solver::read_aux(File* file)
 {

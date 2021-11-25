@@ -1,5 +1,6 @@
 import sys
 aux_list = []
+USED_DEFINITION_SETS = set()
 
 class Graph:
     def __init__(self):
@@ -38,7 +39,7 @@ def add_aux(lit, inputs, gate_type):
             print(str(lit) + " " + gate_type)
 line = sys.stdin.readline()
 while line:
-    # line = lit, gate_type 
+    #line = lit, gate_type 
     words = line.split()
     lit =  int(words[0])
     gate_type = words[1]

@@ -2,52 +2,6 @@
 
 namespace CaDiCaL {
 
-struct literal_occ {
-  int lit;
-  int count;
-  bool operator<(const literal_occ &locc) const {
-    return (count > locc.count) || (count == locc.count && lit < locc.lit);
-
-  }
-  literal_occ operator++() {
-    ++count;
-    return *this;
-
-  }
-
-};
-
-std::vector<int> Internal::lookahead_populate_locc() {
-  std::vector<literal_occ> loccs((std::size_t)max_var+1);
-  for (std::size_t lit = 0; lit < loccs.size(); ++lit) {
-    loccs[lit].lit = lit;
-  }
-  for (const auto &c : clauses)
-    if (!c->redundant)
-      for (const auto &lit : *c)
-        if (active(lit))
-          ++loccs[std::abs(lit)];
-  std::sort(begin(loccs), end(loccs));
-  std::vector<int> locc_map;
-  locc_map.reserve(max_var);
-  for (const auto &locc : loccs)
-    locc_map.push_back(locc.lit);
-  return locc_map;
-
-}
-
-int Internal::lookahead_locc(const std::vector<int> &loccs) {
-  for (auto lit : loccs)
-    if (active(abs(lit)) && !assumed(lit) && !assumed(-lit) && !val(lit))
-      return lit;
-  return 0;
-
-  }
-
-  // This calculates the literal that appears the most often reusing the
-  // available datastructures and iterating over the clause set. This is too
-  // slow to be called iteratively. A faster (but inexact) version is
-  // lookahead_populate_loc and lookahead_loc.
 int Internal::most_occurring_literal () {
   init_noccs ();
   for (const auto & c : clauses)
@@ -117,7 +71,7 @@ void Internal::lookahead_flush_probes () {
     if (have_pos_bin_occs) lit = -lit;
     assert (!noccs (lit)), assert (noccs (-lit) > 0);
     if (propfixed (lit) >= stats.all.fixed) continue;
-    MSG ("keeping probe %d negated occs %" PRId64 "", lit, noccs (-lit));
+    LOG ("keeping probe %d negated occs %" PRId64 "", lit, noccs (-lit));
     *j++ = lit;
   }
   size_t remain = j - probes.begin ();
@@ -175,7 +129,7 @@ void Internal::lookahead_generate_probes () {
       //
       if (propfixed (probe) >= stats.all.fixed) continue;
 
-      MSG ("scheduling probe %d negated occs %" PRId64 "", probe, noccs (-probe));
+      LOG ("scheduling probe %d negated occs %" PRId64 "", probe, noccs (-probe));
       probes.push_back (probe);
     }
 
@@ -186,7 +140,7 @@ void Internal::lookahead_generate_probes () {
       //
       if (propfixed (probe) >= stats.all.fixed) continue;
 
-      MSG ("scheduling probe %d negated occs %" PRId64 "",
+      LOG ("scheduling probe %d negated occs %" PRId64 "",
            probe, noccs (-probe));
       probes.push_back (probe);
     }
@@ -255,12 +209,12 @@ bool non_tautological_cube (std::vector<int> cube) {
 bool Internal::terminating_asked() {
 
   if (external->terminator && external->terminator->terminate()) {
-    MSG("connected terminator forces termination");
+    LOG("connected terminator forces termination");
     return true;
   }
 
   if (termination_forced) {
-    MSG("termination forced");
+    LOG("termination forced");
     return true;
   }
   return false;
@@ -279,7 +233,7 @@ int Internal::lookahead_probing() {
   if (!active ())
     return 0;
 
-  MSG ("lookahead-probe-round %" PRId64
+  LOG ("lookahead-probe-round %" PRId64
        " without propagations limit and %zu assumptions",
        stats.probingrounds, assumptions.size());
 
@@ -294,13 +248,10 @@ int Internal::lookahead_probing() {
   if (unsat) return INT_MIN;
   if (level) backtrack ();
   if (!propagate ()) {
-    MSG ("empty clause before probing");
+    LOG ("empty clause before probing");
     learn_empty_clause ();
     return INT_MIN;
   }
-
-  if (terminating_asked())
-    return most_occurring_literal();
 
   decompose ();
 
@@ -332,10 +283,12 @@ int Internal::lookahead_probing() {
 
   set_mode (PROBE);
 
-  MSG("unsat = %d, terminating_asked () = %d ", unsat, terminating_asked ());
+  LOG("unsat = %d, terminating_asked () = %d ", unsat, terminating_asked ());
   while (!unsat &&
          !terminating_asked () &&
          (probe = lookahead_next_probe ())) {
+    //    if (assumed(probe) || assumed(-probe))
+    //  continue;
     stats.probed++;
     int hbrs;
 
@@ -354,11 +307,11 @@ int Internal::lookahead_probing() {
   reset_mode (PROBE);
 
   if (unsat) {
-    MSG ("probing derived empty clause");
+    LOG ("probing derived empty clause");
     res = INT_MIN;
   }
   else if (propagated < trail.size ()) {
-    MSG ("probing produced %zd units",
+    LOG ("probing produced %zd units",
          (size_t)(trail.size () - propagated));
     if (!propagate ()) {
       MSG ("propagating units after probing results in empty clause");
@@ -382,21 +335,17 @@ int Internal::lookahead_probing() {
     PHASE ("lookahead-probe-round", stats.probingrounds,
       "found %" PRId64 " hyper binary resolvents", hbrs);
 
-  MSG ("lookahead literal %d with %d\n", res, max_hbrs);
+  LOG ("lookahead literal %d with %d\n", res, max_hbrs);
 
   return res;
 }
 
-CubesWithStatus Internal::generate_cubes(int depth, int min_depth) {
-  if (!active() || depth == 0) {
-    CubesWithStatus cubes;
-    cubes.cubes.push_back(std::vector<int>());
-    return cubes;
-  }
+CubesWithStatus Internal::generate_cubes(int depth) {
 
-  lookingahead = true;
-  START(lookahead);
-  MSG("Generating cubes of depth %i", depth);
+  if (!active ())
+    return CubesWithStatus ();
+
+  LOG("Generating cubes of depth %i", depth);
 
   // presimplify required due to assumptions
 
@@ -409,24 +358,17 @@ CubesWithStatus Internal::generate_cubes(int depth, int min_depth) {
   if (res != 0)
     res = solve(true);
   if (res != 0) {
-    MSG("Solved during preprocessing");
+    LOG("Solved during preprocessing");
     CubesWithStatus cubes;
     cubes.status = res;
-    cubes.status = 20;
-    lookingahead = false;
-    STOP(lookahead);
     return cubes;
   }
 
   reset_limits();
-  MSG ("generate cubes with %zu assumptions\n", assumptions.size());
+  LOG ("generate cubes with %zu assumptions\n", assumptions.size());
 
-  assert(ntab.empty());
   std::vector<int> current_assumptions{assumptions};
   std::vector<std::vector<int>> cubes {{assumptions}};
-  auto loccs{lookahead_populate_locc()};
-  LOG("loccs populated\n");
-  assert(ntab.empty());
 
   for (int i = 0; i < depth; ++i) {
     LOG("Probing at depth %i, currently %zu have been generated",
@@ -435,35 +377,23 @@ CubesWithStatus Internal::generate_cubes(int depth, int min_depth) {
     cubes.clear ();
 
     for (size_t j = 0; j < cubes2.size(); ++j) {
-      assert(ntab.empty());
-      assert(!unsat);
+
       reset_assumptions();
       for (auto lit : cubes2[j])
         assume(lit);
       restore_clauses();
-      propagate();
-        // preprocess_round(0); //uncomment maybe
-
+      propagate (), preprocess_round (0);
       if (unsat) {
-        LOG("current cube is unsat; skipping");
-        unsat = false;
+        LOG("found unsat cube");
         continue;
       }
 
-      int res = terminating_asked()  ? lookahead_locc(loccs) : lookahead_probing();
-      if(unsat) {
-        LOG("current cube is unsat; skipping");
-        unsat = false;
+      int res = lookahead_probing();
+      if(res == INT_MIN){
+        LOG ("found unsat cube");
         continue;
       }
 
-      if (res == 0) {
-        LOG("no lit to split %i", res);
-        cubes.push_back(cubes2[j]);
-        continue;
-      }
-
-      assert(res != 0);
       LOG("splitting on lit %i", res);
       std::vector<int> cube1{cubes2[j]};
       cube1.push_back(res);
@@ -473,23 +403,19 @@ CubesWithStatus Internal::generate_cubes(int depth, int min_depth) {
       cubes.push_back(cube2);
     }
 
-    if (terminating_asked() && i >= min_depth)
+    if(terminating_asked())
       break;
   }
 
-  assert(std::for_each(std::begin(cubes), std::end(cubes), [](std::vector<int> cube){return non_tautological_cube (cube);}));
+  assert(std::for_each(begin(cubes), end(cubes), [](std::vector<int> cube){return non_tautological_cube (cube);}));
   reset_assumptions();
 
   for(auto lit : current_assumptions)
     assume(lit);
 
-  STOP(lookahead);
-  lookingahead = false;
-
   if (unsat) {
     LOG("Solved during preprocessing");
     CubesWithStatus cubes;
-    cubes.status = 20;
     cubes.status = res;
     return cubes;
   }
@@ -497,7 +423,6 @@ CubesWithStatus Internal::generate_cubes(int depth, int min_depth) {
   CubesWithStatus rcubes;
   rcubes.status = 0;
   rcubes.cubes = cubes;
-
   return rcubes;
 }
 
