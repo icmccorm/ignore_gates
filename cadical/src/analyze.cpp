@@ -171,9 +171,15 @@ void Internal::bump_variables () {
       analyze_bumped_rank (this), analyze_bumped_smaller (this));
   }
 
-  for (const auto & lit : analyzed)
-    bump_variable (lit);
-
+  for (const auto & lit : analyzed) {
+    #ifdef BRANCHAUX
+    if(!external->is_aux(i2e[vidx(lit)])){
+      bump_variable (lit);
+    }
+    #else
+      bump_variable (lit);
+    #endif
+  }
   if (use_scores ()) bump_variable_score_inc ();
 
   STOP (bump);
