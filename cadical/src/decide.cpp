@@ -19,7 +19,7 @@ int Internal::next_decision_variable_on_queue () {
     }
     int temp = res;
     res = link (res).prev, searched++;
-    if(external->is_aux(i2e[temp])){
+    if(external->is_aux(i2e[vidx(temp)])){
       queue.dequeue (links, temp);
       links[temp].next = queue.first;
       links[queue.first].prev = temp;
@@ -61,7 +61,7 @@ int Internal::next_decision_variable_with_best_score () {
       abort();
     }
     res = scores.front ();
-    bool is_aux = external->is_aux(i2e[res]);
+    bool is_aux = external->is_aux(i2e[vidx(res)]);
     if (!val (res) && !is_aux) {
       break;
     }else if(is_aux){
@@ -94,17 +94,8 @@ int Internal::next_decision_variable_with_best_score () {
 #endif
 
 int Internal::next_decision_variable () {
-  int var = 0;
-  if (use_scores ()) var = next_decision_variable_with_best_score ();
-  else               var = next_decision_variable_on_queue ();
-  if(external->is_aux(i2e[var])){
-    ++NUM_AUX_DECISIONS;
-    #ifdef BRANCHAUX
-    printf("ERROR: BRANCHED ON AN AUX VARIABLE.");
-    abort();
-    #endif
-  }
-  return var;
+  if (use_scores ()) return next_decision_variable_with_best_score ();
+  else               return next_decision_variable_on_queue ();
 }
 
 /*------------------------------------------------------------------------*/

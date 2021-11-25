@@ -41,15 +41,7 @@ void Internal::shuffle_scores () {
   }
   score_inc = 0;
   for (const auto & idx : shuffle) {
-    #ifdef BRANCHAUX
-    if(!external->is_aux(i2e[idx])){
-      stab[idx] = score_inc++;
-    }else{
-      stab[idx] = -1;
-    }
-    #else
-      stab[idx] = score_inc++;
-    #endif
+    stab[idx] = score_inc++;
     scores.push_back (idx);
   }
 }
