@@ -110,7 +110,7 @@ for currRoot in dirs:
             num_clauses = 0
             for line in contents:
                 index = line.find('\tv ')
-                if (index > 0):
+                if (index > 0 and line.find('VERIFIED') == -1):
                     variables = line[index + 2:]
                     variables = variables.strip()
                     varlist = variables.split()

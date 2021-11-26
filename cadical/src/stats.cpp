@@ -25,6 +25,9 @@ do { \
 
 void Stats::print (Internal * internal) {
 
+#ifdef QUIET
+  (void) internal;
+#else
 
   Stats & stats = internal->stats;
 
@@ -50,7 +53,7 @@ void Stats::print (Internal * internal) {
   size_t extendbytes = internal->external->extension.size ();
   extendbytes *= sizeof (int);
 
-  printf ("statistics\n");
+  SECTION ("statistics\n");
 
   if (all || stats.blocked) {
   printf ("blocked:         %15" PRId64 "   %10.2f %%  of irredundant clauses\n", stats.blocked, percent (stats.blocked, stats.added.irredundant));
@@ -261,6 +264,13 @@ void Stats::print (Internal * internal) {
   printf ("  flipped:       %15" PRId64 "   %10.2f    per weakened\n", stats.extended, relative (stats.extended, stats.weakened));
   }
 
+  LINE ();
+  MSG ("%sseconds are measured in %s time for solving%s",
+    tout.magenta_code (),
+      internal->opts.realtime ? "real" : "process",
+    tout.normal_code ());
+
+#endif // ifndef QUIET
 }
 
 void Internal::print_resource_usage () {
