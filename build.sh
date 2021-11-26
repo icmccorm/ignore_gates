@@ -1,7 +1,7 @@
 #!/bin/sh
 (cd kissat; ./configure && make && cp ./build/kissat ../bin/kissat)
 (cd cadical; ./configure --competition && make && cp ./build/cadical ../bin/control)
-(cd drabt; ./configure.sh && make && cp drabt ../bin/drabt)
+(cd drat-trim; make && cp drat-trim ../bin/drat-trim)
 (cp ./kissat/select_aux.py ./bin/select_aux.py)
 (cd cadical; ./configure --competition CXXFLAGS="-DELIMAUX" && make && cp ./build/cadical ../bin/elim)
 (cd cadical; ./configure --competition CXXFLAGS="-DBRANCHAUX" && make && cp ./build/cadical ../bin/br)

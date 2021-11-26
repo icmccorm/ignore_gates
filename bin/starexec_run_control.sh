@@ -1,5 +1,11 @@
+#!/bin/bash
+echo "UNZIP"
+cp $1 ./bench.xz
+xz --decompress ./bench.xz
+mv bench bench.cnf
+
 echo "SOLVE"
-echo -n | ./control $1 ./proof.out > solver.out
+echo -n | ./control ./bench.cnf ./proof.out > solver.out
 
 echo "PRINT"
 cat solver.out
@@ -8,10 +14,11 @@ echo "VERIFY"
 p=$(grep " SATISFIABLE" solver.out | wc | awk '{print  $1}')
   if [ $p -gt 0 ]
   then
+    rm bench.cnf
     rm proof.out
     echo "v VERIFIED C\n"
   else
-    ./drabt $1 ./proof.out
+    ./drat-trim bench.cnf ./proof.out
     rm proof.out
   fi
 rm solver.out
