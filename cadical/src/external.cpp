@@ -70,8 +70,8 @@ void External::init (int new_max_var) {
     assert (e2i[eidx] == (int) iidx);
   }
   if (internal->opts.checkfrozen)
-    while (new_max_var >= (int64_t) moltentab.size ())
-      moltentab.push_back (false);
+    if (new_max_var >= (int64_t) moltentab.size ())
+      moltentab.resize (1 + (size_t) new_max_var, false);
   assert (iidx == (size_t) new_internal_max_var + 1);
   assert (eidx == (size_t) new_max_var + 1);
   max_var = new_max_var;
@@ -82,6 +82,11 @@ void External::init (int new_max_var) {
 void External::reset_assumptions () {
   assumptions.clear ();
   internal->reset_assumptions ();
+}
+
+void External::reset_constraint () {
+  constraint.clear ();
+  internal->reset_constraint ();
 }
 
 void External::reset_extended () {
@@ -167,6 +172,24 @@ bool External::failed (int elit) {
   return internal->failed (ilit);
 }
 
+void External::constrain (int elit) {
+  if (constraint.size () && !constraint.back ()) {
+    LOG (constraint, "replacing previous constraint");
+    reset_constraint ();
+  }
+  assert (elit != INT_MIN);
+  reset_extended ();
+  constraint.push_back (elit);
+  const int ilit = internalize (elit);
+  assert (!elit == !ilit);
+  if (elit) LOG ("adding external %d as internal %d to constraint", elit, ilit);
+  internal->constrain (ilit);
+}
+
+bool External::failed_constraint () {
+  return internal->failed_constraint ();
+}
+
 void External::phase (int elit) {
   assert (elit);
   assert (elit != INT_MIN);
@@ -195,18 +218,22 @@ void External::unphase (int elit) {
 
 void External::check_satisfiable () {
   LOG ("checking satisfiable");
+  if (!extended) extend ();
   if (internal->opts.checkwitness)
     check_assignment (&External::ival);
   if (internal->opts.checkassumptions && !assumptions.empty ())
     check_assumptions_satisfied ();
+  if (internal->opts.checkconstraint && !constraint.empty ())
+    check_constraint_satisfied ();
 }
 
 // Internal checker if 'solve' claims formula to be unsatisfiable.
 
 void External::check_unsatisfiable () {
   LOG ("checking unsatisfiable");
-  if (internal->opts.checkfailed && !assumptions.empty ())
-    check_assumptions_failing ();
+  if (!internal->opts.checkfailed) return;
+  if (!assumptions.empty () || !constraint.empty ())
+    check_failing ();
 }
 
 // Check result of 'solve' to be correct.
@@ -247,7 +274,6 @@ int External::solve (bool preprocess_only) {
   reset_extended ();
   update_molten_literals ();
   int res = internal->solve (preprocess_only);
-  if (res == 10) extend ();
   check_solve_result (res);
   reset_limits ();
   return res;
@@ -264,11 +290,11 @@ int External::lookahead () {
   return elit;
 }
 
-CaDiCaL::CubesWithStatus External::generate_cubes (int depth) {
+CaDiCaL::CubesWithStatus External::generate_cubes (int depth, int min_depth = 0) {
   reset_extended ();
   update_molten_literals ();
   reset_limits ();
-  auto cubes = internal->generate_cubes (depth);
+  auto cubes = internal->generate_cubes (depth, min_depth);
   auto externalize = [this](int ilit) {
     const int elit = ilit ? internal->externalize (ilit) : 0;
     MSG ("lookahead internal %d external %d", ilit, elit);
@@ -279,9 +305,9 @@ CaDiCaL::CubesWithStatus External::generate_cubes (int depth) {
     MSG("Cube : ");
     std::for_each(begin(cube), end(cube), externalize);
   };
-    std::for_each(begin(cubes.cubes), end(cubes.cubes), externalize_map);
+  std::for_each(begin(cubes.cubes), end(cubes.cubes), externalize_map);
 
-    return cubes;
+  return cubes;
 }
 
 /*------------------------------------------------------------------------*/
@@ -290,8 +316,8 @@ void External::freeze (int elit) {
   reset_extended ();
   int ilit = internalize (elit);
   unsigned eidx = vidx (elit);
-  while (eidx >= frozentab.size ())
-    frozentab.push_back (0);
+  if (eidx >= frozentab.size ())
+    frozentab.resize (eidx + 1,  0);
   unsigned & ref = frozentab[eidx];
   if (ref < UINT_MAX) {
     ref++;
@@ -374,20 +400,36 @@ void External::check_assumptions_satisfied () {
     assumptions.size ());
 }
 
-void External::check_assumptions_failing () {
+void External::check_constraint_satisfied () {
+  for (const auto lit : constraint) {
+    if (ival (lit) > 0) {
+      VERBOSE (1, "checked that constraint is satisfied");
+      return;
+    }
+  }
+  FATAL ("constraint not satisfied");
+}
+
+void External::check_failing () {
   Solver * checker = new Solver ();
   checker->prefix ("checker ");
 #ifdef LOGGING
   if (internal->opts.log) checker->set ("log", true);
 #endif
-  for (const auto & lit : original)
+  for (const auto lit : original)
     checker->add (lit);
-  for (const auto & lit : assumptions) {
+  for (const auto lit : assumptions) {
     if (!failed (lit)) continue;
     LOG ("checking failed literal %d in core", lit);
     checker->add (lit);
     checker->add (0);
   }
+  if (failed_constraint ()) {
+    LOG (constraint, "checking failed constraint");
+    for (const auto lit : constraint)
+      checker->add (lit);
+  } else if (constraint.size ())
+    LOG (constraint, "constraint satisfied and ignored");
   int res = checker->solve ();
   if (res != 20) FATAL ("failed assumptions do not form a core");
   delete checker;

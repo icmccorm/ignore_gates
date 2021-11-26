@@ -10,6 +10,47 @@ namespace CaDiCaL {
 // the assigned variables (if 'opts.restartreusetrail' is non-zero).
 
 #ifdef BRANCHAUX
+int Internal::next_decision_variable_on_queue () {
+  int64_t searched = 0;
+  int res = queue.unassigned;
+  while (val (res) || external->is_aux(i2e[vidx(res)])) {
+    if(!link (res).prev){
+      printf("e RAN OUT\n");
+    }
+    int temp = res;
+    res = link (res).prev, searched++;
+    if(external->is_aux(i2e[vidx(temp)])){
+      queue.dequeue (links, temp);
+      links[temp].next = queue.first;
+      links[queue.first].prev = temp;
+      queue.first = temp;
+      links[temp].prev = 0;
+      btab[temp] = btab[links[temp].next]-1;
+    }
+  }
+  if (searched) {
+    stats.searched += searched;
+    update_queue_unassigned (res);
+  }
+  LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
+  return res;
+}
+#else
+int Internal::next_decision_variable_on_queue () {
+  int64_t searched = 0;
+  int res = queue.unassigned;
+  while (val (res))
+    res = link (res).prev, searched++;
+  if (searched) {
+    stats.searched += searched;
+    update_queue_unassigned (res);
+  }
+  LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
+  return res;
+}
+#endif
+
+#ifdef BRANCHAUX
 int Internal::next_decision_variable_with_best_score () {
   int res = 0;
   for (;;) {
@@ -46,52 +87,19 @@ int Internal::next_decision_variable_with_best_score () {
 }
 #endif
 
-#ifdef BRANCHAUX
-int Internal::next_decision_variable_on_queue () {
-  int64_t searched = 0;
-  int res = queue.unassigned;
-  while (val (res) || external->is_aux(i2e[vidx(res)])) {
-    if(!link (res).prev){
-      printf("e RAN OUT\n");
-    }
-    int temp = res;
-    res = link (res).prev, searched++;
-    if(external->is_aux(i2e[vidx(temp)])){
-      queue.dequeue (links, temp);
-      links[temp].next = queue.first;
-      links[queue.first].prev = temp;
-      queue.first = temp;
-      links[temp].prev = 0;
-      btab[temp] = btab[links[temp].next]-1;
-    }
-  }
-
-  if (searched) {
-    stats.searched += searched;
-    update_queue_unassigned (res);
-  }
-  LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
-  return res;
-}
-#else
-int Internal::next_decision_variable_on_queue () {
-  int64_t searched = 0;
-  int res = queue.unassigned;
-  while (val (res))
-    res = link (res).prev, searched++;
-  if (searched) {
-    stats.searched += searched;
-    update_queue_unassigned (res);
-  }
-  LOG ("next queue decision variable %d bumped %" PRId64 "", res, bumped (res));
-  return res;
-}
-#endif
-
-
 int Internal::next_decision_variable () {
-  if (use_scores ()) return next_decision_variable_with_best_score ();
-  else               return next_decision_variable_on_queue ();
+  int var = 0;
+  if (use_scores ()) var = next_decision_variable_with_best_score ();
+  else               var = next_decision_variable_on_queue ();
+  if(external->is_aux(i2e[vidx(var)])){
+    ++NUM_AUX_DECISIONS;
+    #ifdef BRANCHAUX
+    printf("\nAUX SELECTED ERROR ERROR\n");
+    abort();
+    #endif
+  }
+
+  return var;
 }
 
 /*------------------------------------------------------------------------*/
@@ -109,7 +117,7 @@ int Internal::decide_phase (int idx, bool target) {
   if (!phase && target) phase = phases.target[idx];
   if (!phase) phase = phases.saved[idx];
 
-  // The following should no be necessary and in some version we had even
+  // The following should not be necessary and in some version we had even
   // a hard 'COVER' assertion here to check for this.   Unfortunately it
   // triggered for some users and we could not get to the root cause of
   // 'phase' still not being set here.  The logic for phase and target
@@ -133,7 +141,7 @@ int Internal::likely_phase (int idx) { return decide_phase (idx, false); }
 bool Internal::satisfied () {
   size_t assigned = trail.size ();
   if (propagated < assigned) return false;
-  if ((size_t) level < assumptions.size ()) return false;
+  if ((size_t) level < assumptions.size () + (!!constraint.size ())) return false;
   return (assigned == (size_t) max_var);
 }
 
@@ -150,7 +158,6 @@ int Internal::decide () {
     const signed char tmp = val (lit);
     if (tmp < 0) {
       LOG ("assumption %d falsified", lit);
-      failing ();
       res = 20;
     } else if (tmp > 0) {
       LOG ("assumption %d already satisfied", lit);
@@ -161,6 +168,33 @@ int Internal::decide () {
       LOG ("deciding assumption %d", lit);
       search_assume_decision (lit);
     }
+  } else if ((size_t) level == assumptions.size () && constraint.size ()) {
+    bool satisfied_constraint = false;
+    int unassigned_lit = 0;
+    for (const auto lit : constraint) {
+      const signed char tmp = val (lit);
+      if (tmp < 0) {
+        LOG ("constraint lit %d falsified", lit);
+      } else if (tmp > 0) {
+        LOG ("literal %d satisfies constraint and is implied by assumptions", lit);
+        level++;
+        control.push_back (Level (0, trail.size ()));
+        LOG ("added pseudo decision level for constraint");
+        satisfied_constraint = true;
+        break;
+      } else if (!unassigned_lit)
+        unassigned_lit = lit;
+    }
+    if (!satisfied_constraint) {
+      if (unassigned_lit) {
+        LOG ("deciding %d to satisfy constraint", unassigned_lit);
+        search_assume_decision (unassigned_lit);
+      } else {
+        LOG ("failing constraint");
+        unsat_constraint = true;
+        res = 20;
+      }
+    }
   } else {
     stats.decisions++;
     int idx = next_decision_variable ();
@@ -168,6 +202,7 @@ int Internal::decide () {
     int decision = decide_phase (idx, target);
     search_assume_decision (decision);
   }
+  if (res) marked_failed = false;
   STOP (decide);
   return res;
 }
