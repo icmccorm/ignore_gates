@@ -5,10 +5,7 @@ xz --decompress ./bench.xz
 mv bench bench.cnf
 
 echo "SOLVE"
-echo -n | ./control ./bench.cnf ./proof.out > solver.out
-
-echo "PRINT"
-cat solver.out
+echo -n | ./control ./bench.cnf ./proof.out | tee solver.out
 
 echo "VERIFY"
 p=$(grep " SATISFIABLE" solver.out | wc | awk '{print  $1}')

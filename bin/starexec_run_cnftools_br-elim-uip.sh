@@ -8,13 +8,10 @@ echo "AUX"
 ./cnftools-bin2 aux bench.cnf > vars.aux
 
 echo "SOLVE"    
-cat vars.aux | ./br-elim-uip ./bench.cnf ./proof.out > solver.out
-
-echo "PRINT"
-rm vars.aux
-cat solver.out
+cat vars.aux | ./br-elim-uip ./bench.cnf ./proof.out | tee solver.out
 
 echo "VERIFY"
+rm vars.aux
 p=$(grep " SATISFIABLE" solver.out | wc | awk '{print  $1}')
   if [ $p -gt 0 ]
   then

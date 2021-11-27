@@ -8,13 +8,10 @@ echo "AUX"
 ./kissat bench.cnf | python3 ./select_aux.py > vars.aux
 
 echo "SOLVE"    
-cat vars.aux | ./elim bench.cnf ./proof.out > solver.out
-
-echo "PRINT"
-rm vars.aux
-cat solver.out
+cat vars.aux | ./elim bench.cnf ./proof.out | tee solver.out
 
 echo "VERIFY"
+rm vars.aux
 p=$(grep " SATISFIABLE" solver.out | wc | awk '{print  $1}')
   if [ $p -gt 0 ]
   then
