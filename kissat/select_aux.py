@@ -1,11 +1,16 @@
 import sys
-aux_list = []
-USED = set()
 # EQV, ITE, DEF
-def add_aux(lit, clauses, gate_type):
-    if(clauses not in USED):
-        aux_list.append(lit)
-        print(str(lit) + " " + gate_type)
+
+USED = set()
+
+def add_aux(lit, clauses, gate_type, globalSet):
+    overlapping = False
+    for clause in clauses:
+        if clause in globalSet:
+            overlapping = True
+        else:
+            globalSet.add(clause)
+    if(not overlapping): print(str(lit) + " " + gate_type)
 
 line = sys.stdin.readline()
 while line:
@@ -18,8 +23,9 @@ while line:
         line = sys.stdin.readline()
         if "endG" in line:
             break
-        clause = tuple(int(x) for x in line.split())
+        list = [int(x) for x in line.split()]
+        list.sort()
+        clause = tuple(list)
         clauses.add(clause)
-    add_aux(lit, clauses, gate_type)
+    add_aux(lit, clauses, gate_type, USED)
     line = sys.stdin.readline()
-
