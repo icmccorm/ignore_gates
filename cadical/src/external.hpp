@@ -161,6 +161,8 @@ struct External {
 
   void add_aux (int aux_lit);
 
+  int NUM_AUX_DETECTED;
+
   /*----------------------------------------------------------------------*/
 
   // Marking external literals.

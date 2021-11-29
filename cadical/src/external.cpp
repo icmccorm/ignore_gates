@@ -37,7 +37,11 @@ void External::add_aux (int aux_lit) {
 }
 
 bool External::is_aux (int elit) {
-  return aux.find(elit) != aux.end();
+  bool result = aux.find(elit) != aux.end();
+  if(result){
+    ++NUM_AUX_DETECTED;
+  }
+  return result;
 }
 
 void External::init (int new_max_var) {
