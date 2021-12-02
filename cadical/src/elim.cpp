@@ -729,9 +729,8 @@ int Internal::elim_round (bool & completed) {
     if(external->is_aux(i2e[idx])){
       try_to_eliminate_variable (eliminator, idx);
     }
-    #else
-    try_to_eliminate_variable (eliminator, idx);
     #endif
+    //try_to_eliminate_variable (eliminator, idx);
 #ifndef QUIET
     tried++;
 #endif

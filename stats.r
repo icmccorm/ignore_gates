@@ -41,21 +41,21 @@ by_cpu_usage <- by_cpu_usage %>% inner_join(results_all, c("benchmark", "configu
 
 unchanged_cpu <- by_cpu_usage
 
-noelim_better <- by_cpu_usage %>% filter(control_noelim.sh > control.sh)
+noelim_sideeffects_better <- by_cpu_usage %>% filter(control.noelim > control | control.sideeffects > control)
 
-better_aux_mem <- by_mem_usage %>% filter(max != control.sh & max != control_noelim.sh)
-better_aux_mem$percent_diff_from_control <- (better_aux_mem$min - better_aux_mem$control.sh) / better_aux_mem$control.sh * 100
+better_aux_mem <- by_mem_usage %>% filter(max != control & max != control.noelim)
+better_aux_mem$percent_diff_from_control <- (better_aux_mem$min - better_aux_mem$control) / better_aux_mem$control * 100
 better_aux_mem <- as.data.frame(better_aux_mem %>% filter(percent_diff_from_control <= MARGIN_OF_ERROR_PERCENT))
 
-better_aux_cpu <- by_cpu_usage %>% filter(configuration != "control.sh" & configuration != "control_noelim.sh")
-better_aux_cpu$percent_diff_from_control <- (better_aux_cpu$min - better_aux_cpu$control.sh) / better_aux_cpu$control.sh * 100
+better_aux_cpu <- by_cpu_usage %>% filter(configuration != "control" & configuration != "control.noelim" & configuration != "control.sideeffects")
+better_aux_cpu$percent_diff_from_control <- (better_aux_cpu$min - better_aux_cpu$control) / better_aux_cpu$control * 100
 better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(percent_diff_from_control <= MARGIN_OF_ERROR_PERCENT))
 
-worse_aux_mem <- subset(by_mem_usage, configuration %in% c("control.sh", "control_noelim.sh")  & range >= (MARGIN_OF_ERROR_PERCENT/100)*control.sh)
-worse_aux_cpu <- subset(by_cpu_usage, configuration %in% c("control.sh", "control_noelim.sh")  & range >= (MARGIN_OF_ERROR_PERCENT/100)*control.sh)
+worse_aux_mem <- subset(by_mem_usage, configuration %in% c("control", "control.noelim", "control.sideeffects")  & range >= (MARGIN_OF_ERROR_PERCENT/100)*control)
+worse_aux_cpu <- subset(by_cpu_usage, configuration %in% c("control", "control.noelim", "control.sideeffects")  & range >= (MARGIN_OF_ERROR_PERCENT/100)*control)
 
-control_cpu <- results_all %>% filter(configuration == "control.sh") %>% filter(benchmark %in% better_aux_cpu$benchmark)
-control_mem <- results_all %>% filter(configuration == "control.sh") %>% filter(benchmark %in% better_aux_mem$benchmark)
+control_cpu <- results_all %>% filter(configuration == "control") %>% filter(benchmark %in% better_aux_cpu$benchmark)
+control_mem <- results_all %>% filter(configuration == "control") %>% filter(benchmark %in% better_aux_mem$benchmark)
 runtime_statistic_names <- c("num_decisions", "decisions_per_sec", "num_conflicts", "conflicts_per_sec", "num_restarts", "num_reduced", "percent_reduced_per_conflict", "num_propagations", "propagations_per_sec")
 
 compare_to_control_by_percentage <- function(df, control, col_names){
@@ -77,7 +77,7 @@ compare_to_control_by_percentage <- function(df, control, col_names){
 better_aux_cpu <- better_aux_cpu %>% inner_join(compare_to_control_by_percentage(better_aux_cpu, control_cpu, runtime_statistic_names), by="benchmark")
 better_aux_mem <- better_aux_mem %>% inner_join(compare_to_control_by_percentage(better_aux_mem, control_mem, runtime_statistic_names), by="benchmark")
 
-noelim_better <- noelim_better %>% inner_join(compare_to_control_by_percentage(noelim_better, control_cpu, runtime_statistic_names), by="benchmark")
+noelim_sideeffects_better <- noelim_sideeffects_better %>% inner_join(compare_to_control_by_percentage(noelim_sideeffects_better, control_cpu, runtime_statistic_names), by="benchmark")
 
 wb <- createWorkbook()
 addWorksheet(wb, "Solved faster than control")
@@ -96,7 +96,7 @@ addWorksheet(wb, "Used more memory than control")
 writeDataTable(wb, 5, worse_aux_mem)
 
 addWorksheet(wb, "Noelim better than control")
-writeDataTable(wb, 6, noelim_better)
+writeDataTable(wb, 6, noelim_sideeffects_better)
 
 addWorksheet(wb, "Unchanged CPU")
 writeDataTable(wb, 7, unchanged_cpu)
