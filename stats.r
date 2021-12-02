@@ -17,7 +17,7 @@ join_on_attr <- function(dflist, attr, col_names){
     initial <- dflist[[1]] %>% select("benchmark", all_of(attr))
     for(i in 2:length(dflist)){
       temp <- dflist[[i]] %>% select("benchmark", all_of(attr))
-      initial <- left_join(initial, temp, by="benchmark")
+      initial <- full_join(initial, temp, by="benchmark")
     }
     colnames(initial) <- col_names
     return(initial)
@@ -39,7 +39,11 @@ by_mem_usage$range <- by_mem_usage$max - by_mem_usage$min
 by_mem_usage <- by_mem_usage %>% inner_join(results_all, c("benchmark", "configuration"))
 by_cpu_usage <- by_cpu_usage %>% inner_join(results_all, c("benchmark", "configuration"))
 
-better_aux_mem <- by_mem_usage %>% filter(configuration != "control.sh" & configuration != "control_noelim.sh")
+unchanged_cpu <- by_cpu_usage
+
+noelim_better <- by_cpu_usage %>% filter(control_noelim.sh > control.sh)
+
+better_aux_mem <- by_mem_usage %>% filter(max != control.sh & max != control_noelim.sh)
 better_aux_mem$percent_diff_from_control <- (better_aux_mem$min - better_aux_mem$control.sh) / better_aux_mem$control.sh * 100
 better_aux_mem <- as.data.frame(better_aux_mem %>% filter(percent_diff_from_control <= MARGIN_OF_ERROR_PERCENT))
 
@@ -58,12 +62,12 @@ compare_to_control_by_percentage <- function(df, control, col_names){
   subset_df <- select(df, c("benchmark", all_of(runtime_statistic_names)))
   subset_control <- select(control, c("benchmark", all_of(runtime_statistic_names)))
 
-  temp <- merge(subset_df, subset_control, by.x = "benchmark", by.y = "benchmark", all=TRUE)
-
+  temp <- inner_join(subset_df, subset_control, by= "benchmark")
+  message(colnames(temp))
   for(i in 1:length(col_names)){
     name <- col_names[i]
     diff <- paste(name, ".x", sep="")
-    base <- paste(name, ".y", sep="") 
+    base <- paste(name, ".y", sep="")
     temp[name] = (temp[diff] - temp[base]) / temp[base] * 100
   }
   temp <- select(temp, c("benchmark", all_of(runtime_statistic_names)))
@@ -73,11 +77,7 @@ compare_to_control_by_percentage <- function(df, control, col_names){
 better_aux_cpu <- better_aux_cpu %>% inner_join(compare_to_control_by_percentage(better_aux_cpu, control_cpu, runtime_statistic_names), by="benchmark")
 better_aux_mem <- better_aux_mem %>% inner_join(compare_to_control_by_percentage(better_aux_mem, control_mem, runtime_statistic_names), by="benchmark")
 
-
-better_aux_cpu <- better_aux_cpu[,!(names(better_aux_cpu) %in% c("min", "max", "range", COL_NAMES))]
-better_aux_mem <- better_aux_mem[,!(names(better_aux_mem) %in% c("min", "max", "range", COL_NAMES))]
-worse_aux_mem <- worse_aux_mem[,!(names(worse_aux_mem) %in% c("min", "max", "range", COL_NAMES))]
-worse_aux_cpu <- worse_aux_cpu[,!(names(worse_aux_cpu) %in% c("min", "max", "range", COL_NAMES))]
+noelim_better <- noelim_better %>% inner_join(compare_to_control_by_percentage(noelim_better, control_cpu, runtime_statistic_names), by="benchmark")
 
 wb <- createWorkbook()
 addWorksheet(wb, "Solved faster than control")
@@ -94,5 +94,11 @@ writeDataTable(wb, 4, worse_aux_cpu)
 
 addWorksheet(wb, "Used more memory than control")
 writeDataTable(wb, 5, worse_aux_mem)
+
+addWorksheet(wb, "Noelim better than control")
+writeDataTable(wb, 6, noelim_better)
+
+addWorksheet(wb, "Unchanged CPU")
+writeDataTable(wb, 7, unchanged_cpu)
 
 saveWorkbook(wb, FILENAME, overwrite = TRUE)

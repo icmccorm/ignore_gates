@@ -24,6 +24,7 @@ RESULT_DIRS.add("kissat_elim")
 RESULT_DIRS.add("kissat_br-elim")
 RESULT_DIRS.add("kissat_br-uip")
 RESULT_DIRS.add("kissat_br-elim-uip")
+RESULT_DIRS.add("control_sideffects")
 
 foundNames = set()
 START = "./results"
