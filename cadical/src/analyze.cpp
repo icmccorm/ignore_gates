@@ -757,11 +757,12 @@ void Internal::analyze () {
   // MiniSAT and described in our joint SAT'09 paper.
   //
   if (size > 1) {
+    #if !defined(UIPAUX)
     if (opts.shrink)
       shrink_and_minimize_clause();
     else if (opts.minimize)
       minimize_clause();
-
+    #endif
     size = (int) clause.size ();
 
     // Update decision heuristics.

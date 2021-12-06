@@ -18,8 +18,8 @@ num_completed <- function(time, dflist) {
 all_sat <- results %>% filter(result == "SAT-INCORRECT")
 all_unsat <- results %>% filter(result == "UNSAT")
 
-sat_grouped <- all_sat %>% filter(NUM_AUX > 0 | configuration %in% c("control.sh", "control_noelim.sh", "control_sideeffects.sh")) %>% group_by(configuration) %>% group_split()
-unsat_grouped <- all_unsat %>% filter(NUM_AUX > 0 | configuration %in% c("control.sh", "control_noelim.sh", "control_sideeffects.sh")) %>% group_by(configuration) %>% group_split()
+sat_grouped <- all_sat %>% filter(NUM_AUX > 0 | configuration %in% c("control", "control.noelim", "control.sideeffects")) %>% group_by(configuration) %>% group_split()
+unsat_grouped <- all_unsat %>% filter(NUM_AUX > 0 | configuration %in% c("control", "control.noelim", "control.sideeffects")) %>% group_by(configuration) %>% group_split()
 col_names_sat = c("time")
 for(df in sat_grouped){
   col_names_sat <- append(col_names_sat, df[1,]['configuration'])

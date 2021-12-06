@@ -3,11 +3,9 @@ echo "UNZIP"
 cp $1 ./bench.xz
 xz --decompress ./bench.xz
 mv bench bench.cnf
-echo "AUX"
-./cnftools-bin2 aux bench.cnf > vars.aux
 
 echo "SOLVE"    
-cat vars.aux | ./br-uip bench.cnf ./proof.out | tee solver.out
+cat "./queens/${1%%.*}.aux" | ./br-elim bench.cnf ./proof.out | tee solver.out
 
 echo "VERIFY"
 rm vars.aux

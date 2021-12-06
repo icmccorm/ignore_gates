@@ -50,7 +50,8 @@ PROPAGATIONS = re.compile('propagations:[ ]*([0-9]*)[ ]*([0-9]*.[0-9]*)')
 BEGAN_SOLVING = re.compile('([0-9]*.[0-9]*)\/[0-9]*.[0-9]*\s*SOLVE')
 BEGAN_AUX = re.compile('([0-9]*.[0-9]*)\/[0-9]*.[0-9]*\s*AUX\n')
 CNFSTATS = re.compile("c found 'p cnf ([0-9]*) ([0-9]*)' header")
-
+ELIMSTATS = re.compile("eliminated:[ ]*([0-9]*)[ ]*([0-9]*.[0-9]*)")
+SUBSTATS = re.compile("subsumed:[ ]*([0-9]*)[ ]*([0-9]*.[0-9]*)")
 for dirpath, dirnames, filenames in os.walk(START):
     for filename in filenames:
         if filename.endswith("info.csv"):
@@ -80,6 +81,10 @@ INFO["aux_cpu_time"] = 0
 INFO["total_num_clauses"] = 0
 INFO["total_num_variables"] = 0
 INFO['percent_variables_auxiliary'] = 0
+INFO['num_eliminated'] = 0
+INFO['num_subsumed'] = 0
+INFO['percent_eliminated'] = 0
+INFO['percent_subsumed'] = 0
 #benchmark_name, memory usage, cpu time, wallclock time
 def extract_data(FILE):
     solve_time = -1
@@ -87,6 +92,22 @@ def extract_data(FILE):
     currline = FILE.readline()
     datamap = {}
     while(currline):
+        match_sub = SUBSTATS.search(currline)
+        if(match_sub):
+            num_sub = int(match_sub.group(1))
+            per_sub = float(match_sub.group(2))
+            datamap['num_subsumed'] = num_sub
+            datamap['percent_subsumed'] = per_sub
+            currline = FILE.readline()
+            continue                  
+        match_elim = ELIMSTATS.search(currline)
+        if(match_elim):
+            num_elim = int(match_elim.group(1))
+            per_elim = float(match_elim.group(2))
+            datamap['num_eliminated'] = num_elim
+            datamap['percent_eliminated'] = per_elim
+            currline = FILE.readline()
+            continue            
         match_cnfstats = CNFSTATS.search(currline)
         if(match_cnfstats):
             num_variables = int(match_cnfstats.group(1))

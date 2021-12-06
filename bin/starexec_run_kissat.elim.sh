@@ -4,11 +4,8 @@ cp $1 ./bench.xz
 xz --decompress ./bench.xz
 mv bench bench.cnf
 
-echo "AUX"
-./kissat bench.cnf | python3 ./select_aux.py > vars.aux
-
 echo "SOLVE"    
-cat vars.aux | ./br bench.cnf ./proof.out | tee solver.out
+cat "./queens/${1%%.*}.aux" | ./elim bench.cnf ./proof.out | tee solver.out
 
 echo "VERIFY"
 rm vars.aux

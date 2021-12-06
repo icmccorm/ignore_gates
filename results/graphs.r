@@ -10,7 +10,21 @@ options(tz="CA")
 
 # thanks, https://sashamaps.net/docs/resources/20-colors/!
 PALETTE = c("#e6194B", "#3cb44b", "#000075", "#4363d8", "#f58231", "#911eb4", "#9A6324", "#800000", "#808000", "#bfef45", "#469990", "#f032e6", "#42d4f4")
-
+MANUAL = c(
+    "control" = "#A6CEE3",
+    "control.noelim" = "#1F78B4",
+    "control.sideeffects" = "#42d4f4",
+    "kissat.br" = "#B2DF8A", 
+    "kissat.br.elim" = "#33A02C",
+    "kissat.br.elim.uip" = "#FB9A99",
+    "kissat.br.uip" = "#E31A1C",
+    "kissat.elim" = "#FDBF6F",
+    "cnftools.br" = "#FF7F00",
+    "cnftools.br.elim" = "#CAB2D6",
+    "cnftools.br.elim.uip" = "#6A3D9A",
+    "cnftools.br.uip" = "#FFFF99",
+    "cnftools.elim" = "#B15928"    
+)
 
 sat_timings <- read.csv(file = './results/sat_timed.csv')
 unsat_timings <- read.csv(file = './results/unsat_timed.csv')
@@ -46,7 +60,6 @@ g_all_unsat <- ggplot(unsat_timings, aes(x = time, y = value, color=variable)) +
   theme(panel.border = element_rect(fill=NA,color="black", size=0.5, 
                                     linetype="solid")) +
   guides(colour = guide_legend(override.aes = list(size=4)))
-  
 
 g_sat_kissat <- ggplot(sat_timings_kissat, aes(x = time, y = value, color=variable)) + 
   geom_line() +
@@ -58,7 +71,12 @@ g_sat_kissat <- ggplot(sat_timings_kissat, aes(x = time, y = value, color=variab
     "kissat.br.elim" = "#33A02C",
     "kissat.br.elim.uip" = "#FB9A99",
     "kissat.br.uip" = "#E31A1C",
-    "kissat.elim" = "#FDBF6F"
+    "kissat.elim" = "#FDBF6F",
+    "cnftools.br" = "#FF7F00",
+    "cnftools.br.elim" = "#CAB2D6",
+    "cnftools.br.elim.uip" = "#6A3D9A",
+    "cnftools.br.uip" = "#FFFF99",
+    "cnftools.elim" = "#B15928"    
   )) +
   ggtitle("SAT results using kissat for gate detection") +
   xlab("CPU Time") +
@@ -120,5 +138,5 @@ g_unsat_cnf <- ggplot(unsat_timings_cnftools, aes(x = time, y = value, color=var
   theme(panel.border = element_rect(fill=NA,color="black", size=0.5, 
                                     linetype="solid"))
 
-tikz(file = "plots.tex", width = 6, height = 8)
-ggarrange(g_all_sat, g_all_unsat, ncol=1, nrow=2, common.legend = TRUE, legend="right")
+#tikz(file = "plots.tex", width = 6, height = 8)
+ggarrange(g_all_sat, g_all_unsat, ncol=1, nrow=2, common.legend = FALSE, legend="right")
