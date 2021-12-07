@@ -1,0 +1,401 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result
+521073803,cnf_proj/10pipe_k.cnf.xz,13219654,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4984.86,5000.06,839468.0,UNKNOWN
+521073804,cnf_proj/13pipe_k.cnf.xz,13219688,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.14,5000.07,2253992.0,UNKNOWN
+521073805,cnf_proj/143.smt2.cnf.xz,13219805,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4976.39,5000.11,840144.0,UNKNOWN
+521073806,cnf_proj/14pipe_q0_k.cnf.xz,13219627,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4977.94,5000.04,1576292.0,UNKNOWN
+521073807,cnf_proj/20-100-frag12-0_sat.cnf.xz,13219641,igrev13_lastuip,35042,control.lastuip,571823,complete,1347.35,1355.83,457584.0,SAT-INCORRECT
+521073808,cnf_proj/20-100-frag12-14_sat.cnf.xz,13219623,igrev13_lastuip,35042,control.lastuip,571823,complete,262.386,262.773,356908.0,SAT-INCORRECT
+521073809,cnf_proj/20-100-frag12-32_sat.cnf.xz,13219699,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4992.32,5000.07,602852.0,UNKNOWN
+521073810,cnf_proj/20-100-frag12-53_sat.cnf.xz,13219465,igrev13_lastuip,35042,control.lastuip,571823,complete,443.089,443.354,400872.0,SAT-INCORRECT
+521073811,cnf_proj/20-100-lambda100-14_sat.cnf.xz,13219734,igrev13_lastuip,35042,control.lastuip,571823,complete,159.239,159.379,282268.0,SAT-INCORRECT
+521073812,cnf_proj/20-100-lambda100-14_unsat.cnf.xz,13219543,igrev13_lastuip,35042,control.lastuip,571823,complete,259.208,259.752,358160.0,UNSAT
+521073813,cnf_proj/20-100-lambda100-47_unsat.cnf.xz,13219541,igrev13_lastuip,35042,control.lastuip,571823,complete,1598.43,1599.41,777624.0,UNSAT
+521073814,cnf_proj/20-100-lambda100-49_sat.cnf.xz,13219852,igrev13_lastuip,35042,control.lastuip,571823,complete,293.86,294.394,307284.0,SAT-INCORRECT
+521073815,cnf_proj/20-100-lambda100-65_sat.cnf.xz,13219843,igrev13_lastuip,35042,control.lastuip,571823,complete,71.1159,71.2818,283996.0,SAT-INCORRECT
+521073816,cnf_proj/20-100-lambda100-89_sat.cnf.xz,13219463,igrev13_lastuip,35042,control.lastuip,571823,complete,72.3613,72.5519,284544.0,SAT-INCORRECT
+521073817,cnf_proj/20-100-lambda100-89_unsat.cnf.xz,13219764,igrev13_lastuip,35042,control.lastuip,571823,complete,1212.88,1214.15,777736.0,UNSAT
+521073818,cnf_proj/20-100-p100-55_sat.cnf.xz,13219493,igrev13_lastuip,35042,control.lastuip,571823,complete,1562.48,1565.26,468592.0,SAT-INCORRECT
+521073819,cnf_proj/20-100-p100-55_unsat.cnf.xz,13219622,igrev13_lastuip,35042,control.lastuip,571823,complete,4502.13,4505.75,1162632.0,UNSAT
+521073820,cnf_proj/2bitcomp_5.hg_20.cnf.xz,13219526,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4983.23,5000.03,1758604.0,UNKNOWN
+521073821,cnf_proj/51.smt2.cnf.xz,13219613,igrev13_lastuip,35042,control.lastuip,571823,complete,691.573,692.262,778176.0,UNSAT
+521073822,cnf_proj/73.smt2.cnf.xz,13219593,igrev13_lastuip,35042,control.lastuip,571823,complete,821.547,822.929,1076076.0,UNSAT
+521073823,cnf_proj/79.smt2.cnf.xz,13219786,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4981.76,5000.11,495748.0,UNKNOWN
+521073824,cnf_proj/9dlx_vliw_at_b_iq5.cnf.xz,13219739,igrev13_lastuip,35042,control.lastuip,571823,complete,1551.02,1554.26,2061660.0,UNSAT
+521073825,cnf_proj/9dlx_vliw_at_b_iq8.cnf.xz,13219748,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4990.81,5000.03,4447252.0,UNSAT
+521073826,cnf_proj/ACG-15-10p1.cnf.xz,13219820,igrev13_lastuip,35042,control.lastuip,571823,complete,623.134,624.178,451676.0,SAT-INCORRECT
+521073827,cnf_proj/ak016modbtsimpbisc.cnf.xz,13219753,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4993.63,5000.09,363428.0,UNKNOWN
+521073828,cnf_proj/ak032modbtmodbtisc.cnf.xz,13219597,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4982.31,5000.1,509008.0,UNKNOWN
+521073829,cnf_proj/ak128paralparalisc.cnf.xz,13219842,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4964.48,5000.1,2260840.0,UNKNOWN
+521073830,cnf_proj/assoc_mult_err_3.c.cnf.xz,13219612,igrev13_lastuip,35042,control.lastuip,571823,complete,98.5,98.7109,251184.0,UNSAT
+521073831,cnf_proj/at-least-two-aaai10-planning-ipc5-pathways-17-step20.cnf.xz,13219758,igrev13_lastuip,35042,control.lastuip,571823,complete,2018.0,2022.4,1065420.0,UNSAT
+521073832,cnf_proj/at-least-two-aaai10-planning-ipc5-pipesworld-12-step15.cnf.xz,13219628,igrev13_lastuip,35042,control.lastuip,571823,complete,1645.82,1669.12,4194660.0,UNSAT
+521073833,cnf_proj/at-least-two-hwmcc10-timeframe-expansion-k50-pdtviseisenberg2-tseitin.cnf.xz,13219752,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4998.97,5000.07,534588.0,UNKNOWN
+521073834,cnf_proj/at-least-two-ibm-2004-23-k100.cnf.xz,13219667,igrev13_lastuip,35042,control.lastuip,571823,complete,881.79,884.741,768364.0,SAT-INCORRECT
+521073835,cnf_proj/at-least-two-maris-s03-gripper11.cnf.xz,13219486,igrev13_lastuip,35042,control.lastuip,571823,complete,197.752,198.284,298832.0,SAT-INCORRECT
+521073836,cnf_proj/at-least-two-smtlib-qfbv-aigs-ext_con_032_008_0256-tseitin.cnf.xz,13219850,igrev13_lastuip,35042,control.lastuip,571823,complete,251.871,252.183,350284.0,UNSAT
+521073837,cnf_proj/at-least-two-sokoban-sequential-p145-microban-sequential.030-NOTKNOWN.cnf.xz,13219638,igrev13_lastuip,35042,control.lastuip,571823,complete,1128.09,1139.43,4148900.0,UNSAT
+521073838,cnf_proj/at-least-two-traffic_b_unsat.cnf.xz,13219668,igrev13_lastuip,35042,control.lastuip,571823,complete,1082.93,1084.62,602564.0,UNSAT
+521073839,cnf_proj/at-least-two-traffic_f_unknown.cnf.xz,13219496,igrev13_lastuip,35042,control.lastuip,571823,complete,1371.79,1373.08,849324.0,UNSAT
+521073840,cnf_proj/at-least-two-traffic_kkb_unknown.cnf.xz,13219647,igrev13_lastuip,35042,control.lastuip,571823,complete,1305.91,1307.39,822756.0,UNSAT
+521073841,cnf_proj/at-least-two-traffic_pcb_unknown.cnf.xz,13219801,igrev13_lastuip,35042,control.lastuip,571823,complete,2036.57,2037.05,849172.0,UNSAT
+521073842,cnf_proj/at-least-two-vmpc_26.cnf.xz,13219618,igrev13_lastuip,35042,control.lastuip,571823,complete,4413.02,4419.82,4331088.0,UNSAT
+521073843,cnf_proj/at-least-two-vmpc_28.cnf.xz,13219703,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4985.19,5000.12,475804.0,UNKNOWN
+521073844,cnf_proj/b04_s_unknown_pre.cnf.xz,13219657,igrev13_lastuip,35042,control.lastuip,571823,complete,126.617,126.77,427508.0,SAT-INCORRECT
+521073845,cnf_proj/b2005-p1-12x12c10h7-Ser3-0.cnf.xz,13219835,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4974.19,5000.09,978928.0,UNKNOWN
+521073846,cnf_proj/b2005-p1-12x12c10h7-Ser4-0.cnf.xz,13219800,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4963.79,5000.05,992164.0,UNKNOWN
+521073847,cnf_proj/b2005-p1-12x12c10h7-Ser5-0.cnf.xz,13219681,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4971.85,5000.04,984416.0,UNKNOWN
+521073848,cnf_proj/b2005-p1-14x14c17h9-Ser3-0.cnf.xz,13219527,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4974.34,5000.02,4268372.0,UNKNOWN
+521073849,cnf_proj/b2005-p2-12x12c10h7-Ser7-0.cnf.xz,13219546,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4981.83,5000.06,2218456.0,UNKNOWN
+521073850,cnf_proj/b2005-p2-14x14c17h9-Ser5-0.cnf.xz,13219598,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4967.87,5000.07,3792072.0,UNKNOWN
+521073851,cnf_proj/b2005-p2-14x14c17h9-Ser6-0.cnf.xz,13219726,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4962.58,5000.02,3771204.0,UNKNOWN
+521073852,cnf_proj/b2005-p3-12x12c10h7-Ser7-0.cnf.xz,13219525,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4975.28,5000.1,1944200.0,UNKNOWN
+521073853,cnf_proj/b2005-p3-14x14c17h9-Ser3-0.cnf.xz,13219511,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4978.4,5000.03,4050364.0,UNKNOWN
+521073854,cnf_proj/b2005-p4-12x12c10h7-Ser3-0.cnf.xz,13219774,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4966.34,5000.05,961724.0,UNKNOWN
+521073855,cnf_proj/b2005-p4-14x14c17h9-Ser8-0.cnf.xz,13219781,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4987.65,5000.04,8077328.0,UNKNOWN
+521073856,cnf_proj/b2005-p5-12x12c10h7-Ser5-0.cnf.xz,13219754,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4982.61,5000.06,991952.0,UNKNOWN
+521073857,cnf_proj/b2005-p5-14x14c17h9-Ser5-0.cnf.xz,13219648,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4974.43,5000.02,4016604.0,UNKNOWN
+521073858,cnf_proj/barman-pfile10-039.sas.ex.15.cnf.xz,13219651,igrev13_lastuip,35042,control.lastuip,571823,complete,368.543,370.673,1373284.0,UNSAT
+521073859,cnf_proj/barman-pfile10-040.sas.ex.15.cnf.xz,13219743,igrev13_lastuip,35042,control.lastuip,571823,complete,378.233,381.473,1544248.0,UNSAT
+521073860,cnf_proj/battleship-12-12-unsat.cnf.xz,13219629,igrev13_lastuip,35042,control.lastuip,571823,complete,400.0,401.118,600084.0,UNSAT
+521073861,cnf_proj/battleship-14-26-sat.cnf.xz,13219652,igrev13_lastuip,35042,control.lastuip,571823,complete,192.687,195.522,332140.0,SAT-INCORRECT
+521073862,cnf_proj/blocks-blocks-36-0.180-SAT.cnf.xz,13219755,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4938.76,5000.07,3381996.0,UNKNOWN
+521073863,cnf_proj/blocks-blocks-37-1.120-NOTKNOWN.cnf.xz,13219573,igrev13_lastuip,35042,control.lastuip,571823,complete,1032.43,1046.3,3112928.0,UNSAT
+521073864,cnf_proj/blocks-blocks-37-1.130-NOTKNOWN.cnf.xz,13219596,igrev13_lastuip,35042,control.lastuip,571823,complete,4061.95,4193.55,1.3632176E7,UNSAT
+521073865,cnf_proj/bv-term-small-rw_1294.smt2.cnf.xz,13219847,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4987.73,5000.02,423744.0,UNKNOWN
+521073866,cnf_proj/bv-term-small-rw_1492.smt2.cnf.xz,13219472,igrev13_lastuip,35042,control.lastuip,571823,complete,0.079353,0.073293,113292.0,SAT-INCORRECT
+521073867,cnf_proj/bvsdiv_19.smt2.cnf.xz,13219675,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4992.4,5000.02,2092164.0,UNSAT
+521073868,cnf_proj/bvsmod_18.smt2.cnf.xz,13219635,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4994.07,5000.04,361820.0,UNKNOWN
+521073869,cnf_proj/bvsmod_19.smt2.cnf.xz,13219724,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4990.49,5000.09,372828.0,UNKNOWN
+521073870,cnf_proj/bvsub_08985.smt2.cnf.xz,13219470,igrev13_lastuip,35042,control.lastuip,571823,complete,2936.12,3211.98,1.981142E7,UNSAT
+521073871,cnf_proj/bvsub_12973.smt2.cnf.xz,13219655,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4859.28,5000.06,2.9631768E7,UNSAT
+521073872,cnf_proj/bvsub_19952.smt2.cnf.xz,13219521,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4858.8,5000.02,3916460.0,UNKNOWN
+521073873,cnf_proj/bvurem_20.smt2.cnf.xz,13219621,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.77,5000.11,391356.0,UNKNOWN
+521073874,cnf_proj/Circuit_multiplier18.cnf.xz,13219645,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.88,5000.03,419908.0,UNKNOWN
+521073875,cnf_proj/Circuit_multiplier22.cnf.xz,13219626,igrev13_lastuip,35042,control.lastuip,571823,complete,109.969,110.077,268632.0,SAT-INCORRECT
+521073876,cnf_proj/Circuit_multiplier24.cnf.xz,13219454,igrev13_lastuip,35042,control.lastuip,571823,complete,130.651,130.825,276136.0,SAT-INCORRECT
+521073877,cnf_proj/Circuit_multiplier25.cnf.xz,13219803,igrev13_lastuip,35042,control.lastuip,571823,complete,419.983,420.613,305688.0,SAT-INCORRECT
+521073878,cnf_proj/Circuit_multiplier26.cnf.xz,13219504,igrev13_lastuip,35042,control.lastuip,571823,complete,84.3872,84.6644,267080.0,SAT-INCORRECT
+521073879,cnf_proj/Circuit_multiplier29.cnf.xz,13219469,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.27,5000.02,398552.0,UNKNOWN
+521073880,cnf_proj/Circuit_multiplier33.cnf.xz,13219783,igrev13_lastuip,35042,control.lastuip,571823,complete,70.7713,71.1283,266060.0,SAT-INCORRECT
+521073881,cnf_proj/Circuit_multiplier34.cnf.xz,13219599,igrev13_lastuip,35042,control.lastuip,571823,complete,1416.13,1417.23,306244.0,SAT-INCORRECT
+521073882,cnf_proj/Circuit_multiplier35.cnf.xz,13219750,igrev13_lastuip,35042,control.lastuip,571823,complete,34.0481,34.1463,258008.0,SAT-INCORRECT
+521073883,cnf_proj/Circuit_multiplier36.cnf.xz,13219564,igrev13_lastuip,35042,control.lastuip,571823,complete,4952.78,4957.38,385876.0,SAT-INCORRECT
+521073884,cnf_proj/Circuit_multiplier37.cnf.xz,13219698,igrev13_lastuip,35042,control.lastuip,571823,complete,95.4367,98.5656,268276.0,SAT-INCORRECT
+521073885,cnf_proj/Circuit_multiplier45.cnf.xz,13219475,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.36,5000.07,410068.0,UNKNOWN
+521073886,cnf_proj/Circuit_multiplier53.cnf.xz,13219481,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.57,5000.09,415088.0,UNKNOWN
+521073887,cnf_proj/crafted_n10_d6_c4_num15.cnf.xz,13219662,igrev13_lastuip,35042,control.lastuip,571823,complete,1484.65,1489.89,1830084.0,UNSAT
+521073888,cnf_proj/crafted_n10_d6_c4_num21.cnf.xz,13219602,igrev13_lastuip,35042,control.lastuip,571823,complete,1480.15,1482.91,1829028.0,UNSAT
+521073889,cnf_proj/crafted_n11_d6_c4_num14.cnf.xz,13219733,igrev13_lastuip,35042,control.lastuip,571823,complete,3134.79,3137.68,2572796.0,UNSAT
+521073890,cnf_proj/crafted_n12_d6_c3_num18.cnf.xz,13219821,igrev13_lastuip,35042,control.lastuip,571823,complete,854.839,856.041,1540836.0,UNSAT
+521073891,cnf_proj/crafted_n12_d6_c3_num28.cnf.xz,13219565,igrev13_lastuip,35042,control.lastuip,571823,complete,489.366,489.934,1510072.0,UNSAT
+521073892,cnf_proj/crafted_n12_d6_c4_num17.cnf.xz,13219816,igrev13_lastuip,35042,control.lastuip,571823,complete,2371.2,2375.96,2435144.0,UNSAT
+521073893,cnf_proj/ctl_4201_555_unsat.cnf.xz,13219677,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4994.78,5000.1,1522808.0,UNSAT
+521073894,cnf_proj/ctl_4291_567_11_unsat.cnf.xz,13219722,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4990.53,5000.1,379636.0,UNKNOWN
+521073895,cnf_proj/ctl_4291_567_1_unsat.cnf.xz,13219678,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.62,5000.02,1522844.0,UNSAT
+521073896,cnf_proj/ctl_4291_567_6_unsat_pre.cnf.xz,13219588,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4996.3,5000.09,381592.0,UNKNOWN
+521073897,cnf_proj/ctl_4291_567_9_unsat.cnf.xz,13219809,igrev13_lastuip,35042,control.lastuip,571823,complete,2528.25,2529.64,899336.0,UNSAT
+521073898,cnf_proj/dist10.c.cnf.xz,13219649,igrev13_lastuip,35042,control.lastuip,571823,complete,296.069,296.396,357248.0,UNSAT
+521073899,cnf_proj/dist4.c.cnf.xz,13219467,igrev13_lastuip,35042,control.lastuip,571823,complete,255.089,255.661,357248.0,UNSAT
+521073900,cnf_proj/E00X23.cnf.xz,13219836,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4991.25,5000.07,796236.0,UNKNOWN
+521073901,cnf_proj/E02F17.cnf.xz,13219460,igrev13_lastuip,35042,control.lastuip,571823,complete,90.9103,91.003,348472.0,UNSAT
+521073902,cnf_proj/ecarev-110-1031-23-40-8.cnf.xz,13219746,igrev13_lastuip,35042,control.lastuip,571823,complete,1609.36,1611.52,731916.0,SAT-INCORRECT
+521073903,cnf_proj/ecarev-110-4099-22-30-4.cnf.xz,13219494,igrev13_lastuip,35042,control.lastuip,571823,complete,1076.21,1079.58,714164.0,SAT-INCORRECT
+521073904,cnf_proj/edit_distance007_85.cnf.xz,13219826,igrev13_lastuip,35042,control.lastuip,571823,complete,2449.88,2454.35,1454168.0,UNSAT
+521073905,cnf_proj/edit_distance019_312.cnf.xz,13219535,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.42,5000.02,455660.0,UNKNOWN
+521073906,cnf_proj/edit_distance023_281.cnf.xz,13219849,igrev13_lastuip,35042,control.lastuip,571823,complete,624.019,625.638,366452.0,SAT-INCORRECT
+521073907,cnf_proj/edit_distance023_282.cnf.xz,13219453,igrev13_lastuip,35042,control.lastuip,571823,complete,553.207,554.728,368296.0,SAT-INCORRECT
+521073908,cnf_proj/edit_distance023_283.cnf.xz,13219797,igrev13_lastuip,35042,control.lastuip,571823,complete,502.495,503.064,348476.0,SAT-INCORRECT
+521073909,cnf_proj/edit_distance025_448.cnf.xz,13219478,igrev13_lastuip,35042,control.lastuip,571823,complete,4681.04,4696.25,529852.0,SAT-INCORRECT
+521073910,cnf_proj/edit_distance025_449.cnf.xz,13219757,igrev13_lastuip,35042,control.lastuip,571823,complete,3637.03,3645.68,513592.0,SAT-INCORRECT
+521073911,cnf_proj/edit_distance025_450.cnf.xz,13219810,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4988.25,5000.04,544100.0,UNKNOWN
+521073912,cnf_proj/edit_distance031_283.cnf.xz,13219574,igrev13_lastuip,35042,control.lastuip,571823,complete,2860.04,2863.8,2027584.0,UNSAT
+521073913,cnf_proj/edit_distance031_284.cnf.xz,13219851,igrev13_lastuip,35042,control.lastuip,571823,complete,3033.8,3038.14,2027592.0,UNSAT
+521073914,cnf_proj/edit_distance035_393.cnf.xz,13219827,igrev13_lastuip,35042,control.lastuip,571823,complete,4911.9,4935.25,626492.0,SAT-INCORRECT
+521073915,cnf_proj/edit_distance041_182.cnf.xz,13219767,igrev13_lastuip,35042,control.lastuip,571823,complete,424.087,424.738,436268.0,UNSAT
+521073916,cnf_proj/edit_distance041_183.cnf.xz,13219497,igrev13_lastuip,35042,control.lastuip,571823,complete,293.466,294.737,427476.0,UNSAT
+521073917,cnf_proj/ER_500_40_2.apx_0.cnf.xz,13219770,igrev13_lastuip,35042,control.lastuip,571823,complete,235.478,237.01,545236.0,UNSAT
+521073918,cnf_proj/erin2_0x0-379.cnf.xz,13219737,igrev13_lastuip,35042,control.lastuip,571823,complete,1819.75,1823.57,320696.0,SAT-INCORRECT
+521073919,cnf_proj/erin2_0x0_n207-379.cnf.xz,13219796,igrev13_lastuip,35042,control.lastuip,571823,complete,551.624,553.892,298020.0,SAT-INCORRECT
+521073920,cnf_proj/erin2_0x1e3-216.cnf.xz,13219498,igrev13_lastuip,35042,control.lastuip,571823,complete,2985.18,2990.76,392392.0,SAT-INCORRECT
+521073921,cnf_proj/ex045_7.cnf.xz,13219513,igrev13_lastuip,35042,control.lastuip,571823,complete,3758.41,3762.97,2708668.0,SAT-INCORRECT
+521073922,cnf_proj/ex065_25.cnf.xz,13219658,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.44,5000.03,545452.0,UNKNOWN
+521073923,cnf_proj/ex095_8.cnf.xz,13219606,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4973.14,5000.02,2585780.0,UNKNOWN
+521073924,cnf_proj/ex175_20.cnf.xz,13219508,igrev13_lastuip,35042,control.lastuip,571823,complete,758.454,760.898,3348864.0,SAT-INCORRECT
+521073925,cnf_proj/HCP-424-60.cnf.xz,13219615,igrev13_lastuip,35042,control.lastuip,571823,complete,923.486,926.656,381740.0,SAT-INCORRECT
+521073926,cnf_proj/HCP-446-105.cnf.xz,13219707,igrev13_lastuip,35042,control.lastuip,571823,complete,2121.26,2133.03,430264.0,SAT-INCORRECT
+521073927,cnf_proj/HCP-446-420.cnf.xz,13219631,igrev13_lastuip,35042,control.lastuip,571823,complete,2020.29,2028.03,462664.0,SAT-INCORRECT
+521073928,cnf_proj/HCP-446-60.cnf.xz,13219718,igrev13_lastuip,35042,control.lastuip,571823,complete,878.33,885.751,413764.0,SAT-INCORRECT
+521073929,cnf_proj/HCP-470-105.cnf.xz,13219676,igrev13_lastuip,35042,control.lastuip,571823,complete,894.069,895.774,417616.0,SAT-INCORRECT
+521073930,cnf_proj/HCP-470-420.cnf.xz,13219592,igrev13_lastuip,35042,control.lastuip,571823,complete,2529.14,2539.43,656744.0,SAT-INCORRECT
+521073931,cnf_proj/HCP-470-60.cnf.xz,13219537,igrev13_lastuip,35042,control.lastuip,571823,complete,1570.12,1583.39,555312.0,SAT-INCORRECT
+521073932,cnf_proj/HCP-506-60.cnf.xz,13219823,igrev13_lastuip,35042,control.lastuip,571823,complete,506.344,510.322,526280.0,SAT-INCORRECT
+521073933,cnf_proj/HCP-522-105.cnf.xz,13219558,igrev13_lastuip,35042,control.lastuip,571823,complete,198.862,199.761,377156.0,SAT-INCORRECT
+521073934,cnf_proj/HCP-526-105.cnf.xz,13219792,igrev13_lastuip,35042,control.lastuip,571823,complete,210.264,210.633,380816.0,SAT-INCORRECT
+521073935,cnf_proj/HCP-526-420.cnf.xz,13219455,igrev13_lastuip,35042,control.lastuip,571823,complete,198.83,200.406,386652.0,SAT-INCORRECT
+521073936,cnf_proj/HCP-529-420.cnf.xz,13219680,igrev13_lastuip,35042,control.lastuip,571823,complete,489.963,491.087,503128.0,SAT-INCORRECT
+521073937,cnf_proj/HCP-529-60.cnf.xz,13219794,igrev13_lastuip,35042,control.lastuip,571823,complete,158.302,158.655,385464.0,SAT-INCORRECT
+521073938,cnf_proj/huck.col.11.cnf.xz,13219807,igrev13_lastuip,35042,control.lastuip,571823,complete,277.962,278.194,577384.0,UNSAT
+521073939,cnf_proj/IBM_FV_2004_rule_batch_30_SAT_dat.k75.cnf.xz,13219550,igrev13_lastuip,35042,control.lastuip,571823,complete,2666.7,2674.02,516712.0,SAT-INCORRECT
+521073940,cnf_proj/k2fix_gr_rcs_w8.shuffled.cnf.xz,13219484,igrev13_lastuip,35042,control.lastuip,571823,complete,164.099,165.053,350180.0,UNSAT
+521073941,cnf_proj/Kakuro-easy-045-ext.xml.hg_4.cnf.xz,13219684,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4984.78,5000.08,801940.0,UNKNOWN
+521073942,cnf_proj/Kakuro-easy-051-ext.xml.hg_4.cnf.xz,13219679,igrev13_lastuip,35042,control.lastuip,571823,complete,3814.96,3817.43,2115348.0,UNSAT
+521073943,cnf_proj/Kakuro-easy-089-ext.xml.hg_4.cnf.xz,13219483,igrev13_lastuip,35042,control.lastuip,571823,complete,245.953,246.152,2759536.0,SAT-INCORRECT
+521073944,cnf_proj/Kakuro-easy-104-ext.xml.hg_6.cnf.xz,13219825,igrev13_lastuip,35042,control.lastuip,571823,complete,360.62,361.299,3109076.0,SAT-INCORRECT
+521073945,cnf_proj/Kakuro-easy-112-ext.xml.hg_7.cnf.xz,13219775,igrev13_lastuip,35042,control.lastuip,571823,complete,1100.5,1102.52,4014472.0,SAT-INCORRECT
+521073946,cnf_proj/Kakuro-easy-115-ext.xml.hg_5.cnf.xz,13219812,igrev13_lastuip,35042,control.lastuip,571823,complete,1036.97,1039.68,4985116.0,SAT-INCORRECT
+521073947,cnf_proj/Kakuro-easy-118-ext.xml.hg_4.cnf.xz,13219633,igrev13_lastuip,35042,control.lastuip,571823,complete,2212.26,2216.78,3391768.0,SAT-INCORRECT
+521073948,cnf_proj/Kakuro-easy-127-ext.xml.hg_7.cnf.xz,13219837,igrev13_lastuip,35042,control.lastuip,571823,complete,501.209,501.712,4663984.0,SAT-INCORRECT
+521073949,cnf_proj/Kakuro-easy-132-ext.xml.hg_8.cnf.xz,13219653,igrev13_lastuip,35042,control.lastuip,571823,complete,3722.23,3729.05,4645880.0,SAT-INCORRECT
+521073950,cnf_proj/Kakuro-easy-142-ext.xml.hg_8.cnf.xz,13219466,igrev13_lastuip,35042,control.lastuip,571823,complete,369.027,369.341,3626876.0,SAT-INCORRECT
+521073951,cnf_proj/Kakuro-easy-150-ext.xml.hg_9.cnf.xz,13219646,igrev13_lastuip,35042,control.lastuip,571823,complete,1102.61,1103.54,4207652.0,SAT-INCORRECT
+521073952,cnf_proj/Kakuro-easy-156-ext.xml.hg_7.cnf.xz,13219549,igrev13_lastuip,35042,control.lastuip,571823,complete,1063.48,1065.56,3792392.0,SAT-INCORRECT
+521073953,cnf_proj/ktf_TF-1.tf_3_0.02_34.cnf.xz,13219740,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4975.23,5000.11,442608.0,UNKNOWN
+521073954,cnf_proj/ktf_TF-1.tf_4_0.06_101.cnf.xz,13219620,igrev13_lastuip,35042,control.lastuip,571823,complete,480.209,483.467,306108.0,SAT-INCORRECT
+521073955,cnf_proj/ktf_TF-3.tf_2_0.02_24.cnf.xz,13219788,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4976.06,5000.02,427992.0,UNKNOWN
+521073956,cnf_proj/ktf_TF-3.tf_3_0.02_24.cnf.xz,13219536,igrev13_lastuip,35042,control.lastuip,571823,complete,564.371,565.052,545244.0,UNSAT
+521073957,cnf_proj/ktf_TF-3.tf_4_0.04_48.cnf.xz,13219468,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4971.85,5000.05,399136.0,UNKNOWN
+521073958,cnf_proj/ktf_TF-4.tf_2_0.02_18.cnf.xz,13219709,igrev13_lastuip,35042,control.lastuip,571823,complete,131.976,133.234,342700.0,UNSAT
+521073959,cnf_proj/ktf_TF-4.tf_4_0.04_35.cnf.xz,13219705,igrev13_lastuip,35042,control.lastuip,571823,complete,4461.84,4476.48,2304732.0,UNSAT
+521073960,cnf_proj/ktf_TF-4.tf_4_0.06_52.cnf.xz,13219776,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.02,5000.06,445960.0,UNKNOWN
+521073961,cnf_proj/ktf_TF-6.tf_4_0.04_51.cnf.xz,13219765,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4974.45,5000.02,447944.0,UNKNOWN
+521073962,cnf_proj/ktf_TF-6.tf_4_0.06_77.cnf.xz,13219639,igrev13_lastuip,35042,control.lastuip,571823,complete,1762.26,1771.9,341180.0,SAT-INCORRECT
+521073963,cnf_proj/ktf_TF-7.tf_3_0.06_113.cnf.xz,13219791,igrev13_lastuip,35042,control.lastuip,571823,complete,94.8543,95.0901,306588.0,SAT-INCORRECT
+521073964,cnf_proj/ktf_TF-8.tf_4_0.02_37.cnf.xz,13219562,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4992.45,5000.1,407968.0,UNKNOWN
+521073965,cnf_proj/ktf_TF-8.tf_4_0.06_109.cnf.xz,13219600,igrev13_lastuip,35042,control.lastuip,571823,complete,174.692,175.035,287792.0,SAT-INCORRECT
+521073966,cnf_proj/LABS_n041_goal003.cnf.xz,13219619,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4991.41,5000.04,340796.0,UNKNOWN
+521073967,cnf_proj/LABS_n068_goal001.cnf.xz,13219522,igrev13_lastuip,35042,control.lastuip,571823,complete,3212.5,3214.26,631984.0,UNSAT
+521073968,cnf_proj/LABS_n069_goal001.cnf.xz,13219779,igrev13_lastuip,35042,control.lastuip,571823,complete,3711.06,3712.73,686556.0,UNSAT
+521073969,cnf_proj/LABS_n072_goal006.cnf.xz,13219538,igrev13_lastuip,35042,control.lastuip,571823,complete,712.645,715.171,366652.0,SAT-INCORRECT
+521073970,cnf_proj/LABS_n089_goal008.cnf.xz,13219695,igrev13_lastuip,35042,control.lastuip,571823,complete,95.2916,96.2486,516512.0,SAT-INCORRECT
+521073971,cnf_proj/maximum_constrained_partition_14_bits_n200.cnf.xz,13219566,igrev13_lastuip,35042,control.lastuip,571823,complete,64.4914,64.5727,278580.0,SAT-INCORRECT
+521073972,cnf_proj/maximum_constrained_partition_18_bits_n200.cnf.xz,13219738,igrev13_lastuip,35042,control.lastuip,571823,complete,453.574,455.457,375732.0,SAT-INCORRECT
+521073973,cnf_proj/maxor128.cnf.xz,13219583,igrev13_lastuip,35042,control.lastuip,571823,complete,2370.62,2378.44,3825300.0,UNSAT
+521073974,cnf_proj/mp1-blockpuzzle_5x10_s5_free3.cnf.xz,13219650,igrev13_lastuip,35042,control.lastuip,571823,complete,3472.65,3487.95,6406868.0,UNSAT
+521073975,cnf_proj/mp1-blockpuzzle_5x12_s6_free3.cnf.xz,13219531,igrev13_lastuip,35042,control.lastuip,571823,complete,3940.38,4149.97,1.3851724E7,UNSAT
+521073976,cnf_proj/mp1-blockpuzzle_9x9_s1_free8.cnf.xz,13219545,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4952.62,5000.02,806728.0,UNKNOWN
+521073977,cnf_proj/mp1-blockpuzzle_9x9_s5_free3.cnf.xz,13219617,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4965.36,5000.01,9305968.0,UNSAT
+521073978,cnf_proj/mp1-bsat201-707.cnf.xz,13219690,igrev13_lastuip,35042,control.lastuip,571823,complete,1886.0,1887.13,815276.0,UNSAT
+521073979,cnf_proj/mp1-bsat210-739.cnf.xz,13219846,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4973.15,5000.02,330204.0,UNKNOWN
+521073980,cnf_proj/mp1-klieber2017s-0300-034-t12.cnf.xz,13219488,igrev13_lastuip,35042,control.lastuip,571823,complete,161.439,161.899,256504.0,SAT-INCORRECT
+521073981,cnf_proj/mp1-klieber2017s-0490-024-t12.cnf.xz,13219643,igrev13_lastuip,35042,control.lastuip,571823,complete,583.947,584.822,282888.0,SAT-INCORRECT
+521073982,cnf_proj/mp1-klieber2017s-1000-023-eq.cnf.xz,13219634,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4997.62,5000.02,2091068.0,UNSAT
+521073983,cnf_proj/mp1-klieber2017s-1000-024-eq.cnf.xz,13219584,igrev13_lastuip,35042,control.lastuip,571823,complete,1885.84,1887.45,1029536.0,UNSAT
+521073984,cnf_proj/mp1-klieber2017s-1200-022-eq.cnf.xz,13219501,igrev13_lastuip,35042,control.lastuip,571823,complete,2517.99,2519.83,1029572.0,UNSAT
+521073985,cnf_proj/mp1-klieber2017s-2000-022-eq.cnf.xz,13219559,igrev13_lastuip,35042,control.lastuip,571823,complete,3555.8,3558.1,1074148.0,UNSAT
+521073986,cnf_proj/mp1-Nb6T06.cnf.xz,13219473,igrev13_lastuip,35042,control.lastuip,571823,complete,68.7828,69.7358,264628.0,UNSAT
+521073987,cnf_proj/mp1-Nb6T07.cnf.xz,13219772,igrev13_lastuip,35042,control.lastuip,571823,complete,2118.66,2122.89,1529988.0,UNSAT
+521073988,cnf_proj/mp1-Nb7T44.cnf.xz,13219551,igrev13_lastuip,35042,control.lastuip,571823,complete,3.61537,3.61771,296132.0,SAT-INCORRECT
+521073989,cnf_proj/mp1-Nb7T46.cnf.xz,13219479,igrev13_lastuip,35042,control.lastuip,571823,complete,10.0762,10.1076,304396.0,SAT-INCORRECT
+521073990,cnf_proj/mp1-squ_ali_s10x10_c39_abio_SAT.cnf.xz,13219759,igrev13_lastuip,35042,control.lastuip,571823,complete,379.481,379.942,288696.0,SAT-INCORRECT
+521073991,cnf_proj/mp1-squ_any_s09x07_c27_abix_UNS.cnf.xz,13219787,igrev13_lastuip,35042,control.lastuip,571823,complete,2150.14,2152.07,1074092.0,UNSAT
+521073992,cnf_proj/mp1-tri_ali_s11_c35_abix_UNS.cnf.xz,13219533,igrev13_lastuip,35042,control.lastuip,571823,complete,252.933,253.25,356712.0,UNSAT
+521073993,cnf_proj/mp1-tri_ali_s11_c35_bail_UNS.cnf.xz,13219790,igrev13_lastuip,35042,control.lastuip,571823,complete,381.796,382.252,444980.0,UNSAT
+521073994,cnf_proj/MVD_ADS_S10_5_6.cnf.xz,13219457,igrev13_lastuip,35042,control.lastuip,571823,complete,2.77475,2.76839,329324.0,UNSAT
+521073995,cnf_proj/MVD_ADS_S10_6_6.cnf.xz,13219830,igrev13_lastuip,35042,control.lastuip,571823,complete,13.6642,13.6584,355484.0,UNSAT
+521073996,cnf_proj/MVD_ADS_S11_6_7.cnf.xz,13219762,igrev13_lastuip,35042,control.lastuip,571823,complete,1.13892,1.13278,358776.0,SAT-INCORRECT
+521073997,cnf_proj/MVD_ADS_S11_7_7.cnf.xz,13219689,igrev13_lastuip,35042,control.lastuip,571823,complete,0.967429,0.961317,372548.0,SAT-INCORRECT
+521073998,cnf_proj/MVD_ADS_S11_8_7.cnf.xz,13219687,igrev13_lastuip,35042,control.lastuip,571823,complete,0.612471,0.606235,298688.0,SAT-INCORRECT
+521073999,cnf_proj/MVD_ADS_S1_5_5.cnf.xz,13219844,igrev13_lastuip,35042,control.lastuip,571823,complete,5.15066,5.14441,410268.0,UNSAT
+521074000,cnf_proj/MVD_ADS_S3_5_5.cnf.xz,13219735,igrev13_lastuip,35042,control.lastuip,571823,complete,3.74748,3.74081,415652.0,UNSAT
+521074001,cnf_proj/MVD_ADS_S4_5_5.cnf.xz,13219659,igrev13_lastuip,35042,control.lastuip,571823,complete,3.2717,3.26499,380320.0,UNSAT
+521074002,cnf_proj/MVD_ADS_S5_6_6.cnf.xz,13219611,igrev13_lastuip,35042,control.lastuip,571823,complete,4.70913,4.70288,412144.0,UNSAT
+521074003,cnf_proj/MVD_ADS_S6_6_5.cnf.xz,13219547,igrev13_lastuip,35042,control.lastuip,571823,complete,1.12357,1.11729,203928.0,UNSAT
+521074004,cnf_proj/MVD_ADS_S6_6_6.cnf.xz,13219756,igrev13_lastuip,35042,control.lastuip,571823,complete,26.3935,26.3871,433132.0,UNSAT
+521074005,cnf_proj/MVD_ADS_S7_6_6.cnf.xz,13219520,igrev13_lastuip,35042,control.lastuip,571823,complete,26.2627,26.2565,426436.0,UNSAT
+521074006,cnf_proj/MVD_ADS_S9_6_6.cnf.xz,13219570,igrev13_lastuip,35042,control.lastuip,571823,complete,5.65763,5.65098,434644.0,UNSAT
+521074007,cnf_proj/Mycielski-10-hints-10.cnf.xz,13219731,igrev13_lastuip,35042,control.lastuip,571823,complete,484.34,484.894,572184.0,UNSAT
+521074008,cnf_proj/Mycielski-10-hints-5.cnf.xz,13219741,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4984.05,5000.02,464888.0,UNKNOWN
+521074009,cnf_proj/Mycielski-10-hints-6.cnf.xz,13219582,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.73,5000.02,499104.0,UNKNOWN
+521074010,cnf_proj/Mycielski-10-hints-7.cnf.xz,13219685,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4966.82,5000.04,486844.0,UNKNOWN
+521074011,cnf_proj/Mycielski-10-hints-8.cnf.xz,13219747,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4979.05,5000.11,512956.0,UNKNOWN
+521074012,cnf_proj/Mycielski-10-hints-9.cnf.xz,13219604,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4987.18,5000.04,534864.0,UNKNOWN
+521074013,cnf_proj/Mycielski-11-hints-1.cnf.xz,13219489,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.46,5000.04,2473024.0,UNSAT
+521074014,cnf_proj/Mycielski-11-hints-2.cnf.xz,13219808,igrev13_lastuip,35042,control.lastuip,571823,complete,4917.69,4921.17,2212644.0,UNSAT
+521074015,cnf_proj/Mycielski-11-hints-3.cnf.xz,13219544,igrev13_lastuip,35042,control.lastuip,571823,complete,4172.21,4178.4,2150372.0,UNSAT
+521074016,cnf_proj/Mycielski-11-hints-4.cnf.xz,13219673,igrev13_lastuip,35042,control.lastuip,571823,complete,3620.03,3623.5,1819032.0,UNSAT
+521074017,cnf_proj/n320p5q2_n.apx_16.cnf.xz,13219495,igrev13_lastuip,35042,control.lastuip,571823,complete,16.7617,16.9951,256704.0,SAT-INCORRECT
+521074018,cnf_proj/n320p5q2_n.apx_17.cnf.xz,13219760,igrev13_lastuip,35042,control.lastuip,571823,complete,255.75,257.21,705068.0,UNSAT
+521074019,cnf_proj/Nb51T6.cnf.xz,13219838,igrev13_lastuip,35042,control.lastuip,571823,complete,4422.39,4436.62,3852576.0,UNSAT
+521074020,cnf_proj/ndhf_xits_09_UNSAT.cnf.xz,13219833,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4988.32,5000.11,425272.0,UNKNOWN
+521074021,cnf_proj/p01_lb_05.cnf.xz,13219487,igrev13_lastuip,35042,control.lastuip,571823,complete,257.909,259.177,357700.0,UNSAT
+521074022,cnf_proj/pb_300_05_lb_16.cnf.xz,13219462,igrev13_lastuip,35042,control.lastuip,571823,complete,262.576,263.085,414312.0,SAT-INCORRECT
+521074023,cnf_proj/pb_300_05_lb_17.cnf.xz,13219784,igrev13_lastuip,35042,control.lastuip,571823,complete,260.422,261.915,393196.0,SAT-INCORRECT
+521074024,cnf_proj/pb_300_06_lb_02.cnf.xz,13219532,igrev13_lastuip,35042,control.lastuip,571823,complete,3826.79,3841.26,643092.0,SAT-INCORRECT
+521074025,cnf_proj/pb_300_10_lb_06.cnf.xz,13219720,igrev13_lastuip,35042,control.lastuip,571823,complete,187.334,187.562,377624.0,UNSAT
+521074026,cnf_proj/php12e12.cnf.xz,13219780,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4980.36,5000.02,421752.0,UNKNOWN
+521074027,cnf_proj/php14e14.cnf.xz,13219683,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4969.91,5000.09,471100.0,UNKNOWN
+521074028,cnf_proj/prime_a20_b20.cnf.xz,13219828,igrev13_lastuip,35042,control.lastuip,571823,complete,124.153,124.454,259536.0,SAT-INCORRECT
+521074029,cnf_proj/prime_a22_b22.cnf.xz,13219696,igrev13_lastuip,35042,control.lastuip,571823,complete,721.192,722.5,284876.0,SAT-INCORRECT
+521074030,cnf_proj/prime_a24_b24.cnf.xz,13219515,igrev13_lastuip,35042,control.lastuip,571823,complete,696.858,698.061,286504.0,SAT-INCORRECT
+521074031,cnf_proj/problem_12.smt2.cnf.xz,13219575,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4977.03,5000.01,466392.0,UNKNOWN
+521074032,cnf_proj/puzzle30_sat.cnf.xz,13219670,igrev13_lastuip,35042,control.lastuip,571823,complete,2362.13,2364.73,395292.0,SAT-INCORRECT
+521074033,cnf_proj/puzzle34_sat.cnf.xz,13219491,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.37,5000.02,479032.0,UNKNOWN
+521074034,cnf_proj/puzzle34_unsat.cnf.xz,13219510,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.87,5000.02,476784.0,UNKNOWN
+521074035,cnf_proj/puzzle35_sat.cnf.xz,13219829,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4979.55,5000.1,512508.0,UNKNOWN
+521074036,cnf_proj/puzzle35_unsat.cnf.xz,13219507,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4994.2,5000.02,1608168.0,UNSAT
+521074037,cnf_proj/puzzle36_sat.cnf.xz,13219591,igrev13_lastuip,35042,control.lastuip,571823,complete,2677.27,2680.7,441240.0,SAT-INCORRECT
+521074038,cnf_proj/puzzle37_unsat.cnf.xz,13219548,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.59,5000.07,492128.0,UNKNOWN
+521074039,cnf_proj/puzzle39_sat.cnf.xz,13219799,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4985.37,5000.02,482912.0,UNKNOWN
+521074040,cnf_proj/puzzle42_sat.cnf.xz,13219608,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.25,5000.01,481556.0,UNKNOWN
+521074041,cnf_proj/puzzle44_unsat.cnf.xz,13219577,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4996.75,5000.08,480448.0,UNKNOWN
+521074042,cnf_proj/puzzle47_sat.cnf.xz,13219490,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4956.25,5000.02,475012.0,UNKNOWN
+521074043,cnf_proj/puzzle51_unsat.cnf.xz,13219665,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4992.8,5000.02,500040.0,UNKNOWN
+521074044,cnf_proj/puzzle60_sat.cnf.xz,13219458,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4982.9,5000.11,519244.0,UNKNOWN
+521074045,cnf_proj/quad_res_r21_m22.cnf.xz,13219701,igrev13_lastuip,35042,control.lastuip,571823,complete,387.251,387.991,290428.0,SAT-INCORRECT
+521074046,cnf_proj/quad_res_r26_m27.cnf.xz,13219539,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4996.11,5000.03,383752.0,UNKNOWN
+521074047,cnf_proj/quad_res_r28_m29.cnf.xz,13219721,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4996.79,5000.02,367284.0,UNKNOWN
+521074048,cnf_proj/quad_res_r29_m32.cnf.xz,13219555,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.17,5000.05,442384.0,UNKNOWN
+521074049,cnf_proj/quad_res_r31_m35.cnf.xz,13219686,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4997.24,5000.09,354680.0,UNKNOWN
+521074050,cnf_proj/quad_res_r32_m35.cnf.xz,13219528,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.74,5000.02,372384.0,UNKNOWN
+521074051,cnf_proj/quad_res_r33_m36.cnf.xz,13219502,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.56,5000.02,367320.0,UNKNOWN
+521074052,cnf_proj/quad_res_r34_m36.cnf.xz,13219471,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4985.65,5000.02,370808.0,UNKNOWN
+521074053,cnf_proj/quad_res_r35_m36.cnf.xz,13219848,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4996.19,5000.02,338724.0,UNKNOWN
+521074054,cnf_proj/quad_res_r37_m39.cnf.xz,13219694,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4993.86,5000.02,356912.0,UNKNOWN
+521074055,cnf_proj/randomG-B-Mix-n15-d05.cnf.xz,13219456,igrev13_lastuip,35042,control.lastuip,571823,complete,855.766,856.835,1073892.0,UNSAT
+521074056,cnf_proj/randomG-B-Mix-n16-d05.cnf.xz,13219704,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4982.84,5000.07,7670980.0,UNSAT
+521074057,cnf_proj/randomG-B-Mix-n18-d05.cnf.xz,13219771,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4975.95,5000.02,449472.0,UNKNOWN
+521074058,cnf_proj/randomG-B-Mix-n19-d05.cnf.xz,13219516,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4966.32,5000.02,414604.0,UNKNOWN
+521074059,cnf_proj/randomG-Mix-n17-d05.cnf.xz,13219749,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.66,5000.02,391520.0,UNKNOWN
+521074060,cnf_proj/randomG-Mix-n18-d05.cnf.xz,13219529,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.54,5000.05,371360.0,UNKNOWN
+521074061,cnf_proj/randomG-n16-d05.cnf.xz,13219630,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4977.8,5000.02,397848.0,UNKNOWN
+521074062,cnf_proj/randomG-n17-d05.cnf.xz,13219697,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4981.37,5000.02,409732.0,UNKNOWN
+521074063,cnf_proj/randomG-n18-d05.cnf.xz,13219477,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4987.31,5000.1,431780.0,UNKNOWN
+521074064,cnf_proj/randomG-n19-d05.cnf.xz,13219845,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4966.07,5000.1,434540.0,UNKNOWN
+521074065,cnf_proj/randomG-n20-d05.cnf.xz,13219594,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4959.72,5000.02,451936.0,UNKNOWN
+521074066,cnf_proj/rphp4_065_shuffled.cnf.xz,13219840,igrev13_lastuip,35042,control.lastuip,571823,complete,1034.66,1042.5,3185836.0,UNSAT
+521074067,cnf_proj/rphp4_080_shuffled.cnf.xz,13219751,igrev13_lastuip,35042,control.lastuip,571823,complete,3883.98,3909.47,9516516.0,UNSAT
+521074068,cnf_proj/rphp4_090_shuffled.cnf.xz,13219723,igrev13_lastuip,35042,control.lastuip,571823,complete,2465.83,2685.39,1.4184528E7,UNSAT
+521074069,cnf_proj/rpoc_xits_10_UNKNOWN.cnf.xz,13219637,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4988.37,5000.04,434528.0,UNKNOWN
+521074070,cnf_proj/satch2ways12u.cnf.xz,13219666,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4972.76,5000.11,8093912.0,UNKNOWN
+521074071,cnf_proj/satch2ways12wu.cnf.xz,13219777,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4981.8,5000.05,8047584.0,UNKNOWN
+521074072,cnf_proj/satch2ways13wu.cnf.xz,13219702,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4981.04,5000.03,8739848.0,UNKNOWN
+521074073,cnf_proj/satch2ways14u.cnf.xz,13219581,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4974.32,5000.06,9623180.0,UNKNOWN
+521074074,cnf_proj/satch2ways15.cnf.xz,13219585,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4941.97,5000.02,2.697426E7,UNKNOWN
+521074075,cnf_proj/satch2ways15u.cnf.xz,13219514,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4967.44,5000.05,1.032474E7,UNKNOWN
+521074076,cnf_proj/satch2ways15wu.cnf.xz,13219815,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4968.5,5000.05,1.0307292E7,UNKNOWN
+521074077,cnf_proj/satch2ways16.cnf.xz,13219728,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4948.57,5000.04,2.6857228E7,UNKNOWN
+521074078,cnf_proj/satch2ways16w.cnf.xz,13219708,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4942.54,5000.06,2.688284E7,UNKNOWN
+521074079,cnf_proj/satch2ways17w.cnf.xz,13219766,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4926.26,5000.1,3.4562852E7,UNKNOWN
+521074080,cnf_proj/satch2ways18u.cnf.xz,13219572,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4983.41,5000.04,1.2528804E7,UNKNOWN
+521074081,cnf_proj/satch2ways18wu.cnf.xz,13219556,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4952.74,5000.06,1.2485284E7,UNKNOWN
+521074082,cnf_proj/satch2ways19u.cnf.xz,13219523,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4958.12,5000.03,1.3162832E7,UNKNOWN
+521074083,cnf_proj/SC21_Timetable_C_121_E_34_Cl_8_S_4.cnf.xz,13219561,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4916.75,5000.01,1113312.0,UNKNOWN
+521074084,cnf_proj/SC21_Timetable_C_136_E_36_Cl_9_S_15.cnf.xz,13219778,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4973.43,5000.1,595608.0,UNKNOWN
+521074085,cnf_proj/SC21_Timetable_C_136_E_41_Cl_9_S_15.cnf.xz,13219789,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4968.51,5000.02,544172.0,UNKNOWN
+521074086,cnf_proj/SC21_Timetable_C_140_E_29_Cl_10_S_15.cnf.xz,13219656,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4938.99,5000.02,649708.0,UNKNOWN
+521074087,cnf_proj/SC21_Timetable_C_140_E_32_Cl_30_S_10.cnf.xz,13219824,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4966.27,5000.03,665512.0,UNKNOWN
+521074088,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_4.cnf.xz,13219691,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4920.47,5000.02,1416688.0,UNKNOWN
+521074089,cnf_proj/SC21_Timetable_C_181_E_34_Cl_12_S_8.cnf.xz,13219563,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4903.76,5000.11,1570824.0,UNKNOWN
+521074090,cnf_proj/SC21_Timetable_C_241_E_34_Cl_16_S_13.cnf.xz,13219605,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4903.43,5000.1,1556784.0,UNKNOWN
+521074091,cnf_proj/SC21_Timetable_C_466_E_62_Cl_31_S_30.cnf.xz,13219834,igrev13_lastuip,35042,control.lastuip,571823,complete,666.438,671.148,852496.0,SAT-INCORRECT
+521074092,cnf_proj/SC21_Timetable_C_512_E_66_Cl_34_S_35.cnf.xz,13219795,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4966.9,5000.01,1336964.0,UNKNOWN
+521074093,cnf_proj/SC21_Timetable_C_527_E_71_Cl_35_S_35.cnf.xz,13219506,igrev13_lastuip,35042,control.lastuip,571823,complete,110.106,110.812,810972.0,SAT-INCORRECT
+521074094,cnf_proj/SC21_Timetable_C_542_E_71_Cl_36_S_35.cnf.xz,13219798,igrev13_lastuip,35042,control.lastuip,571823,complete,317.96,324.64,949708.0,SAT-INCORRECT
+521074095,cnf_proj/SC21_Timetable_C_557_E_73_Cl_37_S_35.cnf.xz,13219813,igrev13_lastuip,35042,control.lastuip,571823,complete,1178.33,1189.63,1287520.0,SAT-INCORRECT
+521074096,cnf_proj/scc_1213_40_10_3.apx_0.cnf.xz,13219664,igrev13_lastuip,35042,control.lastuip,571823,complete,84.5304,85.5462,408428.0,SAT-INCORRECT
+521074097,cnf_proj/SE_PR_stb_531_83.apx_1.cnf.xz,13219763,igrev13_lastuip,35042,control.lastuip,571823,complete,44.4774,44.5826,249616.0,SAT-INCORRECT
+521074098,cnf_proj/SE_PR_stb_588_138.apx_1.cnf.xz,13219554,igrev13_lastuip,35042,control.lastuip,571823,complete,367.341,367.9,273748.0,SAT-INCORRECT
+521074099,cnf_proj/SE_PR_WS_500_16_70_10.apx_0.cnf.xz,13219552,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4991.51,5000.06,353472.0,UNKNOWN
+521074100,cnf_proj/shift1add.26949.cnf.xz,13219706,igrev13_lastuip,35042,control.lastuip,571823,complete,491.437,491.467,514896.0,UNSAT
+521074101,cnf_proj/size_5_5_5_i003_r12.cnf.xz,13219682,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4994.67,5000.09,419424.0,UNKNOWN
+521074102,cnf_proj/size_5_5_5_i223_r12.cnf.xz,13219716,igrev13_lastuip,35042,control.lastuip,571823,complete,1855.06,1857.92,374372.0,SAT-INCORRECT
+521074103,cnf_proj/size_5_5_5_i251_r12.cnf.xz,13219578,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4974.16,5000.01,397472.0,UNKNOWN
+521074104,cnf_proj/snw_13_8_pre-sc2016.cnf.xz,13219500,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.25,5000.02,1084032.0,UNSAT
+521074105,cnf_proj/snw_13_8_pre.cnf.xz,13219579,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4992.31,5000.06,1084164.0,UNSAT
+521074106,cnf_proj/snw_13_9_pre.cnf.xz,13219712,igrev13_lastuip,35042,control.lastuip,571823,complete,420.401,420.877,437680.0,SAT-INCORRECT
+521074107,cnf_proj/snw_16_9_Encpre.cnf.xz,13219802,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4997.17,5000.04,637868.0,UNKNOWN
+521074108,cnf_proj/sokoban-p16.sas.ex.19-sc2016.cnf.xz,13219663,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4944.63,5000.02,1873440.0,UNKNOWN
+521074109,cnf_proj/sokoban-p20.sas.cr.21.cnf.xz,13219519,igrev13_lastuip,35042,control.lastuip,571823,complete,1567.15,1572.51,1990964.0,UNSAT
+521074110,cnf_proj/sokoban-p20.sas.cr.27.cnf.xz,13219560,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4979.37,5000.02,615572.0,UNKNOWN
+521074111,cnf_proj/sokoban-p20.sas.ex.13.cnf.xz,13219509,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4938.59,5000.02,1596668.0,UNKNOWN
+521074112,cnf_proj/sokoban-sequential-p145-microban-sequential.070-NOTKNOWN.cnf.xz,13219609,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4914.32,5000.08,1795060.0,UNKNOWN
+521074113,cnf_proj/sp4-33-bin-nons-flat-noid.cnf.xz,13219534,igrev13_lastuip,35042,control.lastuip,571823,complete,376.448,376.902,577384.0,UNSAT
+521074114,cnf_proj/sp4-33-one-nons-flat-noid.cnf.xz,13219580,igrev13_lastuip,35042,control.lastuip,571823,complete,63.9272,64.1394,254056.0,SAT-INCORRECT
+521074115,cnf_proj/sp4-33-one-stri-tree-noid.cnf.xz,13219607,igrev13_lastuip,35042,control.lastuip,571823,complete,1470.7,1473.16,1554068.0,UNSAT
+521074116,cnf_proj/sp4-33-una-stri-flat-noid.cnf.xz,13219595,igrev13_lastuip,35042,control.lastuip,571823,complete,493.569,494.353,775988.0,UNSAT
+521074117,cnf_proj/sp5-21-15-bin-stri-flat-noid.cnf.xz,13219831,igrev13_lastuip,35042,control.lastuip,571823,complete,562.191,563.884,299900.0,SAT-INCORRECT
+521074118,cnf_proj/sp5-21-15-bin-stri-tree-noid.cnf.xz,13219773,igrev13_lastuip,35042,control.lastuip,571823,complete,148.856,150.891,264652.0,SAT-INCORRECT
+521074119,cnf_proj/sp5-21-15-one-nons-tree-noid.cnf.xz,13219710,igrev13_lastuip,35042,control.lastuip,571823,complete,1667.39,1676.97,376344.0,SAT-INCORRECT
+521074120,cnf_proj/sp5-21-15-one-stri-tree-noid.cnf.xz,13219736,igrev13_lastuip,35042,control.lastuip,571823,complete,1644.92,1652.79,341364.0,SAT-INCORRECT
+521074121,cnf_proj/sp5-21-15-una-nons-tree-noid.cnf.xz,13219711,igrev13_lastuip,35042,control.lastuip,571823,complete,366.277,367.512,277508.0,SAT-INCORRECT
+521074122,cnf_proj/sp5-21-15-una-stri-flat-noid.cnf.xz,13219669,igrev13_lastuip,35042,control.lastuip,571823,complete,468.705,470.059,304132.0,SAT-INCORRECT
+521074123,cnf_proj/sp5-26-19-bin-nons-tree-noid.cnf.xz,13219567,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4980.48,5000.11,385408.0,UNKNOWN
+521074124,cnf_proj/sp5-26-19-bin-stri-flat-noid.cnf.xz,13219603,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4988.23,5000.02,379404.0,UNKNOWN
+521074125,cnf_proj/sp5-26-19-una-nons-tree-noid.cnf.xz,13219530,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4969.18,5000.03,437156.0,UNKNOWN
+521074126,cnf_proj/spg_200_300.cnf.xz,13219636,igrev13_lastuip,35042,control.lastuip,571823,complete,1246.62,1247.97,1418640.0,UNSAT
+521074127,cnf_proj/spg_200_301.cnf.xz,13219729,igrev13_lastuip,35042,control.lastuip,571823,complete,242.333,243.08,674292.0,UNSAT
+521074128,cnf_proj/spg_200_307.cnf.xz,13219768,igrev13_lastuip,35042,control.lastuip,571823,complete,213.81,214.61,664676.0,UNSAT
+521074129,cnf_proj/spg_200_316.cnf.xz,13219642,igrev13_lastuip,35042,control.lastuip,571823,complete,279.633,281.734,721528.0,UNSAT
+521074130,cnf_proj/spg_200_317.cnf.xz,13219714,igrev13_lastuip,35042,control.lastuip,571823,complete,442.161,442.689,1147504.0,UNSAT
+521074131,cnf_proj/spg_200_321.cnf.xz,13219610,igrev13_lastuip,35042,control.lastuip,571823,complete,141.146,141.547,616416.0,UNSAT
+521074132,cnf_proj/spg_300_300.cnf.xz,13219644,igrev13_lastuip,35042,control.lastuip,571823,complete,379.595,379.996,1063320.0,UNSAT
+521074133,cnf_proj/spg_300_301.cnf.xz,13219715,igrev13_lastuip,35042,control.lastuip,571823,complete,622.646,624.055,1550312.0,UNSAT
+521074134,cnf_proj/spg_300_312.cnf.xz,13219542,igrev13_lastuip,35042,control.lastuip,571823,complete,389.013,389.781,1094472.0,UNSAT
+521074135,cnf_proj/spg_330_400.cnf.xz,13219717,igrev13_lastuip,35042,control.lastuip,571823,complete,540.688,541.232,1387868.0,UNSAT
+521074136,cnf_proj/spg_400_281.cnf.xz,13219793,igrev13_lastuip,35042,control.lastuip,571823,complete,664.35,671.371,1636412.0,UNSAT
+521074137,cnf_proj/spg_420_280.cnf.xz,13219505,igrev13_lastuip,35042,control.lastuip,571823,complete,2400.04,2406.2,3336544.0,UNSAT
+521074138,cnf_proj/spg_420_350.cnf.xz,13219476,igrev13_lastuip,35042,control.lastuip,571823,complete,529.394,529.88,1587512.0,UNSAT
+521074139,cnf_proj/stb_531_83.apx_0.cnf.xz,13219671,igrev13_lastuip,35042,control.lastuip,571823,complete,379.589,381.035,277468.0,SAT-INCORRECT
+521074140,cnf_proj/stb_792_333.apx_0.cnf.xz,13219625,igrev13_lastuip,35042,control.lastuip,571823,complete,1922.79,1928.54,315496.0,SAT-INCORRECT
+521074141,cnf_proj/sted12a_0x1e1-67.cnf.xz,13219499,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4991.57,5000.02,403500.0,UNKNOWN
+521074142,cnf_proj/sted1_0x0-380.cnf.xz,13219806,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4991.87,5000.1,450888.0,UNKNOWN
+521074143,cnf_proj/sted1_0x0-637.cnf.xz,13219640,igrev13_lastuip,35042,control.lastuip,571823,complete,2478.63,2489.7,359436.0,SAT-INCORRECT
+521074144,cnf_proj/sted1_0x1e3-393.cnf.xz,13219524,igrev13_lastuip,35042,control.lastuip,571823,complete,3638.41,3655.71,371932.0,SAT-INCORRECT
+521074145,cnf_proj/sted2_0x0-343.cnf.xz,13219725,igrev13_lastuip,35042,control.lastuip,571823,complete,4759.18,4765.19,390944.0,SAT-INCORRECT
+521074146,cnf_proj/sted2_0x1e3-216.cnf.xz,13219782,igrev13_lastuip,35042,control.lastuip,571823,complete,4950.4,4963.62,423096.0,SAT-INCORRECT
+521074147,cnf_proj/sted3_0x0_n201-239.cnf.xz,13219672,igrev13_lastuip,35042,control.lastuip,571823,complete,30.4355,30.4382,266620.0,SAT-INCORRECT
+521074148,cnf_proj/sted4_0x0_n159-185.cnf.xz,13219518,igrev13_lastuip,35042,control.lastuip,571823,complete,615.881,616.507,299812.0,SAT-INCORRECT
+521074149,cnf_proj/sted5_0x0_n90-157.cnf.xz,13219804,igrev13_lastuip,35042,control.lastuip,571823,complete,3257.37,3264.85,364948.0,SAT-INCORRECT
+521074150,cnf_proj/sted5_0x1e3-120.cnf.xz,13219674,igrev13_lastuip,35042,control.lastuip,571823,complete,127.059,127.372,274376.0,SAT-INCORRECT
+521074151,cnf_proj/sted5_0x1e3-20.cnf.xz,13219660,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4977.94,5000.02,453596.0,UNKNOWN
+521074152,cnf_proj/sted5_0x24204-70.cnf.xz,13219461,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.48,5000.11,409160.0,UNKNOWN
+521074153,cnf_proj/sted6_0x1e3-97.cnf.xz,13219822,igrev13_lastuip,35042,control.lastuip,571823,complete,654.031,655.613,303840.0,SAT-INCORRECT
+521074154,cnf_proj/string_compare_safety_cbmc_unwinding_600.cnf.xz,13219568,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4984.18,5000.02,7178112.0,UNSAT
+521074155,cnf_proj/string_compare_safety_cbmc_unwinding_630.cnf.xz,13219811,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4982.65,5000.06,7383728.0,UNSAT
+521074156,cnf_proj/string_compare_safety_cbmc_unwinding_670.cnf.xz,13219817,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4991.51,5000.03,7382740.0,UNSAT
+521074157,cnf_proj/string_compare_safety_cbmc_unwinding_680.cnf.xz,13219576,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.57,5000.02,7352932.0,UNSAT
+521074158,cnf_proj/string_compare_safety_cbmc_unwinding_690.cnf.xz,13219512,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4992.35,5000.11,7288304.0,UNSAT
+521074159,cnf_proj/string_compare_safety_cbmc_unwinding_700.cnf.xz,13219485,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.52,5000.04,8027364.0,UNSAT
+521074160,cnf_proj/string_compare_safety_cbmc_unwinding_730.cnf.xz,13219744,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4990.25,5000.02,7978352.0,UNSAT
+521074161,cnf_proj/string_compare_safety_cbmc_unwinding_780.cnf.xz,13219492,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4994.49,5000.06,1.0302136E7,UNSAT
+521074162,cnf_proj/string_compare_safety_cbmc_unwinding_800.cnf.xz,13219482,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4993.99,5000.07,1.0231108E7,UNSAT
+521074163,cnf_proj/string_compare_safety_cbmc_unwinding_870.cnf.xz,13219742,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.47,5000.07,1.1432144E7,UNSAT
+521074164,cnf_proj/string_compare_safety_cbmc_unwinding_900.cnf.xz,13219569,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4978.01,5000.09,1.1250352E7,UNSAT
+521074165,cnf_proj/string_compare_safety_cbmc_unwinding_930.cnf.xz,13219814,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4970.33,5000.07,1.1354056E7,UNSAT
+521074166,cnf_proj/string_compare_safety_cbmc_unwinding_940.cnf.xz,13219571,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.32,5000.04,1.1064784E7,UNSAT
+521074167,cnf_proj/sum_of_3_cubes_108_bits_52.cnf.xz,13219719,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.05,5000.06,491860.0,UNKNOWN
+521074168,cnf_proj/sum_of_3_cubes_145_bits_74.cnf.xz,13219517,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4987.31,5000.09,627824.0,UNKNOWN
+521074169,cnf_proj/sum_of_3_cubes_37_bits_87.cnf.xz,13219624,igrev13_lastuip,35042,control.lastuip,571823,complete,2601.25,2603.23,321576.0,SAT-INCORRECT
+521074170,cnf_proj/sum_of_3_cubes_42_bits_96.cnf.xz,13219590,igrev13_lastuip,35042,control.lastuip,571823,complete,238.043,238.338,280620.0,SAT-INCORRECT
+521074171,cnf_proj/sum_of_3_cubes_50_bits_91.cnf.xz,13219693,igrev13_lastuip,35042,control.lastuip,571823,complete,59.6469,59.8969,284552.0,SAT-INCORRECT
+521074172,cnf_proj/sum_of_3_cubes_51_bits_80.cnf.xz,13219761,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4984.43,5000.02,386360.0,UNKNOWN
+521074173,cnf_proj/sum_of_3_cubes_52_bits_39.cnf.xz,13219692,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4978.41,5000.03,397616.0,UNKNOWN
+521074174,cnf_proj/sum_of_3_cubes_76_bits_84.cnf.xz,13219769,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.35,5000.07,462188.0,UNKNOWN
+521074175,cnf_proj/sum_of_3_cubes_87_bits_75.cnf.xz,13219616,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4990.52,5000.07,457104.0,UNKNOWN
+521074176,cnf_proj/sum_of_3_cubes_94_bits_30.cnf.xz,13219601,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4993.99,5000.06,463732.0,UNKNOWN
+521074177,cnf_proj/Sz1024_34824.smt2.cnf.xz,13219464,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4986.32,5000.1,499764.0,UNKNOWN
+521074178,cnf_proj/Sz512_15128_1.smt2.cnf.xz,13219732,igrev13_lastuip,35042,control.lastuip,571823,complete,1599.81,1603.98,390204.0,SAT-INCORRECT
+521074179,cnf_proj/test_v7_r12_vr1_c1_s10576.smt2.cnf.xz,13219589,igrev13_lastuip,35042,control.lastuip,571823,complete,1733.03,1735.58,2387320.0,UNSAT
+521074180,cnf_proj/toughsat_factoring_426s.cnf.xz,13219832,igrev13_lastuip,35042,control.lastuip,571823,complete,148.867,149.248,259984.0,SAT-INCORRECT
+521074181,cnf_proj/toughsat_factoring_895s.cnf.xz,13219818,igrev13_lastuip,35042,control.lastuip,571823,complete,195.207,196.038,272548.0,SAT-INCORRECT
+521074182,cnf_proj/UCG-20-10p1-sc2009.cnf.xz,13219727,igrev13_lastuip,35042,control.lastuip,571823,complete,1009.86,1012.41,512396.0,SAT-INCORRECT
+521074183,cnf_proj/UR-15-10p0.cnf.xz,13219785,igrev13_lastuip,35042,control.lastuip,571823,complete,951.007,952.609,598844.0,UNSAT
+521074184,cnf_proj/UR-20-5p1.cnf.xz,13219614,igrev13_lastuip,35042,control.lastuip,571823,complete,287.638,288.743,461480.0,SAT-INCORRECT
+521074185,cnf_proj/uum32.smt2.cnf.xz,13219819,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4979.22,5000.02,433748.0,UNKNOWN
+521074186,cnf_proj/vlsat2_111_1186.cnf.xz,13219661,igrev13_lastuip,35042,control.lastuip,571823,complete,402.65,404.507,512800.0,SAT-INCORRECT
+521074187,cnf_proj/vlsat2_112_4223.cnf.xz,13219839,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4989.58,5000.04,859076.0,UNKNOWN
+521074188,cnf_proj/vlsat2_113_1150.cnf.xz,13219713,igrev13_lastuip,35042,control.lastuip,571823,complete,853.139,859.547,588552.0,SAT-INCORRECT
+521074189,cnf_proj/vlsat2_11_26.cnf.xz,13219700,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4976.12,5000.01,482660.0,UNKNOWN
+521074190,cnf_proj/vlsat2_11_42.cnf.xz,13219480,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4974.41,5000.02,478320.0,UNKNOWN
+521074191,cnf_proj/vlsat2_142_6781.cnf.xz,13219745,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4985.4,5000.02,1137524.0,UNKNOWN
+521074192,cnf_proj/vlsat2_144_7585.cnf.xz,13219503,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4995.97,5000.03,1397420.0,UNKNOWN
+521074193,cnf_proj/vlsat2_29736_3780419.dimacs.cnf.xz,13219459,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4950.1,5000.02,2543580.0,UNKNOWN
+521074194,cnf_proj/vlsat2_37758_5364539.dimacs.cnf.xz,13219540,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4962.65,5000.02,1721160.0,UNKNOWN
+521074195,cnf_proj/vlsat2_44_545.cnf.xz,13219553,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4988.0,5000.02,426412.0,UNKNOWN
+521074196,cnf_proj/vlsat2_51_824.cnf.xz,13219587,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4979.81,5000.02,517688.0,UNKNOWN
+521074197,cnf_proj/vlsat2_56_1042.cnf.xz,13219474,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4984.95,5000.11,475812.0,UNKNOWN
+521074198,cnf_proj/vlsat2_702_14170.cnf.xz,13219841,igrev13_lastuip,35042,control.lastuip,571823,timeout (wallclock),4973.07,5000.02,3719512.0,UNKNOWN
+521074199,cnf_proj/WS_300_24_90_10.apx_0.cnf.xz,13219586,igrev13_lastuip,35042,control.lastuip,571823,complete,186.889,187.214,356712.0,UNSAT
+521074200,cnf_proj/WS_400_16_90_70.apx_0.cnf.xz,13219730,igrev13_lastuip,35042,control.lastuip,571823,complete,414.666,416.847,444980.0,UNSAT
+521074201,cnf_proj/WS_500_16_70_10.apx_0.cnf.xz,13219557,igrev13_lastuip,35042,control.lastuip,571823,complete,431.287,433.136,283416.0,SAT-INCORRECT
+521074202,cnf_proj/WS_500_32_30_10.apx_0.cnf.xz,13219632,igrev13_lastuip,35042,control.lastuip,571823,complete,3096.68,3099.44,1657240.0,UNSAT

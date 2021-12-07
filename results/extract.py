@@ -11,20 +11,21 @@ import os, pandas, re
 RESULT_DIRS = set()
 
 RESULT_DIRS.add("control")
-RESULT_DIRS.add("control_noelim")
+RESULT_DIRS.add("control.noelim")
+RESULT_DIRS.add("control.side-effects")
+RESULT_DIRS.add("control.lastuip")
 
-RESULT_DIRS.add("cnftools_br")
-RESULT_DIRS.add("cnftools_elim")
-RESULT_DIRS.add("cnftools_br-elim")
-RESULT_DIRS.add("cnftools_br-uip")
-RESULT_DIRS.add("cnftools_br-elim-uip")
+RESULT_DIRS.add("cnftools.br")
+RESULT_DIRS.add("cnftools.elim")
+RESULT_DIRS.add("cnftools.br.elim")
+RESULT_DIRS.add("cnftools.br.uip")
+RESULT_DIRS.add("cnftools.br.elim.uip")
 
-RESULT_DIRS.add("kissat_br")
-RESULT_DIRS.add("kissat_elim")
-RESULT_DIRS.add("kissat_br-elim")
-RESULT_DIRS.add("kissat_br-uip")
-RESULT_DIRS.add("kissat_br-elim-uip")
-RESULT_DIRS.add("control_sideffects")
+RESULT_DIRS.add("kissat.br")
+RESULT_DIRS.add("kissat.elim")
+RESULT_DIRS.add("kissat.br.elim")
+RESULT_DIRS.add("kissat.br.uip")
+RESULT_DIRS.add("kissat.br.elim.uip")
 
 foundNames = set()
 START = "./results"
@@ -221,7 +222,7 @@ for dirpath, dirnames, _ in os.walk(START):
                     result_dirs = [dir for dir in solverDirNames if dir.endswith(".cnf.xz")]
                     for result_dir in result_dirs:
                         BENCHMARK = BENCH_PREFIX + result_dir
-                        SOLVER = dirname + ".sh"
+                        SOLVER = dirname
                         for _, _, benchmark_results in os.walk(solverDirPath + result_dir):
                             for file in benchmark_results:
                                 if(RESULT_FORMAT.match(file)):
