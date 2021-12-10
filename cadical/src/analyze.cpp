@@ -756,8 +756,10 @@ void Internal::analyze () {
   // Minimize the 1st UIP clause as pioneered by Niklas Soerensson in
   // MiniSAT and described in our joint SAT'09 paper.
   //
+
+  
   if (size > 1) {
-    #if !defined(UIPAUX)
+    #ifndef UIPAUX
     if (opts.shrink)
       shrink_and_minimize_clause();
     else if (opts.minimize)

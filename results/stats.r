@@ -1,7 +1,8 @@
 library(tidyverse)
 library(dplyr)
 library(openxlsx)
-results <- read.csv(file = './results/results.csv') %>% filter(result != "UNKNOWN")
+results <- read.csv(file = './results/results.csv') %>% filter(result != "UNKNOWN" & status == "complete")
+incomplete <- results 
 results['percent_variables_auxiliary'] <- results['percent_variables_auxiliary'] * 100
 `%notin%` <- Negate(`%in%`)
 FILENAME = "./results/better_worse.xlsx"
@@ -43,7 +44,7 @@ by_cpu_usage <- by_cpu_usage %>% left_join(results_all, c("benchmark", "configur
 
 unchanged_cpu <- by_cpu_usage
 
-noelim_sideeffects_better <- by_cpu_usage %>% filter(control.noelim > control | control.sideeffects > control | control.lastuip > control)
+noelim_sideeffects_better <- by_cpu_usage %>% filter(control.noelim < control | control.sideeffects < control | control.lastuip < control)
 
 better_aux_mem <- by_mem_usage %>% filter(max != control & max != control.noelim & max != control.sideeffects & max != control.lastuip)
 better_aux_mem$percent_diff_from_control <- (better_aux_mem$min - better_aux_mem$control) / better_aux_mem$control * 100
@@ -58,9 +59,13 @@ better_aux_cpu$percent_diff_from_control_lastuip <- (better_aux_cpu$min - better
 better_aux_cpu$max_diff <- pmax(better_aux_cpu$percent_diff_from_control, better_aux_cpu$percent_diff_from_control_sideeffects, better_aux_cpu$percent_diff_from_control_noelim, better_aux_cpu$percent_diff_from_control_lastuip)
 
 better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(percent_diff_from_control <= MARGIN_OF_ERROR_PERCENT))
-better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(percent_diff_from_control_sideeffects <= MARGIN_OF_ERROR_PERCENT))
-better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(percent_diff_from_control_noelim <= MARGIN_OF_ERROR_PERCENT))
-better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(percent_diff_from_control_lastuip <= MARGIN_OF_ERROR_PERCENT))
+better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(grepl("elim", better_aux_cpu$configuration, fixed = TRUE) & better_aux_cpu$percent_diff_from_control_sideeffects <= MARGIN_OF_ERROR_PERCENT | !grepl("elim", better_aux_cpu$configuration, fixed = TRUE)))
+better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(grepl("elim", better_aux_cpu$configuration, fixed = TRUE) & better_aux_cpu$percent_diff_from_control_noelim <= MARGIN_OF_ERROR_PERCENT | !grepl("elim", better_aux_cpu$configuration, fixed = TRUE)))
+better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(grepl("uip", better_aux_cpu$configuration, fixed = TRUE) & better_aux_cpu$percent_diff_from_control_lastuip <= MARGIN_OF_ERROR_PERCENT | !grepl("uip", better_aux_cpu$configuration, fixed = TRUE)))
+
+
+#better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(percent_diff_from_control_noelim <= MARGIN_OF_ERROR_PERCENT))
+#better_aux_cpu <- as.data.frame(better_aux_cpu %>% filter(percent_diff_from_control_lastuip <= MARGIN_OF_ERROR_PERCENT))
 
 worse_aux_mem <- subset(by_mem_usage, configuration %in% c("control", "control.noelim", "control.sideeffects", "control.lastuip")  & range >= (MARGIN_OF_ERROR_PERCENT/100)*control)
 worse_aux_cpu <- subset(by_cpu_usage, configuration %in% c("control", "control.noelim", "control.sideeffects", "control.lastuip")  & range >= (MARGIN_OF_ERROR_PERCENT/100)*control)
@@ -69,14 +74,20 @@ control_cpu <- results_all %>% filter(configuration == "control") %>% filter(ben
 control_mem <- results_all %>% filter(configuration == "control") %>% filter(benchmark %in% better_aux_mem$benchmark)
 runtime_statistic_names <- c("num_decisions", "decisions_per_sec", "num_conflicts", "conflicts_per_sec", "num_restarts", "num_reduced", "percent_reduced_per_conflict", "num_propagations", "propagations_per_sec", "num_eliminated", "num_subsumed", "percent_eliminated", "percent_subsumed")
 
+control_compare_all <- select(noelim_sideeffects_better, benchmark, control.noelim, control.sideeffects, control.lastuip, control)
+control_compare_all$best_control <- colnames(control_compare_all)[apply(select(control_compare_all, control.noelim, control.sideeffects, control.lastuip, control), 1, which.min)+1]
+control_compare_all_subset <- select(control_compare_all, benchmark, best_control)
+noelim_sideeffects_better <- noelim_sideeffects_better %>% left_join(control_compare_all_subset, on="benchmark")
+
+
 control_compare <- select(better_aux_cpu, benchmark, control.noelim, control.sideeffects, control.lastuip, control)
 control_compare$best_control <- colnames(control_compare)[apply(select(control_compare, control.noelim, control.sideeffects, control.lastuip, control), 1, which.min)+1]
+
 
 best_control_subset <- select(control_compare, benchmark, best_control)
 unchanged_cpu <- unchanged_cpu %>% left_join(best_control_subset, by="benchmark")
 
 better_aux_cpu <- better_aux_cpu %>% left_join(best_control_subset, on="benchmark")
-
 compare_to_control_by_percentage <- function(df, control, col_names){
   subset_df <- select(df, c("benchmark", all_of(runtime_statistic_names)))
   subset_control <- select(control, c("benchmark", all_of(runtime_statistic_names)))

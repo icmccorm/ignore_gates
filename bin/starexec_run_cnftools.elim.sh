@@ -3,6 +3,7 @@ echo "UNZIP"
 cp $1 ./bench.xz
 xz --decompress ./bench.xz
 mv bench bench.cnf
+
 echo "AUX"
 ./cnftools-bin2 aux bench.cnf > vars.aux
 
